@@ -18,7 +18,7 @@ func on_removed() -> void:
 
 func _on_stage_started() -> void:
 	var stage := _run.get_current_stage()
-	if stage.mode == Stage.Mode.REGULAR and spot_type in stage.settlement.state.spot_types:
+	if stage and stage.mode == Stage.Mode.REGULAR and spot_type in stage.settlement.state.spot_types:
 		_state = State.ACTIVE
 	else:
 		_state = State.PASSIVE
