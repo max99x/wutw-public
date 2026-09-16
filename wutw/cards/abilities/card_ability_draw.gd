@@ -29,7 +29,7 @@ func get_ability_tooltip(_card: Card) -> String:
 	else:
 		var text: String
 		if count == 1:
-			text = tr('<term:draw> 1 <term_lower:glyph>')
+			text = tr('<term:draw> a <term_lower:glyph>')
 		else:
 			text = tr('<term:draw> %d <term_lower:glyph>s') % count
 		if aspect:
