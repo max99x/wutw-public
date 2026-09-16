@@ -16,4 +16,8 @@ func _on_stage_finished(_settlement_state: SettlementState) -> void:
 
 func describe() -> String:
 	assert(num_settlements > 0)
-	return tr('Establish at least %d <term_lower:settlement>s.') % num_settlements
+	var result := ''
+	if Utils.get_active_run():
+		result += tr('[%d/%d] ') % [Utils.get_active_run().get_settlement_states().size(), num_settlements]
+	result += tr('Establish at least %d <term_lower:settlement>s.') % num_settlements
+	return result

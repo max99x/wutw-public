@@ -267,6 +267,8 @@ func _on_choice_activated(episode: SurveyEpisode, recipe: SurveyRecipe) -> void:
 	_finished_episodes.append(episode)
 
 	var run := Utils.get_active_run()
+	run.signals.survey_episode_finished.emit(episode)
+
 	var can_continue := _available_episodes and _finished_episodes.size() < _max_episodes
 	if run.get_vars().get_current_value(RunVars.Var.CURRENT_INSPIRATION) <= 0:
 		(%EndText as MarkedUpLabel).set_markedup_text(

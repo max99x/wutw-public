@@ -34,6 +34,7 @@ signal foray_started
 signal before_foray_finished(settlement_state: SettlementState)
 signal foray_finished(settlement_state: SettlementState)
 signal survey_started
+signal survey_episode_finished(episode: SurveyEpisode)
 signal survey_finished
 signal harmonization_started
 signal harmonization_finished

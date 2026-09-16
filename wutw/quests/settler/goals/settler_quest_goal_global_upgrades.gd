@@ -52,15 +52,41 @@ func describe() -> String:
 		for upgrade in upgrades:
 			counts[upgrade] = counts.get(upgrade, 0) + 1
 		if counts.size() == 1:
-			return tr('Establish %d <spot_upgrade:%s> <term_lower:spot_upgrade>s.') % [
+			var text := ''
+			if Utils.get_active_run():
+				var completed := _count_upgrade(upgrades[0])
+				text += tr('[%d/%d] ') % [min(completed, upgrades.size()), upgrades.size()]
+			text += tr('Establish %d <spot_upgrade:%s> <term_lower:spot_upgrade>s.') % [
 				upgrades.size(), upgrades[0].spot_upgrade_id]
+			return text
 		else:
 			var text := tr('Establish all of the following <term_lower:spot_upgrade>s:')
 			text += '[ul]'
 			for upgrade in counts:
-				if counts[upgrade] == 1:
-					text += tr('\n<spot_upgrade:%s>') % upgrade.spot_upgrade_id
-				else:
-					text += tr('\n%d <spot_upgrade:%s>s') % [counts[upgrade], upgrade.spot_upgrade_id]
+				text += '\n'
+				if Utils.get_active_run():
+					var completed := _count_upgrade(upgrade)
+					text += tr('[%d/%d] ') % [min(completed, counts[upgrade]), counts[upgrade]]
+				elif counts[upgrade] > 1:
+					text += '%d ' % counts[upgrade]
+				text += tr_n('<spot_upgrade:%s>', '<spot_upgrade:%s>s', counts[upgrade]) % upgrade.spot_upgrade_id
 			text += '[/ul]'
 			return text
+
+func _count_upgrade(required_upgrade: SpotUpgrade) -> int:
+	var result := 0
+
+	# Check in current stage.
+	var stage := Utils.get_active_run().get_current_stage()
+	if stage:
+		for spot in stage.get_spots():
+			if required_upgrade in spot.get_current_upgrades():
+				result += 1
+
+	# Check in past settlements.
+	for state in Utils.get_active_run().get_settlement_states():
+		for spot_upgrades in state.activated_upgrades:
+			if required_upgrade in spot_upgrades:
+				result += 1
+
+	return result

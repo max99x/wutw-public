@@ -19,4 +19,8 @@ func _on_bonus_gained(gained_bonus_type: BonusType, _amount: int, _reason: Bonus
 func describe() -> String:
 	assert(bonus_type)
 	assert(bonus_amount > 0)
-	return tr('Reach %d total %s <term_lower:bonus>.') % [bonus_amount, bonus_type.get_term_tag()]
+	var result := ''
+	if Utils.get_active_run():
+		result += tr('[%d/%d] ') % [Utils.get_active_run().get_bonus_amounts().get_amount(bonus_type), bonus_amount]
+	result += tr('Reach %d total %s <term_lower:bonus>.') % [bonus_amount, bonus_type.get_term_tag()]
+	return result

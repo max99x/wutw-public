@@ -15,4 +15,8 @@ func _on_relic_added(_relic: Relic) -> void:
 
 func describe() -> String:
 	assert(num_required > 0)
-	return tr('Acquire at least %d <term_lower:relic>s.') % num_required
+	var result := ''
+	if Utils.get_active_run():
+		result += tr('[%d/%d] ') % [Utils.get_active_run().get_current_relics().size(), num_required]
+	result += tr('Acquire at least %d <term_lower:relic>s.') % num_required
+	return result
