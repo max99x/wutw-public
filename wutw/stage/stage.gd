@@ -447,6 +447,7 @@ func _setup_foray() -> void:
 	(%ShowAllToggle as Control).visible = Skill.get_skill_var(Skill.Var.NONGOAL) > 0
 	run.get_stage_goal_tracker().visible = true
 	run.get_stage_goal_tracker().goal = get_goal()
+	run.get_harmonization_haunting_bar().visible = false
 	map.view_controls_enabled = false
 
 	_update_bonus_highlights()
@@ -496,6 +497,13 @@ func _setup_harmonization() -> void:
 			other_settlement.set_haunting(null)
 	run.get_run_data().haunting_leftover_roll = hauntings_roll_result.leftover_roll
 
+	if _hauntings and GameSettings.Interface.show_harmonization_haunting_preview.value():
+		for haunting in _hauntings:
+			run.get_harmonization_haunting_bar().track_haunting(haunting as Haunting_Harmonization)
+		run.get_harmonization_haunting_bar().visible = true
+	else:
+		run.get_harmonization_haunting_bar().visible = false
+
 func _setup_survey() -> void:
 	Utils.ensure(not settlement and not events)
 
@@ -518,6 +526,7 @@ func _setup_survey() -> void:
 	Utils.ensure(_survey.map_location.x >= 0)
 	%SpotsList.add_child(_survey)
 	run.get_stage_goal_tracker().visible = false
+	run.get_harmonization_haunting_bar().visible = false
 	(%ShowAllToggle as Control).visible = false
 	map.view_controls_enabled = false
 	map.focus_location(run.get_run_data().current_survey_location, ZOOM_SURVEY)
@@ -704,8 +713,11 @@ func _on_finish_button_pressed() -> void:
 func _finish_stage() -> void:
 	finish_button_pressed.emit()
 
+	var run := Utils.get_active_run()
 	for haunting in _hauntings:
 		haunting.cleanup_and_close(0.5)
+	run.get_harmonization_haunting_bar().clear()
+	run.get_harmonization_haunting_bar().visible = false
 
 	for child in get_children():
 		if child is Control:
@@ -722,7 +734,6 @@ func _finish_stage() -> void:
 	if mode == Mode.STARTER_TUTORIAL:
 		await _starter_tutorial.animate_transition()
 
-	var run := Utils.get_active_run()
 	var map := run.get_map()
 	if mode == Mode.REGULAR:
 		run.signals.before_foray_finished.emit(settlement.state)

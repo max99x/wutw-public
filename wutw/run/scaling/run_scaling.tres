@@ -57,6 +57,7 @@ point_count = 5
 script = ExtResource("1_n0kst")
 stage_goal_amounts = SubResource("Curve_mscpb")
 first_season_with_double_lacks = 1
+first_season_with_settlement_hauntings = 0
 haunting_standalone_probability = 0.4
 haunting_base_probability = 0.25
 haunting_bonus_per_extra_chance = 100

@@ -28,6 +28,8 @@ func trigger() -> void:
 Starting from <term:season> %d, <term_lower:settlement>s can have <term_lower:haunting>s during <term:harmonization>.
 
 Most of these will trigger even on actions unrelated to the <term_lower:settlement> they appear in.
+
+All <term_lower:haunting>s also appear at the top of the screen for reference.
 ''').strip_edges() % (run.scaling.first_season_with_settlement_hauntings + 1)
 
 	_outline_controls([haunting])

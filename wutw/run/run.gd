@@ -112,6 +112,9 @@ func get_run_bonus_listing() -> RunBonusListing:
 func get_stage_goal_tracker() -> StageGoalTracker:
 	return _top_hud.get_stage_goal_tracker()
 
+func get_harmonization_haunting_bar() -> HarmonizationHauntingBar:
+	return _top_hud.get_harmonization_haunting_bar()
+
 func get_current_relics() -> Array[Relic]:
 	return _data.current_relics if _data else []
 

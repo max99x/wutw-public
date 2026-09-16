@@ -73,7 +73,8 @@ func _play_trigger_animation() -> void:
 	if not _is_setup:  # Pacified by the time it's called.
 		return
 	var stage := Utils.get_active_run().get_current_stage()
-	await stage.ensure_slot_visible(get_aspect_slots()[0])
+	if not GameSettings.Interface.show_harmonization_haunting_preview.value():
+		await stage.ensure_slot_visible(get_aspect_slots()[0])
 	if _trigger_tween:
 		_trigger_tween.kill()
 	_trigger_tween = create_tween()

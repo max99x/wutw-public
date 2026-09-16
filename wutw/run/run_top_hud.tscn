@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://b54vbgiefgjma" path="res://run/run_top_hud.gd" id="1_c1dyg"]
 [ext_resource type="PackedScene" uid="uid://bkq2tif4ts3wn" path="res://run/inspiration_display.tscn" id="2_3icv0"]
 [ext_resource type="PackedScene" uid="uid://fvenkp0gjd5b" path="res://stage/stage_goal_tracker.tscn" id="2_25vkn"]
-[ext_resource type="Material" uid="uid://dx3qmo2m6ybh4" path="res://theme/panel/ukiyoe_panel_container_material.tres" id="5_llqb5"]
+[ext_resource type="PackedScene" uid="uid://dufjmw6cheg55" path="res://stage/hauntings/harmonization_haunting_bar.tscn" id="5_c1dyg"]
 [ext_resource type="PackedScene" uid="uid://2ts6fufc7wli" path="res://quests/hud/quest_hud.tscn" id="6_tuaj4"]
 [ext_resource type="PackedScene" uid="uid://5djyahrhhuhl" path="res://bonuses/run_bonus_listing.tscn" id="7_24fdv"]
 [ext_resource type="PackedScene" uid="uid://if8t46q48gc2" path="res://pause_menu/pause_button.tscn" id="8_7xlfg"]
@@ -23,53 +23,57 @@ theme_override_constants/separation = 0
 
 [node name="InspirationDisplay" parent="TopBar" unique_id=65672330 instance=ExtResource("2_3icv0")]
 unique_name_in_owner = true
-instance_shader_parameters/size = Vector2(149.35979, 59.743896)
 custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 0
 
 [node name="RelicStatusBar" parent="TopBar" unique_id=524091234 instance=ExtResource("1_61jm4")]
 unique_name_in_owner = true
 custom_maximum_size = Vector2(500, -1)
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 0
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="TopBar" unique_id=1326423216]
+[node name="HBoxContainer2" type="HBoxContainer" parent="TopBar" unique_id=1074625104]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 2
 
 [node name="StageGoalTracker" parent="TopBar/HBoxContainer2" unique_id=1220021318 instance=ExtResource("2_25vkn")]
 unique_name_in_owner = true
-material = ExtResource("5_llqb5")
-instance_shader_parameters/size = Vector2(906.11597, 59.743896)
+visible = false
 custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 4
+size_flags_vertical = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="TopBar" unique_id=1390315560]
+[node name="HarmonizationHauntingBar" parent="TopBar/HBoxContainer2" unique_id=1223767700 instance=ExtResource("5_c1dyg")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TopBar" unique_id=548944407]
 layout_mode = 2
 size_flags_horizontal = 8
+mouse_filter = 2
 
 [node name="QuestHud" parent="TopBar/HBoxContainer" unique_id=1165934622 instance=ExtResource("6_tuaj4")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 8
-size_flags_vertical = 4
+size_flags_vertical = 0
 
 [node name="RunBonusListing" parent="TopBar/HBoxContainer" unique_id=676128897 instance=ExtResource("7_24fdv")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 8
-size_flags_vertical = 4
+size_flags_vertical = 0
 
 [node name="PauseButton" parent="TopBar/HBoxContainer" unique_id=28221169 instance=ExtResource("8_7xlfg")]
 unique_name_in_owner = true
 self_modulate = Color(0.83, 0.83, 0.83, 1)
 instance_shader_parameters/background_offset = Vector2(0.07736872, 0.89964944)
-instance_shader_parameters/size = Vector2(49.78662, 49.78659)
-custom_minimum_size = Vector2(60, 60)
 custom_maximum_size = Vector2(-1, -1)
 layout_mode = 2
 size_flags_horizontal = 8
-size_flags_vertical = 4
+size_flags_vertical = 0
+focus_mode = 0

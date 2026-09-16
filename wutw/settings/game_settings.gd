@@ -27,6 +27,8 @@ class Interface:
 	static var show_stage_bonuses := BoolSetting.new('ui', 'show_stage_bonuses', false)
 	static var sort_predicted_yields := BoolSetting.new('ui', 'sort_predicted_yields', true)
 	static var show_version_watermark := BoolSetting.new('ui', 'show_version_watermark', true)
+	# Not configurable unless we find a reason for it to be.
+	static var show_harmonization_haunting_preview := BoolSetting.new('ui', 'show_harmonization_haunting_preview', true)
 	# Deprecated
 	static var _deprecated_accessible_aspect_icons := BoolSetting.new('ui', 'accessible_aspect_icons', true)
 class FirstRun:

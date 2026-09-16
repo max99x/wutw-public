@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://co87vijlhcckp"]
+
+[ext_resource type="Material" uid="uid://dx3qmo2m6ybh4" path="res://theme/panel/ukiyoe_panel_container_material.tres" id="1_02biu"]
+[ext_resource type="StyleBox" uid="uid://d07v5v8gcmg2c" path="res://theme/panel/ukiyoe_panel_container_stylebox.tres" id="2_tm3qy"]
+[ext_resource type="Script" uid="uid://bja5r40haxt6r" path="res://stage/hauntings/haunting_harmonization_preview.gd" id="3_rbtjj"]
+[ext_resource type="PackedScene" uid="uid://c8cqt157t1rdx" path="res://glossary/marked_up_label.tscn" id="4_0uaeo"]
+
+[node name="HauntingHarmonizationPreview" type="PanelContainer" unique_id=779459751]
+texture_filter = 6
+material = ExtResource("1_02biu")
+custom_maximum_size = Vector2(500, -1)
+offset_right = 173.0
+offset_bottom = 82.0
+size_flags_horizontal = 4
+size_flags_vertical = 10
+offset_transform_enabled = true
+offset_transform_pivot_ratio = Vector2(0.5, 0)
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = ExtResource("2_tm3qy")
+script = ExtResource("3_rbtjj")
+metadata/_custom_type_script = "uid://dveiu76ujl3xp"
+
+[node name="EffectLabel" parent="." unique_id=1627404269 instance=ExtResource("4_0uaeo")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 72)
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 2
+text = "Task Activated Here
+↓
+Lose All"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1

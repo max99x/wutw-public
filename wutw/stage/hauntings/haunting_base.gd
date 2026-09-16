@@ -2,6 +2,7 @@
 class_name HauntingBase
 extends Recipe
 
+signal triggered
 signal pacified
 
 @abstract func get_spot() -> Spot
@@ -87,7 +88,7 @@ func _on_triggered(related_gain: BonusGain, related_slot: AspectSlot, related_ca
 	stage.queue_action(func() -> void:
 		if not _is_setup:  # Pacified by the time it's called.
 			return
-		await stage.ensure_slot_visible(get_aspect_slots()[0])
+		triggered.emit()
 		@warning_ignore('redundant_await')
 		await _play_trigger_animation()
 	)

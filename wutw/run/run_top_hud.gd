@@ -14,6 +14,9 @@ func get_relic_status_bar() -> RelicStatusBar:
 func get_stage_goal_tracker() -> StageGoalTracker:
 	return %StageGoalTracker
 
+func get_harmonization_haunting_bar() -> HarmonizationHauntingBar:
+	return %HarmonizationHauntingBar
+
 func get_quest_hud() -> QuestHud:
 	return %QuestHud
 
