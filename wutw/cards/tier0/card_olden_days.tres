@@ -1,0 +1,905 @@
+[gd_resource type="Resource" script_class="CardType" format=3 uid="uid://cmfean16rllhw"]
+
+[ext_resource type="Script" uid="uid://b56kytec5oqcb" path="res://cards/abilities/card_ability.gd" id="1_omrs6"]
+[ext_resource type="Script" uid="uid://cw46n47ekhnqm" path="res://cards/abilities/card_ability_discard.gd" id="2_xi13c"]
+[ext_resource type="Resource" uid="uid://dgd4xg64jr3k0" path="res://aspects/types/spirit/aspect_spirit.tres" id="3_ieqfa"]
+[ext_resource type="Script" uid="uid://ckufokw5lk1yq" path="res://cards/abilities/card_ability_draw.gd" id="4_t2ihu"]
+[ext_resource type="Script" uid="uid://xc73x4t7ckxm" path="res://japanese/example_sentence.gd" id="5_k43g5"]
+[ext_resource type="Script" uid="uid://bl2eelwkj800o" path="res://japanese/japanese_token.gd" id="6_7pau8"]
+[ext_resource type="Script" uid="uid://b6rw4ldrj6wch" path="res://japanese/vocab.gd" id="7_i4pcp"]
+[ext_resource type="Script" uid="uid://du4k150pcdjs6" path="res://japanese/kanji_shape.gd" id="8_p0ksh"]
+[ext_resource type="Script" uid="uid://dc15txdqjanlf" path="res://japanese/stroke_shape.gd" id="9_1v8k0"]
+[ext_resource type="Script" uid="uid://gay6daqawghm" path="res://cards/card_type.gd" id="10_oceka"]
+[ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="11_depuu"]
+[ext_resource type="Resource" uid="uid://d1k7vakhjcq5g" path="res://glossary/categories/termcategory_card.tres" id="12_bw6v5"]
+
+[sub_resource type="Resource" id="Resource_hquw7"]
+script = ExtResource("2_xi13c")
+metadata/_custom_type_script = "uid://cw46n47ekhnqm"
+
+[sub_resource type="Resource" id="Resource_7f4c3"]
+script = ExtResource("4_t2ihu")
+aspect = ExtResource("3_ieqfa")
+metadata/_custom_type_script = "uid://ckufokw5lk1yq"
+
+[sub_resource type="Resource" id="Resource_1dqje"]
+script = ExtResource("7_i4pcp")
+japanese = "昔"
+readings = Array[String](["むかし", "むかーし"])
+meanings = Array[String](["the old days", "the past", "former times", "a long time ago", "the past ten years", "the past decade"])
+jlpt_level = 4
+
+[sub_resource type="Resource" id="Resource_nvs2k"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_e2isy"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_ol0ge"]
+script = ExtResource("6_7pau8")
+raw_text = "よく"
+reading = "よく"
+
+[sub_resource type="Resource" id="Resource_y2b78"]
+script = ExtResource("6_7pau8")
+raw_text = "し"
+reading = "し"
+
+[sub_resource type="Resource" id="Resource_ptibg"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_w3q1a"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_javn2"]
+script = ExtResource("5_k43g5")
+japanese = "昔はよくした。"
+native = "I used to do that a lot."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_nvs2k"), SubResource("Resource_e2isy"), SubResource("Resource_ol0ge"), SubResource("Resource_y2b78"), SubResource("Resource_ptibg"), SubResource("Resource_w3q1a")])
+_difficulty = 217
+
+[sub_resource type="Resource" id="Resource_vwuye"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_oxuqh"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_b7am5"]
+script = ExtResource("6_7pau8")
+raw_text = "よかっ"
+reading = "よかっ"
+
+[sub_resource type="Resource" id="Resource_cyiql"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_ptwri"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_gw6tx"]
+script = ExtResource("5_k43g5")
+japanese = "昔はよかった。"
+native = "I've seen better days."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_vwuye"), SubResource("Resource_oxuqh"), SubResource("Resource_b7am5"), SubResource("Resource_cyiql"), SubResource("Resource_ptwri")])
+_difficulty = 217
+
+[sub_resource type="Resource" id="Resource_m1ian"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_7wmob"]
+script = ExtResource("6_7pau8")
+raw_text = "の"
+reading = "の"
+
+[sub_resource type="Resource" id="Resource_6j82m"]
+script = ExtResource("7_i4pcp")
+japanese = "言葉"
+readings = Array[String](["ことば", "けとば"])
+meanings = Array[String](["language", "dialect", "word", "phrase", "expression", "term", "speech", "(manner of) speaking", "(use of) language", "words", "remark", "statement", "comment", "learning to speak", "language acquisition"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_6l4r4"]
+script = ExtResource("6_7pau8")
+raw_text = "言葉"
+vocab = SubResource("Resource_6j82m")
+reading = "ことば"
+
+[sub_resource type="Resource" id="Resource_rlkpg"]
+script = ExtResource("6_7pau8")
+raw_text = "だ"
+reading = "だ"
+
+[sub_resource type="Resource" id="Resource_mu63g"]
+script = ExtResource("6_7pau8")
+raw_text = "よ"
+reading = "よ"
+
+[sub_resource type="Resource" id="Resource_slvdf"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_kwvpn"]
+script = ExtResource("5_k43g5")
+japanese = "昔の言葉だよ。"
+native = "It's an old word."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_m1ian"), SubResource("Resource_7wmob"), SubResource("Resource_6l4r4"), SubResource("Resource_rlkpg"), SubResource("Resource_mu63g"), SubResource("Resource_slvdf")])
+_difficulty = 241
+
+[sub_resource type="Resource" id="Resource_us38k"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_22k16"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_8tixk"]
+script = ExtResource("6_7pau8")
+raw_text = "そう"
+reading = "そう"
+
+[sub_resource type="Resource" id="Resource_t0ev7"]
+script = ExtResource("6_7pau8")
+raw_text = "だっ"
+reading = "だっ"
+
+[sub_resource type="Resource" id="Resource_wpjen"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_ijs0l"]
+script = ExtResource("6_7pau8")
+raw_text = "よ"
+reading = "よ"
+
+[sub_resource type="Resource" id="Resource_6hqrg"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_tovus"]
+script = ExtResource("5_k43g5")
+japanese = "昔はそうだったよ。"
+native = "That's how things used to be."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_us38k"), SubResource("Resource_22k16"), SubResource("Resource_8tixk"), SubResource("Resource_t0ev7"), SubResource("Resource_wpjen"), SubResource("Resource_ijs0l"), SubResource("Resource_6hqrg")])
+_difficulty = 250
+
+[sub_resource type="Resource" id="Resource_qfjxm"]
+script = ExtResource("7_i4pcp")
+japanese = "町"
+readings = Array[String](["まち"])
+meanings = Array[String](["town", "block", "neighbourhood", "neighborhood", "street", "road"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_aem7v"]
+script = ExtResource("6_7pau8")
+raw_text = "町"
+vocab = SubResource("Resource_qfjxm")
+reading = "まち"
+
+[sub_resource type="Resource" id="Resource_b523f"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_fu63h"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_buyt2"]
+script = ExtResource("6_7pau8")
+raw_text = "の"
+reading = "の"
+
+[sub_resource type="Resource" id="Resource_1ngsw"]
+script = ExtResource("6_7pau8")
+raw_text = "まま"
+reading = "まま"
+
+[sub_resource type="Resource" id="Resource_vv8wq"]
+script = ExtResource("6_7pau8")
+raw_text = "だっ"
+reading = "だっ"
+
+[sub_resource type="Resource" id="Resource_o1ds2"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_hmkxb"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_4l40y"]
+script = ExtResource("5_k43g5")
+japanese = "町は昔のままだった。"
+native = "The town was exactly the same as before."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_aem7v"), SubResource("Resource_b523f"), SubResource("Resource_fu63h"), SubResource("Resource_buyt2"), SubResource("Resource_1ngsw"), SubResource("Resource_vv8wq"), SubResource("Resource_o1ds2"), SubResource("Resource_hmkxb")])
+_difficulty = 256
+
+[sub_resource type="Resource" id="Resource_xh8io"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_1dfcc"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_sjvwk"]
+script = ExtResource("7_i4pcp")
+japanese = "先生"
+readings = Array[String](["せんせい"])
+meanings = Array[String](["teacher", "instructor", "master", "sensei", "title or form of address for a teacher, master, doctor, lawyer, etc.", "intimate or teasing form of address", "one's elder"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_wiup1"]
+script = ExtResource("6_7pau8")
+raw_text = "先生"
+vocab = SubResource("Resource_sjvwk")
+reading = "せんせい"
+
+[sub_resource type="Resource" id="Resource_gt00s"]
+script = ExtResource("6_7pau8")
+raw_text = "し"
+reading = "し"
+
+[sub_resource type="Resource" id="Resource_hoult"]
+script = ExtResource("6_7pau8")
+raw_text = "て"
+reading = "て"
+
+[sub_resource type="Resource" id="Resource_dutfd"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_geafn"]
+script = ExtResource("6_7pau8")
+raw_text = "ん"
+reading = "ん"
+
+[sub_resource type="Resource" id="Resource_5ylsw"]
+script = ExtResource("6_7pau8")
+raw_text = "だ"
+reading = "だ"
+
+[sub_resource type="Resource" id="Resource_s83gj"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_g3plc"]
+script = ExtResource("5_k43g5")
+japanese = "昔は先生してたんだ。"
+native = "I used to be a teacher."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_xh8io"), SubResource("Resource_1dfcc"), SubResource("Resource_wiup1"), SubResource("Resource_gt00s"), SubResource("Resource_hoult"), SubResource("Resource_dutfd"), SubResource("Resource_geafn"), SubResource("Resource_5ylsw"), SubResource("Resource_s83gj")])
+_difficulty = 263
+
+[sub_resource type="Resource" id="Resource_p1bmu"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_b356p"]
+script = ExtResource("6_7pau8")
+raw_text = "ほど"
+reading = "ほど"
+
+[sub_resource type="Resource" id="Resource_orey8"]
+script = ExtResource("7_i4pcp")
+japanese = "お金"
+readings = Array[String](["おかね"])
+meanings = Array[String](["money"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_ee4ln"]
+script = ExtResource("6_7pau8")
+raw_text = "お金"
+vocab = SubResource("Resource_orey8")
+reading = "おかね"
+
+[sub_resource type="Resource" id="Resource_cwbuh"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_t0f1b"]
+script = ExtResource("6_7pau8")
+raw_text = "ない"
+reading = "ない"
+
+[sub_resource type="Resource" id="Resource_1elyr"]
+script = ExtResource("6_7pau8")
+raw_text = "ん"
+reading = "ん"
+
+[sub_resource type="Resource" id="Resource_2lo21"]
+script = ExtResource("6_7pau8")
+raw_text = "だ"
+reading = "だ"
+
+[sub_resource type="Resource" id="Resource_8iyrg"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_a2t43"]
+script = ExtResource("5_k43g5")
+japanese = "昔ほどお金はないんだ。"
+native = "I don't have as much money as I used to have."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_p1bmu"), SubResource("Resource_b356p"), SubResource("Resource_ee4ln"), SubResource("Resource_cwbuh"), SubResource("Resource_t0f1b"), SubResource("Resource_1elyr"), SubResource("Resource_2lo21"), SubResource("Resource_8iyrg")])
+_difficulty = 272
+
+[sub_resource type="Resource" id="Resource_jtq8b"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_e56ri"]
+script = ExtResource("6_7pau8")
+raw_text = "ここ"
+reading = "ここ"
+
+[sub_resource type="Resource" id="Resource_bk25r"]
+script = ExtResource("6_7pau8")
+raw_text = "に"
+reading = "に"
+
+[sub_resource type="Resource" id="Resource_ngdnc"]
+script = ExtResource("7_i4pcp")
+japanese = "橋"
+readings = Array[String](["はし"])
+meanings = Array[String](["bridge"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_8xkko"]
+script = ExtResource("6_7pau8")
+raw_text = "橋"
+vocab = SubResource("Resource_ngdnc")
+reading = "はし"
+
+[sub_resource type="Resource" id="Resource_t13nm"]
+script = ExtResource("6_7pau8")
+raw_text = "が"
+reading = "が"
+
+[sub_resource type="Resource" id="Resource_cs4g6"]
+script = ExtResource("6_7pau8")
+raw_text = "あっ"
+reading = "あっ"
+
+[sub_resource type="Resource" id="Resource_mund0"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_bbiff"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_mgn5y"]
+script = ExtResource("5_k43g5")
+japanese = "昔ここに橋があった。"
+native = "There used to be a bridge here."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_jtq8b"), SubResource("Resource_e56ri"), SubResource("Resource_bk25r"), SubResource("Resource_8xkko"), SubResource("Resource_t13nm"), SubResource("Resource_cs4g6"), SubResource("Resource_mund0"), SubResource("Resource_bbiff")])
+_difficulty = 283
+
+[sub_resource type="Resource" id="Resource_3cee4"]
+script = ExtResource("6_7pau8")
+raw_text = "ここ"
+reading = "ここ"
+
+[sub_resource type="Resource" id="Resource_c1b5h"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_de3n1"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_l6ofy"]
+script = ExtResource("6_7pau8")
+raw_text = "、"
+reading = "、"
+
+[sub_resource type="Resource" id="Resource_c45fx"]
+script = ExtResource("7_i4pcp")
+japanese = "畑"
+readings = Array[String](["はたけ", "はた"])
+meanings = Array[String](["field (for growing wheat, fruit, vegetables, etc.)", "cultivated land", "vegetable plot", "kitchen garden", "plantation", "field (of specialization)", "sphere", "area", "line", "womb", "birth", "birthplace"])
+jlpt_level = 3
+
+[sub_resource type="Resource" id="Resource_b4ohf"]
+script = ExtResource("6_7pau8")
+raw_text = "畑"
+vocab = SubResource("Resource_c45fx")
+reading = "はたけ"
+
+[sub_resource type="Resource" id="Resource_bigiy"]
+script = ExtResource("6_7pau8")
+raw_text = "だっ"
+reading = "だっ"
+
+[sub_resource type="Resource" id="Resource_lbk6a"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_o5nts"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_elhwd"]
+script = ExtResource("5_k43g5")
+japanese = "ここは昔、畑だった。"
+native = "This place used to be a field."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_3cee4"), SubResource("Resource_c1b5h"), SubResource("Resource_de3n1"), SubResource("Resource_l6ofy"), SubResource("Resource_b4ohf"), SubResource("Resource_bigiy"), SubResource("Resource_lbk6a"), SubResource("Resource_o5nts")])
+_difficulty = 283
+
+[sub_resource type="Resource" id="Resource_hqhvi"]
+script = ExtResource("6_7pau8")
+raw_text = "この"
+reading = "この"
+
+[sub_resource type="Resource" id="Resource_onic5"]
+script = ExtResource("6_7pau8")
+raw_text = "町"
+vocab = SubResource("Resource_qfjxm")
+reading = "まち"
+
+[sub_resource type="Resource" id="Resource_lg835"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_pdw3y"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_ye5w0"]
+script = ExtResource("6_7pau8")
+raw_text = "きれい"
+reading = "きれい"
+
+[sub_resource type="Resource" id="Resource_13731"]
+script = ExtResource("6_7pau8")
+raw_text = "でし"
+reading = "でし"
+
+[sub_resource type="Resource" id="Resource_devde"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_4ihim"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_py84n"]
+script = ExtResource("5_k43g5")
+japanese = "この町は昔きれいでした。"
+native = "Formerly, this city was beautiful."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_hqhvi"), SubResource("Resource_onic5"), SubResource("Resource_lg835"), SubResource("Resource_pdw3y"), SubResource("Resource_ye5w0"), SubResource("Resource_13731"), SubResource("Resource_devde"), SubResource("Resource_4ihim")])
+_difficulty = 289
+
+[sub_resource type="Resource" id="Resource_k2lde"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_hygpy"]
+script = ExtResource("6_7pau8")
+raw_text = "の"
+reading = "の"
+
+[sub_resource type="Resource" id="Resource_pkb6b"]
+script = ExtResource("6_7pau8")
+raw_text = "よう"
+reading = "よう"
+
+[sub_resource type="Resource" id="Resource_r3qwf"]
+script = ExtResource("6_7pau8")
+raw_text = "な"
+reading = "な"
+
+[sub_resource type="Resource" id="Resource_vyfyc"]
+script = ExtResource("7_i4pcp")
+japanese = "元気"
+readings = Array[String](["げんき"])
+meanings = Array[String](["lively", "full of spirit", "energetic", "vigorous", "vital", "spirited", "healthy", "well", "fit", "in good health"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_bpwkj"]
+script = ExtResource("6_7pau8")
+raw_text = "元気"
+vocab = SubResource("Resource_vyfyc")
+reading = "げんき"
+
+[sub_resource type="Resource" id="Resource_36s2b"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_e7j23"]
+script = ExtResource("6_7pau8")
+raw_text = "ない"
+reading = "ない"
+
+[sub_resource type="Resource" id="Resource_3bqge"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_kfxvw"]
+script = ExtResource("5_k43g5")
+japanese = "昔のような元気はない。"
+native = "I'm not as young as I used to be."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_k2lde"), SubResource("Resource_hygpy"), SubResource("Resource_pkb6b"), SubResource("Resource_r3qwf"), SubResource("Resource_bpwkj"), SubResource("Resource_36s2b"), SubResource("Resource_e7j23"), SubResource("Resource_3bqge")])
+_difficulty = 289
+
+[sub_resource type="Resource" id="Resource_jx54c"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_43hu3"]
+script = ExtResource("6_7pau8")
+raw_text = "より"
+reading = "より"
+
+[sub_resource type="Resource" id="Resource_0son8"]
+script = ExtResource("7_i4pcp")
+japanese = "食"
+readings = Array[String](["しょく", "じき", "し"])
+meanings = Array[String](["food", "foodstuff", "eating", "appetite", "meal", "portion"])
+
+[sub_resource type="Resource" id="Resource_dly7b"]
+script = ExtResource("6_7pau8")
+raw_text = "食"
+vocab = SubResource("Resource_0son8")
+reading = "しょく"
+
+[sub_resource type="Resource" id="Resource_ogcsv"]
+script = ExtResource("6_7pau8")
+raw_text = "が"
+reading = "が"
+
+[sub_resource type="Resource" id="Resource_pjxcj"]
+script = ExtResource("7_i4pcp")
+japanese = "細い"
+readings = Array[String](["ほそい"])
+meanings = Array[String](["thin", "slender", "fine", "unlucky"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_nlkqc"]
+script = ExtResource("6_7pau8")
+raw_text = "細く"
+vocab = SubResource("Resource_pjxcj")
+reading = "ほそく"
+
+[sub_resource type="Resource" id="Resource_otr7d"]
+script = ExtResource("6_7pau8")
+raw_text = "なっ"
+reading = "なっ"
+
+[sub_resource type="Resource" id="Resource_bvyjb"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_8ynow"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_nk6hk"]
+script = ExtResource("5_k43g5")
+japanese = "昔より食が細くなった。"
+native = "I eat less than I used to."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_jx54c"), SubResource("Resource_43hu3"), SubResource("Resource_dly7b"), SubResource("Resource_ogcsv"), SubResource("Resource_nlkqc"), SubResource("Resource_otr7d"), SubResource("Resource_bvyjb"), SubResource("Resource_8ynow")])
+_difficulty = 298
+
+[sub_resource type="Resource" id="Resource_ddpff"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_j45im"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_u7u16"]
+script = ExtResource("6_7pau8")
+raw_text = "そこ"
+reading = "そこ"
+
+[sub_resource type="Resource" id="Resource_15x23"]
+script = ExtResource("6_7pau8")
+raw_text = "で"
+reading = "で"
+
+[sub_resource type="Resource" id="Resource_fb3ss"]
+script = ExtResource("7_i4pcp")
+japanese = "遊ぶ"
+readings = Array[String](["あそぶ", "あすぶ"])
+meanings = Array[String](["to play (games, sports)", "to enjoy oneself", "to have a good time", "to mess about (with alcohol, gambling, philandery, etc.)", "to be idle", "to do nothing", "to be unused", "to meet up (with friends)", "to hang out", "to give oneself up (to gambling, drinking, etc.)", "to go to (for pleasure or for study)", "to tease (someone)", "to play (with)", "to intentionally throw a ball to lower the batter's concentration"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_w0jj5"]
+script = ExtResource("6_7pau8")
+raw_text = "遊ん"
+vocab = SubResource("Resource_fb3ss")
+reading = "あそん"
+
+[sub_resource type="Resource" id="Resource_rqcmj"]
+script = ExtResource("6_7pau8")
+raw_text = "で"
+reading = "で"
+
+[sub_resource type="Resource" id="Resource_ruj6u"]
+script = ExtResource("6_7pau8")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_2sllh"]
+script = ExtResource("6_7pau8")
+raw_text = "よ"
+reading = "よ"
+
+[sub_resource type="Resource" id="Resource_srnvn"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_y54wa"]
+script = ExtResource("5_k43g5")
+japanese = "昔はそこで遊んでたよ。"
+native = "I used to play there."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_ddpff"), SubResource("Resource_j45im"), SubResource("Resource_u7u16"), SubResource("Resource_15x23"), SubResource("Resource_w0jj5"), SubResource("Resource_rqcmj"), SubResource("Resource_ruj6u"), SubResource("Resource_2sllh"), SubResource("Resource_srnvn")])
+_difficulty = 300
+
+[sub_resource type="Resource" id="Resource_xuswf"]
+script = ExtResource("6_7pau8")
+raw_text = "ずいぶん"
+reading = "ずいぶん"
+
+[sub_resource type="Resource" id="Resource_35410"]
+script = ExtResource("6_7pau8")
+raw_text = "と"
+reading = "と"
+
+[sub_resource type="Resource" id="Resource_ufq15"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_asoql"]
+script = ExtResource("6_7pau8")
+raw_text = "の"
+reading = "の"
+
+[sub_resource type="Resource" id="Resource_8sppo"]
+script = ExtResource("6_7pau8")
+raw_text = "こと"
+reading = "こと"
+
+[sub_resource type="Resource" id="Resource_4upck"]
+script = ExtResource("6_7pau8")
+raw_text = "です"
+reading = "です"
+
+[sub_resource type="Resource" id="Resource_b7aks"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_ndfmv"]
+script = ExtResource("5_k43g5")
+japanese = "ずいぶんと昔のことです。"
+native = "That was such a long time ago."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_xuswf"), SubResource("Resource_35410"), SubResource("Resource_ufq15"), SubResource("Resource_asoql"), SubResource("Resource_8sppo"), SubResource("Resource_4upck"), SubResource("Resource_b7aks")])
+_difficulty = 300
+
+[sub_resource type="Resource" id="Resource_f6qh3"]
+script = ExtResource("7_i4pcp")
+japanese = "話"
+readings = Array[String](["はなし"])
+meanings = Array[String](["topic", "subject", "rumor", "talk", "hearsay", "tale", "story", "fable", "circumstances", "particulars"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_bfxp3"]
+script = ExtResource("6_7pau8")
+raw_text = "話"
+vocab = SubResource("Resource_f6qh3")
+reading = "はなし"
+
+[sub_resource type="Resource" id="Resource_vqml2"]
+script = ExtResource("6_7pau8")
+raw_text = "は"
+reading = "は"
+
+[sub_resource type="Resource" id="Resource_est4x"]
+script = ExtResource("7_i4pcp")
+japanese = "遠い"
+readings = Array[String](["とおい"])
+meanings = Array[String](["far", "distant", "far away", "a long way off", "in the distance", "distant (past)", "remote (in time)", "remote", "far-removed (in time)", "distant (relationship or kinship)", "having little to do (with someone)", "far (from something else in quality, degree, etc.)", "not similar", "way off", "hard (of hearing)", "nearsighted"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_8kyuw"]
+script = ExtResource("6_7pau8")
+raw_text = "遠い"
+vocab = SubResource("Resource_est4x")
+reading = "とおい"
+
+[sub_resource type="Resource" id="Resource_0bth1"]
+script = ExtResource("6_7pau8")
+raw_text = "昔"
+vocab = SubResource("Resource_1dqje")
+reading = "むかし"
+
+[sub_resource type="Resource" id="Resource_yra57"]
+script = ExtResource("6_7pau8")
+raw_text = "に"
+reading = "に"
+
+[sub_resource type="Resource" id="Resource_blwpo"]
+script = ExtResource("7_i4pcp")
+japanese = "始まる"
+readings = Array[String](["はじまる"])
+meanings = Array[String](["to begin", "to start", "to commence", "to happen (again)", "to begin (anew)", "to date (from)", "to originate (in)"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_20koo"]
+script = ExtResource("6_7pau8")
+raw_text = "始まる"
+vocab = SubResource("Resource_blwpo")
+reading = "はじまる"
+
+[sub_resource type="Resource" id="Resource_6bbx8"]
+script = ExtResource("6_7pau8")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_8efjg"]
+script = ExtResource("5_k43g5")
+japanese = "話は遠い昔に始まる。"
+native = "The story begins a long time ago."
+parsed = Array[ExtResource("6_7pau8")]([SubResource("Resource_bfxp3"), SubResource("Resource_vqml2"), SubResource("Resource_8kyuw"), SubResource("Resource_0bth1"), SubResource("Resource_yra57"), SubResource("Resource_20koo"), SubResource("Resource_6bbx8")])
+_difficulty = 303
+
+[sub_resource type="Resource" id="Resource_k324t"]
+script = ExtResource("9_1v8k0")
+points = Array[Vector2]([Vector2(29.25, 30.91), Vector2(34.46, 31.43), Vector2(39.72, 31), Vector2(45.04, 30.47), Vector2(50.2, 29.94), Vector2(55.23, 29.42), Vector2(60.18, 28.94), Vector2(65.1, 28.53), Vector2(70.04, 28.2), Vector2(75.31, 27.99), Vector2(80.12, 28.47)])
+
+[sub_resource type="Resource" id="Resource_yo3i3"]
+script = ExtResource("9_1v8k0")
+points = Array[Vector2]([Vector2(40.62, 19), Vector2(42.44, 24.04), Vector2(42.69, 29.22), Vector2(42.93, 34.51), Vector2(43.19, 40.31), Vector2(43.5, 47)])
+
+[sub_resource type="Resource" id="Resource_ipfky"]
+script = ExtResource("9_1v8k0")
+points = Array[Vector2]([Vector2(67.62, 13.5), Vector2(68.2, 18.16), Vector2(67.59, 22.27), Vector2(66.78, 27.52), Vector2(65.86, 33.48), Vector2(64.9, 39.7), Vector2(64, 45.75)])
+
+[sub_resource type="Resource" id="Resource_lcdy5"]
+script = ExtResource("9_1v8k0")
+points = Array[Vector2]([Vector2(13.5, 49.95), Vector2(18.61, 50.54), Vector2(23.73, 50.4), Vector2(28.7, 49.91), Vector2(33.71, 49.41), Vector2(38.75, 48.9), Vector2(43.83, 48.4), Vector2(48.94, 47.91), Vector2(54.07, 47.43), Vector2(59.24, 46.98), Vector2(64.43, 46.56), Vector2(69.65, 46.18), Vector2(74.88, 45.84), Vector2(80.14, 45.55), Vector2(85.42, 45.32), Vector2(91.39, 45.31), Vector2(95.75, 45.79)])
+
+[sub_resource type="Resource" id="Resource_v1n4f"]
+script = ExtResource("9_1v8k0")
+points = Array[Vector2]([Vector2(37.02, 60.89), Vector2(38.42, 64.95), Vector2(38.42, 68.39), Vector2(38.42, 73.77), Vector2(38.42, 80.15), Vector2(38.42, 86.61), Vector2(38.42, 92.23), Vector2(38.42, 97.25)])
+
+[sub_resource type="Resource" id="Resource_aaoh2"]
+script = ExtResource("9_1v8k0")
+points = Array[Vector2]([Vector2(39.17, 62.03), Vector2(41.97, 61.8), Vector2(47.17, 61.35), Vector2(53.64, 60.79), Vector2(60.24, 60.27), Vector2(65.84, 59.93), Vector2(70.54, 60.36), Vector2(72.6, 64.25), Vector2(72.57, 67.78), Vector2(72.51, 72.61), Vector2(72.44, 78.28), Vector2(72.36, 84.33), Vector2(72.3, 90.33), Vector2(72.28, 95.72)])
+
+[sub_resource type="Resource" id="Resource_ft3rr"]
+script = ExtResource("9_1v8k0")
+points = Array[Vector2]([Vector2(39.86, 77.56), Vector2(43.51, 77.31), Vector2(49.15, 76.91), Vector2(55.75, 76.45), Vector2(62.29, 76.02), Vector2(67.74, 75.71), Vector2(71.08, 75.58)])
+
+[sub_resource type="Resource" id="Resource_5l7ii"]
+script = ExtResource("9_1v8k0")
+points = Array[Vector2]([Vector2(39.71, 94.13), Vector2(43.84, 93.83), Vector2(48.95, 93.54), Vector2(54.62, 93.25), Vector2(60.43, 92.96), Vector2(65.97, 92.69), Vector2(70.82, 92.43)])
+
+[sub_resource type="Resource" id="Resource_pk4f5"]
+script = ExtResource("8_p0ksh")
+stroke_shapes = Array[ExtResource("9_1v8k0")]([SubResource("Resource_k324t"), SubResource("Resource_yo3i3"), SubResource("Resource_ipfky"), SubResource("Resource_lcdy5"), SubResource("Resource_v1n4f"), SubResource("Resource_aaoh2"), SubResource("Resource_ft3rr"), SubResource("Resource_5l7ii")])
+
+[sub_resource type="Resource" id="Resource_7na67"]
+script = ExtResource("7_i4pcp")
+japanese = "昔"
+readings = Array[String](["むかし"])
+meanings = Array[String](["the old days", "the past", "former times", "a long time ago"])
+jlpt_level = 4
+_difficulty = 31
+
+[sub_resource type="Resource" id="Resource_751is"]
+script = ExtResource("7_i4pcp")
+japanese = "大昔"
+readings = Array[String](["おおむかし"])
+meanings = Array[String](["ancient times", "prehistoric times", "the distant past", "a very long time ago"])
+_difficulty = 612
+
+[sub_resource type="Resource" id="Resource_dxw2a"]
+script = ExtResource("7_i4pcp")
+japanese = "昔話"
+readings = Array[String](["むかしばなし"])
+meanings = Array[String](["old tale", "folk tale", "legend"])
+_difficulty = 621
+
+[sub_resource type="Resource" id="Resource_digaa"]
+script = ExtResource("7_i4pcp")
+japanese = "今昔"
+readings = Array[String](["こんじゃく"])
+meanings = Array[String](["past and present"])
+_difficulty = 837
+
+[sub_resource type="Resource" id="Resource_s08l6"]
+script = ExtResource("7_i4pcp")
+japanese = "一昔"
+readings = Array[String](["ひとむかし"])
+meanings = Array[String](["an age (ago)", "a long time (ago)", "a decade (ago)"])
+_difficulty = 905
+
+[sub_resource type="Resource" id="Resource_hju81"]
+script = ExtResource("7_i4pcp")
+japanese = "昔のまま"
+readings = Array[String](["むかしのまま"])
+meanings = Array[String](["the way it was", "the way it used be", "as of old", "in former times"])
+_difficulty = 1000
+
+[resource]
+script = ExtResource("10_oceka")
+symbol = "昔"
+card_name = "Olden Days"
+abilities = Array[ExtResource("1_omrs6")]([SubResource("Resource_hquw7"), SubResource("Resource_7f4c3")])
+tags = Array[int]([17])
+vocabulary = Array[ExtResource("7_i4pcp")]([SubResource("Resource_7na67"), SubResource("Resource_751is"), SubResource("Resource_dxw2a"), SubResource("Resource_digaa"), SubResource("Resource_s08l6"), SubResource("Resource_hju81")])
+example_sentences = Array[ExtResource("5_k43g5")]([SubResource("Resource_javn2"), SubResource("Resource_gw6tx"), SubResource("Resource_kwvpn"), SubResource("Resource_tovus"), SubResource("Resource_4l40y"), SubResource("Resource_g3plc"), SubResource("Resource_a2t43"), SubResource("Resource_mgn5y"), SubResource("Resource_elhwd"), SubResource("Resource_py84n"), SubResource("Resource_kfxvw"), SubResource("Resource_nk6hk"), SubResource("Resource_y54wa"), SubResource("Resource_ndfmv"), SubResource("Resource_8efjg")])
+kanji_shape = SubResource("Resource_pk4f5")
+init_aspects = 4
+term_categories = Array[ExtResource("11_depuu")]([ExtResource("12_bw6v5")])
