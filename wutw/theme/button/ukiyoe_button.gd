@@ -7,11 +7,13 @@ const TRANSITION_SPEED = 12
 @export var hover_sound: WwiseEvent
 @export var click_sound: WwiseEvent
 @export var stylebox_override: StyleBox
+@export var scale_font_size: bool = false
 
 var manually_hovered := false
 
 var _shadow: TextureRect
 var _state: float = 0.0
+var _default_font_size: int
 
 func _ready() -> void:
 	if not material or (material as ShaderMaterial).shader.resource_path == 'res://theme/button/ukiyoe_button.gdshader':
@@ -49,6 +51,11 @@ func _ready() -> void:
 	)
 	focus_mode = Control.FOCUS_NONE
 
+	if scale_font_size:
+		_default_font_size = get_theme_font_size('font_size')
+		_update_font_size()
+		GlobalGameSettings.changed.connect(_update_font_size)
+
 	_process(100)  # Instantly update state (e.g. for disabled).
 
 func _process(delta: float) -> void:
@@ -76,3 +83,8 @@ func _process(delta: float) -> void:
 		(material as ShaderMaterial).set_shader_parameter('state', new_state)
 	else:
 		set_instance_shader_parameter('state', new_state)
+
+func _update_font_size() -> void:
+	var font_size := _default_font_size
+	font_size = roundi(font_size * GameSettings.Interface.paragraph_font_scale.value())
+	add_theme_font_size_override('font_size', font_size)

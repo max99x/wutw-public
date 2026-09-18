@@ -295,6 +295,7 @@ theme_override_styles/hover_pressed = ExtResource("16_do541")
 theme_override_styles/disabled = ExtResource("16_do541")
 text = "View Glyph Deck (99)"
 script = ExtResource("17_fcuti")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="StatsBox" type="HBoxContainer" parent="MainContainer/HBox/LeftColumn" unique_id=868148630]
@@ -321,6 +322,7 @@ theme_override_constants/margin_bottom = 4
 layout_mode = 2
 
 [node name="InsightsHintLabel" type="Label" parent="MainContainer/HBox/LeftColumn/StatsBox/InsightsPanel/MarginContainer/HBoxContainer" unique_id=265000735]
+unique_name_in_owner = true
 layout_mode = 2
 text = "Insights Gained: "
 horizontal_alignment = 1
@@ -360,6 +362,7 @@ theme_override_styles/disabled = ExtResource("16_do541")
 text = "View Stats
 "
 script = ExtResource("17_fcuti")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="RelicScroller" type="ScrollContainer" parent="MainContainer/HBox/LeftColumn" unique_id=2005456045]
@@ -660,6 +663,7 @@ theme_override_styles/hover_pressed = ExtResource("16_do541")
 theme_override_styles/disabled = ExtResource("16_do541")
 text = "Browse Museum"
 script = ExtResource("17_fcuti")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="ViewCardsListButton" type="Button" parent="MainContainer/HBox/RightColumn/VBoxContainer" unique_id=237005121]
@@ -678,6 +682,7 @@ theme_override_styles/hover_pressed = ExtResource("16_do541")
 theme_override_styles/disabled = ExtResource("16_do541")
 text = "Browse Glyph Catalog"
 script = ExtResource("17_fcuti")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="ViewShardTypesButton" type="Button" parent="MainContainer/HBox/RightColumn/VBoxContainer" unique_id=135402548]
@@ -696,6 +701,7 @@ theme_override_styles/hover_pressed = ExtResource("16_do541")
 theme_override_styles/disabled = ExtResource("16_do541")
 text = "View Potential Shard Cultures"
 script = ExtResource("17_fcuti")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [connection signal="pressed" from="MainContainer/HBox/LeftColumn/DeckBox/ViewDeckButton" to="." method="_on_view_deck_button_pressed"]

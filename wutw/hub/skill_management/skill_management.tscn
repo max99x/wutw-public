@@ -143,7 +143,7 @@ color_ramp = SubResource("Gradient_0fvof")
 seamless = true
 seamless_blend_skirt = 0.27
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_kidfd"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a8v6r"]
 shader = ExtResource("3_gyvxu")
 shader_parameter/size = Vector2(1675, 49)
 shader_parameter/scroll_offset = 1.0
@@ -180,7 +180,7 @@ shader_parameter/swish_left_tex = ExtResource("39_jre03")
 shader_parameter/swish_left_transform = Vector4(0, 0, 106.982, 42.958)
 shader_parameter/hover_distance = 2.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_atggr"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kidfd"]
 shader = ExtResource("3_gyvxu")
 shader_parameter/size = Vector2(1673, 49)
 shader_parameter/scroll_offset = 1.0
@@ -207,7 +207,7 @@ custom_minimum_size = Vector2(1775, 0)
 layout_mode = 2
 
 [node name="TopDowelWood" parent="CenterContainer/ScrollPanel/TopDowelContainer" index="0"]
-material = SubResource("ShaderMaterial_kidfd")
+material = SubResource("ShaderMaterial_a8v6r")
 
 [node name="Scroller" parent="CenterContainer/ScrollPanel" index="1"]
 custom_minimum_size = Vector2(0, 835)
@@ -1349,10 +1349,15 @@ theme_override_styles/disabled = ExtResource("41_6yr4c")
 text = "Return
 "
 script = ExtResource("42_n7th8")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
+[node name="BottomDowelContainer" parent="CenterContainer/ScrollPanel" index="2"]
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
 [node name="BottomDowelWood" parent="CenterContainer/ScrollPanel/BottomDowelContainer" index="0"]
-material = SubResource("ShaderMaterial_atggr")
+material = SubResource("ShaderMaterial_kidfd")
 
 [connection signal="pressed" from="CenterContainer/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/ReturnButton" to="." method="_on_return_button_pressed"]
 

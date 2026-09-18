@@ -104,6 +104,9 @@ func _ready() -> void:
 	tween.tween_property(%MainContainer, 'modulate:a', 1.0, (%BG as FadedBackground).default_duration)
 	tween.play()
 
+	_update_font_size()
+	GlobalGameSettings.changed.connect(_update_font_size)
+
 	(%CTAs as Control).visible = Utils.is_demo()
 
 func _handle_esc() -> bool:
@@ -120,6 +123,11 @@ func close() -> void:
 		await (%BG as FadedBackground).fade_out()
 		closed.emit()
 		queue_free()
+
+func _update_font_size() -> void:
+	var font_size := roundi(16 * GameSettings.Interface.paragraph_font_scale.value())
+	(%InsightsHintLabel as Label).add_theme_font_size_override('font_size', font_size)
+	(%InsightsLabel as Label).add_theme_font_size_override('font_size', font_size)
 
 func _on_resume_button_pressed() -> void:
 	close()

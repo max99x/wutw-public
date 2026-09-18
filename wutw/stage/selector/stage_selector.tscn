@@ -20,21 +20,21 @@
 [ext_resource type="PackedScene" uid="uid://c6x5mcsvqxvh7" path="res://stage/selector/survey_preview_entry.tscn" id="16_pnw1h"]
 [ext_resource type="PackedScene" uid="uid://su68xhh44c4g" path="res://stage/selector/spot_placement_button.tscn" id="18_uw1ci"]
 [ext_resource type="MapSpriteType_Lake" uid="uid://dcopgy017tsji" path="res://map/sprites/water_features/lake/mst_lake_1.tres" id="19_51mog"]
-[ext_resource type="Resource" uid="uid://bb65d05uw68x1" path="res://stage/spots/lake/spot_lake.tres" id="19_ifkrs"]
+[ext_resource type="Resource" uid="uid://bb65d05uw68x1" path="res://stage/spots/lake/spot_lake.tres" id="20_6owpa"]
 [ext_resource type="MapSpriteType_Lake" uid="uid://gwbeal8t070v" path="res://map/sprites/water_features/lake/mst_lake_2.tres" id="20_rkkjq"]
 [ext_resource type="MapSpriteType_Lake" uid="uid://dhue4qeqrdlxe" path="res://map/sprites/water_features/lake/mst_lake_3.tres" id="21_udstk"]
 [ext_resource type="MapSpriteType_Generic" uid="uid://c7bph6udtgt3c" path="res://map/sprites/buildings/ruined_square/mst_town_square_1.tres" id="22_ifkrs"]
-[ext_resource type="Resource" uid="uid://ctiwrqhub05ib" path="res://stage/spots/square/spot_square.tres" id="23_6owpa"]
 [ext_resource type="MapSpriteType_Building" uid="uid://7q50hlx03foq" path="res://map/sprites/buildings/ruin_small/mst_ruin_small_1.tres" id="23_q5yg7"]
 [ext_resource type="MapSpriteType_Building" uid="uid://b124qaw5m2hp7" path="res://map/sprites/buildings/ruin_small/mst_ruin_small_2.tres" id="24_6owpa"]
-[ext_resource type="Resource" uid="uid://w8n0bwomyvod" path="res://stage/spots/building_small/spot_building_small.tres" id="25_fptuq"]
+[ext_resource type="Resource" uid="uid://ctiwrqhub05ib" path="res://stage/spots/square/spot_square.tres" id="24_u6c7h"]
 [ext_resource type="MapSpriteType_Building" uid="uid://kraldgu2aycc" path="res://map/sprites/buildings/ruin_small/mst_ruin_small_3.tres" id="25_u6c7h"]
+[ext_resource type="Resource" uid="uid://w8n0bwomyvod" path="res://stage/spots/building_small/spot_building_small.tres" id="26_6wnkg"]
 [ext_resource type="MapSpriteType_Building" uid="uid://cju1uubaywiky" path="res://map/sprites/buildings/ruin_large/mst_ruin_large_1.tres" id="26_fptuq"]
 [ext_resource type="MapSpriteType_Building" uid="uid://qhxgbecxfj81" path="res://map/sprites/buildings/ruin_large/mst_ruin_large_2.tres" id="27_6wnkg"]
 [ext_resource type="MapSpriteType_Building" uid="uid://gveso63csvo" path="res://map/sprites/buildings/ruin_large/mst_ruin_large_3.tres" id="28_c1424"]
 [ext_resource type="MapSpriteType_Building" uid="uid://d4bms8nvv6iy2" path="res://map/sprites/buildings/ruin_large/mst_ruin_large_4.tres" id="29_fths2"]
 [ext_resource type="MapSpriteType_Building" uid="uid://cqlp5im050llq" path="res://map/sprites/buildings/ruin_small/mst_ruin_small_4.tres" id="29_q5yg7"]
-[ext_resource type="Resource" uid="uid://b85k7x2ec04xc" path="res://stage/spots/building_large/spot_building_large.tres" id="30_6wnkg"]
+[ext_resource type="Resource" uid="uid://b85k7x2ec04xc" path="res://stage/spots/building_large/spot_building_large.tres" id="31_c1424"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pnw1h"]
 font = ExtResource("2_k68ur")
@@ -213,6 +213,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 focus_mode = 0
+theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = ExtResource("12_4qknn")
 theme_override_styles/pressed = ExtResource("12_4qknn")
 theme_override_styles/hover = ExtResource("12_4qknn")
@@ -221,6 +222,7 @@ theme_override_styles/disabled = ExtResource("12_4qknn")
 action_mode = 0
 text = "Cancel"
 script = ExtResource("13_8flt8")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="SelectButton" type="Button" parent="CenterContainer/ButtonsContainer" unique_id=522302600]
@@ -232,6 +234,7 @@ layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
 focus_mode = 0
+theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = ExtResource("12_4qknn")
 theme_override_styles/pressed = ExtResource("12_4qknn")
 theme_override_styles/hover = ExtResource("12_4qknn")
@@ -239,6 +242,7 @@ theme_override_styles/hover_pressed = ExtResource("12_4qknn")
 theme_override_styles/disabled = ExtResource("12_4qknn")
 text = "Choose Foray Location"
 script = ExtResource("13_8flt8")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="StartButton_ConfirmOnly" type="Button" parent="CenterContainer/ButtonsContainer" unique_id=2080904953]
@@ -250,6 +254,7 @@ layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
 focus_mode = 0
+theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = ExtResource("12_4qknn")
 theme_override_styles/pressed = ExtResource("12_4qknn")
 theme_override_styles/hover = ExtResource("12_4qknn")
@@ -257,6 +262,7 @@ theme_override_styles/hover_pressed = ExtResource("12_4qknn")
 theme_override_styles/disabled = ExtResource("12_4qknn")
 text = "Start Convergence"
 script = ExtResource("13_8flt8")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="NewStageOffset" type="Control" parent="." unique_id=1796530174]
@@ -393,6 +399,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 4
 focus_mode = 0
 theme_override_colors/font_color = Color(0, 0, 0, 0.64705884)
+theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = ExtResource("12_4qknn")
 theme_override_styles/pressed = ExtResource("12_4qknn")
 theme_override_styles/hover = ExtResource("12_4qknn")
@@ -400,6 +407,7 @@ theme_override_styles/hover_pressed = ExtResource("12_4qknn")
 theme_override_styles/disabled = ExtResource("12_4qknn")
 text = "Cancel"
 script = ExtResource("13_8flt8")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="StartButton" type="Button" parent="NewStageOffset/NewStageContainer/MarginContainer/FadedScrollContainer/VBoxContainer/HBoxContainer" unique_id=1901359178]
@@ -412,6 +420,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 4
 focus_mode = 0
 theme_override_fonts/font = ExtResource("15_461wv")
+theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = ExtResource("12_4qknn")
 theme_override_styles/pressed = ExtResource("12_4qknn")
 theme_override_styles/hover = ExtResource("12_4qknn")
@@ -419,6 +428,7 @@ theme_override_styles/hover_pressed = ExtResource("12_4qknn")
 theme_override_styles/disabled = ExtResource("12_4qknn")
 text = "Start Foray"
 script = ExtResource("13_8flt8")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="EndRunButton" type="Button" parent="." unique_id=759720715]
@@ -433,6 +443,7 @@ offset_bottom = 1048.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 focus_mode = 0
+theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = ExtResource("12_4qknn")
 theme_override_styles/pressed = ExtResource("12_4qknn")
 theme_override_styles/hover = ExtResource("12_4qknn")
@@ -440,6 +451,7 @@ theme_override_styles/hover_pressed = ExtResource("12_4qknn")
 theme_override_styles/disabled = ExtResource("12_4qknn")
 text = "Finish Expedition"
 script = ExtResource("13_8flt8")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="PlacementButtonContainer" type="VBoxContainer" parent="." unique_id=2064163772]
@@ -462,7 +474,7 @@ mouse_filter = 2
 instance_shader_parameters/background_offset = Vector2(0.07198336, 0.21965446)
 layout_mode = 2
 focus_mode = 0
-spot_type = ExtResource("19_ifkrs")
+spot_type = ExtResource("20_6owpa")
 sprites = Array[MapSpriteType]([ExtResource("19_51mog"), ExtResource("20_rkkjq"), ExtResource("21_udstk")])
 run_var = 38
 
@@ -470,7 +482,7 @@ run_var = 38
 instance_shader_parameters/background_offset = Vector2(0.4529772, 0.64415085)
 layout_mode = 2
 focus_mode = 0
-spot_type = ExtResource("23_6owpa")
+spot_type = ExtResource("24_u6c7h")
 sprites = Array[MapSpriteType]([ExtResource("22_ifkrs")])
 run_var = 37
 
@@ -478,7 +490,7 @@ run_var = 37
 instance_shader_parameters/background_offset = Vector2(0.31133008, 0.283024)
 layout_mode = 2
 focus_mode = 0
-spot_type = ExtResource("25_fptuq")
+spot_type = ExtResource("26_6wnkg")
 sprites = Array[MapSpriteType]([ExtResource("23_q5yg7"), ExtResource("24_6owpa"), ExtResource("25_u6c7h"), ExtResource("29_q5yg7")])
 run_var = 35
 inset_factor = 0.75
@@ -487,7 +499,7 @@ inset_factor = 0.75
 instance_shader_parameters/background_offset = Vector2(0.6164714, 0.09611909)
 layout_mode = 2
 focus_mode = 0
-spot_type = ExtResource("30_6wnkg")
+spot_type = ExtResource("31_c1424")
 sprites = Array[MapSpriteType]([ExtResource("26_fptuq"), ExtResource("27_6wnkg"), ExtResource("28_c1424"), ExtResource("29_fths2")])
 run_var = 36
 

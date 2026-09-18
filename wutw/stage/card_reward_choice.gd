@@ -145,6 +145,7 @@ func _refill_card_list(rerolled: bool = false) -> void:
 		if Skill.get_skill_var(Skill.Var.RESERVE_CARD_UNLOCKED):
 			var reserve_button := UkiyoeButton.new()
 			reserve_button.text = tr('Reserve')
+			reserve_button.scale_font_size = true
 			reserve_button.toggle_mode = true
 			reserve_button.button_pressed = card_type == run.get_reserved_card()
 			reserve_button.toggled.connect(_on_reserve_button_toggled.bind(

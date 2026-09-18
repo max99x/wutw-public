@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://c7nqs57hnca8l"]
 
-[ext_resource type="Shader" uid="uid://cy23kwgtjt4et" path="res://theme/panel/panel.gdshader" id="1_r7vuw"]
-[ext_resource type="Texture2D" uid="uid://cgsn7350xgqr5" path="res://theme/panel/panel_bg.png" id="2_k0voj"]
-[ext_resource type="Texture2D" uid="uid://bnkoruxi23qsp" path="res://theme/panel/panel_frame.png" id="3_iel7p"]
+[ext_resource type="Material" uid="uid://dx3qmo2m6ybh4" path="res://theme/panel/ukiyoe_panel_container_material.tres" id="1_cwkhc"]
 [ext_resource type="StyleBox" uid="uid://d07v5v8gcmg2c" path="res://theme/panel/ukiyoe_panel_container_stylebox.tres" id="4_cjipv"]
 [ext_resource type="Script" uid="uid://dcv5c12bh0qnm" path="res://hub/skill_management/skill_tooltip.gd" id="5_uwnvx"]
 [ext_resource type="PackedScene" uid="uid://c8cqt157t1rdx" path="res://glossary/marked_up_label.tscn" id="6_g4742"]
@@ -17,29 +15,6 @@
 [ext_resource type="Script" uid="uid://dveiu76ujl3xp" path="res://theme/panel/ukiyoe_panel_container.gd" id="15_38m7m"]
 [ext_resource type="Texture2D" uid="uid://bf6g0waib064d" path="res://hub/insights/enso.png" id="16_njish"]
 
-[sub_resource type="Gradient" id="Gradient_4qknn"]
-offsets = PackedFloat32Array(0.00512295)
-colors = PackedColorArray(0.71, 0.543387, 0.2556, 0.168627)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_l7j7v"]
-gradient = SubResource("Gradient_4qknn")
-fill_from = Vector2(1, 1)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_r7vuw"]
-shader = ExtResource("1_r7vuw")
-shader_parameter/size = Vector2(582.65454, 241.88184)
-shader_parameter/background = ExtResource("2_k0voj")
-shader_parameter/background_shade = SubResource("GradientTexture2D_l7j7v")
-shader_parameter/background_tex_size = Vector2(2291, 3118)
-shader_parameter/background_scale = 2.0
-shader_parameter/frame_tex = ExtResource("3_iel7p")
-shader_parameter/frame_tex_size = Vector2(1127, 976)
-shader_parameter/frame_margin = Vector4(15, 15, 15, 15)
-shader_parameter/frame_scale = 0.93
-shader_parameter/frame_color = Color(0.24, 0.18848, 0.1056, 1)
-shader_parameter/decor_transform = Vector4(0, 0, 300, 100)
-shader_parameter/decor_modulate = Color(1, 1, 1, 0)
-
 [sub_resource type="LabelSettings" id="LabelSettings_r7vuw"]
 font_color = Color(0.4103271, 2.9480086e-07, 2.1658838e-07, 1)
 
@@ -53,13 +28,12 @@ fill_to = Vector2(0.900285, 0.430199)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k0voj"]
 shader = ExtResource("7_gra0k")
-shader_parameter/size = Vector2(125.618195, 54.79091)
-shader_parameter/state = 0.0
 shader_parameter/mask_tex = ExtResource("9_u2274")
 shader_parameter/background = ExtResource("8_h4i61")
 shader_parameter/gradient = SubResource("GradientTexture2D_wqpyw")
 shader_parameter/background_tex_size = Vector2(635, 249)
 shader_parameter/background_scale = 1.0
+shader_parameter/pressed_modulate = Color(0.91, 0.855, 0.773, 1)
 shader_parameter/outline_tex = ExtResource("10_3yk2m")
 shader_parameter/outline_tex_size = Vector2(650, 261)
 shader_parameter/outline_margin = Vector4(6.38, 6.3, 7.48, 7.97)
@@ -69,21 +43,6 @@ shader_parameter/swish_right_transform = Vector4(0, 0, 106.982, 42.958)
 shader_parameter/swish_left_tex = ExtResource("11_1tp15")
 shader_parameter/swish_left_transform = Vector4(0, 0, 106.982, 42.958)
 shader_parameter/hover_distance = 2.0
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_iel7p"]
-shader = ExtResource("1_r7vuw")
-shader_parameter/size = Vector2(181.74545, 60.136368)
-shader_parameter/background = ExtResource("2_k0voj")
-shader_parameter/background_shade = SubResource("GradientTexture2D_l7j7v")
-shader_parameter/background_tex_size = Vector2(2291, 3118)
-shader_parameter/background_scale = 2.0
-shader_parameter/frame_tex = ExtResource("3_iel7p")
-shader_parameter/frame_tex_size = Vector2(1127, 976)
-shader_parameter/frame_margin = Vector4(15, 15, 15, 15)
-shader_parameter/frame_scale = 0.93
-shader_parameter/frame_color = Color(0.24, 0.18848, 0.1056, 1)
-shader_parameter/decor_transform = Vector4(0, 0, 300, 100)
-shader_parameter/decor_modulate = Color(1, 1, 1, 0)
 
 [sub_resource type="Gradient" id="Gradient_aidgo"]
 colors = PackedColorArray(0.33, 0.18117, 0.0594, 0.423529, 0.33, 0.18117, 0.0594, 0)
@@ -95,13 +54,12 @@ fill_to = Vector2(0.900285, 0.430199)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cjipv"]
 shader = ExtResource("7_gra0k")
-shader_parameter/size = Vector2(179.07272, 54.79091)
-shader_parameter/state = 0.0
 shader_parameter/mask_tex = ExtResource("9_u2274")
 shader_parameter/background = ExtResource("8_h4i61")
 shader_parameter/gradient = SubResource("GradientTexture2D_upvmd")
 shader_parameter/background_tex_size = Vector2(635, 249)
 shader_parameter/background_scale = 1.0
+shader_parameter/pressed_modulate = Color(0.91, 0.855, 0.773, 1)
 shader_parameter/outline_tex = ExtResource("10_3yk2m")
 shader_parameter/outline_tex_size = Vector2(650, 261)
 shader_parameter/outline_margin = Vector4(6.38, 6.3, 7.48, 7.97)
@@ -113,9 +71,7 @@ shader_parameter/swish_left_transform = Vector4(0, 0, 106.982, 42.958)
 shader_parameter/hover_distance = 2.0
 
 [node name="SkillTooltip" type="PanelContainer" unique_id=1493129317]
-visible = false
-modulate = Color(1, 1, 1, 0)
-material = SubResource("ShaderMaterial_r7vuw")
+material = ExtResource("1_cwkhc")
 offset_right = 420.0
 offset_bottom = 181.0
 theme_override_styles/panel = ExtResource("4_cjipv")
@@ -147,6 +103,11 @@ layout_mode = 2
 size_flags_horizontal = 1
 size_flags_vertical = 3
 mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/bold_font_size = 16
+theme_override_font_sizes/bold_italics_font_size = 16
+theme_override_font_sizes/italics_font_size = 16
+theme_override_font_sizes/mono_font_size = 16
 fit_content = true
 tooltip_directions = Array[int]([5, 3, 1, 0])
 
@@ -159,13 +120,14 @@ label_settings = SubResource("LabelSettings_r7vuw")
 
 [node name="InteractiveControls" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=392943426]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 
 [node name="CancelButton" type="Button" parent="MarginContainer/VBoxContainer/InteractiveControls" unique_id=1216794139]
 unique_name_in_owner = true
 material = SubResource("ShaderMaterial_k0voj")
+instance_shader_parameters/state = 0.0
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("13_x176p")
 theme_override_styles/pressed = ExtResource("13_x176p")
 theme_override_styles/hover = ExtResource("13_x176p")
@@ -173,11 +135,12 @@ theme_override_styles/hover_pressed = ExtResource("13_x176p")
 theme_override_styles/disabled = ExtResource("13_x176p")
 text = "Cancel"
 script = ExtResource("14_ghqm7")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="InsightsPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/InteractiveControls" unique_id=312029288]
 unique_name_in_owner = true
-material = SubResource("ShaderMaterial_iel7p")
+material = ExtResource("1_cwkhc")
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 10
@@ -214,8 +177,10 @@ text = "220 / 12345"
 [node name="UnlockButton" type="Button" parent="MarginContainer/VBoxContainer/InteractiveControls" unique_id=1562832353]
 unique_name_in_owner = true
 material = SubResource("ShaderMaterial_cjipv")
+instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 4
+focus_mode = 0
 theme_override_styles/normal = ExtResource("13_x176p")
 theme_override_styles/pressed = ExtResource("13_x176p")
 theme_override_styles/hover = ExtResource("13_x176p")
@@ -223,6 +188,7 @@ theme_override_styles/hover_pressed = ExtResource("13_x176p")
 theme_override_styles/disabled = ExtResource("13_x176p")
 text = "Unlock Skill"
 script = ExtResource("14_ghqm7")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/InteractiveControls/CancelButton" to="." method="_on_cancel_button_pressed"]

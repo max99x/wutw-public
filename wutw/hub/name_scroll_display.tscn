@@ -130,7 +130,7 @@ shader_parameter/noise_scale = Vector2(300, 50)
 [node name="NameScrollDisplay" type="Node2D" unique_id=1300982167]
 material = SubResource("ShaderMaterial_h0xtj")
 script = ExtResource("4_ywsqu")
-metadata/_edit_vertical_guides_ = [1920.0]
+metadata/_edit_vertical_guides_ = [1920.0, 960.0]
 metadata/movie_file = "C:/Users/max99/intro.avi"
 
 [node name="BG" parent="." unique_id=675235880 instance=ExtResource("5_gelcw")]
@@ -148,7 +148,6 @@ mouse_filter = 2
 
 [node name="UkiyoePanelContainer" type="PanelContainer" parent="Main" unique_id=1429352385]
 material = ExtResource("6_pedef")
-instance_shader_parameters/size = Vector2(151.1748, 36.624832)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -334,7 +333,6 @@ texture = SubResource("GradientTexture2D_ygpw5")
 [node name="CloseButton" type="Button" parent="Main" unique_id=1178847054]
 material = ExtResource("14_reldc")
 instance_shader_parameters/background_offset = Vector2(0.081380576, 0.018749613)
-instance_shader_parameters/size = Vector2(56.45282, 27.886414)
 instance_shader_parameters/state = 0.0
 layout_mode = 1
 anchors_preset = 7
@@ -342,13 +340,14 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -41.5
-offset_top = -23.611816
-offset_right = 41.5
-offset_bottom = 17.388184
+offset_left = -48.455444
+offset_top = -14.338257
+offset_right = 34.544556
+offset_bottom = 26.661743
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(1.159, 1.159)
+focus_mode = 0
 theme_override_styles/normal = ExtResource("15_pedef")
 theme_override_styles/pressed = ExtResource("15_pedef")
 theme_override_styles/hover = ExtResource("15_pedef")
@@ -356,6 +355,7 @@ theme_override_styles/hover_pressed = ExtResource("15_pedef")
 theme_override_styles/disabled = ExtResource("15_pedef")
 text = "Close"
 script = ExtResource("16_ax4s5")
+scale_font_size = true
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [connection signal="pressed" from="Main/CloseButton" to="." method="_on_close_button_pressed"]
