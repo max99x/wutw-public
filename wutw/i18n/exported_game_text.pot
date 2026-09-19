@@ -836,7 +836,9 @@
 # res://cards/tier0/card_mouth.tres
 # res://cards/tier0/card_move.tres
 # res://cards/tier0/card_name.tres
+# res://cards/tier0/card_not.tres
 # res://cards/tier0/card_old.tres
+# res://cards/tier0/card_olden_days.tres
 # res://cards/tier0/card_one.tres
 # res://cards/tier0/card_paddy.tres
 # res://cards/tier0/card_rabbit.tres
@@ -882,6 +884,7 @@
 # res://cards/tier1/card_letter.tres
 # res://cards/tier1/card_make.tres
 # res://cards/tier1/card_noon.tres
+# res://cards/tier1/card_origin.tres
 # res://cards/tier1/card_person.tres
 # res://cards/tier1/card_power.tres
 # res://cards/tier1/card_previous.tres
@@ -3245,6 +3248,8 @@
 # res://relics/common/twinned_seed/relic_twinned_seed.gd
 # res://relics/common/twinned_seed/relic_twinned_seed.tres
 # res://relics/common/unfamiliar_coin/relic_unfamiliar_coin.tres
+# res://relics/common/waterlogged_dice/relic_waterlogged_dice.gd
+# res://relics/common/waterlogged_dice/relic_waterlogged_dice.tres
 # res://relics/common/weavers_comb/relic_weavers_comb.gd
 # res://relics/common/weavers_comb/relic_weavers_comb.tres
 # res://relics/common/white_city_tale/relic_white_city_tale.gd
@@ -3533,6 +3538,7 @@
 # res://skills/relics/skill_relics_reroll.tres
 # res://skills/relics/skill_relics_root.tres
 # res://skills/relics/skill_relics_shop.tres
+# res://skills/relics/skill_relics_shop_remove.tres
 # res://skills/relics/skill_relics_starting_common.tres
 # res://skills/relics/skill_relics_starting_selected.tres
 # res://skills/relics/skill_relics_starting_uncommon.tres
@@ -3577,9 +3583,13 @@
 # res://stage/hauntings/effects/haunting_effect_lose_inspiration.gd
 # res://stage/hauntings/effects/haunting_effect_spiteful_fill.gd
 # res://stage/hauntings/effects/haunting_effect_top_card.gd
+# res://stage/hauntings/harmonization_haunting_bar.gd
+# res://stage/hauntings/harmonization_haunting_bar.tscn
 # res://stage/hauntings/haunting_base.gd
 # res://stage/hauntings/haunting_harmonization.gd
 # res://stage/hauntings/haunting_harmonization.tscn
+# res://stage/hauntings/haunting_harmonization_preview.gd
+# res://stage/hauntings/haunting_harmonization_preview.tscn
 # res://stage/hauntings/haunting_spot.gd
 # res://stage/hauntings/haunting_spot.tscn
 # res://stage/hauntings/triggers/haunting_trigger.gd
@@ -4135,9 +4145,6 @@
 # res://visuals/shaders/global_wind_noise.tres
 # res://visuals/zoom_transition/zoom_transition.gd
 # res://visuals/zoom_transition/zoom_transition.tscn
-# res://_dev_tools/i18n_file_adder.gd
-# res://relics/common/waterlogged_dice/relic_waterlogged_dice.tres
-# res://relics/common/waterlogged_dice/relic_waterlogged_dice.gd
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -6059,7 +6066,7 @@ msgstr ""
 #. TRANSLATORS: Property: blurb
 #: art/pieces/piece_bakemono_kamikiri.tres
 msgid ""
-"Depicts Kamikiri (\"hair cutter\"), an insect-like yōkai with a long beak and scissor-like hands, used to cut unsuspecting victims' hair off without warning or motive. They were saaid to infest dark alleys, bedrooms, and, most commonly, bathrooms.\n"
+"Depicts Kamikiri (\"hair cutter\"), an insect-like yōkai with a long beak and scissor-like hands, used to cut unsuspecting victims' hair off without warning or motive. They were said to infest dark alleys, bedrooms, and, most commonly, bathrooms.\n"
 "\n"
 "Hair in the Edo period was an important status symbol, and cutting it was symbolic of becoming a monk or nun, so to have one's hair cut against one's will would have been a major ordeal."
 msgstr ""
@@ -6234,7 +6241,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: blurb
 #: art/pieces/piece_bakemono_uwan.tres
-msgid "Depicts Uwan, a yōkai that was first considered to be a disembodied voice shouting \"uwan!\" at people in the dark, especially in old homes and abandoned temples. Edo-preiod interpretations give this disembodied voice as physical form. Mentions of this yōkai are believed to have originated in Aomori prefecture."
+msgid "Depicts Uwan, a yōkai that was first considered to be a disembodied voice shouting \"uwan!\" at people in the dark, especially in old homes and abandoned temples. Edo-period interpretations give this disembodied voice as physical form. Mentions of this yōkai are believed to have originated in Aomori prefecture."
 msgstr ""
 
 #. TRANSLATORS: Property: piece_name
@@ -15154,7 +15161,7 @@ msgid ""
 msgstr ""
 
 #: art/viewer/artist_details.gd:24
-#: cards/card_type.gd:199
+#: cards/card_type.gd:198
 msgid " (%s)"
 msgstr ""
 
@@ -15169,8 +15176,8 @@ msgstr ""
 #: art/viewer/art_piece_details.gd:135
 #: art/viewer/art_piece_details.gd:139
 #: bonuses/bonus.gd:87
-#: cards/deck/card_deck.gd:473
-#: cards/deck/card_deck.gd:504
+#: cards/deck/card_deck.gd:476
+#: cards/deck/card_deck.gd:507
 #: cards/detail/card_details.gd:175
 #: dialogue/dialogue_display.gd:102
 #: japanese/practice_blanks/blanks_practice.gd:231
@@ -15184,7 +15191,7 @@ msgstr ""
 #: relics/common/cherry_pit/relic_cherry_pit.gd:63
 #: relics/common/grass_crown/relic_grass_crown.gd:49
 #: relics/common/weavers_comb/relic_weavers_comb.gd:35
-#: relics/selector/relic_icon.gd:77
+#: relics/selector/relic_icon.gd:80
 #: relics/uncommon/cicada_shell/relic_cicada_shell.gd:35
 #: relics/uncommon/mended_teacup/relic_mended_teacup.gd:59
 #: run/inspiration_display.gd:110
@@ -15195,11 +15202,11 @@ msgstr ""
 #: run/run_end/discovery_haunting.gd:43
 #: run/run_end/discovery_shop.gd:36
 #: run/run_end/discovery_survey_episode.gd:41
-#: run/run_end/run_end.gd:372
-#: run/run_end/run_end.gd:376
+#: run/run_end/run_end.gd:392
+#: run/run_end/run_end.gd:396
 #: shops/trade/shop_trade.gd:99
-#: stage/hauntings/haunting_base.gd:133
-#: stage/hauntings/haunting_base.gd:140
+#: stage/hauntings/haunting_base.gd:134
+#: stage/hauntings/haunting_base.gd:141
 #: stage/selector/event_list_entry.gd:57
 #: stage/selector/event_list_entry.gd:61
 #: stage/selector/event_list_entry.gd:65
@@ -15245,8 +15252,8 @@ msgstr ""
 #: hub/shard_explorer/shard_details.gd:86
 #: map/capital.gd:336
 #: map/settlement.gd:441
-#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:65
-#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:49
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:73
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:60
 #: stage/selector/survey_preview_entry.gd:66
 #: stage/spots/spot.gd:211
 msgid "[/ul]"
@@ -15301,9 +15308,10 @@ msgstr ""
 #: cards/abilities/card_ability_draw.gd:37
 #: cards/abilities/card_ability_echo.gd:21
 #: cards/abilities/card_ability_fill.gd:23
+#: harmonization/end/harmonization_end.gd:39
 #: map/settlement.gd:462
 #: map/settlement.gd:464
-#: quests/settler/goals/settler_quest_goal_num_cards.gd:29
+#: quests/settler/goals/settler_quest_goal_num_cards.gd:25
 #: shops/trade/shop_trade.gd:98
 msgid "."
 msgstr ""
@@ -15927,8 +15935,8 @@ msgstr ""
 #: hub/run_setup/run_setup_haunting_button.gd:62
 #: run/run_end/discovery_haunting.gd:38
 #: run/run_end/discovery_haunting.gd:40
-#: stage/hauntings/haunting_base.gd:135
-#: stage/hauntings/haunting_base.gd:137
+#: stage/hauntings/haunting_base.gd:136
+#: stage/hauntings/haunting_base.gd:138
 #: stage/selector/haunting_list_entry.gd:51
 #: stage/selector/haunting_list_entry.gd:53
 #: stage/spots/spot.gd:254
@@ -16157,7 +16165,7 @@ msgid "Conjure"
 msgstr ""
 
 #: cards/abilities/card_ability_add_random_card.gd:14
-#: cards/abilities/card_ability_discard.gd:15
+#: cards/abilities/card_ability_discard.gd:22
 msgid "Negative"
 msgstr ""
 
@@ -16188,24 +16196,41 @@ msgctxt "ABILITY"
 msgid "Continue"
 msgstr ""
 
-#: cards/abilities/card_ability_discard.gd:13
+#: cards/abilities/card_ability_discard.gd:14
+msgid "<term:discard>"
+msgstr ""
+
+#: cards/abilities/card_ability_discard.gd:18
 msgctxt "ABILITY"
 msgid "Discard %d"
 msgstr ""
 
-#: cards/abilities/card_ability_discard.gd:21
-msgid "<term:discard> 1 random <term_lower:negative_glyph>."
+#: cards/abilities/card_ability_discard.gd:25
+#: stage/survey/survey_prep_buff_label.gd:21
+msgid " "
 msgstr ""
 
-#: cards/abilities/card_ability_discard.gd:23
+#: cards/abilities/card_ability_discard.gd:36
+msgid "<term:discard> a random <term_lower:negative_glyph>."
+msgstr ""
+
+#: cards/abilities/card_ability_discard.gd:38
 msgid "<term:discard> %d random <term_lower:negative_glyph>s."
 msgstr ""
 
-#: cards/abilities/card_ability_discard.gd:26
-msgid "<term:discard> 1 random <term_lower:glyph>."
+#: cards/abilities/card_ability_discard.gd:41
+msgid "<term:discard> a random <term_lower:glyph> with %s <term_lower:aspect>."
 msgstr ""
 
-#: cards/abilities/card_ability_discard.gd:28
+#: cards/abilities/card_ability_discard.gd:43
+msgid "<term:discard> %d random <term_lower:glyph>s with %s <term_lower:aspect>."
+msgstr ""
+
+#: cards/abilities/card_ability_discard.gd:46
+msgid "<term:discard> a random <term_lower:glyph>."
+msgstr ""
+
+#: cards/abilities/card_ability_discard.gd:48
 msgid "<term:discard> %d random <term_lower:glyph>s."
 msgstr ""
 
@@ -16245,7 +16270,7 @@ msgid "<term:draw> <term_lower:glyph>s until your hand is full."
 msgstr ""
 
 #: cards/abilities/card_ability_draw.gd:32
-msgid "<term:draw> 1 <term_lower:glyph>"
+msgid "<term:draw> a <term_lower:glyph>"
 msgstr ""
 
 #: cards/abilities/card_ability_draw.gd:34
@@ -16287,10 +16312,8 @@ msgctxt "ABILITY"
 msgid "Fade Away"
 msgstr ""
 
-#. TRANSLATORS: Property: markedup_description
 #: cards/abilities/card_ability_exhaust.gd:9
-#: cards/abilities/terms/term_card_ability_exhaust.tres
-msgid "Remove the <term_lower:glyph> for the rest of the <term_lower:stage>."
+msgid "Remove [b]all copies of[/b] this <term_lower:glyph> for the rest of the <term_lower:stage>."
 msgstr ""
 
 #: cards/abilities/card_ability_expand.gd:9
@@ -16769,7 +16792,7 @@ msgstr ""
 #: cards/abilities/lock_ability_dialog.gd:86
 #: cards/abilities/lock_ability_dialog.tscn
 #: cards/tier3/card_hide.tres
-#: cards/viewer/card_deck_viewer.gd:182
+#: cards/viewer/card_deck_viewer.gd:183
 #: cards/viewer/card_deck_viewer.tscn
 #: events/system/scenes/event_scene.gd:121
 #: events/system/scenes/event_scene.tscn
@@ -16781,7 +16804,7 @@ msgstr ""
 #. TRANSLATORS: Property: card_name
 #: cards/abilities/lock_ability_dialog.gd:86
 #: cards/tier2/card_show.tres
-#: cards/viewer/card_deck_viewer.gd:182
+#: cards/viewer/card_deck_viewer.gd:183
 #: events/system/scenes/event_scene.gd:121
 #: relics/selector/relic_selector.gd:139
 msgid "Show"
@@ -16810,12 +16833,12 @@ msgstr ""
 #: main_menu/main_menu.gd:70
 #: main_menu/save_slots_menu.tscn
 #: main_menu/save_slot_choice.gd:39
-#: pause_menu/pause_menu.gd:166
+#: pause_menu/pause_menu.gd:174
 #: shops/accord_monument/shop_accord_monument.gd:143
 #: shops/make_innate_cards/shop_make_innate_cards.gd:25
 #: shops/recall_cards/shop_recall_cards.gd:27
 #: shops/remove_cards/shop_remove_cards.gd:23
-#: stage/card_reward_choice.gd:200
+#: stage/card_reward_choice.gd:201
 #: stage/selector/stage_selector.tscn
 #: theme/confirm_dialog/confirm_dialog.gd:12
 #: theme/confirm_dialog/confirm_dialog.tscn
@@ -17016,6 +17039,11 @@ msgstr ""
 #. TRANSLATORS: Property: long_term_name
 #: cards/abilities/terms/term_card_ability_exhaust.tres
 msgid "Fade Away Invocation"
+msgstr ""
+
+#. TRANSLATORS: Property: markedup_description
+#: cards/abilities/terms/term_card_ability_exhaust.tres
+msgid "Remove [b]all copies of[/b] the <term_lower:glyph> for the rest of the <term_lower:stage>."
 msgstr ""
 
 #. TRANSLATORS: Property: term_name
@@ -17406,7 +17434,7 @@ msgid " - <term:innate>"
 msgstr ""
 
 #: cards/card.gd:387
-#: cards/card_type.gd:211
+#: cards/card_type.gd:210
 msgid "Provides "
 msgstr ""
 
@@ -17445,173 +17473,173 @@ msgstr ""
 msgid "慰"
 msgstr ""
 
-#: cards/card_type.gd:148
+#: cards/card_type.gd:147
 msgid "Not offered in random rewards."
 msgstr ""
 
-#: cards/card_type.gd:149
+#: cards/card_type.gd:148
 msgctxt "CARD_TAG"
 msgid "Plant"
 msgstr ""
 
-#: cards/card_type.gd:150
+#: cards/card_type.gd:149
 msgctxt "CARD_TAG"
 msgid "Animal"
 msgstr ""
 
-#: cards/card_type.gd:151
+#: cards/card_type.gd:150
 msgctxt "CARD_TAG"
 msgid "Mineral"
 msgstr ""
 
-#: cards/card_type.gd:152
+#: cards/card_type.gd:151
 msgctxt "CARD_TAG"
 msgid "Number"
 msgstr ""
 
-#: cards/card_type.gd:153
+#: cards/card_type.gd:152
 msgctxt "CARD_TAG"
 msgid "Person"
 msgstr ""
 
-#: cards/card_type.gd:154
+#: cards/card_type.gd:153
 msgctxt "CARD_TAG"
 msgid "Emotion"
 msgstr ""
 
-#: cards/card_type.gd:155
+#: cards/card_type.gd:154
 msgctxt "CARD_TAG"
 msgid "Body Part"
 msgstr ""
 
-#: cards/card_type.gd:156
+#: cards/card_type.gd:155
 msgctxt "CARD_TAG"
 msgid "Action"
 msgstr ""
 
-#: cards/card_type.gd:157
+#: cards/card_type.gd:156
 msgctxt "CARD_TAG"
 msgid "Time"
 msgstr ""
 
-#: cards/card_type.gd:158
+#: cards/card_type.gd:157
 msgctxt "CARD_TAG"
 msgid "Tool"
 msgstr ""
 
-#: cards/card_type.gd:159
+#: cards/card_type.gd:158
 msgctxt "CARD_TAG"
 msgid "Art"
 msgstr ""
 
-#: cards/card_type.gd:160
+#: cards/card_type.gd:159
 msgctxt "CARD_TAG"
 msgid "Knowledge"
 msgstr ""
 
-#: cards/card_type.gd:161
+#: cards/card_type.gd:160
 msgctxt "CARD_TAG"
 msgid "Commerce"
 msgstr ""
 
-#: cards/card_type.gd:162
+#: cards/card_type.gd:161
 msgctxt "CARD_TAG"
 msgid "Labor"
 msgstr ""
 
-#: cards/card_type.gd:163
+#: cards/card_type.gd:162
 msgctxt "CARD_TAG"
 msgid "Place"
 msgstr ""
 
-#: cards/card_type.gd:164
+#: cards/card_type.gd:163
 msgctxt "CARD_TAG"
 msgid "Spiritual"
 msgstr ""
 
-#: cards/card_type.gd:165
+#: cards/card_type.gd:164
 msgctxt "CARD_TAG"
 msgid "Food"
 msgstr ""
 
-#: cards/card_type.gd:166
+#: cards/card_type.gd:165
 msgctxt "CARD_TAG"
 msgid "Element"
 msgstr ""
 
-#: cards/card_type.gd:167
+#: cards/card_type.gd:166
 msgctxt "CARD_TAG"
 msgid "Color"
 msgstr ""
 
-#: cards/card_type.gd:168
+#: cards/card_type.gd:167
 msgctxt "CARD_TAG"
 msgid "Social"
 msgstr ""
 
-#: cards/card_type.gd:169
+#: cards/card_type.gd:168
 msgctxt "CARD_TAG"
 msgid "Weather"
 msgstr ""
 
-#: cards/card_type.gd:170
+#: cards/card_type.gd:169
 msgctxt "CARD_TAG"
 msgid "Landscape"
 msgstr ""
 
-#: cards/card_type.gd:183
+#: cards/card_type.gd:182
 msgctxt "CARD_RARITY"
 msgid "Basic"
 msgstr ""
 
-#: cards/card_type.gd:184
+#: cards/card_type.gd:183
 msgctxt "CARD_RARITY"
 msgid "Common"
 msgstr ""
 
-#: cards/card_type.gd:185
+#: cards/card_type.gd:184
 msgctxt "CARD_RARITY"
 msgid "Uncommon"
 msgstr ""
 
-#: cards/card_type.gd:186
+#: cards/card_type.gd:185
 msgctxt "CARD_RARITY"
 msgid "Rare"
 msgstr ""
 
-#: cards/card_type.gd:187
+#: cards/card_type.gd:186
 msgctxt "CARD_RARITY"
 msgid "Epic"
 msgstr ""
 
-#: cards/card_type.gd:188
+#: cards/card_type.gd:187
 msgctxt "CARD_RARITY"
 msgid "Legendary"
 msgstr ""
 
-#: cards/card_type.gd:189
+#: cards/card_type.gd:188
 msgctxt "CARD_RARITY"
 msgid "Negative"
 msgstr ""
 
-#: cards/card_type.gd:197
+#: cards/card_type.gd:196
 msgid " Glyph (%s)"
 msgstr ""
 
-#: cards/card_type.gd:216
+#: cards/card_type.gd:215
 msgid "<term:card_ability>s: "
 msgstr ""
 
-#: cards/card_type.gd:220
-#: events/system/event.gd:104
-#: events/system/event.gd:106
-#: events/system/event.gd:108
-#: events/system/event.gd:110
+#: cards/card_type.gd:219
+#: events/system/event.gd:105
+#: events/system/event.gd:107
+#: events/system/event.gd:109
 #: events/system/event.gd:111
-#: events/system/event.gd:129
-#: events/system/event.gd:131
-#: events/system/event.gd:133
-#: events/system/event.gd:136
+#: events/system/event.gd:112
+#: events/system/event.gd:130
+#: events/system/event.gd:132
+#: events/system/event.gd:134
+#: events/system/event.gd:137
 #: events/system/outcomes/all/event_outcome_all.gd:29
 #: events/system/outcomes/choose_card/event_outcome_choose_card.gd:25
 #: events/system/requirements/event_requirement_all.gd:31
@@ -17621,70 +17649,70 @@ msgid ", "
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
-#: cards/card_type.gd:267
+#: cards/card_type.gd:266
 #: cards/tier3/card_duty.tres
 msgid "any"
 msgstr ""
 
 #. TRANSLATORS: Property: term_name
-#: cards/deck/card_deck.gd:444
+#: cards/deck/card_deck.gd:447
 #: glossary/terms/standalone/term_draw_pile.tres
 msgid "Draw Stack"
 msgstr ""
 
 #. TRANSLATORS: Property: term_name
-#: cards/deck/card_deck.gd:459
+#: cards/deck/card_deck.gd:462
 #: glossary/terms/standalone/term_discard_pile.tres
 msgid "Discards"
 msgstr ""
 
-#: cards/deck/card_deck.gd:470
+#: cards/deck/card_deck.gd:473
 msgid ""
 "<header_font_size>[b]%s[/b][/font_size]\n"
 "\n"
 "%s"
 msgstr ""
 
-#: cards/deck/card_deck.gd:475
+#: cards/deck/card_deck.gd:478
 msgid "There are currently [b]no[/b] <term_lower:glyph>s in your <term_lower:draw_pile>."
 msgstr ""
 
-#: cards/deck/card_deck.gd:477
+#: cards/deck/card_deck.gd:480
 msgid "There is currently [b]%d[/b] <term_lower:glyph> in your <term_lower:draw_pile>."
 msgid_plural "There are currently [b]%d[/b] <term_lower:glyph>s in your <term_lower:draw_pile>."
 msgstr[0] ""
 msgstr[1] ""
 
-#: cards/deck/card_deck.gd:482
+#: cards/deck/card_deck.gd:485
 msgid " You will reshuffle your <term:discard_pile> into the <term:draw_pile> the next time your <term_lower:draw>."
 msgstr ""
 
-#: cards/deck/card_deck.gd:485
+#: cards/deck/card_deck.gd:488
 msgid ""
 "\n"
 "\n"
 "Your current <term_lower:hand_size> is [b]%d[/b],"
 msgstr ""
 
-#: cards/deck/card_deck.gd:486
+#: cards/deck/card_deck.gd:489
 msgid " so you will <term_lower:draw> [b]%d[/b] <term_lower:glyph>s next time you <term_lower:redraw>."
 msgstr ""
 
-#: cards/deck/card_deck.gd:487
+#: cards/deck/card_deck.gd:490
 msgid "[i]%s to view the <term_lower:glyph>s in your <term_lower:draw_pile>.[/i]"
 msgstr ""
 
-#: cards/deck/card_deck.gd:506
+#: cards/deck/card_deck.gd:509
 msgid "There are currently [b]no[/b] <term_lower:glyph>s in your <term_lower:discard_pile>."
 msgstr ""
 
-#: cards/deck/card_deck.gd:508
+#: cards/deck/card_deck.gd:511
 msgid "There is currently [b]%d[/b] <term_lower:glyph> in your <term_lower:discard_pile>."
 msgid_plural "There are currently [b]%d[/b] <term_lower:glyph>s in your <term_lower:discard_pile>."
 msgstr[0] ""
 msgstr[1] ""
 
-#: cards/deck/card_deck.gd:513
+#: cards/deck/card_deck.gd:516
 msgid "[i]%s to view the <term_lower:glyph>s in your <term_lower:discard_pile>.[/i]"
 msgstr ""
 
@@ -17953,7 +17981,19 @@ msgstr ""
 #. TRANSLATORS: Property: paths[]
 #: cards/resourcegroup_card_types.tres
 #: glossary/terms/resourcegroup_terms.tres
+msgid "res://cards/tier0/card_not.tres"
+msgstr ""
+
+#. TRANSLATORS: Property: paths[]
+#: cards/resourcegroup_card_types.tres
+#: glossary/terms/resourcegroup_terms.tres
 msgid "res://cards/tier0/card_old.tres"
+msgstr ""
+
+#. TRANSLATORS: Property: paths[]
+#: cards/resourcegroup_card_types.tres
+#: glossary/terms/resourcegroup_terms.tres
+msgid "res://cards/tier0/card_olden_days.tres"
 msgstr ""
 
 #. TRANSLATORS: Property: paths[]
@@ -18224,6 +18264,12 @@ msgstr ""
 #: cards/resourcegroup_card_types.tres
 #: glossary/terms/resourcegroup_terms.tres
 msgid "res://cards/tier1/card_noon.tres"
+msgstr ""
+
+#. TRANSLATORS: Property: paths[]
+#: cards/resourcegroup_card_types.tres
+#: glossary/terms/resourcegroup_terms.tres
+msgid "res://cards/tier1/card_origin.tres"
 msgstr ""
 
 #. TRANSLATORS: Property: paths[]
@@ -22533,6 +22579,7 @@ msgstr ""
 #: cards/tier1/card_king.tres
 #: cards/tier1/card_know.tres
 #: cards/tier1/card_make.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_power.tres
 #: cards/tier1/card_previous.tres
@@ -22783,6 +22830,7 @@ msgstr ""
 #: cards/tier1/card_king.tres
 #: cards/tier1/card_know.tres
 #: cards/tier1/card_make.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_power.tres
 #: cards/tier1/card_previous.tres
@@ -24498,6 +24546,7 @@ msgstr ""
 #: cards/tier0/card_tree.tres
 #: cards/tier0/card_water.tres
 #: cards/tier0/card_woman.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_fog.tres
@@ -24967,6 +25016,7 @@ msgstr ""
 #: cards/tier0/card_middle.tres
 #: cards/tier0/card_name.tres
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_right.tres
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_stand.tres
@@ -27458,6 +27508,7 @@ msgstr ""
 #: cards/tier1/card_heaven.tres
 #: cards/tier1/card_know.tres
 #: cards/tier1/card_make.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_product.tres
 #: cards/tier1/card_see.tres
@@ -27644,6 +27695,7 @@ msgstr ""
 #: cards/tier1/card_heaven.tres
 #: cards/tier1/card_know.tres
 #: cards/tier1/card_make.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_product.tres
 #: cards/tier1/card_see.tres
@@ -27831,6 +27883,7 @@ msgstr ""
 #: cards/tier1/card_heaven.tres
 #: cards/tier1/card_know.tres
 #: cards/tier1/card_make.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_product.tres
 #: cards/tier1/card_see.tres
@@ -30393,6 +30446,7 @@ msgstr ""
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_middle.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_small.tres
 #: cards/tier1/card_dog.tres
@@ -31274,6 +31328,7 @@ msgstr ""
 #: cards/tier0/card_big.tres
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_mouth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_town.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier2/card_castle.tres
@@ -31303,6 +31358,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_big.tres
 #: cards/tier0/card_mouth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_town.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier2/card_castle.tres
@@ -31330,6 +31386,7 @@ msgstr ""
 #: cards/tier0/card_big.tres
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_mouth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_town.tres
 #: cards/tier1/card_dog.tres
 #: cards/tier1/card_gold.tres
@@ -31359,6 +31416,7 @@ msgstr ""
 #: cards/tier0/card_big.tres
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_mouth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_town.tres
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_dog.tres
@@ -31392,6 +31450,7 @@ msgstr ""
 #: cards/tier0/card_left.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mouth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_right.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier0/card_town.tres
@@ -31429,6 +31488,7 @@ msgstr ""
 #: cards/tier0/card_left.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mouth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_right.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier0/card_town.tres
@@ -31563,6 +31623,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_big.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_dog.tres
 #: cards/tier2/card_measure.tres
 #: cards/tier2/card_omen.tres
@@ -31720,6 +31781,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_big.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_pottery.tres
 #: cards/tier2/card_snow.tres
 #: cards/tier6/card_pass_away.tres
@@ -32817,18 +32879,21 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_foot.tres
+#: cards/tier1/card_origin.tres
 msgid "at one's feet"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_foot.tres
+#: cards/tier1/card_origin.tres
 msgid "underfoot"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_foot.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_four.tres
 #: cards/tier2/card_stick.tres
@@ -32843,6 +32908,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_foot.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_four.tres
 #: cards/tier2/card_stick.tres
@@ -32857,6 +32923,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_foot.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_level.tres
 #: cards/tier2/card_versus.tres
 msgid "step"
@@ -34555,6 +34622,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_book.tres
 #: cards/tier1/card_divination.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_product.tres
 #: cards/tier1/card_two.tres
@@ -34674,6 +34742,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_book.tres
 #: cards/tier1/card_divination.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_product.tres
 #: cards/tier1/card_two.tres
@@ -35237,6 +35306,7 @@ msgstr ""
 #: cards/tier1/card_ear.tres
 #: cards/tier1/card_hand.tres
 #: cards/tier1/card_heaven.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_ask.tres
 #: cards/tier2/card_asset.tres
@@ -36821,6 +36891,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_down.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier2/card_pillar.tres
@@ -37220,6 +37291,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_know.tres
 #: cards/tier1/card_letter.tres
@@ -37242,6 +37314,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier2/card_equal.tres
@@ -37382,6 +37455,7 @@ msgstr ""
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_letter.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_carry.tres
@@ -39976,6 +40050,7 @@ msgstr ""
 #: cards/tier1/card_heaven.tres
 #: cards/tier1/card_know.tres
 #: cards/tier1/card_make.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_power.tres
 #: cards/tier1/card_see.tres
 #: cards/tier1/card_thread.tres
@@ -40895,6 +40970,7 @@ msgstr ""
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_meat.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier0/card_wind.tres
 #: cards/tier0/card_woman.tres
@@ -41745,6 +41821,7 @@ msgstr ""
 #: cards/tier0/card_eye.tres
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_grass.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier0/card_small.tres
 #: cards/tier0/card_stand.tres
@@ -41983,6 +42060,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier2/card_starve.tres
 #: cards/tier6/card_want.tres
 msgid "appetite"
@@ -42321,6 +42399,7 @@ msgstr ""
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_equal.tres
 msgid "base"
 msgstr ""
@@ -42391,18 +42470,21 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier4/card_merchandise.tres
 msgid "home area"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier4/card_merchandise.tres
 msgid "home town"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier4/card_merchandise.tres
 msgid "local"
 msgstr ""
@@ -42523,6 +42605,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_small.tres
 #: cards/tier1/card_ball.tres
 #: cards/tier2/card_together.tres
@@ -42777,6 +42860,7 @@ msgstr ""
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_ear.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_white.tres
 #: cards/tier1/card_writing.tres
@@ -45512,6 +45596,7 @@ msgstr ""
 #: cards/tier0/card_younger_sister.tres
 #: cards/tier1/card_ball.tres
 #: cards/tier1/card_bright.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_shape.tres
@@ -45556,6 +45641,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45578,6 +45664,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45600,6 +45687,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_dare.tres
@@ -45625,6 +45713,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45647,6 +45736,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45669,6 +45759,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45695,6 +45786,7 @@ msgstr ""
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_woman.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45717,6 +45809,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45739,6 +45832,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45768,6 +45862,7 @@ msgstr ""
 #: cards/tier1/card_ear.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_heaven.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
@@ -45804,6 +45899,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45826,6 +45922,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45848,6 +45945,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45870,6 +45968,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45892,6 +45991,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -45914,6 +46014,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_discern.tres
@@ -46046,6 +46147,7 @@ msgstr ""
 #: cards/tier0/card_earth.tres
 #: cards/tier0/card_life.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_shop.tres
 #: cards/tier2/card_thanks.tres
 #: cards/tier2/card_toil.tres
@@ -48010,6 +48112,7 @@ msgstr ""
 #: cards/tier1/card_blue.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_king.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_crow.tres
@@ -48326,11 +48429,14 @@ msgstr ""
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_not.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_water.tres
 #: cards/tier0/card_wind.tres
 #: cards/tier0/card_woman.tres
 #: cards/tier0/card_younger_sister.tres
 #: cards/tier1/card_happiness.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier1/card_thread.tres
 #: cards/tier2/card_blow.tres
@@ -50227,6 +50333,8 @@ msgstr ""
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_left.tres
 #: cards/tier0/card_mountain.tres
+#: cards/tier0/card_not.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier2/card_accept.tres
@@ -50586,6 +50694,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_grass.tres
 #: cards/tier0/card_mouth.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_sound.tres
@@ -51032,6 +51141,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_enter.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
 msgid "for some reason"
@@ -51044,6 +51154,7 @@ msgstr ""
 #: cards/tier0/card_stand.tres
 #: cards/tier1/card_fit.tres
 #: cards/tier1/card_happiness.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_crow.tres
@@ -51769,6 +51880,7 @@ msgstr ""
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier1/card_bright.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier2/card_starve.tres
 #: cards/tier2/card_sun.tres
@@ -51788,6 +51900,7 @@ msgstr ""
 #: cards/tier0/card_stand.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_letter.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_writing.tres
 #: cards/tier2/card_starve.tres
@@ -52421,6 +52534,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_escape.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_heaven.tres
@@ -52746,6 +52860,7 @@ msgstr ""
 #: cards/tier0/card_rest.tres
 #: cards/tier1/card_answer.tres
 #: cards/tier1/card_divination.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier2/card_ask.tres
 #: cards/tier2/card_bird.tres
@@ -52781,6 +52896,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier1/card_answer.tres
 #: cards/tier1/card_divination.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier2/card_ask.tres
 #: cards/tier2/card_bird.tres
@@ -53882,9 +53998,11 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
 #: cards/tier1/card_fit.tres
 #: cards/tier1/card_noon.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier1/card_writing.tres
 #: cards/tier2/card_child.tres
@@ -54139,6 +54257,7 @@ msgstr ""
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_make.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_cook.tres
 #: cards/tier2/card_cotton.tres
@@ -54178,6 +54297,7 @@ msgstr ""
 #: cards/tier0/card_move.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_cotton.tres
 #: cards/tier2/card_fast.tres
@@ -55596,6 +55716,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_carry.tres
 #: cards/tier2/card_toil.tres
 #: cards/tier3/card_righteousness.tres
@@ -55980,7 +56101,9 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
 msgid "lively"
@@ -55988,7 +56111,9 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
 msgid "full of spirit"
@@ -55996,7 +56121,9 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
 msgid "energetic"
@@ -56004,7 +56131,9 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_power.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
@@ -56014,7 +56143,9 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
 msgid "vital"
@@ -56022,9 +56153,11 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_small.tres
 #: cards/tier0/card_younger_sister.tres
 #: cards/tier1/card_bright.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_moon.tres
@@ -56035,9 +56168,11 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_water.tres
 #: cards/tier0/card_younger_sister.tres
 #: cards/tier1/card_happiness.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_sleep.tres
@@ -56055,10 +56190,13 @@ msgstr ""
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_not.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_water.tres
 #: cards/tier0/card_younger_sister.tres
 #: cards/tier1/card_fit.tres
 #: cards/tier1/card_happiness.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_pine.tres
@@ -56072,7 +56210,9 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_younger_sister.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_child.tres
 msgid "in good health"
@@ -56983,6 +57123,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_fire.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_prune.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier3/card_fate.tres
@@ -56996,6 +57137,7 @@ msgstr ""
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_fire.tres
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_butterfly.tres
 #: cards/tier2/card_fountain.tres
 #: cards/tier2/card_prune.tres
@@ -57014,6 +57156,7 @@ msgstr ""
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_fire.tres
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_prune.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier2/card_use.tres
@@ -57786,6 +57929,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_sound.tres
 #: cards/tier2/card_bind.tres
@@ -58039,6 +58183,7 @@ msgstr ""
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_middle.tres
 #: cards/tier1/card_fit.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_calm.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_drift.tres
@@ -58411,6 +58556,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_person.tres
 #: cards/tier2/card_dye.tres
@@ -58427,6 +58573,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier2/card_equal.tres
@@ -58439,6 +58586,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_writing.tres
 #: cards/tier2/card_dye.tres
@@ -58453,6 +58601,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_red.tres
@@ -58476,6 +58625,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier2/card_equal.tres
@@ -58488,6 +58638,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier2/card_equal.tres
@@ -58500,6 +58651,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_writing.tres
 #: cards/tier2/card_dye.tres
@@ -58513,6 +58665,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier2/card_equal.tres
@@ -58525,6 +58678,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_shape.tres
 #: cards/tier1/card_writing.tres
@@ -58542,6 +58696,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_one.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_see.tres
@@ -58558,6 +58713,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier2/card_equal.tres
@@ -58570,6 +58726,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier2/card_equal.tres
@@ -58664,6 +58821,7 @@ msgstr ""
 #: cards/tier1/card_divination.tres
 #: cards/tier1/card_dog.tres
 #: cards/tier1/card_ear.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_white.tres
 #: cards/tier1/card_writing.tres
@@ -58693,6 +58851,7 @@ msgstr ""
 #: cards/tier0/card_up.tres
 #: cards/tier1/card_ball.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_crow.tres
@@ -58715,9 +58874,11 @@ msgstr ""
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_rabbit.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_bind.tres
@@ -58751,6 +58912,7 @@ msgstr ""
 #: cards/tier0/card_up.tres
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_bind.tres
@@ -58785,6 +58947,7 @@ msgstr ""
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_ear.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier1/card_white.tres
@@ -58814,6 +58977,7 @@ msgstr ""
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_happiness.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_crow.tres
 #: cards/tier2/card_full.tres
@@ -58847,6 +59011,7 @@ msgstr ""
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_happiness.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_crow.tres
 #: cards/tier2/card_full.tres
@@ -58876,6 +59041,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_accumulate.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_parent.tres
@@ -58895,6 +59061,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_parent.tres
 #: cards/tier2/card_show.tres
@@ -58913,6 +59080,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_parent.tres
 #: cards/tier2/card_show.tres
@@ -58932,6 +59100,7 @@ msgstr ""
 #: cards/tier0/card_rabbit.tres
 #: cards/tier0/card_stone.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_parent.tres
 #: cards/tier2/card_show.tres
@@ -58951,6 +59120,7 @@ msgstr ""
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_crow.tres
@@ -58976,6 +59146,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_crow.tres
@@ -58997,6 +59168,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_parent.tres
 #: cards/tier2/card_show.tres
@@ -59015,6 +59187,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_rabbit.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_parent.tres
 #: cards/tier2/card_show.tres
@@ -59349,6 +59522,7 @@ msgstr ""
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_cotton.tres
 #: cards/tier2/card_fee.tres
@@ -59377,6 +59551,7 @@ msgstr ""
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_cotton.tres
 #: cards/tier2/card_fee.tres
@@ -59405,6 +59580,7 @@ msgstr ""
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_writing.tres
 #: cards/tier2/card_acting.tres
 #: cards/tier2/card_asset.tres
@@ -59438,6 +59614,7 @@ msgstr ""
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_cotton.tres
 #: cards/tier2/card_fee.tres
@@ -59468,6 +59645,7 @@ msgstr ""
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_cotton.tres
 #: cards/tier2/card_fee.tres
@@ -59708,6 +59886,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_insect.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_old.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_bright.tres
@@ -60148,6 +60327,7 @@ msgstr ""
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_fit.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_carry.tres
@@ -60167,6 +60347,7 @@ msgstr ""
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_fit.tres
@@ -60293,6 +60474,7 @@ msgstr ""
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_fit.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_carry.tres
@@ -62627,6 +62809,7 @@ msgstr ""
 #: cards/tier0/card_eye.tres
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_insect.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier1/card_blue.tres
 #: cards/tier1/card_two.tres
@@ -64568,6 +64751,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_fire.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_right.tres
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_mix.tres
@@ -64577,6 +64761,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_fire.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_right.tres
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_mix.tres
@@ -64629,6 +64814,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
@@ -64641,7 +64827,9 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_instruct.tres
@@ -64668,6 +64856,7 @@ msgstr ""
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_middle.tres
 #: cards/tier1/card_bright.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_bind.tres
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_full.tres
@@ -64709,6 +64898,7 @@ msgstr ""
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_flower.tres
 #: cards/tier1/card_ball.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_person.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_dare.tres
@@ -65828,6 +66018,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_up.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_strange.tres
 msgid "actually"
 msgstr ""
@@ -68819,6 +69010,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_hundred.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_look_at.tres
 #: cards/tier2/card_omen.tres
@@ -68852,6 +69044,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_hundred.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_equal.tres
 #: cards/tier2/card_law.tres
@@ -69103,6 +69296,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_timber.tres
@@ -69112,6 +69306,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_fee.tres
@@ -69124,6 +69319,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_fee.tres
@@ -69137,6 +69333,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_ear.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_fee.tres
@@ -69148,6 +69345,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_timber.tres
@@ -69157,6 +69355,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_sky.tres
@@ -69167,6 +69366,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_full.tres
@@ -69178,6 +69378,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_full.tres
@@ -69189,6 +69390,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_up.tres
 #: cards/tier1/card_writing.tres
 #: cards/tier2/card_asset.tres
@@ -69217,6 +69419,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_go.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier2/card_measure.tres
 #: cards/tier2/card_play.tres
@@ -69409,6 +69612,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier3/card_fate.tres
@@ -69582,12 +69786,14 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
+#: cards/tier1/card_origin.tres
 msgid "one's step (as in \"watch your step\")"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier1/card_origin.tres
 msgid "most recent"
 msgstr ""
 
@@ -70537,6 +70743,7 @@ msgstr ""
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_water.tres
 #: cards/tier0/card_wind.tres
 #: cards/tier1/card_fit.tres
@@ -70557,6 +70764,7 @@ msgstr ""
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_happiness.tres
 #: cards/tier3/card_fortune.tres
@@ -70759,6 +70967,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_ice.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_small.tres
 #: cards/tier0/card_town.tres
 #: cards/tier0/card_water.tres
@@ -72845,6 +73054,7 @@ msgstr ""
 #: cards/tier0/card_move.tres
 #: cards/tier1/card_blue.tres
 #: cards/tier1/card_bright.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_crow.tres
 #: cards/tier2/card_effort.tres
@@ -72893,6 +73103,7 @@ msgstr ""
 #: cards/tier0/card_move.tres
 #: cards/tier1/card_blue.tres
 #: cards/tier1/card_bright.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_crow.tres
 #: cards/tier2/card_effort.tres
@@ -72942,6 +73153,7 @@ msgstr ""
 #: cards/tier1/card_blue.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_king.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_crow.tres
 #: cards/tier2/card_effort.tres
@@ -72991,6 +73203,7 @@ msgstr ""
 #: cards/tier1/card_blue.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_king.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_crow.tres
 #: cards/tier2/card_effort.tres
@@ -73038,6 +73251,7 @@ msgstr ""
 #: cards/tier0/card_move.tres
 #: cards/tier1/card_blue.tres
 #: cards/tier1/card_bright.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier2/card_crow.tres
 #: cards/tier2/card_effort.tres
@@ -74082,6 +74296,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_feed.tres
@@ -74443,12 +74658,14 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_shift.tres
 msgid "execution (e.g. of a plan)"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_exchange.tres
 msgid "carrying out"
@@ -74456,6 +74673,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_shift.tres
 msgid "(putting into) practice"
 msgstr ""
@@ -74463,6 +74681,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_make.tres
@@ -74478,6 +74697,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier3/card_vow.tres
 msgid "implementation"
@@ -74485,24 +74705,28 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_shift.tres
 msgid "fulfillment"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_shift.tres
 msgid "realization"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_shift.tres
 msgid "execution (of a program)"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_look_at.tres
@@ -74826,6 +75050,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_stone.tres
 #: cards/tier1/card_hand.tres
 #: cards/tier2/card_pillar.tres
@@ -74857,6 +75082,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_water.tres
 #: cards/tier0/card_wind.tres
 #: cards/tier1/card_sound.tres
@@ -74939,6 +75165,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_strange.tres
 #: cards/tier3/card_divinity.tres
 #: cards/tier3/card_mystery.tres
@@ -75507,6 +75734,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_wait.tres
 #: cards/tier1/card_divination.tres
 #: cards/tier1/card_person.tres
@@ -75832,6 +76060,7 @@ msgstr ""
 #: cards/tier0/card_shift.tres
 #: cards/tier0/card_stone.tres
 #: cards/tier1/card_king.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier2/card_measure.tres
 #: cards/tier3/card_alone.tres
@@ -75845,6 +76074,7 @@ msgstr ""
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_paddy.tres
 #: cards/tier1/card_king.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier2/card_measure.tres
 #: cards/tier3/card_alone.tres
@@ -75862,6 +76092,7 @@ msgstr ""
 #: cards/tier0/card_right.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier1/card_king.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_measure.tres
@@ -75880,6 +76111,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier2/card_measure.tres
 #: cards/tier3/card_study.tres
@@ -75889,8 +76121,10 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier0/card_up.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_instruct.tres
@@ -75910,10 +76144,12 @@ msgstr ""
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_left.tres
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_right.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier0/card_up.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_cut.tres
@@ -75940,8 +76176,10 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
 #: cards/tier1/card_ear.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_instruct.tres
@@ -75959,8 +76197,10 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
 #: cards/tier1/card_ear.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_instruct.tres
@@ -75980,8 +76220,10 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
 #: cards/tier1/card_ear.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_instruct.tres
@@ -76000,7 +76242,9 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_dare.tres
@@ -76023,8 +76267,10 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_small.tres
 #: cards/tier0/card_up.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_dare.tres
@@ -76049,7 +76295,9 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_dare.tres
@@ -76873,6 +77121,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_go.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_happiness.tres
 #: cards/tier1/card_sound.tres
 #: cards/tier2/card_battle.tres
@@ -77435,6 +77684,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_grass.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier1/card_blue.tres
 #: cards/tier1/card_happiness.tres
@@ -79628,6 +79878,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_hold.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_exchange.tres
 #: cards/tier2/card_pray.tres
 #: cards/tier6/card_disease.tres
@@ -79641,6 +79892,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_mother.tres
 #: cards/tier2/card_omen.tres
 #: cards/tier2/card_rain.tres
@@ -79656,6 +79908,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_mother.tres
 #: cards/tier2/card_omen.tres
 #: cards/tier2/card_rain.tres
@@ -79668,6 +79921,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_hold.tres
+#: cards/tier0/card_not.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_mother.tres
 #: cards/tier2/card_omen.tres
@@ -80298,6 +80552,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_hundred.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_two.tres
 msgid "counter for books"
 msgstr ""
@@ -80741,6 +80996,7 @@ msgstr ""
 #: cards/tier1/card_circle.tres
 #: cards/tier1/card_dog.tres
 #: cards/tier1/card_heaven.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_see.tres
 #: cards/tier1/card_thread.tres
 #: cards/tier1/card_white.tres
@@ -83061,6 +83317,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier2/card_butterfly.tres
 #: cards/tier2/card_sun.tres
 #: cards/tier3/card_celebrate.tres
@@ -83109,6 +83366,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_previous.tres
@@ -83131,6 +83389,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_red.tres
@@ -83150,6 +83409,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_name.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
@@ -83176,6 +83436,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_red.tres
@@ -83193,6 +83454,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_red.tres
@@ -83210,6 +83472,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_red.tres
@@ -83227,6 +83490,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier1/card_person.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier1/card_red.tres
@@ -83303,6 +83567,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier2/card_picture.tres
 msgid "birthplace"
 msgstr ""
@@ -83484,6 +83749,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_sound.tres
 #: cards/tier2/card_glow.tres
 #: cards/tier2/card_memorize.tres
@@ -83513,6 +83779,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_not.tres
 #: cards/tier1/card_sound.tres
 #: cards/tier2/card_glow.tres
 #: cards/tier3/card_divinity.tres
@@ -83905,6 +84172,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_starve.tres
 #: cards/tier2/card_timber.tres
@@ -84368,6 +84636,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_accumulate.tres
 #: cards/tier2/card_nothing.tres
@@ -84379,6 +84648,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_accumulate.tres
 #: cards/tier2/card_nothing.tres
@@ -84829,6 +85099,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_life.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_memorize.tres
 #: cards/tier2/card_turtle.tres
@@ -85906,6 +86177,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier0/card_not.tres
 #: cards/tier6/card_harm.tres
 msgid "interruption"
 msgstr ""
@@ -85923,6 +86195,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_rest.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier2/card_play.tres
@@ -85931,6 +86204,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier0/card_not.tres
 #: cards/tier0/card_rest.tres
 #: cards/tier2/card_carry.tres
 msgid "stoppage"
@@ -86471,6 +86745,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
 #: cards/tier4/card_overnight.tres
@@ -86482,6 +86757,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
 #: cards/tier1/card_letter.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier3/card_pearl.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
@@ -86493,6 +86769,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier3/card_pearl.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
@@ -86504,6 +86781,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier3/card_pearl.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
@@ -86515,6 +86793,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_measure.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
@@ -86526,6 +86805,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_measure.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
@@ -86537,6 +86817,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier1/card_writing.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
@@ -86548,6 +86829,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
 #: cards/tier4/card_overnight.tres
@@ -86559,6 +86841,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
 #: cards/tier1/card_letter.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier3/card_village.tres
 #: cards/tier4/card_dedicate.tres
 #: cards/tier4/card_overnight.tres
@@ -86569,6 +86852,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_carry.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier3/card_fate.tres
@@ -86586,6 +86870,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_middle.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_carry.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier3/card_fate.tres
@@ -89833,6 +90118,656 @@ msgid "noted"
 msgstr ""
 
 #. TRANSLATORS: Property: card_name
+#: cards/tier0/card_not.tres
+msgid "Not"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_ear.tres
+#: cards/tier1/card_person.tres
+#: cards/tier2/card_ask.tres
+#: cards/tier2/card_fragment.tres
+#: cards/tier2/card_random.tres
+#: cards/tier3/card_alone.tres
+#: cards/tier3/card_bomb.tres
+#: cards/tier3/card_safe.tres
+#: cards/tier6/card_astray.tres
+#: cards/tier6/card_failure.tres
+#: cards/tier6/card_worry.tres
+msgid "inconvenience"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "inexpediency"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "unhandiness"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_happiness.tres
+#: cards/tier2/card_battle.tres
+#: cards/tier2/card_conflict.tres
+#: cards/tier2/card_full.tres
+msgid "unhappiness"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_happiness.tres
+#: cards/tier2/card_battle.tres
+#: cards/tier2/card_conflict.tres
+#: cards/tier5/card_console.tres
+#: cards/tier6/card_grief.tres
+#: cards/tier6/card_sad.tres
+msgid "sorrow"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier0/card_stand.tres
+#: cards/tier1/card_happiness.tres
+#: cards/tier2/card_battle.tres
+#: cards/tier2/card_carry.tres
+#: cards/tier2/card_conflict.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier6/card_harm.tres
+msgid "misfortune"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_happiness.tres
+#: cards/tier2/card_battle.tres
+#: cards/tier2/card_conflict.tres
+msgid "bereavement"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_stagnate.tres
+msgid "tie-up"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "cessation"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "wrong"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "improper"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_nothing.tres
+#: cards/tier2/card_versus.tres
+#: cards/tier4/card_thought.tres
+#: cards/tier6/card_stink.tres
+msgid "unjustifiable"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "inadvisable"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_burdensome.tres
+msgid "not allowed"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "not possible"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier0/card_stand.tres
+msgid "failing grade"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_full.tres
+#: cards/tier2/card_morning.tres
+#: cards/tier5/card_opportunity.tres
+msgid "displeasure"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_correct.tres
+msgid "injustice"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_correct.tres
+#: cards/tier2/card_equal.tres
+msgid "unfairness"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_guilt.tres
+msgid "wrongdoing"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "iniquity"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "impropriety"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_madness.tres
+msgid "irregularity"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_correct.tres
+msgid "dishonesty"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "illegality"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "fraud"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_omen.tres
+#: cards/tier3/card_safe.tres
+msgid "apprehension"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_omen.tres
+#: cards/tier3/card_safe.tres
+msgid "insecurity"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "disadvantage"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_harm.tres
+msgid "handicap"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "unfavorable position"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_fast.tres
+msgid "grievance"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_ear.tres
+msgid "discomfort"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_ear.tres
+msgid "poverty"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_ear.tres
+msgid "destitution"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_ear.tres
+#: cards/tier2/card_nothing.tres
+msgid "inability"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_ear.tres
+#: cards/tier6/card_harm.tres
+msgid "disability"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_harm.tres
+msgid "impairment"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "nonfluency"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier3/card_divinity.tres
+msgid "marvelous"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_sound.tres
+#: cards/tier2/card_butterfly.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier2/card_strange.tres
+#: cards/tier5/card_wildcard.tres
+msgid "curious"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "miraculous"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "strangely enough"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "oddly enough"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_carry.tres
+msgid "bad luck"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_happiness.tres
+#: cards/tier2/card_carry.tres
+msgid "ill luck"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_carry.tres
+msgid "ill fortune"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_accumulate.tres
+#: cards/tier2/card_cleanse.tres
+#: cards/tier2/card_forbid.tres
+#: cards/tier2/card_timber.tres
+#: cards/tier3/card_illusion.tres
+#: cards/tier4/card_philosophy.tres
+#: cards/tier6/card_disease.tres
+msgid "unclean"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_accumulate.tres
+#: cards/tier2/card_cleanse.tres
+#: cards/tier2/card_forbid.tres
+#: cards/tier2/card_timber.tres
+#: cards/tier3/card_illusion.tres
+#: cards/tier4/card_philosophy.tres
+#: cards/tier6/card_disease.tres
+msgid "dirty"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_disease.tres
+msgid "unsanitary"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_accumulate.tres
+#: cards/tier2/card_forbid.tres
+#: cards/tier2/card_timber.tres
+#: cards/tier3/card_illusion.tres
+#: cards/tier4/card_philosophy.tres
+#: cards/tier6/card_disease.tres
+msgid "filthy"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier3/card_bone.tres
+#: cards/tier6/card_disease.tres
+msgid "indecent"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_disease.tres
+msgid "obscene"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_disease.tres
+msgid "immoral"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "irregular"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "unsystematic"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "unsteady"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "disorderly"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "bad condition"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "poor condition"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_random.tres
+#: cards/tier4/card_pacify.tres
+#: cards/tier6/card_harm.tres
+msgid "disorder"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_fast.tres
+#: cards/tier2/card_mix.tres
+#: cards/tier6/card_astray.tres
+msgid "slump"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "being out of form"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_mix.tres
+#: cards/tier3/card_split.tres
+msgid "rupture"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "breakdown, e.g. of negotiations"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "defective"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "delinquent"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "hoodlum"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "hooligan"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier0/card_rest.tres
+#: cards/tier1/card_bright.tres
+#: cards/tier6/card_fall.tres
+msgid "absence"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "disregard"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "indifference"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "unseasonable"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "changeable"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_calm.tres
+#: cards/tier3/card_clamor.tres
+msgid "unsettled"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "abnormal"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+#: cards/tier3/card_safe.tres
+msgid "I'm worried."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_omen.tres
+#: cards/tier3/card_safe.tres
+msgid "suspense"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "Deeds, not words."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_drift.tres
+#: cards/tier2/card_nothing.tres
+#: cards/tier2/card_quiet.tres
+#: cards/tier5/card_console.tres
+msgid "silence"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "It is strange."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "curiously"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "We ran short of money."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_full.tres
+msgid "I have no complaints."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "I am short of money."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "I was careless."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_cry.tres
+msgid "carelessness"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_cry.tres
+msgid "inattention"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier2/card_discern.tres
+#: cards/tier6/card_cry.tres
+#: cards/tier6/card_guilt.tres
+msgid "thoughtlessness"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier6/card_cry.tres
+msgid "negligence"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "That doesn't sound healthy."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "It looks unhealthy."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "That seems unhealthy."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "This is a defective product."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_product.tres
+msgid "fine article"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_product.tres
+msgid "good-quality item"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_product.tres
+msgid "quality product"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_not.tres
+msgid "The crops failed last year."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_make.tres
+msgid "poor crop"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_make.tres
+msgid "bad harvest"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+#: cards/tier1/card_make.tres
+#: cards/tier2/card_starve.tres
+msgid "crop failure"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "low quality (e.g. of literary works)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_not.tres
+msgid "negative"
+msgstr ""
+
+#. TRANSLATORS: Property: card_name
 #: cards/tier0/card_old.tres
 msgid "Old"
 msgstr ""
@@ -89847,12 +90782,14 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier2/card_emptiness.tres
 msgid "ancient times"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_previous.tres
 #: cards/tier2/card_emptiness.tres
@@ -90189,6 +91126,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_olden_days.tres
 #: cards/tier0/card_up.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier2/card_dare.tres
@@ -90881,6 +91819,593 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_old.tres
 msgid "funny story"
+msgstr ""
+
+#. TRANSLATORS: Property: card_name
+#: cards/tier0/card_olden_days.tres
+msgid "Olden Days"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier2/card_bridge.tres
+#: cards/tier2/card_pine.tres
+#: cards/tier3/card_cedar.tres
+#: cards/tier3/card_create.tres
+#: cards/tier6/card_entangle.tres
+#: cards/tier6/card_vomit.tres
+msgid "the old days"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier2/card_bridge.tres
+#: cards/tier2/card_memorize.tres
+#: cards/tier2/card_pine.tres
+#: cards/tier2/card_record.tres
+#: cards/tier2/card_worship.tres
+#: cards/tier3/card_cedar.tres
+#: cards/tier3/card_create.tres
+#: cards/tier3/card_fertility.tres
+#: cards/tier3/card_recollection.tres
+#: cards/tier4/card_observe.tres
+#: cards/tier6/card_entangle.tres
+#: cards/tier6/card_sad.tres
+#: cards/tier6/card_vomit.tres
+msgid "the past"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier2/card_bridge.tres
+#: cards/tier2/card_memorize.tres
+#: cards/tier2/card_pine.tres
+#: cards/tier2/card_record.tres
+#: cards/tier2/card_worship.tres
+#: cards/tier3/card_cedar.tres
+#: cards/tier3/card_create.tres
+#: cards/tier3/card_fertility.tres
+#: cards/tier3/card_recollection.tres
+#: cards/tier4/card_observe.tres
+#: cards/tier6/card_entangle.tres
+#: cards/tier6/card_sad.tres
+#: cards/tier6/card_vomit.tres
+msgid "former times"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier2/card_bridge.tres
+#: cards/tier2/card_pine.tres
+#: cards/tier3/card_cedar.tres
+#: cards/tier3/card_create.tres
+#: cards/tier6/card_entangle.tres
+#: cards/tier6/card_vomit.tres
+msgid "a long time ago"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "prehistoric times"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "the distant past"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "a very long time ago"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "old tale"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "folk tale"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "past and present"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "an age (ago)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "a long time (ago)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "a decade (ago)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "the way it was"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "the way it used be"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "as of old"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "in former times"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "I used to do that a lot."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier2/card_bridge.tres
+#: cards/tier2/card_pine.tres
+#: cards/tier3/card_cedar.tres
+#: cards/tier3/card_create.tres
+#: cards/tier6/card_entangle.tres
+#: cards/tier6/card_vomit.tres
+msgid "the past ten years"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier2/card_bridge.tres
+#: cards/tier2/card_pine.tres
+#: cards/tier3/card_cedar.tres
+#: cards/tier3/card_create.tres
+#: cards/tier6/card_entangle.tres
+#: cards/tier6/card_vomit.tres
+msgid "the past decade"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "I've seen better days."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "It's an old word."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "That's how things used to be."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+msgid "The town was exactly the same as before."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "I used to be a teacher."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "I don't have as much money as I used to have."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "There used to be a bridge here."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "This place used to be a field."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "field (for growing wheat, fruit, vegetables, etc.)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "cultivated land"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "vegetable plot"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "kitchen garden"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "plantation"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "field (of specialization)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "womb"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "Formerly, this city was beautiful."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "I'm not as young as I used to be."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "I eat less than I used to."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier2/card_starve.tres
+msgid "eating"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier1/card_make.tres
+#: cards/tier2/card_starve.tres
+#: cards/tier6/card_astray.tres
+msgid "meal"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier2/card_dye.tres
+msgid "thin"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "slender"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier2/card_crow.tres
+#: cards/tier2/card_year.tres
+#: cards/tier3/card_radiance.tres
+msgid "unlucky"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "I used to play there."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to play (games, sports)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to enjoy oneself"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_rest.tres
+#: cards/tier0/card_water.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+#: cards/tier3/card_alone.tres
+#: cards/tier6/card_isolate.tres
+msgid "to have a good time"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to mess about (with alcohol, gambling, philandery, etc.)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to be idle"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to do nothing"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to be unused"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to meet up (with friends)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to hang out"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to give oneself up (to gambling, drinking, etc.)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to go to (for pleasure or for study)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to tease (someone)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to play (with)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_shape.tres
+#: cards/tier2/card_play.tres
+msgid "to intentionally throw a ball to lower the batter's concentration"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "That was such a long time ago."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier0/card_olden_days.tres
+msgid "The story begins a long time ago."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "far"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_run.tres
+#: cards/tier0/card_town.tres
+#: cards/tier1/card_see.tres
+#: cards/tier2/card_bird.tres
+#: cards/tier2/card_castle.tres
+#: cards/tier2/card_drift.tres
+#: cards/tier2/card_smoke.tres
+#: cards/tier2/card_turtle.tres
+#: cards/tier3/card_village.tres
+#: cards/tier6/card_fall.tres
+msgid "far away"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier1/card_see.tres
+#: cards/tier2/card_bird.tres
+#: cards/tier2/card_drift.tres
+#: cards/tier2/card_turtle.tres
+#: cards/tier3/card_village.tres
+msgid "a long way off"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "in the distance"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "distant (past)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "remote (in time)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+#: cards/tier6/card_isolate.tres
+msgid "remote"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "far-removed (in time)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "distant (relationship or kinship)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "having little to do (with someone)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "far (from something else in quality, degree, etc.)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "not similar"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "way off"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "hard (of hearing)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_town.tres
+#: cards/tier3/card_village.tres
+msgid "nearsighted"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_wind.tres
+#: cards/tier1/card_craft.tres
+#: cards/tier2/card_instruct.tres
+#: cards/tier3/card_drama.tres
+#: cards/tier3/card_village.tres
+msgid "to commence"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier1/card_craft.tres
+#: cards/tier2/card_instruct.tres
+#: cards/tier3/card_drama.tres
+msgid "to happen (again)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier1/card_craft.tres
+#: cards/tier2/card_instruct.tres
+#: cards/tier3/card_drama.tres
+msgid "to begin (anew)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier1/card_craft.tres
+#: cards/tier2/card_instruct.tres
+#: cards/tier3/card_drama.tres
+msgid "to date (from)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+#: cards/tier1/card_craft.tres
+#: cards/tier2/card_cotton.tres
+#: cards/tier2/card_instruct.tres
+#: cards/tier3/card_drama.tres
+msgid "to originate (in)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "once upon a time"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier0/card_olden_days.tres
+msgid "old times"
 msgstr ""
 
 #. TRANSLATORS: Property: card_name
@@ -92202,13 +93727,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_rest.tres
-#: cards/tier1/card_bright.tres
-#: cards/tier6/card_fall.tres
-msgid "absence"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_rest.tres
 msgid "dormancy"
 msgstr ""
 
@@ -92634,17 +94152,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_rest.tres
 #: cards/tier0/card_water.tres
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-#: cards/tier3/card_alone.tres
-#: cards/tier6/card_isolate.tres
-msgid "to have a good time"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_rest.tres
-#: cards/tier0/card_water.tres
 #: cards/tier3/card_alone.tres
 #: cards/tier6/card_isolate.tres
 msgid "to have fun"
@@ -92971,6 +94478,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_right.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 msgid "grip"
 msgstr ""
@@ -93690,20 +95198,6 @@ msgstr ""
 #: cards/tier3/card_village.tres
 #: cards/tier6/card_fall.tres
 msgid "(in the) distance"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_run.tres
-#: cards/tier0/card_town.tres
-#: cards/tier1/card_see.tres
-#: cards/tier2/card_bird.tres
-#: cards/tier2/card_castle.tres
-#: cards/tier2/card_drift.tres
-#: cards/tier2/card_smoke.tres
-#: cards/tier2/card_turtle.tres
-#: cards/tier3/card_village.tres
-#: cards/tier6/card_fall.tres
-msgid "far away"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -95129,6 +96623,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_small.tres
+#: cards/tier1/card_origin.tres
 msgid "reduction"
 msgstr ""
 
@@ -97120,17 +98615,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_stand.tres
-#: cards/tier1/card_happiness.tres
-#: cards/tier2/card_battle.tres
-#: cards/tier2/card_carry.tres
-#: cards/tier2/card_conflict.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier6/card_harm.tres
-msgid "misfortune"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_stand.tres
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_drama.tres
 msgid "to attack"
@@ -97351,11 +98835,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_stand.tres
 msgid "failure (in an examination)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_stand.tres
-msgid "failing grade"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -99361,95 +100840,6 @@ msgstr ""
 msgid "It's a long way to town."
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "far"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier1/card_see.tres
-#: cards/tier2/card_bird.tres
-#: cards/tier2/card_drift.tres
-#: cards/tier2/card_turtle.tres
-#: cards/tier3/card_village.tres
-msgid "a long way off"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "in the distance"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "distant (past)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "remote (in time)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-#: cards/tier6/card_isolate.tres
-msgid "remote"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "far-removed (in time)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "distant (relationship or kinship)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "having little to do (with someone)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "far (from something else in quality, degree, etc.)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "not similar"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "way off"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "hard (of hearing)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier3/card_village.tres
-msgid "nearsighted"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier0/card_town.tres
 msgid "Did you come to town?"
@@ -99606,91 +100996,6 @@ msgstr ""
 #. TRANSLATORS: Property: native
 #: cards/tier0/card_town.tres
 msgid "This is the Town Hall."
-msgstr ""
-
-#. TRANSLATORS: Property: native
-#: cards/tier0/card_town.tres
-msgid "The town was exactly the same as before."
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier2/card_bridge.tres
-#: cards/tier2/card_pine.tres
-#: cards/tier3/card_cedar.tres
-#: cards/tier3/card_create.tres
-#: cards/tier6/card_entangle.tres
-#: cards/tier6/card_vomit.tres
-msgid "the old days"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier2/card_bridge.tres
-#: cards/tier2/card_memorize.tres
-#: cards/tier2/card_pine.tres
-#: cards/tier2/card_record.tres
-#: cards/tier2/card_worship.tres
-#: cards/tier3/card_cedar.tres
-#: cards/tier3/card_create.tres
-#: cards/tier3/card_fertility.tres
-#: cards/tier3/card_recollection.tres
-#: cards/tier4/card_observe.tres
-#: cards/tier6/card_entangle.tres
-#: cards/tier6/card_sad.tres
-#: cards/tier6/card_vomit.tres
-msgid "the past"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier2/card_bridge.tres
-#: cards/tier2/card_memorize.tres
-#: cards/tier2/card_pine.tres
-#: cards/tier2/card_record.tres
-#: cards/tier2/card_worship.tres
-#: cards/tier3/card_cedar.tres
-#: cards/tier3/card_create.tres
-#: cards/tier3/card_fertility.tres
-#: cards/tier3/card_recollection.tres
-#: cards/tier4/card_observe.tres
-#: cards/tier6/card_entangle.tres
-#: cards/tier6/card_sad.tres
-#: cards/tier6/card_vomit.tres
-msgid "former times"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier2/card_bridge.tres
-#: cards/tier2/card_pine.tres
-#: cards/tier3/card_cedar.tres
-#: cards/tier3/card_create.tres
-#: cards/tier6/card_entangle.tres
-#: cards/tier6/card_vomit.tres
-msgid "a long time ago"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier2/card_bridge.tres
-#: cards/tier2/card_pine.tres
-#: cards/tier3/card_cedar.tres
-#: cards/tier3/card_create.tres
-#: cards/tier6/card_entangle.tres
-#: cards/tier6/card_vomit.tres
-msgid "the past ten years"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_town.tres
-#: cards/tier2/card_bridge.tres
-#: cards/tier2/card_pine.tres
-#: cards/tier3/card_cedar.tres
-#: cards/tier3/card_create.tres
-#: cards/tier6/card_entangle.tres
-#: cards/tier6/card_vomit.tres
-msgid "the past decade"
 msgstr ""
 
 #. TRANSLATORS: Property: native
@@ -106077,15 +107382,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_wind.tres
-#: cards/tier1/card_craft.tres
-#: cards/tier2/card_instruct.tres
-#: cards/tier3/card_drama.tres
-#: cards/tier3/card_village.tres
-msgid "to commence"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_wind.tres
 #: cards/tier2/card_accept.tres
 #: cards/tier3/card_village.tres
 #: cards/tier6/card_rot.tres
@@ -106933,97 +108229,6 @@ msgstr ""
 msgid "The girls are playing."
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to play (games, sports)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to enjoy oneself"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to mess about (with alcohol, gambling, philandery, etc.)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to be idle"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to do nothing"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to be unused"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to meet up (with friends)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to hang out"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to give oneself up (to gambling, drinking, etc.)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to go to (for pleasure or for study)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to tease (someone)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to play (with)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier0/card_woman.tres
-#: cards/tier1/card_shape.tres
-#: cards/tier2/card_play.tres
-msgid "to intentionally throw a ball to lower the batter's concentration"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier0/card_woman.tres
 msgid "The girl made an awkward bow."
@@ -107332,6 +108537,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier0/card_woman.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier3/card_bear.tres
@@ -109321,6 +110527,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_pottery.tres
 #: cards/tier2/card_timber.tres
@@ -109408,6 +110615,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_nothing.tres
 #: cards/tier3/card_clamor.tres
 #: cards/tier6/card_harm.tres
@@ -109423,6 +110631,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_nothing.tres
 #: cards/tier6/card_harm.tres
 msgid "essentially"
@@ -109577,6 +110786,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #. Property: bones[]
 #: cards/tier1/card_book.tres
+#: cards/tier1/card_origin.tres
 #: characters/explorer/hub_character_explorer.tscn
 #: characters/historian/hub_character_historian.tscn
 #: characters/scribe/hub_character_scribe.tscn
@@ -110248,6 +111458,7 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_inside.tres
 #: cards/tier2/card_pottery.tres
@@ -111847,35 +113058,6 @@ msgstr ""
 msgid "structure"
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_craft.tres
-#: cards/tier2/card_instruct.tres
-#: cards/tier3/card_drama.tres
-msgid "to happen (again)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_craft.tres
-#: cards/tier2/card_instruct.tres
-#: cards/tier3/card_drama.tres
-msgid "to begin (anew)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_craft.tres
-#: cards/tier2/card_instruct.tres
-#: cards/tier3/card_drama.tres
-msgid "to date (from)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_craft.tres
-#: cards/tier2/card_cotton.tres
-#: cards/tier2/card_instruct.tres
-#: cards/tier3/card_drama.tres
-msgid "to originate (in)"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier1/card_craft.tres
 msgid "This is a plan of my own devising."
@@ -112579,11 +113761,13 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_dog.tres
+#: cards/tier1/card_origin.tres
 msgid "puppy"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_dog.tres
+#: cards/tier1/card_origin.tres
 msgid "small dog"
 msgstr ""
 
@@ -113191,50 +114375,8 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_ear.tres
-msgid "discomfort"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_ear.tres
-#: cards/tier1/card_person.tres
-#: cards/tier2/card_ask.tres
-#: cards/tier2/card_fragment.tres
-#: cards/tier2/card_random.tres
-#: cards/tier3/card_alone.tres
-#: cards/tier3/card_bomb.tres
-#: cards/tier3/card_safe.tres
-#: cards/tier6/card_astray.tres
-#: cards/tier6/card_failure.tres
-#: cards/tier6/card_worry.tres
-msgid "inconvenience"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_ear.tres
-msgid "poverty"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_ear.tres
 #: cards/tier6/card_want.tres
 msgid "want"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_ear.tres
-msgid "destitution"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_ear.tres
-#: cards/tier2/card_nothing.tres
-msgid "inability"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_ear.tres
-#: cards/tier6/card_harm.tres
-msgid "disability"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -116220,31 +117362,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_happiness.tres
-#: cards/tier2/card_battle.tres
-#: cards/tier2/card_conflict.tres
-#: cards/tier2/card_full.tres
-msgid "unhappiness"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_happiness.tres
-#: cards/tier2/card_battle.tres
-#: cards/tier2/card_conflict.tres
-#: cards/tier5/card_console.tres
-#: cards/tier6/card_grief.tres
-#: cards/tier6/card_sad.tres
-msgid "sorrow"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_happiness.tres
-#: cards/tier2/card_battle.tres
-#: cards/tier2/card_conflict.tres
-msgid "bereavement"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_happiness.tres
 #: cards/tier2/card_carry.tres
 #: cards/tier2/card_pray.tres
 #: cards/tier3/card_fortune.tres
@@ -116263,12 +117380,6 @@ msgstr ""
 #: cards/tier1/card_happiness.tres
 #: cards/tier1/card_make.tres
 msgid "yield"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_happiness.tres
-#: cards/tier2/card_carry.tres
-msgid "ill luck"
 msgstr ""
 
 #. TRANSLATORS: Property: native
@@ -117567,6 +118678,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_letter.tres
+#: cards/tier1/card_origin.tres
 #: cards/tier2/card_copy.tres
 msgid "dictionary"
 msgstr ""
@@ -118088,22 +119200,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_make.tres
-msgid "poor crop"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_make.tres
-msgid "bad harvest"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_make.tres
-#: cards/tier2/card_starve.tres
-msgid "crop failure"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_make.tres
 msgid "work of great effort"
 msgstr ""
 
@@ -118266,13 +119362,6 @@ msgstr ""
 #: cards/tier1/card_make.tres
 #: cards/tier6/card_astray.tres
 msgid "cooked rice"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_make.tres
-#: cards/tier2/card_starve.tres
-#: cards/tier6/card_astray.tres
-msgid "meal"
 msgstr ""
 
 #. TRANSLATORS: Property: native
@@ -118735,6 +119824,353 @@ msgstr ""
 #: cards/tier1/card_noon.tres
 #: cards/tier2/card_sleep.tres
 msgid "(afternoon) nap"
+msgstr ""
+
+#. TRANSLATORS: Property: card_name
+#: cards/tier1/card_origin.tres
+msgid "Origin"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+#: cards/tier2/card_timber.tres
+#: cards/tier3/card_element.tres
+msgid "raw material"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_fee.tres
+#: cards/tier2/card_prune.tres
+#: cards/tier2/card_seed.tres
+#: cards/tier2/card_timber.tres
+#: cards/tier3/card_element.tres
+#: cards/tier3/card_fate.tres
+msgid "ingredient"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "soup stock"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_child.tres
+msgid "root of a plant"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "tree trunk"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "part (of a brush, chopsticks, etc.) one holds"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "first three lines of a waka"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "New Year's Day"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "head of state"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "first year of an era"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "classical element (e.g. earth, water, air, fire)"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier3/card_clamor.tres
+#: cards/tier5/card_wildcard.tres
+msgid "in the first place"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier1/card_previous.tres
+#: cards/tier3/card_clamor.tres
+msgid "to begin with"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_pray.tres
+#: cards/tier4/card_discipline.tres
+#: cards/tier6/card_disease.tres
+msgid "restoration"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+msgid "at hand"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+msgid "on hand"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+msgid "way of moving one's arms"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+msgid "pocket money"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "dimension"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_look_at.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier4/card_observe.tres
+msgid "perspective"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "point of reference"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "one's identity"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier1/card_writing.tres
+#: cards/tier2/card_show.tres
+msgid "background"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+#: cards/tier2/card_nurture.tres
+#: cards/tier3/card_teach.tres
+#: cards/tier4/card_foster.tres
+#: cards/tier4/card_signpost.tres
+msgid "upbringing"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "ringleader"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "main culprit"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "main cause"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier4/card_build.tres
+msgid "reconstruction"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "restitution"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "elder statesman"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "old-timer"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier1/card_power.tres
+#: cards/tier2/card_discern.tres
+#: cards/tier2/card_prune.tres
+#: cards/tier3/card_alone.tres
+#: cards/tier3/card_village.tres
+#: cards/tier4/card_pacify.tres
+#: cards/tier4/card_peace.tres
+#: cards/tier4/card_philosophy.tres
+#: cards/tier6/card_want.tres
+msgid "authority"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "head of a school"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "pre-era"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "BC"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "BCE"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier1/card_origin.tres
+msgid "Are you well?"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier1/card_origin.tres
+#: cards/tier1/card_spirit.tres
+#: cards/tier2/card_use.tres
+msgid "Take care."
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier1/card_origin.tres
+msgid "How are you? Did you have a good trip?"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier1/card_origin.tres
+msgid "I always keep several dictionaries at hand."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+msgid "close at hand"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+msgid "money at hand"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_copy.tres
+#: cards/tier3/card_forge.tres
+msgid "lexicon"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_copy.tres
+msgid "letter of resignation"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier1/card_origin.tres
+msgid "A healthy child can no more sit still than a puppy can."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_correct.tres
+#: cards/tier2/card_equal.tres
+#: cards/tier2/card_omen.tres
+#: cards/tier2/card_same.tres
+#: cards/tier2/card_strange.tres
+#: cards/tier6/card_madness.tres
+msgid "similar"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_omen.tres
+msgid "(just) like"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier1/card_origin.tres
+msgid "My gait is unsteady from lack of sleep."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_sleep.tres
+#: cards/tier5/card_echo.tres
+msgid "lack of sleep"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_sleep.tres
+#: cards/tier5/card_echo.tres
+msgid "insufficient sleep"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier1/card_origin.tres
+msgid "You need to go and encourage the girl."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+#: cards/tier3/card_dance.tres
+#: cards/tier5/card_festival.tres
+#: cards/tier5/card_holy.tres
+msgid "to conduct oneself"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "to pep up"
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "to cheer up"
+msgstr ""
+
+#. TRANSLATORS: Property: native
+#: cards/tier1/card_origin.tres
+msgid "His speech inspired all the boys."
+msgstr ""
+
+#. TRANSLATORS: Property: meanings[]
+#: cards/tier1/card_origin.tres
+msgid "former time"
 msgstr ""
 
 #. TRANSLATORS: Property: card_name
@@ -120033,19 +121469,6 @@ msgstr ""
 msgid "political power"
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_power.tres
-#: cards/tier2/card_discern.tres
-#: cards/tier2/card_prune.tres
-#: cards/tier3/card_alone.tres
-#: cards/tier3/card_village.tres
-#: cards/tier4/card_pacify.tres
-#: cards/tier4/card_peace.tres
-#: cards/tier4/card_philosophy.tres
-#: cards/tier6/card_want.tres
-msgid "authority"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier1/card_power.tres
 msgid "I am always ready to help you."
@@ -120363,12 +121786,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_previous.tres
 msgid "firstly"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_previous.tres
-#: cards/tier3/card_clamor.tres
-msgid "to begin with"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -121022,21 +122439,6 @@ msgstr ""
 #. TRANSLATORS: Property: native
 #: cards/tier1/card_product.tres
 msgid "It's defective."
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_product.tres
-msgid "fine article"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_product.tres
-msgid "good-quality item"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_product.tres
-msgid "quality product"
 msgstr ""
 
 #. TRANSLATORS: Property: native
@@ -122536,15 +123938,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_sound.tres
-#: cards/tier2/card_butterfly.tres
-#: cards/tier2/card_picture.tres
-#: cards/tier2/card_strange.tres
-#: cards/tier5/card_wildcard.tres
-msgid "curious"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_sound.tres
 #: cards/tier2/card_picture.tres
 #: cards/tier3/card_clamor.tres
 #: cards/tier5/card_wildcard.tres
@@ -123237,12 +124630,6 @@ msgstr ""
 #: cards/tier1/card_spirit.tres
 #: cards/tier3/card_bee.tres
 msgid "to be accustomed to"
-msgstr ""
-
-#. TRANSLATORS: Property: native
-#: cards/tier1/card_spirit.tres
-#: cards/tier2/card_use.tres
-msgid "Take care."
 msgstr ""
 
 #. TRANSLATORS: Property: native
@@ -124290,12 +125677,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier1/card_writing.tres
-#: cards/tier2/card_show.tres
-msgid "background"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier1/card_writing.tres
 msgid "stationery"
 msgstr ""
 
@@ -125205,38 +126586,6 @@ msgstr ""
 #: cards/tier3/card_illusion.tres
 #: cards/tier4/card_philosophy.tres
 msgid "serious (look)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_accumulate.tres
-#: cards/tier2/card_cleanse.tres
-#: cards/tier2/card_forbid.tres
-#: cards/tier2/card_timber.tres
-#: cards/tier3/card_illusion.tres
-#: cards/tier4/card_philosophy.tres
-#: cards/tier6/card_disease.tres
-msgid "dirty"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_accumulate.tres
-#: cards/tier2/card_cleanse.tres
-#: cards/tier2/card_forbid.tres
-#: cards/tier2/card_timber.tres
-#: cards/tier3/card_illusion.tres
-#: cards/tier4/card_philosophy.tres
-#: cards/tier6/card_disease.tres
-msgid "unclean"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_accumulate.tres
-#: cards/tier2/card_forbid.tres
-#: cards/tier2/card_timber.tres
-#: cards/tier3/card_illusion.tres
-#: cards/tier4/card_philosophy.tres
-#: cards/tier6/card_disease.tres
-msgid "filthy"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -126235,13 +127584,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_asset.tres
-#: cards/tier2/card_timber.tres
-#: cards/tier3/card_element.tres
-msgid "raw material"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_asset.tres
 #: cards/tier2/card_emptiness.tres
 #: cards/tier4/card_dedicate.tres
 #: cards/tier4/card_signpost.tres
@@ -126366,36 +127708,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_asset.tres
-msgid "at hand"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_asset.tres
-msgid "on hand"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_asset.tres
-msgid "close at hand"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_asset.tres
-msgid "way of moving one's arms"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_asset.tres
-msgid "money at hand"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_asset.tres
-msgid "pocket money"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_asset.tres
 #: cards/tier2/card_manure.tres
 #: cards/tier2/card_statue.tres
 #: cards/tier3/card_create.tres
@@ -126504,15 +127816,6 @@ msgstr ""
 #: cards/tier3/card_teach.tres
 #: cards/tier4/card_signpost.tres
 msgid "teaching"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_asset.tres
-#: cards/tier2/card_nurture.tres
-#: cards/tier3/card_teach.tres
-#: cards/tier4/card_foster.tres
-#: cards/tier4/card_signpost.tres
-msgid "upbringing"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -129527,12 +130830,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_calm.tres
-#: cards/tier3/card_clamor.tres
-msgid "unsettled"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_calm.tres
 msgid "non-radical"
 msgstr ""
 
@@ -129905,16 +131202,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_carry.tres
 msgid "use of funds"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_carry.tres
-msgid "bad luck"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_carry.tres
-msgid "ill fortune"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -130346,11 +131633,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_child.tres
 msgid "red bean jam"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_child.tres
-msgid "root of a plant"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -131658,17 +132940,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_copy.tres
-#: cards/tier3/card_forge.tres
-msgid "lexicon"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_copy.tres
-msgid "letter of resignation"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_copy.tres
 msgid "cc (on e-mails)"
 msgstr ""
 
@@ -131710,22 +132981,6 @@ msgstr ""
 #. TRANSLATORS: Property: card_name
 #: cards/tier2/card_correct.tres
 msgid "Correct"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_correct.tres
-msgid "injustice"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_correct.tres
-#: cards/tier2/card_equal.tres
-msgid "unfairness"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_correct.tres
-msgid "dishonesty"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -131863,16 +133118,6 @@ msgstr ""
 #: cards/tier2/card_strange.tres
 #: cards/tier6/card_madness.tres
 msgid "closely related"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_correct.tres
-#: cards/tier2/card_equal.tres
-#: cards/tier2/card_omen.tres
-#: cards/tier2/card_same.tres
-#: cards/tier2/card_strange.tres
-#: cards/tier6/card_madness.tres
-msgid "similar"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -132361,13 +133606,6 @@ msgstr ""
 #: cards/tier2/card_year.tres
 #: cards/tier3/card_radiance.tres
 msgid "inauspicious"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_crow.tres
-#: cards/tier2/card_year.tres
-#: cards/tier3/card_radiance.tres
-msgid "unlucky"
 msgstr ""
 
 #. TRANSLATORS: Property: native
@@ -133707,13 +134945,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_discern.tres
-#: cards/tier6/card_cry.tres
-#: cards/tier6/card_guilt.tres
-msgid "thoughtlessness"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_discern.tres
 msgid "senselessness"
 msgstr ""
 
@@ -134458,14 +135689,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_drift.tres
-#: cards/tier2/card_nothing.tres
-#: cards/tier2/card_quiet.tres
-#: cards/tier5/card_console.tres
-msgid "silence"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_drift.tres
 msgid "being silent"
 msgstr ""
 
@@ -134955,11 +136178,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_dye.tres
 msgid "watery"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_dye.tres
-msgid "thin"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -136641,13 +137859,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_fast.tres
-#: cards/tier2/card_mix.tres
-#: cards/tier6/card_astray.tres
-msgid "slump"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_fast.tres
 msgid "weakening"
 msgstr ""
 
@@ -137067,11 +138278,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_fast.tres
-msgid "grievance"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_fast.tres
 msgid "processing"
 msgstr ""
 
@@ -137370,16 +138576,6 @@ msgstr ""
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_timber.tres
 msgid "raw materials"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_fee.tres
-#: cards/tier2/card_prune.tres
-#: cards/tier2/card_seed.tres
-#: cards/tier2/card_timber.tres
-#: cards/tier3/card_element.tres
-#: cards/tier3/card_fate.tres
-msgid "ingredient"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -139935,13 +141131,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_full.tres
-#: cards/tier2/card_morning.tres
-#: cards/tier5/card_opportunity.tres
-msgid "displeasure"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_full.tres
 msgid "to become full"
 msgstr ""
 
@@ -140133,11 +141322,6 @@ msgstr ""
 #. TRANSLATORS: Property: native
 #: cards/tier2/card_full.tres
 msgid "There's a full moon tonight."
-msgstr ""
-
-#. TRANSLATORS: Property: native
-#: cards/tier2/card_full.tres
-msgid "I have no complaints."
 msgstr ""
 
 #. TRANSLATORS: Property: native
@@ -143112,13 +144296,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_look_at.tres
-#: cards/tier2/card_picture.tres
-#: cards/tier4/card_observe.tres
-msgid "perspective"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_look_at.tres
 #: cards/tier5/card_loop.tres
 msgid "regarding as important"
 msgstr ""
@@ -144994,12 +146171,6 @@ msgstr ""
 msgid "permanent breach of friendship"
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_mix.tres
-#: cards/tier3/card_split.tres
-msgid "rupture"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier2/card_mix.tres
 msgid "It's finished."
@@ -146004,14 +147175,6 @@ msgstr ""
 #: cards/tier6/card_destroy.tres
 #: cards/tier6/card_stink.tres
 msgid "unreasonable"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_nothing.tres
-#: cards/tier2/card_versus.tres
-#: cards/tier4/card_thought.tres
-#: cards/tier6/card_stink.tres
-msgid "unjustifiable"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -147122,32 +148285,9 @@ msgstr ""
 msgid "social studies"
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_omen.tres
-#: cards/tier3/card_safe.tres
-msgid "apprehension"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_omen.tres
-#: cards/tier3/card_safe.tres
-msgid "insecurity"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_omen.tres
-#: cards/tier3/card_safe.tres
-msgid "suspense"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier2/card_omen.tres
 msgid "Like most diseases, it has its own symptoms."
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_omen.tres
-msgid "(just) like"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -150275,13 +151415,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_pray.tres
-#: cards/tier4/card_discipline.tres
-#: cards/tier6/card_disease.tres
-msgid "restoration"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_pray.tres
 #: cards/tier6/card_disease.tres
 msgid "recovery"
 msgstr ""
@@ -151712,13 +152845,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier2/card_random.tres
 msgid "crowding"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_random.tres
-#: cards/tier4/card_pacify.tres
-#: cards/tier6/card_harm.tres
-msgid "disorder"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -156820,18 +157946,6 @@ msgstr ""
 msgid "I haven't been getting enough sleep lately."
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_sleep.tres
-#: cards/tier5/card_echo.tres
-msgid "lack of sleep"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_sleep.tres
-#: cards/tier5/card_echo.tres
-msgid "insufficient sleep"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier2/card_sleep.tres
 msgid "What time do you usually go to bed?"
@@ -157818,11 +158932,6 @@ msgstr ""
 #. TRANSLATORS: Property: native
 #: cards/tier2/card_starve.tres
 msgid "He furnished food to the hungry."
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier2/card_starve.tres
-msgid "eating"
 msgstr ""
 
 #. TRANSLATORS: Property: native
@@ -164575,12 +165684,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier3/card_bone.tres
-#: cards/tier6/card_disease.tres
-msgid "indecent"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier3/card_bone.tres
 msgid "white (bleached) bone"
 msgstr ""
 
@@ -165758,12 +166861,6 @@ msgstr ""
 msgid "strictly speaking"
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier3/card_clamor.tres
-#: cards/tier5/card_wildcard.tres
-msgid "in the first place"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier3/card_clamor.tres
 msgid "What's this noise?"
@@ -166274,13 +167371,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier3/card_dance.tres
-#: cards/tier5/card_festival.tres
-#: cards/tier5/card_holy.tres
-msgid "to conduct oneself"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier3/card_dance.tres
 msgid "to treat someone to food or drink"
 msgstr ""
 
@@ -166688,11 +167778,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier3/card_divinity.tres
 msgid "divinity"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier3/card_divinity.tres
-msgid "marvelous"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -172752,11 +173837,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: native
 #: cards/tier3/card_safe.tres
-msgid "I'm worried."
-msgstr ""
-
-#. TRANSLATORS: Property: native
-#: cards/tier3/card_safe.tres
 msgid "Safety is the most important thing."
 msgstr ""
 
@@ -175375,11 +176455,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier4/card_build.tres
 msgid "formulation"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier4/card_build.tres
-msgid "reconstruction"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -182317,11 +183392,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier6/card_burdensome.tres
-msgid "not allowed"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_burdensome.tres
 msgid "neutral point"
 msgstr ""
 
@@ -182918,21 +183988,6 @@ msgstr ""
 msgid "Confused by her careless mistake, she burst into tears."
 msgstr ""
 
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_cry.tres
-msgid "carelessness"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_cry.tres
-msgid "inattention"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_cry.tres
-msgid "negligence"
-msgstr ""
-
 #. TRANSLATORS: Property: native
 #: cards/tier6/card_cry.tres
 msgid "So friendly was his letter that she was deeply moved and began to cry."
@@ -183267,22 +184322,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier6/card_disease.tres
-msgid "unsanitary"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_disease.tres
 msgid "dirty (story, money, etc.)"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_disease.tres
-msgid "obscene"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_disease.tres
-msgid "immoral"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -185506,11 +186546,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier6/card_guilt.tres
-msgid "wrongdoing"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_guilt.tres
 msgid "penalty"
 msgstr ""
 
@@ -185667,16 +186702,6 @@ msgstr ""
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier6/card_harm.tres
 msgid "impediment"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_harm.tres
-msgid "handicap"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_harm.tres
-msgid "impairment"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -186403,11 +187428,6 @@ msgstr ""
 #. TRANSLATORS: Property: native
 #: cards/tier6/card_madness.tres
 msgid "He has an unerring eye."
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_madness.tres
-msgid "irregularity"
 msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
@@ -188628,11 +189648,6 @@ msgstr ""
 
 #. TRANSLATORS: Property: meanings[]
 #: cards/tier6/card_stagnate.tres
-msgid "tie-up"
-msgstr ""
-
-#. TRANSLATORS: Property: meanings[]
-#: cards/tier6/card_stagnate.tres
 msgid "standstill"
 msgstr ""
 
@@ -190547,7 +191562,7 @@ msgstr ""
 msgid "Glyph Deck"
 msgstr ""
 
-#: cards/viewer/card_deck_viewer.gd:107
+#: cards/viewer/card_deck_viewer.gd:108
 msgid "%s total glyphs"
 msgstr ""
 
@@ -191850,8 +192865,8 @@ msgstr ""
 #: companions/tai/companion_recipe_tai.gd:40
 #: companions/tanuki/companion_recipe_tanuki.gd:48
 #: companions/tiger/companion_recipe_tiger.gd:22
-#: hub/run_setup/run_setup.gd:302
-#: run/run_end/run_end.gd:424
+#: hub/run_setup/run_setup.gd:306
+#: run/run_end/run_end.gd:444
 msgid ""
 "<header_font_size>[b]%s <term:companion> Ability[/b][/font_size]\n"
 "%s"
@@ -210240,7 +211255,7 @@ msgid "res://events/main_quest/3_50_accord_monument/event_accord_monument.tres"
 msgstr ""
 
 #. TRANSLATORS: Property: text
-#: events/system/event.gd:135
+#: events/system/event.gd:136
 #: events/system/scenes/event_choice_scene.gd:58
 #: hub/museum/museum_browser.gd:32
 #: hub/museum/museum_browser.gd:36
@@ -210298,15 +211313,15 @@ msgstr ""
 msgid "Choose a <term_lower:glyph>s from: "
 msgstr ""
 
-#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:52
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:53
 msgid "Choose %s <term_lower:glyph>"
 msgstr ""
 
-#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:54
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:55
 msgid " with %s"
 msgstr ""
 
-#: events/system/outcomes/choose_card/event_outcome_widget_choose_card.gd:57
+#: events/system/outcomes/choose_card/event_outcome_widget_choose_card.gd:58
 msgid "Chose not to add a glyph."
 msgstr ""
 
@@ -210339,7 +211354,7 @@ msgstr ""
 
 #: events/system/outcomes/choose_remove_card/event_outcome_widget_choose_remove_card.gd:22
 #: shops/remove_cards/shop_remove_cards.gd:22
-#: stage/card_reward_choice.gd:199
+#: stage/card_reward_choice.gd:200
 msgid "Choose Glyph to Remove"
 msgstr ""
 
@@ -210786,8 +211801,8 @@ msgstr ""
 #. Property: term_name
 #: glossary/categories/termcategory_harmonization.tres
 #: glossary/terms/standalone/term_harmonization.tres
-#: pause_menu/pause_menu.gd:187
-#: run/run_end/run_end.gd:36
+#: pause_menu/pause_menu.gd:195
+#: run/run_end/run_end.gd:39
 msgid "Convergence"
 msgstr ""
 
@@ -211945,7 +212960,7 @@ msgstr ""
 #. TRANSLATORS: Property: paths[]
 #: glossary/terms/resourcegroup_terms.tres
 #: relics/resourcegroup_relics.tres
-msgid "res://relics/common/waterlogged_dice/relic_waterlogged _dice.tres"
+msgid "res://relics/common/waterlogged_dice/relic_waterlogged_dice.tres"
 msgstr ""
 
 #. TRANSLATORS: Property: paths[]
@@ -212666,6 +213681,12 @@ msgstr ""
 #: glossary/terms/resourcegroup_terms.tres
 #: skills/resourcegroup_skills.tres
 msgid "res://skills/relics/skill_relics_shop.tres"
+msgstr ""
+
+#. TRANSLATORS: Property: paths[]
+#: glossary/terms/resourcegroup_terms.tres
+#: skills/resourcegroup_skills.tres
+msgid "res://skills/relics/skill_relics_shop_remove.tres"
 msgstr ""
 
 #. TRANSLATORS: Property: paths[]
@@ -213589,7 +214610,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: term_name
 #: glossary/terms/standalone/term_survey.tres
-#: pause_menu/pause_menu.gd:201
+#: pause_menu/pause_menu.gd:209
 msgid "Survey"
 msgstr ""
 
@@ -213635,6 +214656,14 @@ msgstr ""
 msgid "A broken fragment of the Old World, floating in the Cloud Sea, now ready to be restored into a new home for <term:refugee>s."
 msgstr ""
 
+#: harmonization/end/harmonization_end.gd:35
+msgid "Lost a total of %d <term:inspiration>"
+msgstr ""
+
+#: harmonization/end/harmonization_end.gd:37
+msgid " (protected from %d)"
+msgstr ""
+
 #. TRANSLATORS: Property: text
 #: harmonization/end/harmonization_end.tscn
 msgid "Convergence Result"
@@ -213643,6 +214672,11 @@ msgstr ""
 #. TRANSLATORS: Property: text
 #: harmonization/end/harmonization_end.tscn
 msgid "Capital Yields:"
+msgstr ""
+
+#. TRANSLATORS: Property: text
+#: harmonization/end/harmonization_end.tscn
+msgid "[color=800000]Total Lost: -2 Inspiration (protected from 3)[/color]"
 msgstr ""
 
 #. TRANSLATORS: Property: text
@@ -213979,7 +215013,7 @@ msgid "⨯1"
 msgstr ""
 
 #: hub/hub.gd:203
-#: stage/stage.gd:666
+#: stage/stage.gd:675
 #: tutorial/starter/starter_tutorial.gd:184
 msgid "Start Expedition"
 msgstr ""
@@ -214121,7 +215155,7 @@ msgid "The Dawn of a New Age"
 msgstr ""
 
 #: hub/museum/museum_browser.gd:38
-#: run/run_end/run_end.gd:81
+#: run/run_end/run_end.gd:84
 #: stage/selector/stage_selector.gd:275
 msgid "Challenges"
 msgstr ""
@@ -214200,7 +215234,6 @@ msgstr ""
 #: hub/museum/museum_detail_companion.tscn
 #: hub/museum/museum_detail_haunting.tscn
 #: hub/museum/museum_detail_shop.tscn
-#: hub/museum/museum_detail_spot.tscn
 msgid ""
 "Warehouses in this settlement turn up empty overnight. Households run out of food twice as fast.\n"
 "\n"
@@ -214562,24 +215595,37 @@ msgid ""
 "A <term_lower:capital> founded on this <term_lower:spot> will provide %s."
 msgstr ""
 
-#: hub/museum/museum_detail_spot.gd:97
-msgid ""
-"\n"
-"\n"
-"This site can feature the following special <term_lower:haunting>s:"
+#: hub/museum/museum_detail_spot.gd:98
+msgid "This site can feature the following special <term_lower:haunting>s:"
 msgstr ""
 
-#: hub/museum/museum_detail_spot.gd:104
+#: hub/museum/museum_detail_spot.gd:105
 msgid "This site can feature not yet discovered <term_lower:haunting>s."
 msgstr ""
 
-#: hub/museum/museum_detail_spot.gd:107
+#: hub/museum/museum_detail_spot.gd:110
 msgid "Look for this <term_lower:spot> out there on the shards..."
 msgstr ""
+
+#: hub/museum/museum_detail_spot.gd:169
+msgid "%d Undiscovered Event"
+msgid_plural "%d Undiscovered Events"
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: Property: text
 #: hub/museum/museum_detail_spot.tscn
 msgid "Upgrade flavor."
+msgstr ""
+
+#. TRANSLATORS: Property: text
+#: hub/museum/museum_detail_spot.tscn
+msgid "Events list goes here..."
+msgstr ""
+
+#. TRANSLATORS: Property: text
+#: hub/museum/museum_detail_spot.tscn
+msgid "Development description goes here..."
 msgstr ""
 
 #: hub/museum/museum_detail_survey.gd:55
@@ -214612,9 +215658,9 @@ msgstr ""
 #: hub/run_setup/run_setup.gd:121
 #: hub/run_setup/run_setup.gd:129
 #: hub/run_setup/run_setup.gd:142
-#: hub/run_setup/run_setup.gd:166
-#: hub/run_setup/run_setup.gd:187
-#: hub/run_setup/run_setup.gd:213
+#: hub/run_setup/run_setup.gd:170
+#: hub/run_setup/run_setup.gd:191
+#: hub/run_setup/run_setup.gd:217
 #: quests/settler/challenges/settler_quest_challenge_harm_on_aspect_cards.gd:43
 #: settings/settings_dialog.gd:195
 #: settings/settings_dialog.tscn
@@ -214660,11 +215706,11 @@ msgstr ""
 msgid "Choose an Event to Guarantee"
 msgstr ""
 
-#: hub/run_setup/run_setup.gd:177
+#: hub/run_setup/run_setup.gd:181
 msgid "Choose a Companion"
 msgstr ""
 
-#: hub/run_setup/run_setup.gd:203
+#: hub/run_setup/run_setup.gd:207
 msgid "Choose a Starting Relic"
 msgstr ""
 
@@ -214746,13 +215792,13 @@ msgstr ""
 #: hub/run_setup/run_setup_haunting_button.gd:65
 #: hub/run_setup/run_setup_relic_button.gd:47
 #: relics/selector/relic_choice.gd:70
-#: relics/selector/relic_icon.gd:78
+#: relics/selector/relic_icon.gd:81
 #: run/run_end/discovery_event.gd:54
 #: run/run_end/discovery_haunting.gd:44
 #: run/run_end/discovery_shop.gd:37
 #: run/run_end/discovery_survey_episode.gd:42
 #: run/run_end/discovery_upgrade.gd:85
-#: stage/hauntings/haunting_base.gd:141
+#: stage/hauntings/haunting_base.gd:142
 #: stage/selector/event_list_entry.gd:74
 #: stage/selector/haunting_list_entry.gd:58
 #: stage/selector/spot_type_entry.gd:128
@@ -214887,8 +215933,8 @@ msgstr[1] ""
 msgid "Population: %s"
 msgstr ""
 
-#: hub/shard_explorer/past_run_details.gd:99
-#: run/run_end/run_end.gd:252
+#: hub/shard_explorer/past_run_details.gd:107
+#: run/run_end/run_end.gd:272
 msgid "Final Deck"
 msgstr ""
 
@@ -214951,7 +215997,7 @@ msgid ""
 msgstr ""
 
 #: hub/shard_explorer/shard_details.gd:88
-#: quests/list/shard_type_entry.gd:53
+#: quests/list/shard_type_entry.gd:60
 msgid "[b]Revealed as part of the main story and takes precedence over other cultures.[/b]"
 msgstr ""
 
@@ -215396,18 +216442,6 @@ msgstr ""
 msgid "Practice Result"
 msgstr ""
 
-#. TRANSLATORS: Property: text
-#: japanese/practice_blanks/blanks_practice.gd:238
-#: japanese/practice_blanks/blanks_practice.gd:679
-#: main_menu/main_menu.gd:70
-#: main_menu/main_menu.gd:103
-#: quests/announcement/quest_announcement.tscn
-#: theme/confirm_dialog/confirm_dialog.gd:11
-#: theme/confirm_dialog/confirm_dialog.tscn
-#: utils/ui.gd:288
-msgid "Ok"
-msgstr ""
-
 #: japanese/practice_blanks/blanks_practice.gd:364
 msgid "Onyomi: "
 msgstr ""
@@ -215484,8 +216518,34 @@ msgid "Preview the kanji that will be included in this session. Only kanji of gl
 msgstr ""
 
 #: japanese/practice_blanks/blanks_practice.gd:667
-msgctxt "\nJapanese writing uses 3 sets of characters.\n\nKanji are the Chinese-origin characters that you see on the glyph scrolls in the game. Each character has a meaning, as well as one or more Chinese-origin and Japanese-origin pronunciations.\n\nHiragana is a phonetic syllabary used for grammar and common words. Hiragana characters do not have innate meanings, but simply represent sounds. They have simple, usually rounded shapes.\n\nKatakana is a phonetic syllabary used for foreign loanwords. It represents the exact same sounds as hiragana, but has different shapes, written with sharp strokes.\n\nWhen hiragana or katakana appears above a kanji character as a pronunciation hint, that is called furigana.\n\nWhen hiragana or katakana is transliterated into latin letters, that is called romaji.\n"
 msgid "Japanese Writing Intro"
+msgstr ""
+
+#: japanese/practice_blanks/blanks_practice.gd:667
+msgid ""
+"\n"
+"Japanese writing uses 3 sets of characters.\n"
+"\n"
+"Kanji are the Chinese-origin characters that you see on the glyph scrolls in the game. Each character has a meaning, as well as one or more Chinese-origin and Japanese-origin pronunciations.\n"
+"\n"
+"Hiragana is a phonetic syllabary used for grammar and common words. Hiragana characters do not have innate meanings, but simply represent sounds. They have simple, usually rounded shapes.\n"
+"\n"
+"Katakana is a phonetic syllabary used for foreign loanwords. It represents the exact same sounds as hiragana, but has different shapes, written with sharp strokes.\n"
+"\n"
+"When hiragana or katakana appears above a kanji character as a pronunciation hint, that is called furigana.\n"
+"\n"
+"When hiragana or katakana is transliterated into latin letters, that is called romaji.\n"
+msgstr ""
+
+#. TRANSLATORS: Property: text
+#: japanese/practice_blanks/blanks_practice.gd:679
+#: main_menu/main_menu.gd:70
+#: main_menu/main_menu.gd:103
+#: quests/announcement/quest_announcement.tscn
+#: theme/confirm_dialog/confirm_dialog.gd:11
+#: theme/confirm_dialog/confirm_dialog.tscn
+#: utils/ui.gd:288
+msgid "Ok"
 msgstr ""
 
 #. TRANSLATORS: Property: text
@@ -215587,7 +216647,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: text
 #: japanese/practice_blanks/blanks_practice.tscn
-#: pause_menu/pause_menu.gd:177
+#: pause_menu/pause_menu.gd:185
 msgid "Start"
 msgstr ""
 
@@ -216027,7 +217087,9 @@ msgid ""
 "Uses [color=#2020a0][url=https://www.edrdg.org/edrdg/licence.html]JMdict[/url][/color].\n"
 "Uses [color=#2020a0][url=https://github.com/scriptin/jmdict-simplified]JMdict-simplified[/url][/color].\n"
 "Uses examples from [color=#2020a0][url=https://tatoeba.org]tatoeba.org[/url][/color].\n"
-"Uses stroke data from [color=#2020a0][url=https://kanjivg.tagaini.net/]KanjiVG[/url][/color]."
+"Uses stroke data from [color=#2020a0][url=https://kanjivg.tagaini.net/]KanjiVG[/url][/color].\n"
+"\n"
+"[b][color=#2020a0][url=https://github.com/max99x/wutw-public]This game is open source![/url][/color][/b]"
 msgstr ""
 
 #. TRANSLATORS: Property: text
@@ -216094,7 +217156,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: text
 #: main_menu/main_menu.tscn
-#: pause_menu/pause_menu.gd:166
+#: pause_menu/pause_menu.gd:174
 #: pause_menu/pause_menu.tscn
 msgid "Quit"
 msgstr ""
@@ -216356,8 +217418,8 @@ msgid "This <term_lower:settlement> has the following <term_lower:spot>s:"
 msgstr ""
 
 #: map/settlement.gd:429
-#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:59
-#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:46
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:64
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:51
 msgid "[ul]"
 msgstr ""
 
@@ -216372,6 +217434,8 @@ msgid "No <term_lower:spot_upgrade>s"
 msgstr ""
 
 #: map/settlement.gd:440
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:66
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:53
 #: relics/uncommon/mended_teacup/relic_mended_teacup.gd:62
 #: stage/selector/survey_preview_entry.gd:68
 msgid "\n"
@@ -216462,104 +217526,104 @@ msgstr ""
 msgid "Retry Convergence"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:128
+#: pause_menu/pause_menu.gd:136
 #: stage/selector/stage_selector.gd:488
 msgid "Are you sure you want to finish this expedition?"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:136
-#: pause_menu/pause_menu.gd:137
+#: pause_menu/pause_menu.gd:144
+#: pause_menu/pause_menu.gd:145
 msgid "%d insight"
 msgid_plural "%d insights"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pause_menu/pause_menu.gd:140
+#: pause_menu/pause_menu.gd:148
 msgid "You will keep %s but forfeit %s because you are currently in a foray."
 msgstr ""
 
-#: pause_menu/pause_menu.gd:143
+#: pause_menu/pause_menu.gd:151
 msgid "You will keep %s but forfeit %s because you are currently in a convergence."
 msgstr ""
 
-#: pause_menu/pause_menu.gd:146
+#: pause_menu/pause_menu.gd:154
 msgid "You will gain %s in addition to the %s you earned for returning before inspiration is exhausted."
 msgstr ""
 
-#: pause_menu/pause_menu.gd:149
+#: pause_menu/pause_menu.gd:157
 #: stage/selector/stage_selector.gd:499
 msgid "Finish Expedition?"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:161
+#: pause_menu/pause_menu.gd:169
 msgid "The game is not saved before the end of the tutorial."
 msgstr ""
 
-#: pause_menu/pause_menu.gd:163
+#: pause_menu/pause_menu.gd:171
 msgid "Last saved: "
 msgstr ""
 
-#: pause_menu/pause_menu.gd:164
+#: pause_menu/pause_menu.gd:172
 msgid "Are you sure you want to exit the game?"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:166
+#: pause_menu/pause_menu.gd:174
 msgid "Exit Game?"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:166
+#: pause_menu/pause_menu.gd:174
 msgid "Return to Main Menu"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:174
+#: pause_menu/pause_menu.gd:182
 msgid "Phase %d - "
 msgstr ""
 
-#: pause_menu/pause_menu.gd:179
+#: pause_menu/pause_menu.gd:187
 msgid "Foray %d Location Choice"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:181
-#: run/run_end/run_end.gd:34
+#: pause_menu/pause_menu.gd:189
+#: run/run_end/run_end.gd:37
 #: stage/selector/stage_selector.gd:67
 msgid "Foray %d"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:183
+#: pause_menu/pause_menu.gd:191
 msgid "Foray %d Results"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:185
+#: pause_menu/pause_menu.gd:193
 msgid "Capital Planning"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:189
+#: pause_menu/pause_menu.gd:197
 msgid "Convergence Results"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:191
+#: pause_menu/pause_menu.gd:199
 msgid "End"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:193
+#: pause_menu/pause_menu.gd:201
 msgid "Expedition End (Premature)"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:195
+#: pause_menu/pause_menu.gd:203
 msgid "Expedition End"
 msgstr ""
 
 #. TRANSLATORS: Property: display_name
-#: pause_menu/pause_menu.gd:197
+#: pause_menu/pause_menu.gd:205
 #: run/types/run_type_tutorial.tres
 msgid "Tutorial"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:199
+#: pause_menu/pause_menu.gd:207
 msgid "Survey Planning"
 msgstr ""
 
-#: pause_menu/pause_menu.gd:203
+#: pause_menu/pause_menu.gd:211
 msgid "Survey Results"
 msgstr ""
 
@@ -216847,12 +217911,12 @@ msgid "Ordered Draw Deck"
 msgstr ""
 
 #: pause_menu/stat_label.gd:50
-#: run/run_end/run_end.gd:235
+#: run/run_end/run_end.gd:255
 msgid "Yes"
 msgstr ""
 
 #: pause_menu/stat_label.gd:50
-#: run/run_end/run_end.gd:235
+#: run/run_end/run_end.gd:255
 msgid "No"
 msgstr ""
 
@@ -217186,7 +218250,7 @@ msgstr ""
 msgid "Quests"
 msgstr ""
 
-#: quests/hud/quest_list_tooltip.gd:43
+#: quests/hud/quest_list_tooltip.gd:55
 msgid "No quests are currently active."
 msgstr ""
 
@@ -217205,11 +218269,15 @@ msgstr ""
 msgid "Accomplish the task."
 msgstr ""
 
-#: quests/list/shard_type_entry.gd:35
+#: quests/list/shard_type_entry.gd:42
 msgid "Shard Culture: "
 msgstr ""
 
-#: quests/list/shard_type_entry.gd:70
+#: quests/list/shard_type_entry.gd:67
+msgid "[b]The requirements for a main story shard culture have been met, which takes precedence over this culture.[/b]"
+msgstr ""
+
+#: quests/list/shard_type_entry.gd:84
 msgid ""
 "When toggled on, these requirements will appear in the quests list during <term_lower:run>s.\n"
 "\n"
@@ -218851,7 +219919,7 @@ msgstr ""
 msgid "Establish any of the following <term_lower:spot_upgrade>s:[ul]%s[/ul]"
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_biome_settlements.gd:25
+#: quests/settler/goals/settler_quest_goal_biome_settlements.gd:19
 msgid "Establish at least %d <term_lower:settlement> with a <spot:%s> <term_lower:spot>."
 msgid_plural "Establish at least %d <term_lower:settlement>s with a <spot:%s> <term_lower:spot>."
 msgstr[0] ""
@@ -218861,25 +219929,36 @@ msgstr[1] ""
 msgid "Encounter the <event:%s> <term_lower:event>."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:55
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:58
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:69
+#: quests/settler/goals/settler_quest_goal_num_cards.gd:21
+#: quests/settler/goals/settler_quest_goal_num_connected_settlements.gd:20
+#: quests/settler/goals/settler_quest_goal_num_events.gd:20
+#: quests/settler/goals/settler_quest_goal_num_perfect_settlements.gd:20
+#: quests/settler/goals/settler_quest_goal_num_relics.gd:20
+#: quests/settler/goals/settler_quest_goal_num_settlements.gd:21
+#: quests/settler/goals/settler_quest_goal_num_survey_episodes.gd:20
+#: quests/settler/goals/settler_quest_goal_run_bonus.gd:24
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:45
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:56
+#: quests/settler/goals/settler_quest_goal_stage_bonus.gd:24
+msgid "[%d/%d] "
+msgstr ""
+
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:59
 msgid "Establish %d <spot_upgrade:%s> <term_lower:spot_upgrade>s."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:58
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:63
 msgid "Establish all of the following <term_lower:spot_upgrade>s:"
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:62
-msgid ""
-"\n"
-"<spot_upgrade:%s>"
-msgstr ""
-
-#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:64
-msgid ""
-"\n"
-"%d <spot_upgrade:%s>s"
-msgstr ""
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:72
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:59
+msgid "<spot_upgrade:%s>"
+msgid_plural "<spot_upgrade:%s>s"
+msgstr[0] ""
+msgstr[1] ""
 
 #: quests/settler/goals/settler_quest_goal_no_loss_survey.gd:51
 msgid "Finish all <term_lower:encounter>s in a <term_lower:survey> without ever losing any <term_lower:bonus>s or <term:inspiration>."
@@ -218889,47 +219968,47 @@ msgstr ""
 msgid " [color=#444]The current survey is ineligible because %s was lost.[/color]"
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_num_cards.gd:26
+#: quests/settler/goals/settler_quest_goal_num_cards.gd:22
 msgid "Have at least %d <term_lower:glyph>s"
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_num_cards.gd:28
+#: quests/settler/goals/settler_quest_goal_num_cards.gd:24
 msgid " with %s <term_lower:aspect>"
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_num_connected_settlements.gd:23
+#: quests/settler/goals/settler_quest_goal_num_connected_settlements.gd:21
 msgid "Connect at least %d <term_lower:settlement>s."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_num_events.gd:22
+#: quests/settler/goals/settler_quest_goal_num_events.gd:21
 msgid "Finish at least %d <term_lower:event>s."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_num_perfect_settlements.gd:24
+#: quests/settler/goals/settler_quest_goal_num_perfect_settlements.gd:21
 msgid "Finish at least %d <term_lower:foray>s with all <term_lower:stage_goal>s fully satisfied."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_num_relics.gd:18
+#: quests/settler/goals/settler_quest_goal_num_relics.gd:21
 msgid "Acquire at least %d <term_lower:relic>s."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_num_settlements.gd:19
+#: quests/settler/goals/settler_quest_goal_num_settlements.gd:22
 msgid "Establish at least %d <term_lower:settlement>s."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_num_survey_episodes.gd:22
+#: quests/settler/goals/settler_quest_goal_num_survey_episodes.gd:21
 msgid "Finish at least %d <term_lower:survey> <term_lower:encounter>s."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_run_bonus.gd:22
+#: quests/settler/goals/settler_quest_goal_run_bonus.gd:25
 msgid "Reach %d total %s <term_lower:bonus>."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:42
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:46
 msgid "Establish %d <spot_upgrade:%s> <term_lower:spot_upgrade>s [b]in one <term_lower:settlement>[/b]."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:45
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:50
 msgid "Establish all of the following <term_lower:spot_upgrade>s [b]in one <term_lower:settlement>[/b]:"
 msgstr ""
 
@@ -220018,7 +221097,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: flavor_text
 #: relics/common/koi_emblem/relic_koi_emblem.tres
-msgid "The koi perseveres, no matter the challenge."
+msgid "The carp perseveres, no matter the challenge."
 msgstr ""
 
 #. TRANSLATORS: Property: default_name
@@ -220636,6 +221715,21 @@ msgstr ""
 #. TRANSLATORS: Property: flavor_text
 #: relics/common/unfamiliar_coin/relic_unfamiliar_coin.tres
 msgid "Maybe someone will accept it..."
+msgstr ""
+
+#. TRANSLATORS: Property: default_name
+#: relics/common/waterlogged_dice/relic_waterlogged_dice.tres
+msgid "Waterlogged Dice"
+msgstr ""
+
+#. TRANSLATORS: Property: default_description
+#: relics/common/waterlogged_dice/relic_waterlogged_dice.tres
+msgid "Whenever you <term_lower:add_card> a <term_lower:glyph> to your <term_lower:card_deck>, gain one <term_lower:glyph> <term_lower:reroll>."
+msgstr ""
+
+#. TRANSLATORS: Property: flavor_text
+#: relics/common/waterlogged_dice/relic_waterlogged_dice.tres
+msgid "The only way to win is to keep playing."
 msgstr ""
 
 #: relics/common/weavers_comb/relic_weavers_comb.gd:36
@@ -221357,7 +222451,7 @@ msgstr ""
 msgid " If you finish the <term:harmonization> now, you will lose [b]%d[/b] <term:inspiration>."
 msgstr ""
 
-#: run/run.gd:476
+#: run/run.gd:479
 msgid "Loading Settlements..."
 msgstr ""
 
@@ -221420,42 +222514,42 @@ msgstr ""
 msgid "Wildflower Meadow"
 msgstr ""
 
-#: run/run_end/run_end.gd:37
+#: run/run_end/run_end.gd:40
 msgid "Phase %d - %s"
 msgstr ""
 
-#: run/run_end/run_end.gd:43
+#: run/run_end/run_end.gd:46
 msgid "*"
 msgstr ""
 
-#: run/run_end/run_end.gd:234
+#: run/run_end/run_end.gd:254
 msgid ""
 "You have not selected a glyph to keep.\n"
 "\n"
 "Are you sure you want to proceed?"
 msgstr ""
 
-#: run/run_end/run_end.gd:235
+#: run/run_end/run_end.gd:255
 msgid "Skip Kept Glyph?"
 msgstr ""
 
-#: run/run_end/run_end.gd:373
+#: run/run_end/run_end.gd:393
 msgid "* You received %d bonus insights from new discoveries."
 msgstr ""
 
-#: run/run_end/run_end.gd:377
+#: run/run_end/run_end.gd:397
 msgid "* You received %d bonus insights because you returned before running out of <term:inspiration>."
 msgstr ""
 
-#: run/run_end/run_end.gd:386
+#: run/run_end/run_end.gd:406
 msgid "Choose a Glyph to Keep"
 msgstr ""
 
-#: run/run_end/run_end.gd:392
+#: run/run_end/run_end.gd:412
 msgid "Change Kept Glyph"
 msgstr ""
 
-#: run/run_end/run_end.gd:420
+#: run/run_end/run_end.gd:440
 msgid "No glyphs were acquired during this expedition."
 msgstr ""
 
@@ -223161,7 +224255,7 @@ msgid ""
 "The temple complex looks abandoned, and isn't open to visitors. The surrounding town is heavily catering to tourists, and full of folks trying to make money by showing visitors a tree that the Avatar allegedly climbed as a child, or a tea house which the Avatar used to frequent, no doubt run by their friends."
 msgstr ""
 
-#: shard_types/mq_forest_shrine/shard_type_mq_forest_shrine.gd:36
+#: shard_types/mq_forest_shrine/shard_type_mq_forest_shrine.gd:38
 #: shard_types/mq_foxes/shard_type_mq_foxes.gd:17
 #: shard_types/mq_lake_shrine/shard_type_mq_lake_shrine.gd:17
 msgid "Finish the <event:%s>."
@@ -225030,8 +226124,17 @@ msgstr ""
 msgid "This portal leads somewhere unknowable. Those who enter come back with insights unlike anything seen before, but after such an experience, they lose all interest in exploring this shard."
 msgstr ""
 
-#: shops/get_relics/shop_get_relics.gd:30
+#: shops/get_relics/shop_get_relics.gd:46
 msgid "Retrieve a <term:relic> from the ruins."
+msgstr ""
+
+#: shops/get_relics/shop_get_relics.gd:49
+msgid "Leave a <term:relic> at the ruins."
+msgstr ""
+
+#: shops/get_relics/shop_get_relics.gd:53
+#: shops/shop_base.gd:87
+msgid "[b]Only one transaction in each <term_lower:shop> can be performed per <term_lower:stage>.[/b]"
 msgstr ""
 
 #. TRANSLATORS: Property: intro
@@ -225074,6 +226177,16 @@ msgstr ""
 #. TRANSLATORS: Property: text
 #: shops/get_relics/shop_get_relics.tscn
 msgid "Send explorers to uncover what lies beneath the rubble."
+msgstr ""
+
+#. TRANSLATORS: Property: text
+#: shops/get_relics/shop_get_relics.tscn
+msgid "You can also bury a relic."
+msgstr ""
+
+#. TRANSLATORS: Property: text
+#: shops/get_relics/shop_get_relics.tscn
+msgid "Remove a Relic"
 msgstr ""
 
 #: shops/heal/shop_heal.gd:13
@@ -225258,10 +226371,6 @@ msgstr ""
 #. TRANSLATORS: Property: includes[]
 #: shops/resourcegroup_shop_types.tres
 msgid "*/shop_*.tres"
-msgstr ""
-
-#: shops/shop_base.gd:87
-msgid "[b]Only one transaction in each <term_lower:shop> can be performed per <term_lower:stage>.[/b]"
 msgstr ""
 
 #: shops/shop_type.gd:45
@@ -226064,6 +227173,16 @@ msgid "Unlocks the <shop:get_relics> <term_lower:shop>, available in the Wastela
 msgstr ""
 
 #. TRANSLATORS: Property: skill_name
+#: skills/relics/skill_relics_shop_remove.tres
+msgid "Relic Removal"
+msgstr ""
+
+#. TRANSLATORS: Property: description
+#: skills/relics/skill_relics_shop_remove.tres
+msgid "Allows you to remove <term_lower:relic>s at the <shop:get_relics> <term_lower:shop>."
+msgstr ""
+
+#. TRANSLATORS: Property: skill_name
 #: skills/relics/skill_relics_starting_common.tres
 msgid "Random Starting Relic"
 msgstr ""
@@ -226080,7 +227199,7 @@ msgstr ""
 
 #. TRANSLATORS: Property: description
 #: skills/relics/skill_relics_starting_selected.tres
-msgid "Allows you to select a specific <term_lower:relic> to start with before each <term_lower:run>."
+msgid "Allows you to select a specific <term_lower:relic> to start with before each <term_lower:run>, without being limited to specific choices."
 msgstr ""
 
 #. TRANSLATORS: Property: skill_name
@@ -226270,7 +227389,7 @@ msgstr ""
 msgid "Adds one extra <term_lower:spot> in each <term_lower:foray> after every <term:harmonization>."
 msgstr ""
 
-#: skills/skill.gd:163
+#: skills/skill.gd:165
 msgid "Skill: "
 msgstr ""
 
@@ -226466,25 +227585,32 @@ msgstr ""
 msgid "Top "
 msgstr ""
 
-#: stage/hauntings/haunting_base.gd:124
+#: stage/hauntings/haunting_base.gd:125
 msgid "This <term_lower:haunting> can be mitigated by <term_lower:fill>ing the associated <term_lower:aspect_slot>s."
 msgstr ""
 
-#: stage/hauntings/haunting_base.gd:126
+#: stage/hauntings/haunting_base.gd:127
 #: stage/selector/haunting_list_entry.gd:40
 msgid "This <term_lower:haunting> can be pacified by <term_lower:fill>ing the associated <term_lower:aspect_slot>s."
 msgstr ""
 
-#: stage/hauntings/haunting_base.gd:130
+#: stage/hauntings/haunting_base.gd:131
 msgid " It has an extra slot (up to %d) for every %d %s the shard produces."
 msgstr ""
 
 #. TRANSLATORS: Property: text
 #: stage/hauntings/haunting_harmonization.tscn
+#: stage/hauntings/haunting_harmonization_preview.tscn
 msgid ""
 "Task Activated Here\n"
 "↓\n"
 "Lose All"
+msgstr ""
+
+#: stage/hauntings/haunting_harmonization_preview.gd:59
+msgid ""
+"\n"
+"[i]%s to pan to the relevant settlement.[/i]"
 msgstr ""
 
 #. TRANSLATORS: Property: text
@@ -234641,37 +235767,37 @@ msgid "A stern fortress scarred by the storms, ramparts covered with lightning r
 msgstr ""
 
 #: stage/stage.gd:78
-#: stage/stage.gd:849
+#: stage/stage.gd:860
 msgid "Replan (%d)"
 msgstr ""
 
-#: stage/stage.gd:574
+#: stage/stage.gd:583
 msgid "This <term_lower:glyph> has no <term_lower:card_ability>s."
 msgstr ""
 
-#: stage/stage.gd:657
+#: stage/stage.gd:666
 msgid "Redraw Hand (%d left)"
 msgstr ""
 
-#: stage/stage.gd:659
+#: stage/stage.gd:668
 msgid "Redraw Hand"
 msgstr ""
 
 #. TRANSLATORS: Property: text
-#: stage/stage.gd:662
+#: stage/stage.gd:671
 #: stage/stage.tscn
 msgid "End Foray"
 msgstr ""
 
-#: stage/stage.gd:664
+#: stage/stage.gd:673
 msgid "End Convergence"
 msgstr ""
 
-#: stage/stage.gd:668
+#: stage/stage.gd:677
 msgid "End Survey"
 msgstr ""
 
-#: stage/stage.gd:863
+#: stage/stage.gd:874
 msgid "Reshuffle your <term_lower:card_deck> and draw a new starting <term_lower:hand>. Can't be used after a card is played."
 msgstr ""
 
@@ -239306,7 +240432,7 @@ msgstr ""
 msgid "res://stage/survey/episodes/episode_winter_wonderland.tres"
 msgstr ""
 
-#: stage/survey/survey.gd:273
+#: stage/survey/survey.gd:275
 msgid "[b]You have run out of inspiration, so the expedition is finished.[/b]"
 msgstr ""
 
@@ -239444,10 +240570,6 @@ msgstr ""
 
 #: stage/survey/survey_episode.gd:88
 msgid "Shard Edge"
-msgstr ""
-
-#: stage/survey/survey_prep_buff_label.gd:21
-msgid " "
 msgstr ""
 
 #: stage/survey/survey_prep_buff_label.gd:29
@@ -240288,6 +241410,8 @@ msgid ""
 "Starting from <term:season> %d, <term_lower:settlement>s can have <term_lower:haunting>s during <term:harmonization>.\n"
 "\n"
 "Most of these will trigger even on actions unrelated to the <term_lower:settlement> they appear in.\n"
+"\n"
+"All <term_lower:haunting>s also appear at the top of the screen for reference.\n"
 msgstr ""
 
 #: tutorial/steps/stage/tutorial_haunting_scaling.gd:22
@@ -240324,7 +241448,7 @@ msgid ""
 "It will accept any kind of <term_lower:aspect>.\n"
 msgstr ""
 
-#: utils/bug_reporter/bug_reporter.gd:31
+#: utils/bug_reporter/bug_reporter.gd:34
 msgid "Sending..."
 msgstr ""
 
@@ -240505,21 +241629,6 @@ msgstr ""
 #. TRANSLATORS: Property: text
 #: utils/version_watermark.tscn
 msgid "BUILD: unknown"
-msgstr ""
-
-#. TRANSLATORS: Property: default_name
-#: relics/common/waterlogged_dice/relic_waterlogged_dice.tres
-msgid "Waterlogged Dice"
-msgstr ""
-
-#. TRANSLATORS: Property: default_description
-#: relics/common/waterlogged_dice/relic_waterlogged_dice.tres
-msgid "Whenever you <term_lower:add_card> a <term_lower:glyph> to your <term_lower:card_deck>, gain one <term_lower:glyph> <term_lower:reroll>."
-msgstr ""
-
-#. TRANSLATORS: Property: flavor_text
-#: relics/common/waterlogged_dice/relic_waterlogged_dice.tres
-msgid "The only way to win is to keep playing."
 msgstr ""
 
 msgid "Worlds Upon The Wind"
