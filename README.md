@@ -60,51 +60,51 @@ The code is intentionally kept as simple as possible while supporting efficient 
     * `godotsteam` is a third-party addon for Steam integration.
     * `godot_resource_groups` is a third-party addon for defining sets of Resources using path patterns. The loading aspect of it is unused.
     * `wutw_editor` adds an editor dock to start the game from various story points and with various progression states.
-    * `wutw_exporter` embeds the git commit and tag to when exporting the game for distribution.
+    * `wutw_exporter` embeds the git commit and tag when exporting the game for distribution.
     * `wutw_i18n_export` exports strings for localization from Resource instances and Nodes embedded in scenes.
   * `res://art/`: The art wiki, including the UI and all data for the various historical and original art pieces, artists, art styles, etc.
   * `res://aspects`: The Essences and Slots system which is the core mechanic of the game.
   * `res://audio`: A simple Wwise-based audio system that handles SFX, music, and ambient audio. The audio files themselves are not included due to licensing restrictions, so it is essentially a no-op at runtime, but all the code is there.
-  * `res://bin`: Windows, Linux, and MacOS binaries for the GDExtension in `wutw-gdext`.
-  * `res://bonuses`: The Yields system, which comprises the main resource the player gathers.
+  * `res://bin`: Windows, Linux, and MacOS binaries for the GDExtension in `wutw-gdext`, as well as the extension manifest.
+  * `res://bonuses`: The Yields system, which comprises the main resource that the player gathers.
   * `res://cards`: The Glyphs system, which are the cards that the player plays. Includes all related UI scenes, scripts for the invocations (card abilities), and the definition of all the cards in the game as individual Resources.
   * `res://characters`: The Characters system, which includes story characters and randomized Haven (hub area) characters.
   * `res://companions`: The Animal Companions system, including gameplay and hub support.
   * `res://cutscenes`: The game's fullscreen cutscenes including their Scenes, art, and voice audio.
   * `res://debate`: A small system for handling the Debate feature that takes place in the game's final section.
-  * `res://dialogue`: A simple dialogue system, including support for playing dialogues during runs (expeditions) and on the hub, as well as barks (semi-random one-liners for hub NPCs). This doesn't handle any player choices.
+  * `res://dialogue`: A simple dialogue system, including support for playing dialogues during runs (expeditions) and on the hub, as well as barks (semi-random one-liners for hub NPCs). Dialogues are linear and don't have any player choices.
   * `res://events`: The Events (interactive vignettes) system, as well as the definition of all events in the game as individual Resources.
-  * `res://glossary`: A system for linkable gameplay terms used throughout the game to show tooltips and various gameplay-related text. This folder includes "standalone" terms, and many other parts of the game (cards, relics, etc.) are themselves Terms.
-  * `res://hub`: The game's hub area system, including all the related UIs (museum, skills, crafting, shard cultures, etc.).
+  * `res://glossary`: A system for linkable gameplay terms used throughout the game to show tooltips and various gameplay-related text. This folder includes "standalone" terms, and many other Resource classes in the game (cards, relics, etc.) are subclasses of Term.
+  * `res://hub`: The game's hub area (Haven) system, including all related UIs (museum, skills, crafting, shard cultures, etc.).
   * `res://i18n`: The exported dump of all localizable strings from the game.
   * `res://japanese`: Code related to the Japanese learning part of the game. This includes the minigames, but also third-party linguistic databases and editor tools to extract and convert relevant parts of them into Godot resources.
   * `res://main_menu`: The main menu UI.
-  * `res://map`: The Map system for displaying and manipulating the ingame map. Includes resources defining all the sprites used on the map in a custom format and a giant shader to render them all in one pass.
+  * `res://map`: The Map system for displaying and manipulating the ingame map. Includes resources defining all the sprites used on the map as custom Resources and a giant shader to render them all in one pass.
   * `res://pause_menu`: The pause menu UI.
   * `res://quests`: The Quests system, including both main story quests and repeatable settler quests. This is probably the jankiest part of the codebase.
   * `res://relics`: The Relics system, including the definition of all the relics in the game, one resource and one script per relic.
   * `res://run`: The Run system, which manages the state of a single run (expedition).
     * `run.gd` is the backbone controlling most of the high level gameplay state during a run.
     * `run_data.gd` represents the persistent state of the run.
-    * `run_signals.gd` acts as a signal bus used by many other systems.
+    * `run_signals.gd` acts as a signal bus used by many other systems such as relics, quests, tutorials, and achievements.
   * `res://settings`: The settings menu and a GameSettings singleton for loading and querying game settings.
   * `res://shard_types`: The Shard Cultures system, including the definitions of each culture, one resource and one script each.
   * `res://shops`: The Landmarks system, including the definitions of each landmark, one resource, one scene, and one script each.
-  * `res://skills`: The Skills system, including the definitions of each skills as resources. Skills don't have behavior themselves - they are just data queried by other systems.
+  * `res://skills`: The Skills system, including the definitions of each skill as a Resource. Skills don't have behavior themselves - they are just data queried by other systems.
   * `res://stage`: The core card gameplay system.
     * `stage.gd` handles gameplay during forays, surveys, and convergences. 90% of the time spent in the game involves the player interacting with it.
     * `hauntings` is the Hauntings feature, including the definition of all hauntings.
     * `spots` is the Sites system that defines the different biomes and terrain features and their developments as resources.
     * `survey` implements survey gameplay and contains the definition of all survey encounters.
     * `selector` handles selecting stage locations on the map between stages.
-  * `res://startup`: A janky system for preloading resources, because the built-in Godot resource loader is extremely buggy as of 4.7.
+  * `res://startup`: A janky system for preloading resources, because the built-in Godot background resource loader is extremely buggy as of 4.7.
   * `res://theme`: Reusable UI primitives like buttons, panels, and drop-downs.
   * `res://tutorial`: The Tutorials system, including all the contextual tutorials, one script each, and the starting tutorial at the beginning of the game.
   * `res://utils`: Low level utilities.
     * `save_game.gd` is the most important file here. It handles saving and loading, but more importantly, it serves as the persistent source of truth for game state which all other systems read from and write to.
     * `utils.gd` has a bunch of common utility functions used in almost every other script.
     * `random_state.gd` is a deterministic seeded random generator used throughout the game.
-    * `bug_reporter` is a simple UI for sending feedback reports from within the game. It bundles the logs, the savegame, and a screenshot and sends them off via HTTP POST to a server (which just forwards it as an email).
+    * `bug_reporter` is a simple UI for sending feedback reports from within the game. It bundles the logs, the savegame, and a screenshot and sends them off via HTTP POST to a server (which just forwards them as an email).
   * `res://visuals`: A few reusable art assets and scenes, such as shader includes and transition scenes.
   * `res://_dev_tools/`: Editor scripts and scenes for more efficiently creating content such as new cards, events, and encounters. Also includes scenes that generate Steam screenshots and trailer segments.
 
@@ -120,7 +120,7 @@ This mirror is updated along with the official Steam release.
 
 ## License
 
-Except for third-party data mentioned below, and the excluded audio, the entire game is released into the public domain. Feel free to reuse any art and code, including within commercial projects.
+Except for the third-party libraries and data mentioned below and the excluded audio, the entire game is released into the public domain. Feel free to reuse any art or code, including within commercial projects, without attribution.
 
 You are even welcome to translate and sell the game without any royalties, though attribution is appreciated.
 
