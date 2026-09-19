@@ -83,7 +83,7 @@ func _setup_finished() -> void:
 				possible_trip_results.append(random_trip_rewards.rewards[argument])
 		var rng := GlobalSaveGame.get_hub_random().snapshot()
 
-		if possible_trip_results and rng.rand_bool():
+		if possible_trip_results:
 			_current_reward = rng.pick(possible_trip_results)
 		else:
 			_current_reward = TripReward.new()
