@@ -33,6 +33,20 @@ func _update_pinned_shard() -> void:
 	if is_node_ready():
 		_shard_type_entry.shard_type = GlobalSaveGame.get_pinned_shard_type()
 		_shard_type_entry.visible = _shard_type_entry.shard_type != null
+		if _shard_type_entry.shard_type:
+			var run := Utils.get_active_run()
+			_shard_type_entry.will_use_main_quest_shard_type = false
+			if _shard_type_entry.shard_type.tier != ShardType.Tier.MAIN_QUEST:
+				for shard_type: ShardType in ShardType.get_all_shard_types().values():
+					if shard_type.tier != ShardType.Tier.MAIN_QUEST:
+						continue
+					if shard_type.min_main_quest_progress > GlobalSaveGame.get_main_quest_progress():
+						continue  # Not possible yet.
+					if GlobalSaveGame.is_shard_type_unlocked(shard_type):
+						continue
+					if shard_type.score(run.get_run_data()) >= 1.0:
+						_shard_type_entry.will_use_main_quest_shard_type = true
+						break
 		(%ScrollPanel as Control).visible = %List.get_child_count() > 0 or _shard_type_entry.shard_type
 	await get_tree().process_frame  # Wait for size to update.
 	(%Scroller as ScrollContainer).custom_minimum_size.y = min(max_size, (%ScrollerContents as Control).size.y)

@@ -6,11 +6,18 @@ static var QUEST_GOAL_ENTRY_SCENE := AsyncLoadedResource.new('res://quests/list/
 var shard_type: ShardType:
 	set(value):
 		shard_type = value
-		_update()
+		if is_node_ready():
+			_update()
+var will_use_main_quest_shard_type: bool:
+	set(value):
+		will_use_main_quest_shard_type = value
+		if is_node_ready():
+			_update()
 var show_pin_button: bool = false:
 	set(value):
 		show_pin_button = value
-		_update()
+		if is_node_ready():
+			_update()
 
 func _ready() -> void:
 	_update()
@@ -53,6 +60,13 @@ func _update() -> void:
 		quest_goal_entry.text = tr('[b]Revealed as part of the main story and takes precedence over other cultures.[/b]')
 		quest_goal_entry.completed = all_completed
 		quest_goal_entry.failed = false
+		quest_goal_entry.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		%EntriesList.add_child(quest_goal_entry)
+	elif will_use_main_quest_shard_type:
+		var quest_goal_entry := QUEST_GOAL_ENTRY_SCENE.instantiate_loaded_scene() as QuestGoalEntry
+		quest_goal_entry.text = tr('[b]The requirements for a main story shard culture have been met, which takes precedence over this culture.[/b]')
+		quest_goal_entry.completed = false
+		quest_goal_entry.failed = true
 		quest_goal_entry.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		%EntriesList.add_child(quest_goal_entry)
 

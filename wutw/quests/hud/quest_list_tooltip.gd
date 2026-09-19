@@ -35,8 +35,20 @@ func _ready() -> void:
 			quest_entry.quest_instance = instance
 			%QuestList.add_child(quest_entry)
 		if GlobalSaveGame.get_pinned_shard_type():
+			var run := Utils.get_active_run()
 			var shard_type_entry := SHARD_TYPE_ENTRY_SCENE.instantiate_loaded_scene() as ShardTypeEntry
 			shard_type_entry.shard_type = GlobalSaveGame.get_pinned_shard_type()
+			if shard_type_entry.shard_type.tier != ShardType.Tier.MAIN_QUEST:
+				for shard_type: ShardType in ShardType.get_all_shard_types().values():
+					if shard_type.tier != ShardType.Tier.MAIN_QUEST:
+						continue
+					if shard_type.min_main_quest_progress > GlobalSaveGame.get_main_quest_progress():
+						continue  # Not possible yet.
+					if GlobalSaveGame.is_shard_type_unlocked(shard_type):
+						continue
+					if shard_type.score(run.get_run_data()) >= 1.0:
+						shard_type_entry.will_use_main_quest_shard_type = true
+						break
 			%QuestList.add_child(shard_type_entry)
 		if not %QuestList.get_child_count():
 			var message := Label.new()
