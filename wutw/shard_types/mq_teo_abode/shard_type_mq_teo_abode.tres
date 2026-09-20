@@ -18,7 +18,7 @@ metadata/_custom_type_script = "uid://bl1twid5gmdyr"
 
 [sub_resource type="Resource" id="Resource_6xths"]
 script = ExtResource("1_r0r5w")
-text = "When the Scribe declared that the time of passivity had passed, the monks quickly sprung into action. The prayer halls were turned into glyph research hubs, and scholars began producing treatises and commentaries on the old texts. The priesthood organization evolved too, as new teachers arose to lead factions focused on studying different types of essence. These masters now wear special robes and carry gold scepters adorned with relics to mark their station, and pilgrims regularly arrive to beg for their blessing."
+text = "When the Scribe declared that the time of passivity had passed, the monks quickly sprang into action. The prayer halls were turned into glyph research hubs, and scholars began producing treatises and commentaries on the old texts. The priesthood organization evolved too, as new teachers arose to lead factions focused on studying different types of essence. These masters now wear special robes and carry gold scepters adorned with relics to mark their station, and pilgrims regularly arrive to beg for their blessing."
 min_main_quest = 200
 time_taken = 2
 metadata/_custom_type_script = "uid://bl1twid5gmdyr"
