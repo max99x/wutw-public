@@ -21,7 +21,7 @@
 [sub_resource type="Resource" id="Resource_mpdjo"]
 script = ExtResource("2_ra3e2")
 var_type = 6
-delta = 5
+delta = -5
 description = "Reduce maximum inspiration by 5."
 metadata/_custom_type_script = "uid://4wq52c05i2oa"
 
