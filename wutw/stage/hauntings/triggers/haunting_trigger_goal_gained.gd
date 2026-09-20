@@ -6,7 +6,7 @@ extends HauntingTrigger
 @export var any_spot: bool = true
 
 func get_description(_mode: HauntingTrigger.Mode) -> String:
-	if not any_spot:
+	if any_spot:
 		if nongoal:
 			return tr('a <related_term:stage_goal>non-goal <term_lower:bonus> is gained')
 		else:
