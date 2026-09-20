@@ -21,6 +21,12 @@ class ExportPlugin extends EditorExportPlugin:
 		build_metadata.git_tag = _run_git('tag --points-at HEAD')
 		if ResourceSaver.save(build_metadata, BuildMetadata.EXPORT_PATH) != OK:
 			push_error('Failed to save build metadata file. Make sure the path is valid.')
+		# Update project build number.
+		var version_regex := RegEx.create_from_string(r'\d+(\.\d+){0,3}')
+		var version_match := version_regex.search(build_metadata.git_tag)
+		if version_match:
+			ProjectSettings.set_setting('application/config/version', version_match.get_string(0))
+			ProjectSettings.save()
 
 	func _run_git(command: String, allow_empty: bool = true) -> String:
 		var git_output: Array[String] = []
