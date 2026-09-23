@@ -9,6 +9,7 @@ func _ready() -> void:
 		tr('Base Challenge Chance') if Utils.is_realistic_era() else tr('Base Haunting Chance'))
 	var haunt_probability := HauntingType.get_base_haunt_probability(Utils.get_active_run())
 	(%HauntChanceValueLabel as Label).text = '%d%%' % roundi(haunt_probability * 100)
+	(%HauntChanceValueLabel as Label).visible = Utils.are_hauntings_unlocked()
 	GlobalTooltipSystem.attach(
 		%HauntChanceBox as Control, _make_haunt_chanch_tooltip,
 		[Tooltip.RelativeDirection.RIGHT], [Tooltip.Alignment.CENTERED])
