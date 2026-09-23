@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://chyw12kmskk5u"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_miv5r"]
+[ext_resource type="Script" uid="uid://4wq52c05i2oa" path="res://quests/settler/challenges/settler_quest_challenge_run_var.gd" id="2_w640a"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="3_njiiw"]
+[ext_resource type="Resource" uid="uid://bacnbk0nebvks" path="res://characters/jobs/job_bureaucrat.tres" id="4_b0v5p"]
+[ext_resource type="Script" uid="uid://cvrgydjebg044" path="res://quests/settler/rewards/settler_quest_reward_run_var.gd" id="6_o2q5w"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="9_3y65j"]
+[ext_resource type="Script" uid="uid://d05spfrbbh1i" path="res://quests/settler/goals/settler_quest_goal_all_bonuses.gd" id="9_mh1e0"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="12_lapn4"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="13_0pvif"]
+
+[sub_resource type="Resource" id="Resource_wwbgj"]
+script = ExtResource("2_w640a")
+var_type = 45
+delta = 5
+description = "Lose 5 more <term:inspiration> for each <term_lower:lack> at the end of a <term_lower:harmonization>."
+metadata/_custom_type_script = "uid://4wq52c05i2oa"
+
+[sub_resource type="Resource" id="Resource_x3kw4"]
+script = ExtResource("6_o2q5w")
+run_var = 53
+delta = 50
+preview_description = "Increase <term:card_ability.satisfy> effects by 50%."
+outcome_description = "Increased <term:card_ability.satisfy> effects by 50%."
+metadata/_custom_type_script = "uid://cvrgydjebg044"
+
+[sub_resource type="Resource" id="Resource_u37jp"]
+script = ExtResource("9_mh1e0")
+bonus_amount = 400
+metadata/_custom_type_script = "uid://d05spfrbbh1i"
+
+[resource]
+script = ExtResource("12_lapn4")
+intro_text = "As my town's quartermaster, I take pride in making sure there are never any shortages. Now I want to try my hand at something bigger: managing the resources of an entire shard!"
+challenges = Array[ExtResource("1_miv5r")]([SubResource("Resource_wwbgj")])
+settler_goals = Array[ExtResource("13_0pvif")]([SubResource("Resource_u37jp")])
+rewards = Array[ExtResource("9_3y65j")]([SubResource("Resource_x3kw4")])
+restrict_to_jobs = Array[ExtResource("3_njiiw")]([ExtResource("4_b0v5p")])
+restrict_to_ages = Array[int]([1, 2])
+quest_id = "settler_quartermaster"
+category = 2
+name = "A Quartermaster"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

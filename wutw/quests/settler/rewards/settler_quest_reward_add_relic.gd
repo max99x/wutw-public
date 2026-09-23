@@ -12,4 +12,4 @@ func grant(_quest: Quest_Settler, _run: Run) -> EventOutcomeWidget:
 	return widget
 
 func describe() -> String:
-	return tr('Get <term_lower:relic>: %s.') % relic.get_term_tag()
+	return tr('Get <term_lower:relic>: <relic:%s>.') % relic.relic_id

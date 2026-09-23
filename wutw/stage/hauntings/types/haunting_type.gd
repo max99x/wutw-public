@@ -184,6 +184,7 @@ func get_toal_aspect_slots(run: Run, mode: HauntingTrigger.Mode) -> Array[Aspect
 	var bonus_amount := run.get_bonus_amounts().get_amount(scaling_bonus_type)
 	@warning_ignore('integer_division')
 	var extra_slots := bonus_amount / run.scaling.haunting_bonus_per_slot
+	extra_slots += run.get_var(RunVars.Var.EXTRA_HAUNTING_SLOTS)
 	var max_slots := (run.scaling.haunting_max_slots_spot if mode == HauntingTrigger.Mode.SPOT
 					  else run.scaling.haunting_max_slots_harmonization)
 	for _i in extra_slots:

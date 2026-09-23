@@ -28,6 +28,7 @@ signal card_added(card_type: CardType)  # to deck
 signal card_removed(card_type: CardType)  # from deck
 signal relic_added(relic: Relic)
 signal relic_removed(relic: Relic)
+signal relic_triggered(relic: Relic)
 signal stage_started
 signal stage_finished
 signal foray_started

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://bb0wdjkc1lxew"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_b6kn5"]
+[ext_resource type="Script" uid="uid://4wq52c05i2oa" path="res://quests/settler/challenges/settler_quest_challenge_run_var.gd" id="2_oqrla"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="3_qknup"]
+[ext_resource type="Resource" uid="uid://bcyiqb6aoy7gy" path="res://characters/jobs/job_scholar.tres" id="4_3r4h5"]
+[ext_resource type="Resource" uid="uid://o1gy1yhuff3v" path="res://characters/jobs/job_teacher.tres" id="5_ho412"]
+[ext_resource type="Resource" uid="uid://gkwrrdvc7850" path="res://characters/jobs/job_storyteller.tres" id="6_hfpq8"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="17_1nkdx"]
+[ext_resource type="Resource" uid="uid://blf4pbxl5dj72" path="res://relics/season_reward/field_scroll/relic_field_scroll.tres" id="18_x4rpr"]
+[ext_resource type="Script" uid="uid://0k12wwnmq50h" path="res://quests/settler/rewards/settler_quest_reward_add_relic.gd" id="19_74l3s"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="20_00nsm"]
+[ext_resource type="Script" uid="uid://ddq33u80psjgf" path="res://quests/settler/rewards/settler_quest_reward_choose_card.gd" id="20_nsos1"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="21_l0s2m"]
+[ext_resource type="Script" uid="uid://cschghuk4t5qx" path="res://quests/settler/goals/settler_quest_goal_global_upgrades.gd" id="23_dogcv"]
+[ext_resource type="Script" uid="uid://b0htm2ynuxyr0" path="res://stage/spots/spot_upgrade.gd" id="24_udfk2"]
+[ext_resource type="Resource" uid="uid://ttlit2wbfgbj" path="res://stage/spots/square/upgrade_square_2_philosophy_corner.tres" id="25_dyvyg"]
+
+[sub_resource type="Resource" id="Resource_ffuxc"]
+script = ExtResource("2_oqrla")
+delta = -2
+description = "Reduce <term_lower:hand_size> by 2."
+metadata/_custom_type_script = "uid://4wq52c05i2oa"
+
+[sub_resource type="Resource" id="Resource_foxht"]
+script = ExtResource("19_74l3s")
+relic = ExtResource("18_x4rpr")
+metadata/_custom_type_script = "uid://0k12wwnmq50h"
+
+[sub_resource type="Resource" id="Resource_okxsm"]
+script = ExtResource("20_nsos1")
+card_tier_bonus = 1000
+metadata/_custom_type_script = "uid://ddq33u80psjgf"
+
+[sub_resource type="Resource" id="Resource_qwm32"]
+script = ExtResource("23_dogcv")
+upgrades = Array[ExtResource("24_udfk2")]([ExtResource("25_dyvyg"), ExtResource("25_dyvyg"), ExtResource("25_dyvyg")])
+metadata/_custom_type_script = "uid://cschghuk4t5qx"
+
+[resource]
+script = ExtResource("20_00nsm")
+intro_text = "My colleagues and I represent a philosophy advocating non-action. We believe that enlightenment can only be reached through discussing the nature of reality, rather than doing things that may disrupt its natural order. We'd like someone to set up schools for us to teach the next generation."
+challenges = Array[ExtResource("1_b6kn5")]([SubResource("Resource_ffuxc")])
+settler_goals = Array[ExtResource("21_l0s2m")]([SubResource("Resource_qwm32")])
+rewards = Array[ExtResource("17_1nkdx")]([SubResource("Resource_foxht"), SubResource("Resource_okxsm")])
+restrict_to_jobs = Array[ExtResource("3_qknup")]([ExtResource("4_3r4h5"), ExtResource("5_ho412"), ExtResource("6_hfpq8")])
+restrict_to_ages = Array[int]([1, 2])
+quest_id = "settler_philosophers"
+category = 2
+name = "A Philosophy School"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

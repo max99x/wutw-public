@@ -117,8 +117,13 @@ func _ready() -> void:
 	(%MulliganButton as Button).disabled = false
 
 	# Hauntings are set up after the initial draw, so they don't trigger for initially drawn cards.
+	var run_data := run.get_run_data()
 	for haunting in _hauntings:
 		haunting.setup()
+		run_data.encountered_hauntings[haunting.haunting_type] = 1 + run_data.encountered_hauntings.get(haunting.haunting_type, 0)
+		haunting.pacified.connect(func() -> void:
+			run_data.pacified_hauntings[haunting.haunting_type] = 1 + run_data.pacified_hauntings.get(haunting.haunting_type, 0)
+		)
 
 	if mode == Mode.REGULAR:
 		# Needed to show initial bonuses when reloading.
@@ -297,7 +302,7 @@ func _finish_processing(card: Card) -> void:
 		run.get_capital().update_settlement_lacks()
 
 func cast_card(card: Card, already_processing: bool = false) -> void:
-	assert(card.card_type.abilities)
+	Utils.ensure(not card.card_type.abilities.is_empty())
 
 	if not already_processing:
 		_begin_processing(card)
@@ -687,11 +692,18 @@ func _on_finish_button_pressed() -> void:
 		_end_button_pending = true
 		return
 
+	# If the relevant flag is set, cast everything.
+	if Utils.get_active_run().get_var(RunVars.Var.CAST_ALL_ON_TURN_END):
+		for card in get_card_deck().get_hand_cards():
+			# Card could no longer exist if casting causes it to be discarded (e.g. inkstick relic)
+			if card and card.card_type.abilities:
+				await cast_card(card)
+
 	# Cast any remaining negative cards.
 	if not Utils.get_active_run().get_var(RunVars.Var.NEGATIVE_CARD_PROTECTION):
 		for card in get_card_deck().get_hand_cards():
 			# Card could no longer exist if casting causes it to be discarded (e.g. inkstick relic)
-			if card and card.card_type.rarity == CardType.Rarity.NEGATIVE:
+			if card and card.card_type.abilities and card.card_type.rarity == CardType.Rarity.NEGATIVE:
 				await cast_card(card)
 
 	if _redraws_left:

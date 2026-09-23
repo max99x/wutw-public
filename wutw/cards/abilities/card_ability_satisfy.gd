@@ -59,7 +59,7 @@ func cast(card: Card) -> void:
 		var remaining_reqs := stage.get_remaining_requirements()
 		var effective_points := points
 		if effective_points > 0:
-			effective_points = maxi(0, effective_points + run.get_var(RunVars.Var.SATISFY_ABILITY_BONUS))
+			effective_points = maxi(0, roundi(effective_points * (1.0 + run.get_var(RunVars.Var.SATISFY_ABILITY_BONUS_PERCENT) / 100.0)))
 			if all:
 				bonus_types.assign(remaining_reqs.keys())
 			else:

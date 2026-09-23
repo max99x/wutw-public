@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://byqlt1hpg3ydl"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_wlxqx"]
+[ext_resource type="Script" uid="uid://dvbqpkockpxms" path="res://quests/settler/challenges/settler_quest_challenge_damage_on_relic.gd" id="2_b8a3e"]
+[ext_resource type="Resource" uid="uid://jttde8t0g8wh" path="res://characters/jobs/job_priest.tres" id="4_3bskl"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="5_2kybq"]
+[ext_resource type="Resource" uid="uid://c2qx8ufo4c12r" path="res://characters/jobs/job_monk_ember.tres" id="5_amt6r"]
+[ext_resource type="Resource" uid="uid://djn3flqos8t4f" path="res://characters/jobs/job_monk_shattered.tres" id="8_t831r"]
+[ext_resource type="Resource" uid="uid://kau1o80i2qm0" path="res://characters/jobs/job_monk_forest.tres" id="9_ug7el"]
+[ext_resource type="Resource" uid="uid://brr7uk3citu0o" path="res://characters/jobs/job_monk_wilds.tres" id="10_ix5ir"]
+[ext_resource type="Resource" uid="uid://bggnpbtpw44ow" path="res://cards/tier5/card_holy.tres" id="10_r8cm7"]
+[ext_resource type="Script" uid="uid://fw1i6f5bcbx0" path="res://quests/settler/rewards/settler_quest_reward_add_card.gd" id="11_wlxqx"]
+[ext_resource type="Script" uid="uid://cschghuk4t5qx" path="res://quests/settler/goals/settler_quest_goal_global_upgrades.gd" id="14_6y8rs"]
+[ext_resource type="Script" uid="uid://b0htm2ynuxyr0" path="res://stage/spots/spot_upgrade.gd" id="15_dxqqa"]
+[ext_resource type="Resource" uid="uid://c56dxbu1pjfbl" path="res://stage/spots/forest/upgrade_forest_3_monastery.tres" id="16_oga61"]
+[ext_resource type="Resource" uid="uid://dhsu0y2nvmlf4" path="res://stage/spots/canyon/upgrade_canyon_3_hanging_monastery.tres" id="17_2kybq"]
+[ext_resource type="Resource" uid="uid://bi3q0q8mk0b41" path="res://stage/spots/mountain/upgrade_mountain_2_ember_monastery.tres" id="18_8t1ad"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="19_7fxx2"]
+[ext_resource type="Resource" uid="uid://bhli4xwx0vayp" path="res://stage/spots/brushland/upgrade_brushland_3_monastery_of_the_wilds.tres" id="19_m2mc5"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="22_ybypi"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="23_6aduh"]
+
+[sub_resource type="Resource" id="Resource_6d4jc"]
+script = ExtResource("2_b8a3e")
+metadata/_custom_type_script = "uid://dvbqpkockpxms"
+
+[sub_resource type="Resource" id="Resource_mk522"]
+script = ExtResource("11_wlxqx")
+card_type = ExtResource("10_r8cm7")
+metadata/_custom_type_script = "uid://fw1i6f5bcbx0"
+
+[sub_resource type="Resource" id="Resource_rb11r"]
+script = ExtResource("14_6y8rs")
+upgrades = Array[ExtResource("15_dxqqa")]([ExtResource("16_oga61"), ExtResource("17_2kybq"), ExtResource("18_8t1ad"), ExtResource("19_m2mc5")])
+metadata/_custom_type_script = "uid://cschghuk4t5qx"
+
+[resource]
+script = ExtResource("22_ybypi")
+intro_text = "I am trying to stop this barbaric practice of lugging relics along on expeditions for good luck. These holy artifacts belong in monasteries, where they can be properly preserved and revered, not out on the road."
+challenges = Array[ExtResource("1_wlxqx")]([SubResource("Resource_6d4jc")])
+settler_goals = Array[ExtResource("23_6aduh")]([SubResource("Resource_rb11r")])
+rewards = Array[ExtResource("19_7fxx2")]([SubResource("Resource_mk522")])
+exclude_jobs = Array[ExtResource("5_2kybq")]([ExtResource("4_3bskl"), ExtResource("5_amt6r"), ExtResource("10_ix5ir"), ExtResource("9_ug7el"), ExtResource("8_t831r")])
+restrict_to_ages = Array[int]([1, 2])
+quest_id = "settler_anti_relics"
+category = 2
+name = "A Relic Preserver"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

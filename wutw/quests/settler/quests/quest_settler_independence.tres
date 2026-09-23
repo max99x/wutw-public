@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://c3u6nfdo74htl"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_ksrav"]
+[ext_resource type="Script" uid="uid://4wq52c05i2oa" path="res://quests/settler/challenges/settler_quest_challenge_run_var.gd" id="2_bg7fj"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="3_s73tw"]
+[ext_resource type="Resource" uid="uid://gmdrouwpddwx" path="res://characters/jobs/job_hermit.tres" id="4_85wog"]
+[ext_resource type="Resource" uid="uid://c42kw1m70orw3" path="res://characters/jobs/job_herbalist.tres" id="5_2fwuo"]
+[ext_resource type="Resource" uid="uid://gb2hon6q3l08" path="res://characters/jobs/job_adventurer.tres" id="6_f0r6b"]
+[ext_resource type="Resource" uid="uid://c5e7uvgwx4xd6" path="res://characters/jobs/job_wanderer.tres" id="9_q4vf8"]
+[ext_resource type="Resource" uid="uid://b8dosepcop8nv" path="res://characters/jobs/job_alchemist.tres" id="10_k7opn"]
+[ext_resource type="Resource" uid="uid://cai2ha5thudbv" path="res://characters/jobs/job_beekeeper.tres" id="11_c4eoh"]
+[ext_resource type="Resource" uid="uid://cb6ba6dpl4ocm" path="res://characters/jobs/job_woodcutter.tres" id="11_ngjh0"]
+[ext_resource type="Resource" uid="uid://b3wei2d5vpv7b" path="res://characters/jobs/job_mushroom_gatherer.tres" id="16_6a5h5"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="17_y7ae4"]
+[ext_resource type="Script" uid="uid://cvrgydjebg044" path="res://quests/settler/rewards/settler_quest_reward_run_var.gd" id="18_ngjh0"]
+[ext_resource type="Script" uid="uid://ku752yv8p8ur" path="res://quests/settler/goals/settler_quest_goal_settlement_upgrades.gd" id="21_bg7fj"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="21_w5vvl"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="22_0hjin"]
+[ext_resource type="Resource" uid="uid://cnk8qcthoxlj7" path="res://stage/spots/forest/upgrade_forest_1_forage.tres" id="23_s73tw"]
+[ext_resource type="Resource" uid="uid://bxfsnqpj2fir0" path="res://stage/spots/forest/upgrade_forest_2_hermit.tres" id="24_85wog"]
+[ext_resource type="Script" uid="uid://b0htm2ynuxyr0" path="res://stage/spots/spot_upgrade.gd" id="24_qerkq"]
+[ext_resource type="Resource" uid="uid://57a7846tn4a3" path="res://stage/spots/building_small/upgrade_building_small_2_artisan.tres" id="26_4topg"]
+
+[sub_resource type="Resource" id="Resource_ffuxc"]
+script = ExtResource("2_bg7fj")
+var_type = 59
+delta = -1
+description = "<term:card_ability.support> <term_lower:card_ability>s are disabled."
+metadata/_custom_type_script = "uid://4wq52c05i2oa"
+
+[sub_resource type="Resource" id="Resource_wpc33"]
+script = ExtResource("18_ngjh0")
+run_var = 47
+delta = 20
+preview_description = "Gain 20% more <term_lower:bonus>s."
+outcome_description = "From now on, all <term_lower:bonus> gains are raised by 20%."
+metadata/_custom_type_script = "uid://cvrgydjebg044"
+
+[sub_resource type="Resource" id="Resource_bg7fj"]
+script = ExtResource("21_bg7fj")
+upgrades = Array[ExtResource("24_qerkq")]([ExtResource("23_s73tw"), ExtResource("24_85wog"), ExtResource("26_4topg")])
+metadata/_custom_type_script = "uid://ku752yv8p8ur"
+
+[resource]
+script = ExtResource("21_w5vvl")
+intro_text = "Everyone's relying on help nowadays. What if another Shattering happens tomorrow? One must be able to rely on one's own skills, at the very least for everyday necessities."
+challenges = Array[ExtResource("1_ksrav")]([SubResource("Resource_ffuxc")])
+settler_goals = Array[ExtResource("22_0hjin")]([SubResource("Resource_bg7fj")])
+rewards = Array[ExtResource("17_y7ae4")]([SubResource("Resource_wpc33")])
+restrict_to_jobs = Array[ExtResource("3_s73tw")]([ExtResource("4_85wog"), ExtResource("5_2fwuo"), ExtResource("6_f0r6b"), ExtResource("11_c4eoh"), ExtResource("16_6a5h5"), ExtResource("9_q4vf8"), ExtResource("10_k7opn"), ExtResource("11_ngjh0")])
+restrict_to_ages = Array[int]([1])
+quest_id = "settler_independence"
+category = 2
+name = "A Self-Starter"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

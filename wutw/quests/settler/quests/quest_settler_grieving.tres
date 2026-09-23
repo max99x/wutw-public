@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://db08meda03ku1"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_3o6sk"]
+[ext_resource type="Script" uid="uid://4wq52c05i2oa" path="res://quests/settler/challenges/settler_quest_challenge_run_var.gd" id="2_3y02o"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="3_2a20g"]
+[ext_resource type="Resource" uid="uid://gmdrouwpddwx" path="res://characters/jobs/job_hermit.tres" id="4_1ajwi"]
+[ext_resource type="Resource" uid="uid://kau1o80i2qm0" path="res://characters/jobs/job_monk_forest.tres" id="7_guxh8"]
+[ext_resource type="Resource" uid="uid://c2qx8ufo4c12r" path="res://characters/jobs/job_monk_ember.tres" id="7_vpdtx"]
+[ext_resource type="Resource" uid="uid://djn3flqos8t4f" path="res://characters/jobs/job_monk_shattered.tres" id="8_aufbn"]
+[ext_resource type="Resource" uid="uid://brr7uk3citu0o" path="res://characters/jobs/job_monk_wilds.tres" id="8_oboyu"]
+[ext_resource type="Resource" uid="uid://cp1tm8f5y17tu" path="res://relics/uncommon/red_string/relic_red_string.tres" id="10_btswp"]
+[ext_resource type="Script" uid="uid://0k12wwnmq50h" path="res://quests/settler/rewards/settler_quest_reward_add_relic.gd" id="11_wdxi7"]
+[ext_resource type="Resource" uid="uid://muvefinh7jsu" path="res://stage/spots/steppe/upgrade_steppe_2_lonely_cairns.tres" id="16_814ij"]
+[ext_resource type="Resource" uid="uid://mdv0suhkkuqr" path="res://stage/spots/square/upgrade_square_2_monument.tres" id="17_nt1au"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="17_rbndb"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="19_vfws4"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="20_dah3d"]
+[ext_resource type="Script" uid="uid://ku752yv8p8ur" path="res://quests/settler/goals/settler_quest_goal_settlement_upgrades.gd" id="21_sl44s"]
+[ext_resource type="Script" uid="uid://b0htm2ynuxyr0" path="res://stage/spots/spot_upgrade.gd" id="22_wg27c"]
+
+[sub_resource type="Resource" id="Resource_ffuxc"]
+script = ExtResource("2_3y02o")
+var_type = 48
+delta = -50
+description = "<term:inspiration> restoration is reduced by 50%."
+metadata/_custom_type_script = "uid://4wq52c05i2oa"
+
+[sub_resource type="Resource" id="Resource_l8i0k"]
+script = ExtResource("11_wdxi7")
+relic = ExtResource("10_btswp")
+metadata/_custom_type_script = "uid://0k12wwnmq50h"
+
+[sub_resource type="Resource" id="Resource_bg7fj"]
+script = ExtResource("21_sl44s")
+upgrades = Array[ExtResource("22_wg27c")]([ExtResource("16_814ij"), ExtResource("17_nt1au")])
+metadata/_custom_type_script = "uid://ku752yv8p8ur"
+
+[resource]
+script = ExtResource("19_vfws4")
+intro_text = "My husband was never able to travel in life, so he asked me to at least have his ashes buried on another shard. I may be old, but I can still fulfill his last request."
+challenges = Array[ExtResource("1_3o6sk")]([SubResource("Resource_ffuxc")])
+settler_goals = Array[ExtResource("20_dah3d")]([SubResource("Resource_bg7fj")])
+rewards = Array[ExtResource("17_rbndb")]([SubResource("Resource_l8i0k")])
+exclude_jobs = Array[ExtResource("3_2a20g")]([ExtResource("4_1ajwi"), ExtResource("7_guxh8"), ExtResource("8_oboyu"), ExtResource("7_vpdtx"), ExtResource("8_aufbn")])
+restrict_to_ages = Array[int]([2])
+quest_id = "settler_grieving"
+category = 2
+name = "A Griever"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

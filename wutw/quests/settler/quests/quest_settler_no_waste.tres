@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://cymhdqnx6pye7"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_defm0"]
+[ext_resource type="Script" uid="uid://4wq52c05i2oa" path="res://quests/settler/challenges/settler_quest_challenge_run_var.gd" id="2_dyjt6"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="5_0x2rl"]
+[ext_resource type="Resource" uid="uid://gmdrouwpddwx" path="res://characters/jobs/job_hermit.tres" id="6_0ebay"]
+[ext_resource type="Resource" uid="uid://c42kw1m70orw3" path="res://characters/jobs/job_herbalist.tres" id="7_i880s"]
+[ext_resource type="Resource" uid="uid://d0v3kvp7ov8a7" path="res://characters/jobs/job_diver.tres" id="8_mr8qt"]
+[ext_resource type="Resource" uid="uid://kau1o80i2qm0" path="res://characters/jobs/job_monk_forest.tres" id="9_oflkx"]
+[ext_resource type="Resource" uid="uid://brr7uk3citu0o" path="res://characters/jobs/job_monk_wilds.tres" id="10_1fvjb"]
+[ext_resource type="Resource" uid="uid://dt3y14agfelm2" path="res://characters/jobs/job_brewer.tres" id="11_lsryl"]
+[ext_resource type="Resource" uid="uid://bjddr4kenqn3x" path="res://characters/jobs/job_weaver.tres" id="12_jma50"]
+[ext_resource type="Resource" uid="uid://cai2ha5thudbv" path="res://characters/jobs/job_beekeeper.tres" id="13_nwpcj"]
+[ext_resource type="Resource" uid="uid://cgr1qsm5enwc5" path="res://characters/jobs/job_cleaner.tres" id="14_2m8hh"]
+[ext_resource type="Resource" uid="uid://d0irdlql0od71" path="res://characters/jobs/job_gardener.tres" id="15_30cpo"]
+[ext_resource type="Resource" uid="uid://bdc0fvmxafv4r" path="res://characters/jobs/job_silkworm_carer.tres" id="16_xlqeq"]
+[ext_resource type="Resource" uid="uid://mt11gcxxg5g4" path="res://characters/jobs/job_seaweed_gatherer.tres" id="17_k2aie"]
+[ext_resource type="Resource" uid="uid://bc3igarpoejno" path="res://relics/common/overflow_jar/relic_overflow_jar.tres" id="18_dyjt6"]
+[ext_resource type="Resource" uid="uid://b3wei2d5vpv7b" path="res://characters/jobs/job_mushroom_gatherer.tres" id="18_x84s7"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="19_qenmy"]
+[ext_resource type="Script" uid="uid://0k12wwnmq50h" path="res://quests/settler/rewards/settler_quest_reward_add_relic.gd" id="21_4les7"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="22_4y65c"]
+[ext_resource type="Script" uid="uid://co3hkmhvl4i10" path="res://quests/settler/goals/settler_quest_goal_num_t3_spots.gd" id="22_xll87"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="23_eqalv"]
+
+[sub_resource type="Resource" id="Resource_ffuxc"]
+script = ExtResource("2_dyjt6")
+var_type = 57
+delta = 1
+description = "All <term_lower:glyph>s remaining in hand at <term_lower:turn> end are <term_lower:cast_card>."
+metadata/_custom_type_script = "uid://4wq52c05i2oa"
+
+[sub_resource type="Resource" id="Resource_foxht"]
+script = ExtResource("21_4les7")
+relic = ExtResource("18_dyjt6")
+metadata/_custom_type_script = "uid://0k12wwnmq50h"
+
+[sub_resource type="Resource" id="Resource_wpc33"]
+script = ExtResource("22_xll87")
+num_required = 12
+metadata/_custom_type_script = "uid://co3hkmhvl4i10"
+
+[resource]
+script = ExtResource("22_4y65c")
+intro_text = "I see people in my hometown throwing away perfectly good tools just because they aren't needed. That's such a waste! I think that we should use everything at our disposal, even if it isn't perfect."
+challenges = Array[ExtResource("1_defm0")]([SubResource("Resource_ffuxc")])
+settler_goals = Array[ExtResource("23_eqalv")]([SubResource("Resource_wpc33")])
+rewards = Array[ExtResource("19_qenmy")]([SubResource("Resource_foxht")])
+exclude_jobs = Array[ExtResource("5_0x2rl")]([ExtResource("6_0ebay"), ExtResource("7_i880s"), ExtResource("8_mr8qt"), ExtResource("9_oflkx"), ExtResource("10_1fvjb"), ExtResource("11_lsryl"), ExtResource("12_jma50"), ExtResource("13_nwpcj"), ExtResource("14_2m8hh"), ExtResource("15_30cpo"), ExtResource("16_xlqeq"), ExtResource("17_k2aie"), ExtResource("18_x84s7")])
+restrict_to_ages = Array[int]([1, 2])
+quest_id = "settler_no_waste"
+category = 2
+name = "A Salvager"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

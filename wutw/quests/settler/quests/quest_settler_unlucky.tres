@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://fe6gxbvy74ee"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_12wiu"]
+[ext_resource type="Script" uid="uid://fl76ou1a2d20" path="res://quests/settler/challenges/settler_quest_challenge_negative_glyph_each_turn.gd" id="2_apuc2"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="3_s6af8"]
+[ext_resource type="Resource" uid="uid://jttde8t0g8wh" path="res://characters/jobs/job_priest.tres" id="4_kyj7x"]
+[ext_resource type="Resource" uid="uid://djn3flqos8t4f" path="res://characters/jobs/job_monk_shattered.tres" id="8_ui20t"]
+[ext_resource type="Resource" uid="uid://c2qx8ufo4c12r" path="res://characters/jobs/job_monk_ember.tres" id="9_k53jg"]
+[ext_resource type="Script" uid="uid://cvrgydjebg044" path="res://quests/settler/rewards/settler_quest_reward_run_var.gd" id="10_c23wh"]
+[ext_resource type="Resource" uid="uid://kau1o80i2qm0" path="res://characters/jobs/job_monk_forest.tres" id="10_oaofj"]
+[ext_resource type="Resource" uid="uid://brr7uk3citu0o" path="res://characters/jobs/job_monk_wilds.tres" id="11_120hf"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="12_tjrra"]
+[ext_resource type="Script" uid="uid://dnpsv4sdt31ok" path="res://quests/settler/goals/settler_quest_goal_legendary_card.gd" id="14_7cphc"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="14_8ov8k"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="15_mg16t"]
+
+[sub_resource type="Resource" id="Resource_yja6g"]
+script = ExtResource("2_apuc2")
+metadata/_custom_type_script = "uid://fl76ou1a2d20"
+
+[sub_resource type="Resource" id="Resource_12wiu"]
+script = ExtResource("10_c23wh")
+run_var = 6
+delta = 5
+preview_description = "Gain 5 maximum <term_lower:inspiration>."
+outcome_description = "Gained 5 maximum <term_lower:inspiration>."
+metadata/_custom_type_script = "uid://cvrgydjebg044"
+
+[sub_resource type="Resource" id="Resource_klppm"]
+script = ExtResource("14_7cphc")
+metadata/_custom_type_script = "uid://dnpsv4sdt31ok"
+
+[resource]
+script = ExtResource("14_8ov8k")
+intro_text = "I've been unlucky my whole life. Just once, I want to witness miraculous luck. Perhaps a grand adventure like settling a new shard could give me the opportunity."
+challenges = Array[ExtResource("1_12wiu")]([SubResource("Resource_yja6g")])
+settler_goals = Array[ExtResource("15_mg16t")]([SubResource("Resource_klppm")])
+rewards = Array[ExtResource("12_tjrra")]([SubResource("Resource_12wiu")])
+exclude_jobs = Array[ExtResource("3_s6af8")]([ExtResource("4_kyj7x"), ExtResource("8_ui20t"), ExtResource("9_k53jg"), ExtResource("10_oaofj"), ExtResource("11_120hf")])
+restrict_to_ages = Array[int]([1, 2])
+quest_id = "settler_unlucky"
+category = 2
+name = "An Unfortunate"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

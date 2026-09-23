@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://cfy8esnii5ia6"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_ec3w2"]
+[ext_resource type="Script" uid="uid://4wq52c05i2oa" path="res://quests/settler/challenges/settler_quest_challenge_run_var.gd" id="2_s8bgv"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="3_mtqw2"]
+[ext_resource type="Resource" uid="uid://vf76byksw3p" path="res://characters/jobs/job_blacksmith.tres" id="4_qh85k"]
+[ext_resource type="Resource" uid="uid://dt3y14agfelm2" path="res://characters/jobs/job_brewer.tres" id="5_1x2xr"]
+[ext_resource type="Resource" uid="uid://nsln8vp2ib8x" path="res://characters/jobs/job_carpenter.tres" id="6_nojhh"]
+[ext_resource type="Resource" uid="uid://70encfwfdam3" path="res://characters/jobs/job_carver.tres" id="7_6lqkx"]
+[ext_resource type="Resource" uid="uid://xcmnoj7t2n7r" path="res://characters/jobs/job_dyer.tres" id="8_bl0fa"]
+[ext_resource type="Resource" uid="uid://dhumaomhxxrtd" path="res://characters/jobs/job_lacquerer.tres" id="9_hds00"]
+[ext_resource type="Resource" uid="uid://bu363437ycabc" path="res://characters/jobs/job_mason.tres" id="10_n8ksn"]
+[ext_resource type="Resource" uid="uid://bbce2k46luhuh" path="res://characters/jobs/job_papermaker.tres" id="11_0jabi"]
+[ext_resource type="Resource" uid="uid://c6w4xf2ca4b8" path="res://characters/jobs/job_potter.tres" id="12_t7now"]
+[ext_resource type="Resource" uid="uid://da4u71gixmh34" path="res://characters/jobs/job_silversmith.tres" id="13_c0dni"]
+[ext_resource type="Resource" uid="uid://5j074ki38b7f" path="res://characters/jobs/job_tea_maker.tres" id="14_6lq0f"]
+[ext_resource type="Resource" uid="uid://b0g3xuacmt460" path="res://characters/jobs/job_thatcher.tres" id="15_gpm8m"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="15_t7now"]
+[ext_resource type="Resource" uid="uid://bjddr4kenqn3x" path="res://characters/jobs/job_weaver.tres" id="16_aml10"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="18_gpm8m"]
+[ext_resource type="Script" uid="uid://cvrgydjebg044" path="res://quests/settler/rewards/settler_quest_reward_run_var.gd" id="18_uj7q5"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="19_aml10"]
+[ext_resource type="Script" uid="uid://ku752yv8p8ur" path="res://quests/settler/goals/settler_quest_goal_settlement_upgrades.gd" id="22_3jl16"]
+[ext_resource type="Script" uid="uid://b0htm2ynuxyr0" path="res://stage/spots/spot_upgrade.gd" id="23_rvxsj"]
+[ext_resource type="Resource" uid="uid://dffls1ubwkx6w" path="res://stage/spots/brushland/upgrade_brushland_3_paper_artisan_studio.tres" id="24_5vqcx"]
+[ext_resource type="Resource" uid="uid://dodn5qucrntii" path="res://stage/spots/steppe/upgrade_steppe_3_painted_ceramics_workshop.tres" id="25_k5ejh"]
+[ext_resource type="Resource" uid="uid://dh1sy0fm46wde" path="res://stage/spots/building_large/upgrade_building_large_3_artisans_college.tres" id="26_ca8wi"]
+
+[sub_resource type="Resource" id="Resource_wwbgj"]
+script = ExtResource("2_s8bgv")
+var_type = 17
+delta = -999
+description = "<term:card_ability>s can no longer <term_lower:fill> <term_lower:aspect_slot>s."
+metadata/_custom_type_script = "uid://4wq52c05i2oa"
+
+[sub_resource type="Resource" id="Resource_tbvql"]
+script = ExtResource("18_uj7q5")
+run_var = 8
+delta = 20
+preview_description = "Increase <term_lower:card_rarity_tier> by 20%."
+outcome_description = "Increased <term_lower:card_rarity_tier> by 20%."
+metadata/_custom_type_script = "uid://cvrgydjebg044"
+
+[sub_resource type="Resource" id="Resource_3jl16"]
+script = ExtResource("22_3jl16")
+upgrades = Array[ExtResource("23_rvxsj")]([ExtResource("24_5vqcx"), ExtResource("25_k5ejh"), ExtResource("26_ca8wi")])
+metadata/_custom_type_script = "uid://ku752yv8p8ur"
+
+[resource]
+script = ExtResource("18_gpm8m")
+intro_text = "I feel true mastery is disappearing day by day. Modern craftspeople have no standards. They use whatever materials they have on hand and don't even bother checking their work. I yearn for the returen of real, traditional artisanship."
+challenges = Array[ExtResource("1_ec3w2")]([SubResource("Resource_wwbgj")])
+settler_goals = Array[ExtResource("19_aml10")]([SubResource("Resource_3jl16")])
+rewards = Array[ExtResource("15_t7now")]([SubResource("Resource_tbvql")])
+restrict_to_jobs = Array[ExtResource("3_mtqw2")]([ExtResource("4_qh85k"), ExtResource("5_1x2xr"), ExtResource("6_nojhh"), ExtResource("7_6lqkx"), ExtResource("8_bl0fa"), ExtResource("9_hds00"), ExtResource("10_n8ksn"), ExtResource("11_0jabi"), ExtResource("12_t7now"), ExtResource("13_c0dni"), ExtResource("14_6lq0f"), ExtResource("15_gpm8m"), ExtResource("16_aml10")])
+restrict_to_ages = Array[int]([1, 2])
+quest_id = "settler_artisan"
+category = 2
+name = "An Artisan"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

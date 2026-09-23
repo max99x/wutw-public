@@ -125,6 +125,7 @@ func add_relic(relic: Relic) -> void:
 	relic = relic.duplicate()  # So the active instance can store state.
 	get_current_relics().append(relic)
 	relic.on_added(self, true)
+	relic.triggered.connect(signals.relic_triggered.emit.bind(relic))
 	_relics_gained_this_stage.append(relic)
 	GlobalSaveGame.mark_relic_seen(relic)
 	signals.relic_added.emit(relic)
@@ -134,6 +135,7 @@ func remove_relic(relic: Relic) -> void:
 	assert(matching_relic)
 	get_current_relics().erase(matching_relic)
 	matching_relic.on_removed()
+	matching_relic.triggered.disconnect(signals.relic_triggered.emit.bind(matching_relic))
 	_relics_gained_this_stage.erase(relic)
 	signals.relic_removed.emit(matching_relic)
 
@@ -514,6 +516,7 @@ func _resume_from_data(resumed_data: RunData) -> void:
 	# Rebind relic listeners.
 	for relic in _data.current_relics:
 		relic.on_added(self, false)
+		relic.triggered.connect(signals.relic_triggered.emit.bind(relic))
 
 	_hide_loading()
 

@@ -38,6 +38,12 @@ func get_term() -> Term:
 
 func cast(_card: Card) -> void:
 	var run := Utils.get_active_run()
+
+	if not reversed and run.get_var(RunVars.Var.SUPPORT_ENABLED) == 0:
+		GlobalUI.show_error(tr('Support invocations are disabled.'))
+		await run.get_tree().create_timer(Utils.anim_duration(0.3)).timeout
+		return
+
 	var stage := run.get_current_stage()
 	var effective_bonus_type := bonus_type
 	if not effective_bonus_type:

@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://j71a6ebt8jco"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_48bwr"]
+[ext_resource type="Resource" uid="uid://dpsq4t5okk4kb" path="res://cards/tier6/card_itchy.tres" id="2_gtrmp"]
+[ext_resource type="Script" uid="uid://bdmkmcqejgusb" path="res://quests/settler/challenges/settler_quest_challenge_card_on_tag_played.gd" id="3_chv68"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="3_oe8ie"]
+[ext_resource type="Script" uid="uid://bm4ru0gtg6wcv" path="res://quests/settler/challenges/settler_quest_challenge_card_on_companion.gd" id="4_lcm63"]
+[ext_resource type="Resource" uid="uid://gmdrouwpddwx" path="res://characters/jobs/job_hermit.tres" id="6_b164v"]
+[ext_resource type="Resource" uid="uid://c42kw1m70orw3" path="res://characters/jobs/job_herbalist.tres" id="7_5bhaa"]
+[ext_resource type="Resource" uid="uid://kau1o80i2qm0" path="res://characters/jobs/job_monk_forest.tres" id="7_oripl"]
+[ext_resource type="Resource" uid="uid://d0v3kvp7ov8a7" path="res://characters/jobs/job_diver.tres" id="8_foxht"]
+[ext_resource type="Resource" uid="uid://brr7uk3citu0o" path="res://characters/jobs/job_monk_wilds.tres" id="8_kejel"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="9_jypv8"]
+[ext_resource type="Resource" uid="uid://dt3y14agfelm2" path="res://characters/jobs/job_brewer.tres" id="11_8tw8n"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="11_agx7o"]
+[ext_resource type="Resource" uid="uid://bjddr4kenqn3x" path="res://characters/jobs/job_weaver.tres" id="12_aor06"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="12_gtrmp"]
+[ext_resource type="Resource" uid="uid://cai2ha5thudbv" path="res://characters/jobs/job_beekeeper.tres" id="13_32o7h"]
+[ext_resource type="Resource" uid="uid://cgr1qsm5enwc5" path="res://characters/jobs/job_cleaner.tres" id="14_rotxr"]
+[ext_resource type="Resource" uid="uid://d0irdlql0od71" path="res://characters/jobs/job_gardener.tres" id="15_mu7wo"]
+[ext_resource type="Resource" uid="uid://bdc0fvmxafv4r" path="res://characters/jobs/job_silkworm_carer.tres" id="16_urvak"]
+[ext_resource type="Resource" uid="uid://mt11gcxxg5g4" path="res://characters/jobs/job_seaweed_gatherer.tres" id="17_xspn8"]
+[ext_resource type="Resource" uid="uid://b3wei2d5vpv7b" path="res://characters/jobs/job_mushroom_gatherer.tres" id="18_iubks"]
+[ext_resource type="Resource" uid="uid://c5yajko7b17q4" path="res://relics/common/incense_pellet/relic_incense_pellet.tres" id="20_mllc3"]
+[ext_resource type="Script" uid="uid://0k12wwnmq50h" path="res://quests/settler/rewards/settler_quest_reward_add_relic.gd" id="21_vbe6u"]
+[ext_resource type="Script" uid="uid://3xshfa7eyl6i" path="res://quests/settler/goals/settler_quest_goal_num_settlements.gd" id="24_2nqxn"]
+
+[sub_resource type="Resource" id="Resource_lcm63"]
+script = ExtResource("3_chv68")
+trigger_tag = 3
+added_card = ExtResource("2_gtrmp")
+metadata/_custom_type_script = "uid://bdmkmcqejgusb"
+
+[sub_resource type="Resource" id="Resource_b164v"]
+script = ExtResource("4_lcm63")
+added_card = ExtResource("2_gtrmp")
+metadata/_custom_type_script = "uid://bm4ru0gtg6wcv"
+
+[sub_resource type="Resource" id="Resource_foxht"]
+script = ExtResource("21_vbe6u")
+relic = ExtResource("20_mllc3")
+metadata/_custom_type_script = "uid://0k12wwnmq50h"
+
+[sub_resource type="Resource" id="Resource_5bhaa"]
+script = ExtResource("24_2nqxn")
+num_settlements = 10
+metadata/_custom_type_script = "uid://3xshfa7eyl6i"
+
+[resource]
+script = ExtResource("11_agx7o")
+intro_text = "My skin gets all itchy whenever an animal is around. I even carry incense around to keep them away. I don't hate animals, but I'm trying to find a place to live away from them."
+challenges = Array[ExtResource("1_48bwr")]([SubResource("Resource_lcm63"), SubResource("Resource_b164v")])
+settler_goals = Array[ExtResource("12_gtrmp")]([SubResource("Resource_5bhaa")])
+rewards = Array[ExtResource("9_jypv8")]([SubResource("Resource_foxht")])
+exclude_jobs = Array[ExtResource("3_oe8ie")]([ExtResource("6_b164v"), ExtResource("7_5bhaa"), ExtResource("8_foxht"), ExtResource("7_oripl"), ExtResource("8_kejel"), ExtResource("11_8tw8n"), ExtResource("12_aor06"), ExtResource("13_32o7h"), ExtResource("14_rotxr"), ExtResource("15_mu7wo"), ExtResource("16_urvak"), ExtResource("17_xspn8"), ExtResource("18_iubks")])
+restrict_to_ages = Array[int]([1, 2])
+quest_id = "settler_animal_allergy"
+category = 2
+name = "An Allergiac"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

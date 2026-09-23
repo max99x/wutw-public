@@ -55,6 +55,8 @@ var map_modifications: Array[MapModification]
 var finished_episodes: Dictionary[int, Array] = {}  # key is stage index; value is one Array[SurveyEpisode]
 var used_episodes: Dictionary[SurveyEpisode, bool]
 var recent_hauntings: Dictionary[HauntingType, int]  # Value is stage index of most recent spawn.
+var encountered_hauntings: Dictionary[HauntingType, int]
+var pacified_hauntings: Dictionary[HauntingType, int]
 ## The state of events stored per-run.
 var events_state: EventsState = EventsState.new()
 
@@ -219,6 +221,16 @@ func encode() -> Dictionary:
 		encoded_recent_hauntings[haunting_type.haunting_id] = recent_hauntings[haunting_type]
 	result['recent_hauntings'] = encoded_recent_hauntings
 
+	var encoded_encountered_hauntings := {}
+	for haunting_type in encountered_hauntings:
+		encoded_encountered_hauntings[haunting_type.haunting_id] = encountered_hauntings[haunting_type]
+	result['encountered_hauntings'] = encoded_encountered_hauntings
+
+	var encoded_pacified_hauntings := {}
+	for haunting_type in pacified_hauntings:
+		encoded_pacified_hauntings[haunting_type.haunting_id] = pacified_hauntings[haunting_type]
+	result['pacified_hauntings'] = encoded_pacified_hauntings
+
 	result['events_state'] = events_state.to_flat()
 
 	result['events_random'] = events_random.encode()
@@ -349,6 +361,14 @@ static func decode(encoded_data: Dictionary) -> RunData:
 	var encoded_recent_hauntings := encoded_data.get('recent_hauntings', {}) as Dictionary
 	for haunting_id: String in encoded_recent_hauntings:
 		result.recent_hauntings[HauntingType.get_haunting_type_by_id(haunting_id)] = encoded_recent_hauntings[haunting_id]
+
+	var encoded_encountered_hauntings := encoded_data.get('encountered_hauntings', {}) as Dictionary
+	for haunting_id: String in encoded_encountered_hauntings:
+		result.encountered_hauntings[HauntingType.get_haunting_type_by_id(haunting_id)] = encoded_encountered_hauntings[haunting_id]
+
+	var encoded_pacified_hauntings := encoded_data.get('pacified_hauntings', {}) as Dictionary
+	for haunting_id: String in encoded_pacified_hauntings:
+		result.pacified_hauntings[HauntingType.get_haunting_type_by_id(haunting_id)] = encoded_pacified_hauntings[haunting_id]
 
 	result.events_state.load_from_flat(encoded_data['events_state'] as Dictionary)
 
