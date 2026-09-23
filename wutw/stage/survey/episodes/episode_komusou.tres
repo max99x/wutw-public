@@ -14,6 +14,7 @@
 [ext_resource type="Resource" uid="uid://oqni6hco277k" path="res://cards/tier2/card_flute.tres" id="11_gy5xj"]
 [ext_resource type="Script" uid="uid://xa1k8k6o7j78" path="res://stage/survey/survey_episode.gd" id="12_82g3g"]
 [ext_resource type="Script" uid="uid://dwtqh0ebqpsk3" path="res://stage/spots/spot_type.gd" id="13_c0j0o"]
+[ext_resource type="Script" uid="uid://c50bhh4sr0g8o" path="res://events/system/requirements/event_requirement_main_quest_progress.gd" id="13_l1qnd"]
 
 [sub_resource type="Resource" id="Resource_2pltd"]
 script = ExtResource("1_s2xya")
@@ -78,11 +79,17 @@ outcome_text = "The scouts nod a polite bow and move on.
 
 The man appears to be perfectly content to be left alone."
 
+[sub_resource type="Resource" id="Resource_trtbi"]
+script = ExtResource("13_l1qnd")
+min_progress = 130
+metadata/_custom_type_script = "uid://c50bhh4sr0g8o"
+
 [resource]
 script = ExtResource("12_82g3g")
 episode_id = "komusou"
 title = "The Monk of Emptiness"
 biome_types = Array[int]([6, 5, 8])
+requirement = SubResource("Resource_trtbi")
 text = "As the survey team is walking through an ancient, overgrown road, they spot a figure on the horizon.
 
 The figure turns out to be a man wearing a basket as a hat. He introduces himself as a monk of Emptiness, an order none of the scouts had heard of.
