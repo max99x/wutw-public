@@ -49,7 +49,7 @@ func _on_button_pressed() -> void:
 		if stage:
 			stage.get_card_deck().add_card_to_hand(card_type, CardDeck.CardDrawReason.EVENT)
 		card_reward.close()
-		_clear_modifier()
+		_clear_modifier(modifier_tag)
 		finished.emit()
 	)
 	card_reward.canceled.connect(func() -> void:
@@ -57,12 +57,10 @@ func _on_button_pressed() -> void:
 		(%Button as Button).visible = false
 		(%Label as Label).text = tr('Chose not to add a glyph.')
 		card_reward.close()
-		_clear_modifier()
+		_clear_modifier(modifier_tag)
 		finished.emit()
 	)
 	GlobalUI.add_layer_content(card_reward, ui_layer)
 
-func _clear_modifier() -> void:
-	var run := Utils.get_active_run()
-	var modifier_tag := Utils.generate_guid()
-	run.get_vars().remove_modifier(modifier_tag)
+func _clear_modifier(modifier_tag: String) -> void:
+	Utils.get_active_run().get_vars().remove_modifier(modifier_tag)
