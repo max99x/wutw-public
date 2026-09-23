@@ -6,6 +6,6 @@
 
 [resource]
 script = ExtResource("1_aa7ub")
-job_name = "Salt Maker"
+job_name = "Salter"
 origin_spot_upgrades = Array[ExtResource("1_6uhik")]([ExtResource("2_53mf4")])
 metadata/_custom_type_script = "uid://dubk46gum5oed"
