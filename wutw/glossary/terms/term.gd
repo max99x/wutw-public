@@ -89,7 +89,7 @@ static func parse(markedup_text: String, create_links: bool = false) -> ParseRes
 					var relic := Relic.get_relic_by_id(item_id)
 					if not Utils.ensure(relic != null, 'Unknown %s: %s' % [tag_and_arg[0], item_id]):
 						continue
-					result.append_link('museum_relic', item_id, relic.get_relic_name(), create_links)
+					result.append_link('museum_relic', item_id, relic.get_term_name(false), create_links)
 				'event':
 					var event := Event.get_event_by_id(item_id)
 					if not Utils.ensure(event != null, 'Unknown %s: %s' % [tag_and_arg[0], item_id]):
