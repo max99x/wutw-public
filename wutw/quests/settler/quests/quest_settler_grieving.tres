@@ -45,5 +45,5 @@ exclude_jobs = Array[ExtResource("3_2a20g")]([ExtResource("4_1ajwi"), ExtResourc
 restrict_to_ages = Array[int]([2])
 quest_id = "settler_grieving"
 category = 2
-name = "A Griever"
+name = "A Grieving Spouse"
 metadata/_custom_type_script = "uid://1na7ymvvvbby"
