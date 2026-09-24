@@ -10,12 +10,14 @@ const MAX_EXPANDED_LENGTH := 1400
 @export var tooltip_alignments: Array[Tooltip.Alignment] = [Tooltip.Alignment.CENTERED]
 
 var _markedup_text: String
+var _saved_mouse_filter: MouseFilter
 var _tooltips: Dictionary[String, Tooltip]
 
 func _ready() -> void:
 	meta_hover_started.connect(_on_meta_hovered)
 	meta_hover_ended.connect(_on_meta_unhovered)
 	meta_clicked.connect(_on_meta_clicked)
+	_saved_mouse_filter = mouse_filter  # Just for safety.
 
 func _exit_tree() -> void:
 	for tooltip: Tooltip in _tooltips.values():
@@ -23,6 +25,10 @@ func _exit_tree() -> void:
 	_tooltips.clear()
 
 func _on_meta_hovered(meta_string: String) -> void:
+	if meta_string.begins_with('term:card.') or not meta_string.begins_with('term:'):
+		# Prevent clicks on links from bubbling up.
+		_saved_mouse_filter = mouse_filter
+		mouse_filter = Control.MOUSE_FILTER_STOP
 	if not meta_string.begins_with('term:'):
 		return
 	var term_id := meta_string.substr(5)
@@ -41,6 +47,8 @@ func _on_meta_hovered(meta_string: String) -> void:
 	GlobalContextHighlight.request(ContextHighlight.terms(self, [term]))
 
 func _on_meta_unhovered(meta_string: String) -> void:
+	if meta_string.begins_with('term:card.') or not meta_string.begins_with('term:'):
+		mouse_filter = _saved_mouse_filter
 	if not meta_string.begins_with('term:'):
 		return
 	var term_id := meta_string.substr(5)

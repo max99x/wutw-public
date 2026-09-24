@@ -88,7 +88,8 @@ func _on_description_label_gui_input(event: InputEvent) -> void:
 	if not mouse_event:
 		return
 	if mouse_event.button_index == MOUSE_BUTTON_LEFT and not mouse_event.pressed:
-		(%Button as UkiyoeButton).pressed.emit()
+		if (%DescriptionLabel as MarkedUpLabel).mouse_filter != MouseFilter.MOUSE_FILTER_STOP:
+			(%Button as UkiyoeButton).pressed.emit()
 	else:
 		_on_button_gui_input(event)
 
