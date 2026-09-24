@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Relic_LoomShuttle" format=3 uid="uid://b3b2toane68b8"]
+
+[ext_resource type="Texture2D" uid="uid://cun32iiyos7gq" path="res://relics/common/loom_shuttle/loom_shuttle.png" id="1_5syih"]
+[ext_resource type="Script" uid="uid://cjw8ca41mrd61" path="res://relics/common/loom_shuttle/relic_loom_shuttle.gd" id="1_rnpqs"]
+[ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="2_5syih"]
+[ext_resource type="Resource" uid="uid://5q63svcbmx37" path="res://glossary/categories/termcategory_relic.tres" id="3_cpvaa"]
+
+[resource]
+script = ExtResource("1_rnpqs")
+relic_id = "loom_shuttle"
+default_name = "Loom Shuttle"
+default_description = "As long as you have %d copies of any <term_lower:glyph> in <term_lower:hand>, gain %d%% more <term_lower:bonus>s."
+flavor_text = "It just keeps going back and forth."
+icon = ExtResource("1_5syih")
+term_categories = Array[ExtResource("2_5syih")]([ExtResource("3_cpvaa")])
+metadata/_custom_type_script = "uid://cjw8ca41mrd61"

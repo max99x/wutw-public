@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://bu1ug2arae22t"]
+
+[ext_resource type="Resource" uid="uid://cfb354e7i6h13" path="res://stage/spots/building_small/upgrade_building_small_3_weaver.tres" id="1_i6iik"]
+[ext_resource type="Script" uid="uid://pyad6w22lri1" path="res://events/system/requirements/event_requirement.gd" id="2_emydf"]
+[ext_resource type="Script" uid="uid://c50bhh4sr0g8o" path="res://events/system/requirements/event_requirement_main_quest_progress.gd" id="3_fxetd"]
+[ext_resource type="Script" uid="uid://b87xjo1pfiqcm" path="res://events/system/requirements/event_requirement_season.gd" id="4_8ckd3"]
+[ext_resource type="Script" uid="uid://15prcev7a3ta" path="res://events/system/requirements/event_requirement_all.gd" id="5_sntp0"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="6_ovtbf"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="7_ocbfa"]
+[ext_resource type="Resource" uid="uid://7lyrvdet3ha0" path="res://art/pieces/piece_hiroshige_3_ashikaga_loom.tres" id="8_emydf"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="8_uxou7"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="9_et50i"]
+[ext_resource type="Script" uid="uid://us3vhbuc1tdq" path="res://events/system/outcomes/all/event_outcome_all.gd" id="10_a58le"]
+[ext_resource type="Script" uid="uid://djcv8lbjfjg6e" path="res://events/system/outcomes/event_outcome.gd" id="11_uo8ii"]
+[ext_resource type="Resource" uid="uid://bvf0fdy10l400" path="res://bonuses/types/bonus_productivity.tres" id="12_0sad8"]
+[ext_resource type="Script" uid="uid://dkas1jvkeluf4" path="res://events/system/outcomes/bonus/event_outcome_bonus.gd" id="13_iyivt"]
+[ext_resource type="Resource" uid="uid://c6itkj7qwdavt" path="res://bonuses/types/bonus_harmony.tres" id="14_bppvs"]
+[ext_resource type="Resource" uid="uid://ddp3f5lll121p" path="res://aspects/types/connection/aspect_connection.tres" id="15_s1e1l"]
+[ext_resource type="Script" uid="uid://cjdop1iab2efw" path="res://events/system/requirements/event_requirement_num_aspects.gd" id="16_55a32"]
+[ext_resource type="Resource" uid="uid://b3b2toane68b8" path="res://relics/common/loom_shuttle/relic_loom_shuttle.tres" id="17_aban3"]
+[ext_resource type="Script" uid="uid://c72da5id7avtu" path="res://events/system/outcomes/add_relic/event_outcome_add_relic.gd" id="18_8udv6"]
+[ext_resource type="Resource" uid="uid://bs3kd38ehlkw" path="res://aspects/types/illumination/aspect_illumination.tres" id="19_fipn2"]
+[ext_resource type="Resource" uid="uid://c4nbpkrobjaro" path="res://cards/tier2/card_sell.tres" id="20_khg3v"]
+[ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="21_musrc"]
+
+[sub_resource type="Resource" id="Resource_4xuhh"]
+script = ExtResource("3_fxetd")
+min_progress = 300
+max_progress = -1
+
+[sub_resource type="Resource" id="Resource_tuogj"]
+script = ExtResource("4_8ckd3")
+min_index = 1
+
+[sub_resource type="Resource" id="Resource_rx1a8"]
+script = ExtResource("5_sntp0")
+all_requirements = Array[ExtResource("2_emydf")]([SubResource("Resource_4xuhh"), SubResource("Resource_tuogj")])
+
+[sub_resource type="Resource" id="Resource_dpp3j"]
+script = ExtResource("8_uxou7")
+_texture_path = "res://events/generic/weaving_house/weaving_house.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_cpvaa"]
+script = ExtResource("13_iyivt")
+bonus_type = ExtResource("12_0sad8")
+amount = 25
+extra_per_season = 20
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_yo5sm"]
+script = ExtResource("13_iyivt")
+bonus_type = ExtResource("14_bppvs")
+amount = 15
+extra_per_season = 20
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_5syih"]
+script = ExtResource("10_a58le")
+suboutcomes = Array[ExtResource("11_uo8ii")]([SubResource("Resource_cpvaa"), SubResource("Resource_yo5sm")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_06ahh"]
+script = ExtResource("16_55a32")
+aspect_type = ExtResource("15_s1e1l")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_ciwob"]
+script = ExtResource("9_et50i")
+markedup_text = "Offer cloth instead."
+requirement = SubResource("Resource_06ahh")
+outcome = SubResource("Resource_5syih")
+markedup_result_text = "The weaver offers to sell her his finest cloth instead. The merchant reluctantly agrees, on the condition that he sell only to her.
+
+And so the deal is sealed, the master earning a small fortune in the process.
+
+In time, the workshop will expand to employ much of the town's workforce, yet none will be able to wear garments made from the cloth they produce."
+
+[sub_resource type="Resource" id="Resource_2i40o"]
+script = ExtResource("18_8udv6")
+relic = ExtResource("17_aban3")
+metadata/_custom_type_script = "uid://c72da5id7avtu"
+
+[sub_resource type="Resource" id="Resource_nthfn"]
+script = ExtResource("16_55a32")
+aspect_type = ExtResource("19_fipn2")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_2myy3"]
+script = ExtResource("9_et50i")
+markedup_text = "Explain how to build such looms."
+requirement = SubResource("Resource_nthfn")
+outcome = SubResource("Resource_2i40o")
+markedup_result_text = "The weaver offers to teach the merchant how to build her own great looms instead. She seems reluctant at first, but agrees after the master refuses to sell the loom for any sum.
+
+The woman will bring schematics and spare parts back to her home shard, and perhaps the technology will continue to spread."
+
+[sub_resource type="Resource" id="Resource_qmdva"]
+script = ExtResource("21_musrc")
+card_type = ExtResource("20_khg3v")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_w2hpu"]
+script = ExtResource("9_et50i")
+markedup_text = "Accept the offer."
+outcome = SubResource("Resource_qmdva")
+markedup_result_text = "The master weaver, tempted by the large sum which the merchant is offering, agrees to sell her the loom. He can always construct a new one, he reasons.
+
+The loom is deconstructed, packed into crates, and shipped off to a distant shard.
+
+It won't be long before off-shard cloth becomes cheaper than anything the town manages to produce."
+
+[sub_resource type="Resource" id="Resource_3sdrw"]
+script = ExtResource("9_et50i")
+markedup_text = "Refuse the offer."
+markedup_result_text = "The merchant's arrogance doesn't sit well with the weaver, and besides, he doesn't need any more money.
+
+He politely but firmly refuses her offer and sends the woman on her way."
+
+[sub_resource type="Resource" id="Resource_fmixu"]
+script = ExtResource("7_ocbfa")
+markedup_text = "The head weaver surveys his workshop while his assistant is hard at work at the great loom, a massive construction only recently invented by local carpenters.
+
+Thanks to this loom, the workshop's reputation is already spreading throughout the shard.
+
+Today, an unusual visitor is at the door: a tall, well-dressed woman, accompanied by a young attendant. She speaks in an unusual accent, and offers a great sum in return for selling her the loom."
+background_image = SubResource("Resource_dpp3j")
+background_credit = ExtResource("8_emydf")
+choices = Array[ExtResource("9_et50i")]([SubResource("Resource_ciwob"), SubResource("Resource_2myy3"), SubResource("Resource_w2hpu")])
+exit_choice = SubResource("Resource_3sdrw")
+
+[resource]
+script = ExtResource("6_ovtbf")
+default_spot_upgrade = ExtResource("1_i6iik")
+event_id = "weaving_house"
+event_name = "The Foreign Merchant"
+requirement = SubResource("Resource_rx1a8")
+steps = Array[ExtResource("7_ocbfa")]([SubResource("Resource_fmixu")])
+categories = Array[int]([3])

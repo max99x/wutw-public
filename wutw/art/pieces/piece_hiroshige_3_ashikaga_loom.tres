@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://7lyrvdet3ha0"]
+
+[ext_resource type="Resource" uid="uid://qkp6ccdl1lni" path="res://art/artists/artist_hiroshige_3.tres" id="1_quaro"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_gjtj8"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_l0f6x"]
+[ext_resource type="Resource" uid="uid://xy1743ph6s1u" path="res://art/series/series_hiroshige_3_products_of_greater_japan.tres" id="4_fu6bx"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="5_lpm0c"]
+[ext_resource type="Resource" uid="uid://bsywespoeltew" path="res://art/styles/style_kaika.tres" id="6_qwyoj"]
+
+[sub_resource type="Resource" id="Resource_2qtq3"]
+script = ExtResource("2_gjtj8")
+_texture_path = "uid://j6kiglm8k3o8"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_bcsnl"]
+script = ExtResource("2_gjtj8")
+_texture_path = "uid://cnyy0sqls74e0"
+_is_horizontal = true
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_l0f6x")
+original_image = SubResource("Resource_bcsnl")
+piece_name = "High Loom Near Ashikaga, Shimotsuke Province"
+series = ExtResource("4_fu6bx")
+artist = ExtResource("1_quaro")
+styles = Array[ExtResource("5_lpm0c")]([ExtResource("6_qwyoj")])
+actual_start_year = 1877
+custom_link = "https://pages.uoregon.edu/jsmacollections/home/articles/dai-nippon-bussan-zue-the-greater-bc77ec8603f40022.html"
+edits_description = "The image was cropped."
+final_image_tex = SubResource("Resource_2qtq3")
+province = 66
+blurb = "Depicts the operation of a high loom. The text on the right describes various types of silk fabrics, such as satin and damask, being manufactured in the Ashikaga province, and explains that the operator sits on a raised platform to manipulate threads and weave intricate patterns. It praises the craftsmanship, explaining that \"Ashikaga Silk\" is a renowned local product."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"
