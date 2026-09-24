@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("1_j6mo0")
 realistic_term_name = "Challenge"
-realistic_markedup_description = "Extra challenges during <term_lower:foray>s, attributed to hauntings in ages past. Challenges can affect a specific <term_lower:spot> or the whole settlement. They can be countered by <term_lower:fill>ing their associated <term_lower:aspect_slot>s."
+realistic_markedup_description = "Extra challenges during <term_lower:stage>s, attributed to hauntings in ages past. Challenges can affect a specific <term_lower:spot> or the whole settlement. They can be countered by <term_lower:fill>ing their associated <term_lower:aspect_slot>s."
 term_id = "haunting"
 term_name = "Haunting"
 markedup_description = "Restless spirits posing extra challenges during <term_lower:foray>s. Hauntings can affect a specific <term_lower:spot> or the whole settlement. They can be pacified by <term_lower:fill>ing their associated <term_lower:aspect_slot>s."
