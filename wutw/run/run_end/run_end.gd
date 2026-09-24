@@ -168,6 +168,7 @@ func _ready() -> void:
 		hide_tween.set_speed_scale(Utils.anim_speed())
 		hide_tween.play()
 		await hide_tween.finished
+		await Utils.wait_with_timeout(map.is_camera_moving, 2.0)
 		_past_run.screenshot = map.get_subviewport().get_texture().get_image()
 		GlobalSaveGame.add_past_run(_past_run)
 
