@@ -87,6 +87,7 @@ The code is intentionally kept as simple as possible while supporting efficient 
     * `run.gd` is the backbone controlling most of the high level gameplay state during a run.
     * `run_data.gd` represents the persistent state of the run.
     * `run_signals.gd` acts as a signal bus used by many other systems such as relics, quests, tutorials, and achievements.
+    * `run_vars.gd` defines mutable stats like current/max inspiration, glyph rarity, redraws, etc. that systems like relics and events change either directly (e.g. losing inspiration) or through modifiers (e.g. increasing hand size under certain conditions).
   * `res://settings`: The settings menu and a GameSettings singleton for loading and querying game settings.
   * `res://shard_types`: The Shard Cultures system, including the definitions of each culture, one resource and one script each.
   * `res://shops`: The Landmarks system, including the definitions of each landmark, one resource, one scene, and one script each.
