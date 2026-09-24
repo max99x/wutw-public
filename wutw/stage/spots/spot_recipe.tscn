@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://ceqx71t7v8xf8"]
+[gd_scene format=3 uid="uid://ceqx71t7v8xf8"]
 
 [ext_resource type="Script" uid="uid://droe6i883k500" path="res://stage/spots/spot_recipe.gd" id="1_vaai5"]
 [ext_resource type="Shader" uid="uid://cy23kwgtjt4et" path="res://theme/panel/panel.gdshader" id="2_n1qup"]
@@ -20,7 +20,6 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sukoo"]
 shader = ExtResource("2_n1qup")
-shader_parameter/size = Vector2(158.1228, 81.25757)
 shader_parameter/background = ExtResource("3_n1qup")
 shader_parameter/background_tex_size = Vector2(947, 380)
 shader_parameter/background_scale = 2.27
@@ -34,7 +33,6 @@ shader_parameter/decor_modulate = Color(1, 1, 1, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o6g1t"]
 shader = ExtResource("2_n1qup")
-shader_parameter/size = Vector2(478.76074, 81.25757)
 shader_parameter/background = ExtResource("3_n1qup")
 shader_parameter/background_tex_size = Vector2(947, 380)
 shader_parameter/background_scale = 2.27
@@ -48,7 +46,6 @@ shader_parameter/decor_modulate = Color(1, 1, 1, 0)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kkp2d"]
 shader = ExtResource("2_n1qup")
-shader_parameter/size = Vector2(377.7379, 81.25757)
 shader_parameter/background = ExtResource("3_n1qup")
 shader_parameter/background_tex_size = Vector2(947, 380)
 shader_parameter/background_scale = 2.27
@@ -84,19 +81,19 @@ scale_curve = SubResource("CurveTexture_mtwdc")
 hue_variation_min = -2.2351742e-08
 hue_variation_max = 0.06999998
 
-[node name="SpotRecipe" type="PanelContainer"]
+[node name="SpotRecipe" type="PanelContainer" unique_id=1455259577]
 offset_right = 418.0
 offset_bottom = 37.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_dla0s")
 script = ExtResource("1_vaai5")
 
-[node name="HBox" type="HBoxContainer" parent="."]
+[node name="HBox" type="HBoxContainer" parent="." unique_id=1124901414]
 show_behind_parent = true
 layout_mode = 2
 mouse_filter = 2
 theme_override_constants/separation = -4
 
-[node name="AspectsPanel" type="PanelContainer" parent="HBox"]
+[node name="AspectsPanel" type="PanelContainer" parent="HBox" unique_id=383136406]
 unique_name_in_owner = true
 self_modulate = Color(0.9, 0.9, 0.9, 1)
 material = SubResource("ShaderMaterial_sukoo")
@@ -107,29 +104,29 @@ script = ExtResource("6_0femc")
 material_customized = true
 metadata/_custom_type_script = "uid://dveiu76ujl3xp"
 
-[node name="MarginContainer" type="MarginContainer" parent="HBox/AspectsPanel"]
+[node name="MarginContainer" type="MarginContainer" parent="HBox/AspectsPanel" unique_id=1834022715]
 layout_mode = 2
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_top = 1
 theme_override_constants/margin_right = 2
 theme_override_constants/margin_bottom = 2
 
-[node name="AspectsList" type="HBoxContainer" parent="HBox/AspectsPanel/MarginContainer"]
+[node name="AspectsList" type="HBoxContainer" parent="HBox/AspectsPanel/MarginContainer" unique_id=2132196992]
 unique_name_in_owner = true
 z_index = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="AspectSlot" parent="HBox/AspectsPanel/MarginContainer/AspectsList" instance=ExtResource("2_usab3")]
+[node name="AspectSlot" parent="HBox/AspectsPanel/MarginContainer/AspectsList" unique_id=1832358132 instance=ExtResource("2_usab3")]
 layout_mode = 2
 aspect_type = ExtResource("3_6nlq7")
 
-[node name="AspectSlot2" parent="HBox/AspectsPanel/MarginContainer/AspectsList" instance=ExtResource("2_usab3")]
+[node name="AspectSlot2" parent="HBox/AspectsPanel/MarginContainer/AspectsList" unique_id=984525845 instance=ExtResource("2_usab3")]
 layout_mode = 2
 aspect_type = ExtResource("4_ny23q")
 
-[node name="BonusesPanel" type="PanelContainer" parent="HBox"]
+[node name="BonusesPanel" type="PanelContainer" parent="HBox" unique_id=1864592041]
 unique_name_in_owner = true
 self_modulate = Color(0.9, 0.9, 0.9, 1)
 material = SubResource("ShaderMaterial_o6g1t")
@@ -141,17 +138,17 @@ script = ExtResource("6_0femc")
 material_customized = true
 metadata/_custom_type_script = "uid://dveiu76ujl3xp"
 
-[node name="MarginContainer" type="MarginContainer" parent="HBox/BonusesPanel"]
+[node name="MarginContainer" type="MarginContainer" parent="HBox/BonusesPanel" unique_id=1093655572]
 layout_mode = 2
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_top = 0
 theme_override_constants/margin_right = 2
 theme_override_constants/margin_bottom = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBox/BonusesPanel/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBox/BonusesPanel/MarginContainer" unique_id=1749476154]
 layout_mode = 2
 
-[node name="Bonus1" parent="HBox/BonusesPanel/MarginContainer/HBoxContainer" instance=ExtResource("5_tdnwl")]
+[node name="Bonus1" parent="HBox/BonusesPanel/MarginContainer/HBoxContainer" unique_id=916771818 instance=ExtResource("5_tdnwl")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
@@ -160,7 +157,7 @@ bonus_type = ExtResource("6_nw3ud")
 current_value = 15
 label_first = true
 
-[node name="Bonus2" parent="HBox/BonusesPanel/MarginContainer/HBoxContainer" instance=ExtResource("5_tdnwl")]
+[node name="Bonus2" parent="HBox/BonusesPanel/MarginContainer/HBoxContainer" unique_id=1421576681 instance=ExtResource("5_tdnwl")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
@@ -169,7 +166,7 @@ bonus_type = ExtResource("5_nw3ud")
 current_value = 10
 label_first = true
 
-[node name="Bonus3" parent="HBox/BonusesPanel/MarginContainer/HBoxContainer" instance=ExtResource("5_tdnwl")]
+[node name="Bonus3" parent="HBox/BonusesPanel/MarginContainer/HBoxContainer" unique_id=1230816095 instance=ExtResource("5_tdnwl")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
@@ -178,7 +175,7 @@ bonus_type = ExtResource("7_nsyw2")
 current_value = 10
 label_first = true
 
-[node name="Bonus4" parent="HBox/BonusesPanel/MarginContainer/HBoxContainer" instance=ExtResource("5_tdnwl")]
+[node name="Bonus4" parent="HBox/BonusesPanel/MarginContainer/HBoxContainer" unique_id=883040102 instance=ExtResource("5_tdnwl")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
@@ -187,7 +184,7 @@ bonus_type = ExtResource("7_nsyw2")
 current_value = 15
 label_first = true
 
-[node name="NamePanel" type="PanelContainer" parent="HBox"]
+[node name="NamePanel" type="PanelContainer" parent="HBox" unique_id=1567823828]
 unique_name_in_owner = true
 self_modulate = Color(0.9, 0.9, 0.9, 1)
 material = SubResource("ShaderMaterial_kkp2d")
@@ -198,23 +195,23 @@ script = ExtResource("6_0femc")
 material_customized = true
 metadata/_custom_type_script = "uid://dveiu76ujl3xp"
 
-[node name="MarginContainer" type="MarginContainer" parent="HBox/NamePanel"]
+[node name="MarginContainer" type="MarginContainer" parent="HBox/NamePanel" unique_id=751357390]
 layout_mode = 2
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBox/NamePanel/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBox/NamePanel/MarginContainer" unique_id=1899568769]
 layout_mode = 2
 
-[node name="NameLabel" type="Label" parent="HBox/NamePanel/MarginContainer/HBoxContainer"]
+[node name="NameLabel" type="Label" parent="HBox/NamePanel/MarginContainer/HBoxContainer" unique_id=1152249050]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 text = "Skybound Stair"
 vertical_alignment = 1
 
-[node name="UniqueIcon" type="TextureRect" parent="HBox/NamePanel/MarginContainer/HBoxContainer"]
+[node name="UniqueIcon" type="TextureRect" parent="HBox/NamePanel/MarginContainer/HBoxContainer" unique_id=1116423076]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(24, 24)
 layout_mode = 2
@@ -223,49 +220,49 @@ texture = ExtResource("14_sukoo")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="OutlineContainer" type="Control" parent="."]
+[node name="OutlineContainer" type="Control" parent="." unique_id=786596779]
 unique_name_in_owner = true
 modulate = Color(1, 0.883333, 0, 1)
 z_index = 1
 layout_mode = 2
 mouse_filter = 2
 
-[node name="VFX_Top" type="GPUParticles2D" parent="OutlineContainer"]
+[node name="VFX_Top" type="GPUParticles2D" parent="OutlineContainer" unique_id=1723123643]
 unique_name_in_owner = true
 emitting = false
 amount = 80
 texture = ExtResource("16_o6g1t")
 lifetime = 5.0
-visibility_rect = Rect2(-10, -10, 120, 120)
+visibility_rect = Rect2(-10, -10, 600, 600)
 local_coords = true
 process_material = SubResource("ParticleProcessMaterial_h7nao")
 
-[node name="VFX_Bottom" type="GPUParticles2D" parent="OutlineContainer"]
+[node name="VFX_Bottom" type="GPUParticles2D" parent="OutlineContainer" unique_id=1961870539]
 unique_name_in_owner = true
 emitting = false
 amount = 80
 texture = ExtResource("16_o6g1t")
 lifetime = 5.0
-visibility_rect = Rect2(-10, -10, 120, 120)
+visibility_rect = Rect2(-10, -10, 600, 55)
 local_coords = true
 process_material = SubResource("ParticleProcessMaterial_h7nao")
 
-[node name="VFX_Left" type="GPUParticles2D" parent="OutlineContainer"]
+[node name="VFX_Left" type="GPUParticles2D" parent="OutlineContainer" unique_id=1456729941]
 unique_name_in_owner = true
 emitting = false
 amount = 12
 texture = ExtResource("16_o6g1t")
 lifetime = 5.0
-visibility_rect = Rect2(-10, -10, 120, 120)
+visibility_rect = Rect2(-10, -10, 600, 55)
 local_coords = true
 process_material = SubResource("ParticleProcessMaterial_h7nao")
 
-[node name="VFX_Right" type="GPUParticles2D" parent="OutlineContainer"]
+[node name="VFX_Right" type="GPUParticles2D" parent="OutlineContainer" unique_id=500209460]
 unique_name_in_owner = true
 emitting = false
 amount = 12
 texture = ExtResource("16_o6g1t")
 lifetime = 5.0
-visibility_rect = Rect2(-10, -10, 120, 120)
+visibility_rect = Rect2(-10, -10, 600, 55)
 local_coords = true
 process_material = SubResource("ParticleProcessMaterial_h7nao")
