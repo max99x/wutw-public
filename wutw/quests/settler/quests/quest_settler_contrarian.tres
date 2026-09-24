@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="Quest_Settler" format=3 uid="uid://rcx64np6kyjw"]
+
+[ext_resource type="Script" uid="uid://cjloydxgrv8oa" path="res://quests/settler/settler_quest_challenge.gd" id="1_4s77w"]
+[ext_resource type="Resource" uid="uid://b1wnujbo0nxlg" path="res://stage/hauntings/types/amanojaku/haunting_amanojaku.tres" id="2_bu15d"]
+[ext_resource type="Script" uid="uid://dubk46gum5oed" path="res://characters/jobs/job.gd" id="3_2w3f1"]
+[ext_resource type="Script" uid="uid://web0s3ngmfto" path="res://quests/settler/challenges/settler_quest_extra_haunting.gd" id="3_pftd6"]
+[ext_resource type="Resource" uid="uid://dy87ylunavd6o" path="res://characters/jobs/job_matchmaker.tres" id="5_o8tx0"]
+[ext_resource type="Script" uid="uid://dboilh3ffqatw" path="res://quests/settler/goals/settler_quest_goal_num_unfinished_settlements.gd" id="10_qvv6k"]
+[ext_resource type="Script" uid="uid://cd4swbq3t72je" path="res://quests/settler/settler_quest_reward.gd" id="17_xn5j8"]
+[ext_resource type="Script" uid="uid://cvrgydjebg044" path="res://quests/settler/rewards/settler_quest_reward_run_var.gd" id="18_paw5y"]
+[ext_resource type="Script" uid="uid://1na7ymvvvbby" path="res://quests/settler/quest_settler.gd" id="19_t0mfi"]
+[ext_resource type="Script" uid="uid://bxua8gxfjp2wy" path="res://quests/settler/settler_quest_goal.gd" id="20_65o4i"]
+
+[sub_resource type="Resource" id="Resource_ffgl8"]
+script = ExtResource("3_pftd6")
+haunting_type = ExtResource("2_bu15d")
+metadata/_custom_type_script = "uid://web0s3ngmfto"
+
+[sub_resource type="Resource" id="Resource_tbvql"]
+script = ExtResource("18_paw5y")
+run_var = 15
+delta = -20
+preview_description = "Reduce all <term_lower:stage_goal>s by 20%."
+outcome_description = "Reduced all <term_lower:stage_goal>s by 20%."
+metadata/_custom_type_script = "uid://cvrgydjebg044"
+
+[sub_resource type="Resource" id="Resource_rv3e6"]
+script = ExtResource("10_qvv6k")
+metadata/_custom_type_script = "uid://dboilh3ffqatw"
+
+[resource]
+script = ExtResource("19_t0mfi")
+intro_text = "I've been on three expeditions now and I've watched the leaders make the wrong choice every time. Like when they decide they need harmony while there's a forest perfect for clear-cutting! I need folks to finally listen to my ideas."
+challenges = Array[ExtResource("1_4s77w")]([SubResource("Resource_ffgl8")])
+settler_goals = Array[ExtResource("20_65o4i")]([SubResource("Resource_rv3e6")])
+rewards = Array[ExtResource("17_xn5j8")]([SubResource("Resource_tbvql")])
+exclude_jobs = Array[ExtResource("3_2w3f1")]([ExtResource("5_o8tx0")])
+restrict_to_ages = Array[int]([1, 2])
+quest_id = "settler_contrarian"
+category = 2
+name = "A Contrarian"
+metadata/_custom_type_script = "uid://1na7ymvvvbby"

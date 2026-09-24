@@ -448,6 +448,16 @@ func _setup_foray() -> void:
 	if remaining_events:
 		push_warning('Events are left over after spot assignment.')
 
+	# Setup extra hauntings.
+	for haunting_type in run.get_run_data().extra_hauntings:
+		var haunting := HAUNTING_SPOT_SCENE.instantiate_loaded_scene() as Haunting_Spot
+		haunting.haunting_type = haunting_type
+		haunting.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+		haunting.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
+		%SpotsList.add_child(haunting)
+		_hauntings.append(haunting)
+		haunting.pacified.connect(func() -> void: _hauntings.erase(haunting))
+
 	(%SpotsScroller as Control).visible = true
 	(%ShowAllToggle as Control).visible = Skill.get_skill_var(Skill.Var.NONGOAL) > 0
 	run.get_stage_goal_tracker().visible = true

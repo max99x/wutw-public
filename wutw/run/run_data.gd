@@ -57,6 +57,7 @@ var used_episodes: Dictionary[SurveyEpisode, bool]
 var recent_hauntings: Dictionary[HauntingType, int]  # Value is stage index of most recent spawn.
 var encountered_hauntings: Dictionary[HauntingType, int]
 var pacified_hauntings: Dictionary[HauntingType, int]
+var extra_hauntings: Array[HauntingType]  # In forays only.
 ## The state of events stored per-run.
 var events_state: EventsState = EventsState.new()
 
@@ -231,6 +232,11 @@ func encode() -> Dictionary:
 		encoded_pacified_hauntings[haunting_type.haunting_id] = pacified_hauntings[haunting_type]
 	result['pacified_hauntings'] = encoded_pacified_hauntings
 
+	var encoded_extra_hauntings: Array[String]
+	for haunting_type in extra_hauntings:
+		encoded_extra_hauntings.append(haunting_type.haunting_id)
+	result['extra_hauntings'] = encoded_extra_hauntings
+
 	result['events_state'] = events_state.to_flat()
 
 	result['events_random'] = events_random.encode()
@@ -369,6 +375,10 @@ static func decode(encoded_data: Dictionary) -> RunData:
 	var encoded_pacified_hauntings := encoded_data.get('pacified_hauntings', {}) as Dictionary
 	for haunting_id: String in encoded_pacified_hauntings:
 		result.pacified_hauntings[HauntingType.get_haunting_type_by_id(haunting_id)] = encoded_pacified_hauntings[haunting_id]
+
+	var encoded_extra_hauntings := encoded_data.get('extra_hauntings', []) as Array
+	for haunting_id: String in encoded_extra_hauntings:
+		result.extra_hauntings.append(HauntingType.get_haunting_type_by_id(haunting_id))
 
 	result.events_state.load_from_flat(encoded_data['events_state'] as Dictionary)
 
