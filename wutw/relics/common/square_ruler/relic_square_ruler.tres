@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Relic_SquareRuler" format=3 uid="uid://yvcmp4xcijmh"]
+
+[ext_resource type="Texture2D" uid="uid://cr5py610mstdn" path="res://relics/common/square_ruler/square_ruler.png" id="1_glrby"]
+[ext_resource type="Script" uid="uid://f0dfix3tr47v" path="res://relics/common/square_ruler/relic_square_ruler.gd" id="1_gp73y"]
+[ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="2_glrby"]
+[ext_resource type="Resource" uid="uid://5q63svcbmx37" path="res://glossary/categories/termcategory_relic.tres" id="3_wyxff"]
+
+[resource]
+script = ExtResource("1_gp73y")
+relic_id = "square_ruler"
+default_name = "Carpenter's Square"
+default_description = "Number <term_lower:glyph>s no longer <term_lower:discard>."
+flavor_text = "On the back is another scale, spaced to find the square beam hidden inside any log."
+icon = ExtResource("1_glrby")
+default_starting_state = 1
+term_categories = Array[ExtResource("2_glrby")]([ExtResource("3_wyxff")])
+metadata/_custom_type_script = "uid://f0dfix3tr47v"

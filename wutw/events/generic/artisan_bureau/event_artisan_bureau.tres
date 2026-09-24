@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://ckpc6bq8iys4n"]
+
+[ext_resource type="Resource" uid="uid://dh1sy0fm46wde" path="res://stage/spots/building_large/upgrade_building_large_3_artisans_college.tres" id="1_pwuj5"]
+[ext_resource type="Script" uid="uid://c50bhh4sr0g8o" path="res://events/system/requirements/event_requirement_main_quest_progress.gd" id="2_gdi4t"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="3_7t1di"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="4_vp2do"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_67kcy"]
+[ext_resource type="Resource" uid="uid://ccslowsv5wv58" path="res://art/pieces/piece_toshikata_hanawa_hokiichi.tres" id="5_gdi4t"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_2cahw"]
+[ext_resource type="Script" uid="uid://us3vhbuc1tdq" path="res://events/system/outcomes/all/event_outcome_all.gd" id="7_6dtk4"]
+[ext_resource type="Script" uid="uid://djcv8lbjfjg6e" path="res://events/system/outcomes/event_outcome.gd" id="8_s7vqh"]
+[ext_resource type="Resource" uid="uid://c6itkj7qwdavt" path="res://bonuses/types/bonus_harmony.tres" id="9_u01m1"]
+[ext_resource type="Script" uid="uid://dkas1jvkeluf4" path="res://events/system/outcomes/bonus/event_outcome_bonus.gd" id="10_hvpbu"]
+[ext_resource type="Resource" uid="uid://wqou66pnkghf" path="res://cards/tier0/card_resign.tres" id="11_37d24"]
+[ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="12_3tjnj"]
+[ext_resource type="Resource" uid="uid://bvftq8aivni7l" path="res://aspects/types/stability/aspect_stability.tres" id="13_3vsb0"]
+[ext_resource type="Script" uid="uid://cjdop1iab2efw" path="res://events/system/requirements/event_requirement_num_aspects.gd" id="14_582a0"]
+[ext_resource type="Resource" uid="uid://yvcmp4xcijmh" path="res://relics/common/square_ruler/relic_square_ruler.tres" id="15_4nonq"]
+[ext_resource type="Script" uid="uid://c72da5id7avtu" path="res://events/system/outcomes/add_relic/event_outcome_add_relic.gd" id="16_c1wma"]
+[ext_resource type="Resource" uid="uid://ddp3f5lll121p" path="res://aspects/types/connection/aspect_connection.tres" id="17_2llpx"]
+[ext_resource type="Resource" uid="uid://rysapqd7fyjl" path="res://bonuses/types/bonus_knowledge.tres" id="18_8gjuv"]
+[ext_resource type="Resource" uid="uid://bs3kd38ehlkw" path="res://aspects/types/illumination/aspect_illumination.tres" id="19_ale3b"]
+[ext_resource type="Resource" uid="uid://cer6b18uutqkb" path="res://cards/tier6/card_refuse.tres" id="20_ltmgi"]
+
+[sub_resource type="Resource" id="Resource_vt8lw"]
+script = ExtResource("2_gdi4t")
+min_progress = 130
+max_progress = -1
+
+[sub_resource type="Resource" id="Resource_coyvd"]
+script = ExtResource("5_67kcy")
+_texture_path = "res://events/generic/artisan_bureau/artisan_bureau.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_yo5sm"]
+script = ExtResource("10_hvpbu")
+bonus_type = ExtResource("9_u01m1")
+amount = 20
+extra_per_season = 20
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_yoigp"]
+script = ExtResource("12_3tjnj")
+card_type = ExtResource("11_37d24")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_cpvaa"]
+script = ExtResource("7_6dtk4")
+suboutcomes = Array[ExtResource("8_s7vqh")]([SubResource("Resource_yo5sm"), SubResource("Resource_yoigp")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_217w4"]
+script = ExtResource("14_582a0")
+aspect_type = ExtResource("13_3vsb0")
+min_count = 4
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_cyfme"]
+script = ExtResource("6_2cahw")
+markedup_text = "Retire quietly."
+requirement = SubResource("Resource_217w4")
+outcome = SubResource("Resource_cpvaa")
+markedup_result_text = "The master accepts with a heavy heart.
+
+Though it pains him to give up his craft, he knows that to continue is to hold the entire group back."
+
+[sub_resource type="Resource" id="Resource_2yibc"]
+script = ExtResource("16_c1wma")
+relic = ExtResource("15_4nonq")
+metadata/_custom_type_script = "uid://c72da5id7avtu"
+
+[sub_resource type="Resource" id="Resource_4fe78"]
+script = ExtResource("14_582a0")
+aspect_type = ExtResource("17_2llpx")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_rymnn"]
+script = ExtResource("6_2cahw")
+markedup_text = "Choose a successor."
+requirement = SubResource("Resource_4fe78")
+outcome = SubResource("Resource_2yibc")
+markedup_result_text = "The master agrees, but before resigning he chooses the foremost of his pupils as a successor.
+
+He presents the fortunate apprentice with his carpenter's square, an indispensable tool that has served him for decades."
+
+[sub_resource type="Resource" id="Resource_4un3v"]
+script = ExtResource("10_hvpbu")
+bonus_type = ExtResource("18_8gjuv")
+amount = 25
+extra_per_season = 15
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_xpc6o"]
+script = ExtResource("14_582a0")
+aspect_type = ExtResource("19_ale3b")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_mv6ao"]
+script = ExtResource("6_2cahw")
+markedup_text = "Start teaching instead."
+requirement = SubResource("Resource_xpc6o")
+outcome = SubResource("Resource_4un3v")
+markedup_result_text = "The master agrees to leave the cutting and measuring to the apprentices, but insists on holding regular carpentry classes, open to all.
+
+It would be a tragedy to let all his accumulated wisdom go to waste just because his eyesight is gone."
+
+[sub_resource type="Resource" id="Resource_njdss"]
+script = ExtResource("12_3tjnj")
+card_type = ExtResource("20_ltmgi")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_k6skd"]
+script = ExtResource("6_2cahw")
+markedup_text = "Refuse to retire."
+outcome = SubResource("Resource_njdss")
+markedup_result_text = "The master refuses to retire. Carpentry has been his life for decades, and he'd rather die a carpenter than spend his days sitting around.
+
+The apprentices will be forced to redo much of his work, but they are too timid to force the point."
+
+[sub_resource type="Resource" id="Resource_je5w8"]
+script = ExtResource("4_vp2do")
+markedup_text = "The settlement's master carpenter is slowly but surely going blind. His techniques remain unrivaled, but it won't be long before he will be unable to put any of them into practice.
+
+His apprentices gather for their monthly meeting with apprehension. It isn't easy to ask their master to put down his tools and retire.
+
+The master listens without saying a word, and stops to consider their suggestion."
+background_image = SubResource("Resource_coyvd")
+background_credit = ExtResource("5_gdi4t")
+choices = Array[ExtResource("6_2cahw")]([SubResource("Resource_cyfme"), SubResource("Resource_rymnn"), SubResource("Resource_mv6ao")])
+exit_choice = SubResource("Resource_k6skd")
+
+[resource]
+script = ExtResource("3_7t1di")
+default_spot_upgrade = ExtResource("1_pwuj5")
+event_id = "artisan_bureau"
+event_name = "The Retiring Master"
+requirement = SubResource("Resource_vt8lw")
+steps = Array[ExtResource("4_vp2do")]([SubResource("Resource_je5w8")])
+categories = Array[int]([3])

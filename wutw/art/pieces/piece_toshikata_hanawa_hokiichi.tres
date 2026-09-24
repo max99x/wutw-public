@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://ccslowsv5wv58"]
+
+[ext_resource type="Resource" uid="uid://b6y6o7v2ws78c" path="res://art/artists/artist_toshikata.tres" id="1_kq3s4"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_381v2"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_g5vmg"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="4_mp3e8"]
+
+[sub_resource type="Resource" id="Resource_alwh0"]
+script = ExtResource("2_381v2")
+_texture_path = "uid://dr83rsllkqfm4"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_bcsnl"]
+script = ExtResource("2_381v2")
+_texture_path = "uid://3yqwxdr1hlph"
+_is_horizontal = false
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_g5vmg")
+original_image = SubResource("Resource_bcsnl")
+piece_name = "Hanawa Hokiichi"
+artist = ExtResource("1_kq3s4")
+actual_start_year = 1890
+custom_link = "https://pages.uoregon.edu/jsmacollections/home/artists/mizuno-toshikata-1866-1908-/hanawa-hokiichi-from-the-series-i-21cbd0ece51d1b15.html"
+edits_description = "The image was cropped."
+final_image_tex = SubResource("Resource_alwh0")
+province = 71
+blurb = "Depicts the blind scholar [url=https://en.wikipedia.org/wiki/Hanawa_Hokiichi]Hanawa Hokiichi[/url] (1746-1821), famous for compiling the [url=https://en.wikipedia.org/wiki/Gunsho_Ruij%C5%AB]Gunsho Ruijū[/url], a collection of over a thousand historical documents. Helen Keller has described Hokiichi as one of her role models.
+
+In this scene, Hokiichi is giving a lecture when the wind blows out the candle, leaving the room dark. When his students explained the issue, he is said to to have replied: \"That shows the inconvenience of having to depend on eyes; for when the light goes out, you suddenly become helpless. I'm fortunate in never having any such trouble.\"
+
+The text in the top right corner gives a background on the scholar, but also claims that he published 3070 books, which is an obvious exaggeration.
+
+This print is from the series Foundations of Morality and Success designed by various artists and published by Matsuki Heikichi."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"
