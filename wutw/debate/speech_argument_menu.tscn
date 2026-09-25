@@ -59,7 +59,7 @@ color_ramp = SubResource("Gradient_okwfv")
 seamless = true
 seamless_blend_skirt = 0.27
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ahic"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4jphl"]
 shader = ExtResource("4_2tdcq")
 shader_parameter/size = Vector2(645, 49)
 shader_parameter/scroll_offset = 1.0
@@ -85,6 +85,7 @@ shader_parameter/background = ExtResource("15_1e38q")
 shader_parameter/gradient = SubResource("GradientTexture2D_jnknv")
 shader_parameter/background_tex_size = Vector2(635, 249)
 shader_parameter/background_scale = 1.0
+shader_parameter/pressed_modulate = Color(0.91, 0.855, 0.773, 1)
 shader_parameter/outline_tex = ExtResource("17_e3avv")
 shader_parameter/outline_tex_size = Vector2(650, 261)
 shader_parameter/outline_margin = Vector4(6.38, 6.3, 7.48, 7.97)
@@ -95,7 +96,7 @@ shader_parameter/swish_left_tex = ExtResource("18_6b02k")
 shader_parameter/swish_left_transform = Vector4(0, 0, 106.982, 42.958)
 shader_parameter/hover_distance = 2.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_bowbw"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_peabl"]
 shader = ExtResource("4_2tdcq")
 shader_parameter/size = Vector2(643, 49)
 shader_parameter/scroll_offset = 1.0
@@ -127,7 +128,7 @@ custom_minimum_size = Vector2(745, 0)
 layout_mode = 2
 
 [node name="TopDowelWood" parent="Control/ScrollPanel/TopDowelContainer" index="0"]
-material = SubResource("ShaderMaterial_1ahic")
+material = SubResource("ShaderMaterial_4jphl")
 
 [node name="Scroller" parent="Control/ScrollPanel" index="1"]
 custom_minimum_size = Vector2(0, 440)
@@ -137,7 +138,6 @@ offset_bottom = 1656.0
 
 [node name="ContentPanel" parent="Control/ScrollPanel/Scroller/ScrollMargin" index="0"]
 material = ExtResource("6_uta6u")
-instance_shader_parameters/size = Vector2(434.0136, 299.3197)
 
 [node name="ContentContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel" index="0"]
 theme_override_constants/margin_top = 10
@@ -155,7 +155,6 @@ horizontal_alignment = 1
 
 [node name="ArgumentsListPanel" type="PanelContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer" unique_id=2007050013]
 material = ExtResource("6_uta6u")
-instance_shader_parameters/size = Vector2(408.16327, 208.16324)
 custom_minimum_size = Vector2(365, 0)
 layout_mode = 2
 size_flags_vertical = 3
@@ -176,6 +175,13 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[node name="NoMissableLabel" type="Label" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/ArgumentsListPanel" unique_id=1609302512]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "No more speeches will be found."
+horizontal_alignment = 1
+
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer" unique_id=1949338384]
 layout_mode = 2
 
@@ -183,11 +189,11 @@ layout_mode = 2
 unique_name_in_owner = true
 material = SubResource("ShaderMaterial_7ttsd")
 instance_shader_parameters/background_offset = Vector2(0.14630975, 0.5529591)
-instance_shader_parameters/size = Vector2(63.26532, 27.891174)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 2
 size_flags_vertical = 8
+focus_mode = 0
 theme_override_styles/normal = ExtResource("20_wkv51")
 theme_override_styles/pressed = ExtResource("20_wkv51")
 theme_override_styles/hover = ExtResource("20_wkv51")
@@ -201,11 +207,11 @@ metadata/_custom_type_script = "uid://tmvhmuymumhk"
 unique_name_in_owner = true
 material = SubResource("ShaderMaterial_7ttsd")
 instance_shader_parameters/background_offset = Vector2(0.19940975, 0.704915)
-instance_shader_parameters/size = Vector2(95.23804, 27.891174)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 8
+focus_mode = 0
 theme_override_styles/normal = ExtResource("20_wkv51")
 theme_override_styles/pressed = ExtResource("20_wkv51")
 theme_override_styles/hover = ExtResource("20_wkv51")
@@ -216,7 +222,7 @@ script = ExtResource("21_u3u7r")
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="BottomDowelWood" parent="Control/ScrollPanel/BottomDowelContainer" index="0"]
-material = SubResource("ShaderMaterial_bowbw")
+material = SubResource("ShaderMaterial_peabl")
 
 [connection signal="pressed" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/HBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/HBoxContainer/SendButton" to="." method="_on_send_button_pressed"]

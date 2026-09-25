@@ -15,7 +15,8 @@ var _closing: bool
 func _ready() -> void:
 	Utils.clear_node(%ArgumentsList)
 	var group := ButtonGroup.new()
-	for argument: DebateArgument in DebateArgument.get_all_arguments().values():
+	var all_arguments := DebateArgument.get_all_arguments().values()
+	for argument: DebateArgument in all_arguments:
 		if GlobalSaveGame.is_argument_unlocked(argument) and not GlobalSaveGame.is_argument_used(argument):
 			var button := UkiyoeButton.new()
 			button.text = tr(argument.name)
@@ -26,6 +27,8 @@ func _ready() -> void:
 			%ArgumentsList.add_child(button)
 	Utils.ensure(%ArgumentsList.get_child_count() > 0)
 	(%ArgumentsList.get_child(0) as Button).button_pressed = true
+
+	(%NoMissableLabel as Label).visible = all_arguments.size() == 1 and _get_num_missable_arguments() == 0
 
 	(%ScrollPanel as ScrollPanel).animate_unroll()
 
@@ -79,6 +82,7 @@ func _get_num_missable_arguments() -> int:
 	for argument in talisman_arguments:
 		if GlobalSaveGame.is_argument_used(argument):
 			any_talisman_used = true
+			break
 	if not any_talisman_used:
 		num_missable += 1
 
@@ -86,6 +90,7 @@ func _get_num_missable_arguments() -> int:
 	for argument in fox_arguments:
 		if GlobalSaveGame.is_argument_used(argument):
 			any_magic_used = true
+			break
 	if not any_magic_used:
 		num_missable += 1
 
@@ -93,6 +98,7 @@ func _get_num_missable_arguments() -> int:
 	for argument in forest_shrine_arguments:
 		if GlobalSaveGame.is_argument_used(argument):
 			any_religion_used = true
+			break
 	if not any_religion_used:
 		num_missable += 1
 
