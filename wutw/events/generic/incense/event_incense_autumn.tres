@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://brx8q015n4bwj"]
+
+[ext_resource type="Resource" uid="uid://cgnttpxl266fx" path="res://stage/spots/brushland/upgrade_brushland_2_incense_workshop.tres" id="1_a2r66"]
+[ext_resource type="Script" uid="uid://c50bhh4sr0g8o" path="res://events/system/requirements/event_requirement_main_quest_progress.gd" id="2_3dk2p"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="2_u1arm"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="3_3dk2p"]
+[ext_resource type="Resource" uid="uid://bvppc0404jmro" path="res://art/pieces/piece_gekkou_incense.tres" id="4_2bs4v"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_027ey"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_d0f0g"]
+[ext_resource type="Resource" uid="uid://c5yajko7b17q4" path="res://relics/common/incense_pellet/relic_incense_pellet.tres" id="7_arw1h"]
+[ext_resource type="Script" uid="uid://c72da5id7avtu" path="res://events/system/outcomes/add_relic/event_outcome_add_relic.gd" id="8_atrs7"]
+[ext_resource type="Resource" uid="uid://cxvs8kjmqlbjk" path="res://cards/tier6/card_failure.tres" id="9_y75a7"]
+[ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="10_al4kx"]
+
+[sub_resource type="Resource" id="Resource_trtbi"]
+script = ExtResource("2_3dk2p")
+min_progress = 220
+metadata/_custom_type_script = "uid://c50bhh4sr0g8o"
+
+[sub_resource type="Resource" id="Resource_d0keq"]
+script = ExtResource("5_027ey")
+_texture_path = "res://events/generic/incense/incense.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_eb57d"]
+script = ExtResource("10_al4kx")
+card_type = ExtResource("9_y75a7")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_mxy6s"]
+script = ExtResource("6_d0f0g")
+markedup_text = "Mix in clove, frankincense, and sandalwood."
+outcome = SubResource("Resource_eb57d")
+markedup_result_text = "The apprentices blend clove, frankincense, and sandalwood into the base mixture of agarwood and crushed seashells, then knead it with honey.
+
+The result is a set of pellets with a deep, warm fragrance.
+
+The master examines their work over a hot censer and frowns. \"It is a fine scent, but it does not suit the season.\""
+
+[sub_resource type="Resource" id="Resource_rqfe5"]
+script = ExtResource("8_atrs7")
+relic = ExtResource("7_arw1h")
+metadata/_custom_type_script = "uid://c72da5id7avtu"
+
+[sub_resource type="Resource" id="Resource_l1gue"]
+script = ExtResource("6_d0f0g")
+markedup_text = "Mix in clove, frankincense, and spikenard."
+outcome = SubResource("Resource_rqfe5")
+markedup_result_text = "The apprentices blend clove, frankincense, and spikenard into the base mixture of agarwood and crushed seashells, then knead it with honey.
+
+The result is a set of pellets with a rich woody scent.
+
+The master examines their work over a hot censer and nods. \"They bring to mind the fading of chrysanthemum flower.\"
+
+The pellets are buried to age in the dark."
+
+[sub_resource type="Resource" id="Resource_ps5l8"]
+script = ExtResource("6_d0f0g")
+markedup_text = "Mix in clove, camphor, spikenard, and sandalwood."
+outcome = SubResource("Resource_eb57d")
+markedup_result_text = "The apprentices blend clove, camphor, spikenard, and sandalwood into the base mixture of agarwood and crushed seashells, then knead it with honey.
+
+The result is a set of pellets with a sweet, floral scent.
+
+The master examines their work over a hot censer and frowns. \"It is a fine scent, but it does not suit the season.\""
+
+[sub_resource type="Resource" id="Resource_6at2x"]
+script = ExtResource("6_d0f0g")
+markedup_text = "Mix in patchouli, spikenard, sandalwood, and turmeric."
+outcome = SubResource("Resource_eb57d")
+markedup_result_text = "The apprentices blend patchouli, spikenard, sandalwood, and turmeric into the base mixture of agarwood and crushed seashells, then knead it with honey.
+
+The result is a set of pellets with an earthy yet refreshing scent.
+
+The master examines their work over a hot censer and frowns. \"It is a fine scent, but it does not suit the season.\""
+
+[sub_resource type="Resource" id="Resource_8mfyw"]
+script = ExtResource("3_3dk2p")
+markedup_text = "At the incense workshop, the apprentices are preparing a new blend for their master to examine.
+
+They have boiled and crushed seashells, mixing them with agarwood for the traditional base, and are now preparing to add the main aromatic ingredients.
+
+Today, they have been tasked with creating a seasonal scent appropriate for [b]autumn[/b]."
+background_image = SubResource("Resource_d0keq")
+background_credit = ExtResource("4_2bs4v")
+choices = Array[ExtResource("6_d0f0g")]([SubResource("Resource_mxy6s"), SubResource("Resource_l1gue"), SubResource("Resource_ps5l8"), SubResource("Resource_6at2x")])
+
+[resource]
+script = ExtResource("2_u1arm")
+default_probability_weight = 5
+default_spot_upgrade = ExtResource("1_a2r66")
+event_id = "incense_autumn"
+event_name = "Seasonal Incense: Autumn"
+requirement = SubResource("Resource_trtbi")
+steps = Array[ExtResource("3_3dk2p")]([SubResource("Resource_8mfyw")])
+categories = Array[int]([3])

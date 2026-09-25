@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://bvppc0404jmro"]
+
+[ext_resource type="Resource" uid="uid://cbw2e4ja2vgj1" path="res://art/artists/artist_gekkou.tres" id="1_fsem5"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_r1ckb"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_mdcew"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="5_enw8b"]
+[ext_resource type="Resource" uid="uid://qykm4cyua7ra" path="res://art/styles/style_shin_hanga.tres" id="6_pkann"]
+
+[sub_resource type="Resource" id="Resource_vst2n"]
+script = ExtResource("2_r1ckb")
+_texture_path = "uid://qsok6cudwpta"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_bcsnl"]
+script = ExtResource("2_r1ckb")
+_texture_path = "uid://dhsue3i6g1nji"
+_is_horizontal = false
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_mdcew")
+original_image = SubResource("Resource_bcsnl")
+piece_name = "Incense Ceremony"
+artist = ExtResource("1_fsem5")
+styles = Array[ExtResource("5_enw8b")]([ExtResource("6_pkann")])
+actual_start_year = 1891
+actual_end_year = 1891
+custom_link = "https://ogatagekko.com/print/incense-ceremony-20/"
+edits_description = "The background was edited out."
+final_image_tex = SubResource("Resource_vst2n")
+blurb = "Depicts women performing an incense ceremony. The exact nature of the ceremony is unclear, but it seems to involve smelling different kinds of incense.
+
+Incense has a long history in Japanese traditions. During the Heian period, incense blends were often presented to be judged by aristocrats, and the Tale of Genji features a chapter describing one such occasion.
+
+Later, in the Muromachi and Edo periods, incense-guessing games were invented, the most famous of which is the Genjikō, which involved drawing five sachets of blended wood and guessing which of them were the same and which were different."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"
