@@ -13,6 +13,7 @@ func on_added(run: Run, apply_modifiers: bool) -> void:
 	_update_state()
 
 func on_removed() -> void:
+	_update_state()
 	_run.signals.card_added_to_hand.disconnect(_on_card_added_to_hand)
 	_run.signals.discard_finished.disconnect(_on_discard_finished)
 	_run.signals.redraw_started.disconnect(_on_redraw_started)
