@@ -134,7 +134,7 @@ tooltip = "An era of social and political upheaval, marked by regional lords (da
 
 Despite civil war, the economy boomed, leading to the rise of a wealthy merchant class and artisan guilds. Farmers also gained power, and occasionally launched coordinated uprisings to demand tax or debt relief from their lords.
 
-Influenced by Zen Buddhism, the wabi-sabi aesthetic developed, focused on appreciating rustic imperfection. Famous traditions like the Japanese tea ceremony, flower arranging, rock gardens, sumi-e painting, and Noh theater arose during this time."
+Influenced by Zen Buddhism, the wabi aesthetic developed, focused on melancholic appreciating of rustic imperfection. Famous traditions like the Japanese tea ceremony, flower arranging, rock gardens, sumi-e painting, and Noh theater arose during this time."
 
 [node name="AzuchiLine" type="Panel" parent="Control" unique_id=2123492001]
 unique_name_in_owner = true
