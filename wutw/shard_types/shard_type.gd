@@ -36,6 +36,28 @@ static func get_all_shard_types() -> Dictionary[String, ShardType]:
 static func get_shard_type_by_id(id: String) -> ShardType:
 	return get_all_shard_types().get(id, null)
 
+static func choose_shard_type(run_data: RunData) -> ShardType:
+	var best_shard_type: ShardType
+	var best_shard_type_score: float = -1
+	for shard_type: ShardType in ShardType.get_all_shard_types().values():
+		if GlobalSaveGame.is_shard_type_unlocked(shard_type):
+			continue  # Already assigned.
+		elif shard_type.min_main_quest_progress > GlobalSaveGame.get_main_quest_progress():
+			continue  # Not yet accessible.
+		var current_score := shard_type.score(run_data)
+		if current_score >= 1:
+			if shard_type.tier == ShardType.Tier.MAIN_QUEST:
+				current_score *= 1_000_000.0
+			elif GlobalSaveGame.get_pinned_shard_type() == shard_type:
+				current_score *= 100.0
+		if current_score > best_shard_type_score:
+			best_shard_type = shard_type
+			best_shard_type_score = current_score
+	if best_shard_type_score >= 1:
+		return best_shard_type
+	else:
+		return null
+
 func score(run_data: RunData) -> float:
 	var reqs := describe_requirements()
 	var result := 0.0

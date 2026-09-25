@@ -12,10 +12,10 @@ func score_requirement(run_data: RunData, index: int) -> float:
 			for settlement_state in run_data.settlement_states:
 				for upgrades in settlement_state.activated_upgrades:
 					if monastery in upgrades:
-						return 1000
+						return 1
 			return 0
-		1: return 1000 if run_data.bonus_amounts.get_amount(harmony) >= min_harmony else 0
-		2: return 1000 if run_data.capital_location.x < 0 else 0
+		1: return 1 if run_data.bonus_amounts.get_amount(harmony) >= min_harmony else 0
+		2: return 1 if run_data.capital_location.x < 0 else 0
 		_: return -1
 
 func describe_requirements() -> Array[String]:

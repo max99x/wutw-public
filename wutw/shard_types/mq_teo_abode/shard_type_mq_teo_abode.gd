@@ -9,7 +9,7 @@ func score_requirement(_run_data: RunData, index: int) -> float:
 		0:
 			var instance := GlobalSaveGame.get_quest_instance(quest)
 			if instance and instance.get_state() >= Quest_Main140_Dedication.STATE_PROMPT_SHOWN:
-				return 1000
+				return 1
 			else:
 				return 0
 		_: return -1

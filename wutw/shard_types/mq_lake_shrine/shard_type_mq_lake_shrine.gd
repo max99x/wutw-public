@@ -8,7 +8,7 @@ func score_requirement(run_data: RunData, index: int) -> float:
 	match index:
 		0:
 			if event.has_triggered(run_data):
-				return 1000
+				return 1
 			else:
 				return 0
 		_: return -1

@@ -128,24 +128,12 @@ func _ready() -> void:
 		_past_run.uid = GlobalSaveGame.get_current_slot() * 10000 + 1 + GlobalSaveGame.get_past_run_ids().size()
 		_past_run.run_data = run.get_run_data()
 		_past_run.date_settled = GlobalSaveGame.get_current_date()
-		var best_shard_type: ShardType
-		var best_shard_type_score: float = -1
-		for shard_type: ShardType in ShardType.get_all_shard_types().values():
-			if GlobalSaveGame.is_shard_type_unlocked(shard_type):
-				continue  # Already assigned.
-			elif shard_type.min_main_quest_progress > GlobalSaveGame.get_main_quest_progress():
-				continue  # Not yet accessible.
-			var score := shard_type.score(run.get_run_data())
-			if score >= 1 and GlobalSaveGame.get_pinned_shard_type() == shard_type:
-				score = 100.0
-			if score > best_shard_type_score:
-				best_shard_type = shard_type
-				best_shard_type_score = score
-		if best_shard_type_score >= 1:
-			_past_run.shard_type = best_shard_type
-			_past_run.shard_name = best_shard_type.shard_name_override
-			_past_run.shard_name_jp = best_shard_type.shard_name_override_jp
-			_past_run.shard_name_meaning = best_shard_type.shard_name_override_meaning
+		var shard_type := ShardType.choose_shard_type(run.get_run_data())
+		if shard_type:
+			_past_run.shard_type = shard_type
+			_past_run.shard_name = shard_type.shard_name_override
+			_past_run.shard_name_jp = shard_type.shard_name_override_jp
+			_past_run.shard_name_meaning = shard_type.shard_name_override_meaning
 		else:
 			var shard_names := SHARD_NAMES.get_loaded() as ShardNameSet
 			var shard_name_index := (GlobalSaveGame.get_playthrough_seed() + _past_run.uid) % shard_names.names.size()
