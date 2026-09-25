@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Relic_CherryPetal" format=3 uid="uid://d0m5uiabu4h4"]
+
+[ext_resource type="Script" uid="uid://lpwtl3mt3rtr" path="res://relics/common/cherry_petal/relic_cherry_petal.gd" id="1_f3l80"]
+[ext_resource type="Texture2D" uid="uid://crjuvl53eoav5" path="res://relics/common/cherry_petal/chery_petal.png" id="1_vv3vv"]
+[ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="2_vv3vv"]
+[ext_resource type="Resource" uid="uid://5q63svcbmx37" path="res://glossary/categories/termcategory_relic.tres" id="3_gw7yh"]
+
+[resource]
+script = ExtResource("1_f3l80")
+relic_id = "cherry_petal"
+default_name = "Cherry Petal"
+default_description = "Event choices require %s when no <term_lower:redraw>s are left."
+flavor_text = "Falling sakura...The blooms that remain are still... Falling sakura."
+icon = ExtResource("1_vv3vv")
+term_categories = Array[ExtResource("2_vv3vv")]([ExtResource("3_gw7yh")])
+metadata/_custom_type_script = "uid://lpwtl3mt3rtr"

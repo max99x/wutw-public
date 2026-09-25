@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://c730g5rnj80op"]
+
+[ext_resource type="Resource" uid="uid://86d5h85e0bsq" path="res://art/artists/artist_hiroshige.tres" id="1_rmwy5"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_5wqhi"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_4jxic"]
+[ext_resource type="Resource" uid="uid://cbgg20kryy52m" path="res://art/series/series_hiroshige_famous_views_of_edo.tres" id="4_rmwy5"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="5_7muox"]
+[ext_resource type="Resource" uid="uid://dyx8q8iako05e" path="res://art/styles/style_meisho.tres" id="6_4h0b8"]
+
+[sub_resource type="Resource" id="Resource_54jar"]
+script = ExtResource("2_5wqhi")
+_texture_path = "uid://dwhul5d5gxe84"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_bcsnl"]
+script = ExtResource("2_5wqhi")
+_texture_path = "uid://b18evejcdkqc0"
+_is_horizontal = false
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_4jxic")
+original_image = SubResource("Resource_bcsnl")
+piece_name = "Blossoms on the Tama River Embankment"
+series = ExtResource("4_rmwy5")
+artist = ExtResource("1_rmwy5")
+styles = Array[ExtResource("5_7muox")]([ExtResource("6_4h0b8")])
+actual_start_year = 1856
+actual_end_year = 1856
+date_type = 1
+final_image_tex = SubResource("Resource_54jar")
+province = 71
+blurb = "Depicts sightseers viewing cherry blossoms along the banks of the Tama River at Edo.
+
+The scene is situated along the Tamagawa Aqueduct flowing south of Naito-Shinjuku, a post town on the Kōshū Kaidō road. To the right are the houses of the post town, and to the left is a row of cherry trees planted during the Kyōhō era (1716-1736) to reinforce the embankment."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"

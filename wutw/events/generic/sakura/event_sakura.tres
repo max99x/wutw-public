@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://c0q6e422ja7xm"]
+
+[ext_resource type="Resource" uid="uid://hohy7ifwvu0x" path="res://stage/spots/river/upgrade_river_2_sakura_riverbank.tres" id="1_2r08p"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="2_hw1i8"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="3_8tvs8"]
+[ext_resource type="Resource" uid="uid://c730g5rnj80op" path="res://art/pieces/piece_hiroshige_tama_river_blossoms.tres" id="4_j0evi"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_1qeg5"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_rlsqx"]
+[ext_resource type="Script" uid="uid://us3vhbuc1tdq" path="res://events/system/outcomes/all/event_outcome_all.gd" id="7_abj2w"]
+[ext_resource type="Script" uid="uid://djcv8lbjfjg6e" path="res://events/system/outcomes/event_outcome.gd" id="8_xc56h"]
+[ext_resource type="Resource" uid="uid://c2oiykws0j88s" path="res://relics/common/cherry_pit/relic_cherry_pit.tres" id="9_uu7oc"]
+[ext_resource type="Script" uid="uid://c72da5id7avtu" path="res://events/system/outcomes/add_relic/event_outcome_add_relic.gd" id="10_0xeql"]
+[ext_resource type="Resource" uid="uid://c6itkj7qwdavt" path="res://bonuses/types/bonus_harmony.tres" id="11_fr6jt"]
+[ext_resource type="Script" uid="uid://dkas1jvkeluf4" path="res://events/system/outcomes/bonus/event_outcome_bonus.gd" id="12_v7fih"]
+[ext_resource type="Resource" uid="uid://o80v148lfiri" path="res://aspects/types/change/aspect_change.tres" id="13_63hna"]
+[ext_resource type="Script" uid="uid://cjdop1iab2efw" path="res://events/system/requirements/event_requirement_num_aspects.gd" id="14_c3etr"]
+[ext_resource type="Resource" uid="uid://c1q7ycgoyodvr" path="res://bonuses/types/bonus_beauty.tres" id="15_u00l5"]
+[ext_resource type="Resource" uid="uid://begvnkwoyu3nf" path="res://aspects/types/craft/aspect_craft.tres" id="16_nxdde"]
+[ext_resource type="Resource" uid="uid://d0m5uiabu4h4" path="res://relics/common/cherry_petal/relic_cherry_petal.tres" id="17_j5fly"]
+[ext_resource type="Resource" uid="uid://dgd4xg64jr3k0" path="res://aspects/types/spirit/aspect_spirit.tres" id="18_o7u58"]
+
+[sub_resource type="Resource" id="Resource_tq8ra"]
+script = ExtResource("5_1qeg5")
+_texture_path = "res://events/generic/sakura/sakura.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_x1gg7"]
+script = ExtResource("10_0xeql")
+relic = ExtResource("9_uu7oc")
+metadata/_custom_type_script = "uid://c72da5id7avtu"
+
+[sub_resource type="Resource" id="Resource_1a7fo"]
+script = ExtResource("12_v7fih")
+bonus_type = ExtResource("11_fr6jt")
+amount = -20
+extra_per_season = -20
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_d1arc"]
+script = ExtResource("7_abj2w")
+suboutcomes = Array[ExtResource("8_xc56h")]([SubResource("Resource_x1gg7"), SubResource("Resource_1a7fo")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_vthxo"]
+script = ExtResource("14_c3etr")
+aspect_type = ExtResource("13_63hna")
+min_count = 5
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_2s4jx"]
+script = ExtResource("6_rlsqx")
+markedup_text = "Replant with varieties that bloom at different times."
+requirement = SubResource("Resource_vthxo")
+outcome = SubResource("Resource_d1arc")
+markedup_result_text = "The horticulturists cut down most of the existing cherry trees and plant new varieties brought from distant shards.
+
+Each one will bloom at a different time, letting the sakura season last for a month or more.
+
+Still, it will be years before the new trees will mature, much to the disppointment of the locals."
+
+[sub_resource type="Resource" id="Resource_s13el"]
+script = ExtResource("12_v7fih")
+bonus_type = ExtResource("15_u00l5")
+amount = 25
+extra_per_season = 15
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_xtxwj"]
+script = ExtResource("14_c3etr")
+aspect_type = ExtResource("16_nxdde")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_i1mfw"]
+script = ExtResource("6_rlsqx")
+markedup_text = "Graft longer-blooming varieties onto existing trees."
+requirement = SubResource("Resource_xtxwj")
+outcome = SubResource("Resource_s13el")
+markedup_result_text = "The horticulturists carefully choose branches to replace, making sure to match them in size to the scion branches.
+
+They make interlocking cuts, then seal and bind the wounds.
+
+In time, this will double the length of the blooming season, even if the result may be somewhat patchy."
+
+[sub_resource type="Resource" id="Resource_8isx0"]
+script = ExtResource("10_0xeql")
+relic = ExtResource("17_j5fly")
+metadata/_custom_type_script = "uid://c72da5id7avtu"
+
+[sub_resource type="Resource" id="Resource_6c24b"]
+script = ExtResource("14_c3etr")
+aspect_type = ExtResource("18_o7u58")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_qhnyi"]
+script = ExtResource("6_rlsqx")
+markedup_text = "Highlight the beauty in the blooms' transience."
+requirement = SubResource("Resource_6c24b")
+outcome = SubResource("Resource_8isx0")
+markedup_result_text = "The horticulturists' ambitions are overriden by an old poet, who sings praises to the transience of the blooms.
+
+The joy of the cherry blossom viewing tradition lies in its transience, he declares. If these trees bloomed all year long, they wouldn't be special anymore. He even recites a poem to support his point:
+
+Falling sakura...
+The blooms that remain are still;
+Falling sakura."
+
+[sub_resource type="Resource" id="Resource_k5mxp"]
+script = ExtResource("6_rlsqx")
+markedup_text = "Leave the trees alone."
+markedup_result_text = "The horticulturists decide against harming the existing trees, and they are left to bloom in peace, even if for only a short while."
+
+[sub_resource type="Resource" id="Resource_f4vqu"]
+script = ExtResource("3_8tvs8")
+markedup_text = "The cherry trees lining the riverbank enjoy a great popularity among the the locals, but despite their beauty, they bloom for only a few days.
+
+Once the brief blooming season ends, the petals fall, covering the banks in a pink blanket.
+
+Local horticulturists think they may be able to solve the problem with enough effort."
+background_image = SubResource("Resource_tq8ra")
+background_credit = ExtResource("4_j0evi")
+choices = Array[ExtResource("6_rlsqx")]([SubResource("Resource_2s4jx"), SubResource("Resource_i1mfw"), SubResource("Resource_qhnyi")])
+exit_choice = SubResource("Resource_k5mxp")
+
+[resource]
+script = ExtResource("2_hw1i8")
+default_spot_upgrade = ExtResource("1_2r08p")
+event_id = "sakura"
+event_name = "The Brief Bloom"
+steps = Array[ExtResource("3_8tvs8")]([SubResource("Resource_f4vqu")])
+categories = Array[int]([3])
