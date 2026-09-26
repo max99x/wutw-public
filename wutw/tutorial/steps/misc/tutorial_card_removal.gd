@@ -16,7 +16,7 @@ func _on_state_changed() -> void:
 
 	var run := Utils.get_active_run()
 	if run.get_state() == RunData.State.STAGE_CARD_REWARD:
-		if run.get_deck_cards().size() >= 18:
+		if run.get_deck_cards().size() >= 20:
 			ready_to_trigger.emit()
 
 func trigger() -> void:
