@@ -13,14 +13,14 @@
 [ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="11_1osj0"]
 [ext_resource type="Resource" uid="uid://d1k7vakhjcq5g" path="res://glossary/categories/termcategory_card.tres" id="12_ebvjw"]
 
-[sub_resource type="Resource" id="Resource_m4jlw"]
-script = ExtResource("2_m44tb")
-metadata/_custom_type_script = "uid://bxewhuj5jjbsx"
-
 [sub_resource type="Resource" id="Resource_rtw6j"]
 script = ExtResource("4_fes1g")
 card_type = ExtResource("3_seqfv")
 metadata/_custom_type_script = "uid://bl5b1rm7x8b36"
+
+[sub_resource type="Resource" id="Resource_m4jlw"]
+script = ExtResource("2_m44tb")
+metadata/_custom_type_script = "uid://bxewhuj5jjbsx"
 
 [sub_resource type="Resource" id="Resource_rscah"]
 script = ExtResource("7_7kp5m")
@@ -691,7 +691,7 @@ _difficulty = 122
 script = ExtResource("10_mosau")
 symbol = "不"
 card_name = "Not"
-abilities = Array[ExtResource("1_3xwwt")]([SubResource("Resource_m4jlw"), SubResource("Resource_rtw6j")])
+abilities = Array[ExtResource("1_3xwwt")]([SubResource("Resource_rtw6j"), SubResource("Resource_m4jlw")])
 vocabulary = Array[ExtResource("7_7kp5m")]([SubResource("Resource_g3t7v"), SubResource("Resource_8eutt"), SubResource("Resource_hlonl"), SubResource("Resource_nfcsb"), SubResource("Resource_lomae"), SubResource("Resource_58nko"), SubResource("Resource_1xmie"), SubResource("Resource_ooaxq"), SubResource("Resource_shqmt"), SubResource("Resource_skvw2"), SubResource("Resource_20tjc"), SubResource("Resource_qocp4"), SubResource("Resource_idtf6"), SubResource("Resource_06xte"), SubResource("Resource_wqed4"), SubResource("Resource_vgb1o"), SubResource("Resource_rjmkq"), SubResource("Resource_iv5ef"), SubResource("Resource_pk5mn"), SubResource("Resource_8tpwi")])
 example_sentences = Array[ExtResource("5_50xrg")]([SubResource("Resource_edylq"), SubResource("Resource_yjqde"), SubResource("Resource_0gtuu"), SubResource("Resource_jrwvu"), SubResource("Resource_52vdt"), SubResource("Resource_lo4yd"), SubResource("Resource_errr2"), SubResource("Resource_xg530"), SubResource("Resource_6lhcg"), SubResource("Resource_ofmnr"), SubResource("Resource_jegh1"), SubResource("Resource_josan")])
 kanji_shape = SubResource("Resource_8ectk")
