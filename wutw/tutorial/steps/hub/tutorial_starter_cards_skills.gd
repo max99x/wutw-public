@@ -39,7 +39,9 @@ func trigger() -> void:
 					break
 
 	var text := tr('''
-Consider unlocking the [b]%s[/b] to customize your starter deck.
+Now may be a good time to consider unlocking the [b]%s[/b] skill.
+
+It will give you a lot of choices in customizing your starting <term_lower:card_deck>.
 ''').strip_edges() % tr(start_cards_skill_node.skill.skill_name)
 	_outline_controls([start_cards_skill_node])
 	_show_tooltip(start_cards_skill_node, text, [Tooltip.RelativeDirection.BELOW])
