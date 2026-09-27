@@ -3,7 +3,7 @@ class_name EventRequirement_EventState
 extends EventRequirement
 
 enum Scope { RUN, SAVEGAME }
-enum Op { EQ, NEQ, GT, GTE, LT, LTE }
+enum Op { EQ, NEQ, GT, GTE, LT, LTE, EXISTS, NOT_EXISTS }
 
 @export var scope: Scope = Scope.RUN
 @export var event_id: String = '<self>'
@@ -22,6 +22,11 @@ func is_satisfied(run: Run, event: Event) -> bool:
 	var actual_event_id := event_id
 	if event_id == '<self>':
 		actual_event_id = event.event_id
+
+	if var_op == Op.EXISTS:
+		return events_state.exists(actual_event_id, var_id)
+	elif var_op == Op.NOT_EXISTS:
+		return not events_state.exists(actual_event_id, var_id)
 
 	var current_value: Variant
 	var target_value: Variant

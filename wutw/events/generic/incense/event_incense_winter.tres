@@ -3,12 +3,15 @@
 [ext_resource type="Resource" uid="uid://cgnttpxl266fx" path="res://stage/spots/brushland/upgrade_brushland_2_incense_workshop.tres" id="1_7qsly"]
 [ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="2_0215k"]
 [ext_resource type="Script" uid="uid://c50bhh4sr0g8o" path="res://events/system/requirements/event_requirement_main_quest_progress.gd" id="2_p7otl"]
+[ext_resource type="Script" uid="uid://pyad6w22lri1" path="res://events/system/requirements/event_requirement.gd" id="2_yjgko"]
 [ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="3_21g8u"]
 [ext_resource type="Resource" uid="uid://bvppc0404jmro" path="res://art/pieces/piece_gekkou_incense.tres" id="4_032t8"]
+[ext_resource type="Script" uid="uid://d16r7o1hw8apt" path="res://events/system/requirements/event_requirement_event_state.gd" id="4_7265i"]
 [ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_2e476"]
 [ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_p7otl"]
 [ext_resource type="Resource" uid="uid://c5yajko7b17q4" path="res://relics/common/incense_pellet/relic_incense_pellet.tres" id="7_2e476"]
 [ext_resource type="Script" uid="uid://c72da5id7avtu" path="res://events/system/outcomes/add_relic/event_outcome_add_relic.gd" id="8_p7otl"]
+[ext_resource type="Script" uid="uid://15prcev7a3ta" path="res://events/system/requirements/event_requirement_all.gd" id="9_gg8to"]
 [ext_resource type="Resource" uid="uid://cxvs8kjmqlbjk" path="res://cards/tier6/card_failure.tres" id="9_rqfe5"]
 [ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="10_eb57d"]
 
@@ -17,12 +20,38 @@ script = ExtResource("2_p7otl")
 min_progress = 220
 metadata/_custom_type_script = "uid://c50bhh4sr0g8o"
 
+[sub_resource type="Resource" id="Resource_yjgko"]
+script = ExtResource("4_7265i")
+event_id = "incense_spring"
+var_id = "TRIGGERED_STAGE_INDEX"
+var_op = 7
+metadata/_custom_type_script = "uid://d16r7o1hw8apt"
+
+[sub_resource type="Resource" id="Resource_fjfsr"]
+script = ExtResource("4_7265i")
+event_id = "incense_summer"
+var_id = "TRIGGERED_STAGE_INDEX"
+var_op = 7
+metadata/_custom_type_script = "uid://d16r7o1hw8apt"
+
+[sub_resource type="Resource" id="Resource_q5jjd"]
+script = ExtResource("4_7265i")
+event_id = "incense_autumn"
+var_id = "TRIGGERED_STAGE_INDEX"
+var_op = 7
+metadata/_custom_type_script = "uid://d16r7o1hw8apt"
+
+[sub_resource type="Resource" id="Resource_p7otl"]
+script = ExtResource("9_gg8to")
+all_requirements = Array[ExtResource("2_yjgko")]([SubResource("Resource_trtbi"), SubResource("Resource_yjgko"), SubResource("Resource_fjfsr"), SubResource("Resource_q5jjd")])
+metadata/_custom_type_script = "uid://15prcev7a3ta"
+
 [sub_resource type="Resource" id="Resource_d0keq"]
 script = ExtResource("5_2e476")
 _texture_path = "res://events/generic/incense/incense.png"
 _is_horizontal = false
 
-[sub_resource type="Resource" id="Resource_rqfe5"]
+[sub_resource type="Resource" id="Resource_4g7wn"]
 script = ExtResource("8_p7otl")
 relic = ExtResource("7_2e476")
 metadata/_custom_type_script = "uid://c72da5id7avtu"
@@ -30,7 +59,7 @@ metadata/_custom_type_script = "uid://c72da5id7avtu"
 [sub_resource type="Resource" id="Resource_mxy6s"]
 script = ExtResource("6_p7otl")
 markedup_text = "Mix in clove, frankincense, and sandalwood."
-outcome = SubResource("Resource_rqfe5")
+outcome = SubResource("Resource_4g7wn")
 markedup_result_text = "The apprentices blend clove, frankincense, and sandalwood into the base mixture of agarwood and crushed seashells, then knead it with honey.
 
 The result is a set of pellets with a deep, warm fragrance.
@@ -91,6 +120,6 @@ default_probability_weight = 5
 default_spot_upgrade = ExtResource("1_7qsly")
 event_id = "incense_winter"
 event_name = "Seasonal Incense: Winter"
-requirement = SubResource("Resource_trtbi")
+requirement = SubResource("Resource_p7otl")
 steps = Array[ExtResource("3_21g8u")]([SubResource("Resource_8mfyw")])
 categories = Array[int]([3])

@@ -3,8 +3,11 @@
 [ext_resource type="Resource" uid="uid://cgnttpxl266fx" path="res://stage/spots/brushland/upgrade_brushland_2_incense_workshop.tres" id="1_kg0eo"]
 [ext_resource type="Script" uid="uid://c50bhh4sr0g8o" path="res://events/system/requirements/event_requirement_main_quest_progress.gd" id="2_j7p1u"]
 [ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="2_rsr40"]
+[ext_resource type="Script" uid="uid://pyad6w22lri1" path="res://events/system/requirements/event_requirement.gd" id="2_wktmc"]
 [ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="3_j7p1u"]
+[ext_resource type="Script" uid="uid://d16r7o1hw8apt" path="res://events/system/requirements/event_requirement_event_state.gd" id="4_8gjxh"]
 [ext_resource type="Resource" uid="uid://bvppc0404jmro" path="res://art/pieces/piece_gekkou_incense.tres" id="4_ganf1"]
+[ext_resource type="Script" uid="uid://15prcev7a3ta" path="res://events/system/requirements/event_requirement_all.gd" id="5_1gy68"]
 [ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_wktmc"]
 [ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_8gjxh"]
 [ext_resource type="Resource" uid="uid://c5yajko7b17q4" path="res://relics/common/incense_pellet/relic_incense_pellet.tres" id="7_1gy68"]
@@ -16,6 +19,32 @@
 script = ExtResource("2_j7p1u")
 min_progress = 220
 metadata/_custom_type_script = "uid://c50bhh4sr0g8o"
+
+[sub_resource type="Resource" id="Resource_yjgko"]
+script = ExtResource("4_8gjxh")
+event_id = "incense_autumn"
+var_id = "TRIGGERED_STAGE_INDEX"
+var_op = 7
+metadata/_custom_type_script = "uid://d16r7o1hw8apt"
+
+[sub_resource type="Resource" id="Resource_fjfsr"]
+script = ExtResource("4_8gjxh")
+event_id = "incense_summer"
+var_id = "TRIGGERED_STAGE_INDEX"
+var_op = 7
+metadata/_custom_type_script = "uid://d16r7o1hw8apt"
+
+[sub_resource type="Resource" id="Resource_q5jjd"]
+script = ExtResource("4_8gjxh")
+event_id = "incense_winter"
+var_id = "TRIGGERED_STAGE_INDEX"
+var_op = 7
+metadata/_custom_type_script = "uid://d16r7o1hw8apt"
+
+[sub_resource type="Resource" id="Resource_p7otl"]
+script = ExtResource("5_1gy68")
+all_requirements = Array[ExtResource("2_wktmc")]([SubResource("Resource_trtbi"), SubResource("Resource_yjgko"), SubResource("Resource_fjfsr"), SubResource("Resource_q5jjd")])
+metadata/_custom_type_script = "uid://15prcev7a3ta"
 
 [sub_resource type="Resource" id="Resource_d0keq"]
 script = ExtResource("5_wktmc")
@@ -87,10 +116,10 @@ choices = Array[ExtResource("6_8gjxh")]([SubResource("Resource_mxy6s"), SubResou
 
 [resource]
 script = ExtResource("2_rsr40")
-default_probability_weight = 5
+default_probability_weight = 6
 default_spot_upgrade = ExtResource("1_kg0eo")
 event_id = "incense_spring"
 event_name = "Seasonal Incense: Spring"
-requirement = SubResource("Resource_trtbi")
+requirement = SubResource("Resource_p7otl")
 steps = Array[ExtResource("3_j7p1u")]([SubResource("Resource_8mfyw")])
 categories = Array[int]([3])

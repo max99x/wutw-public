@@ -10,6 +10,9 @@ var _values: Dictionary[String, Variant] = {}
 func clear() -> void:
 	_values.clear()
 
+func exists(event_id: String, var_id: String) -> bool:
+	return _format_id(event_id, var_id) in _values
+
 # Ints
 
 func get_int(event_id: String, var_id: String) -> int:
