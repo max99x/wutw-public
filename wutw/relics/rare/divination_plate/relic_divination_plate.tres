@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Relic" format=3 uid="uid://b41ftl0jtwpyw"]
+
+[ext_resource type="Texture2D" uid="uid://dtdjq0s3p32h1" path="res://relics/rare/divination_plate/divination_plate.png" id="1_3ct8e"]
+[ext_resource type="Script" uid="uid://cocdm5ulvrs8m" path="res://relics/relic.gd" id="1_bl5ox"]
+[ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="2_3ct8e"]
+[ext_resource type="Resource" uid="uid://5q63svcbmx37" path="res://glossary/categories/termcategory_relic.tres" id="3_axjcl"]
+
+[resource]
+script = ExtResource("1_bl5ox")
+relic_id = "divination_plate"
+default_name = "Divination Plate"
+default_description = "Reduce <term_lower:hand_size> by 1 but add one more <term_lower:spot> to each <term_lower:foray>."
+flavor_text = "It's missing the spoon-shaped indicator which would point in the auspicious direction."
+icon = ExtResource("1_3ct8e")
+rarity = 1
+var_modifiers = Dictionary[int, int]({
+0: -1,
+60: 1
+})
+default_starting_state = 1
+term_categories = Array[ExtResource("2_3ct8e")]([ExtResource("3_axjcl")])
+metadata/_custom_type_script = "uid://cocdm5ulvrs8m"

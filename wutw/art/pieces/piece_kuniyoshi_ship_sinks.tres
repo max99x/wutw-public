@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://cawyd3x6n0awy"]
+
+[ext_resource type="Resource" uid="uid://buhrvhy5pk3af" path="res://art/artists/artist_kuniyoshi.tres" id="1_kbdvm"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_muofj"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_7nn2t"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="4_r5r0d"]
+[ext_resource type="Resource" uid="uid://cg3uma80dh6ro" path="res://art/styles/style_rekishi.tres" id="5_kbdvm"]
+
+[sub_resource type="Resource" id="Resource_am1kv"]
+script = ExtResource("2_muofj")
+_texture_path = "uid://dwjf5upqu23yh"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_bcsnl"]
+script = ExtResource("2_muofj")
+_texture_path = "uid://c22eebnl44hfl"
+_is_horizontal = true
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_7nn2t")
+original_image = SubResource("Resource_bcsnl")
+piece_name = "Minamoto no Tametomo Shoots an Enemy Ship with an Arrow"
+artist = ExtResource("1_kbdvm")
+styles = Array[ExtResource("4_r5r0d")]([ExtResource("5_kbdvm")])
+actual_start_year = 1843
+actual_end_year = 1846
+date_type = 1
+edits_description = "The image was cropped and extra ships and the text were removed."
+final_image_tex = SubResource("Resource_am1kv")
+province = 56
+blurb = "Depicts a legendary scene of the famous 12th-century samurai [url=https://en.wikipedia.org/wiki/Minamoto_no_Tametomo]Minamoto no Tametomo[/url] (far left) sinking an enemy ship by firing a single arrow.
+
+The legend goes that instead of dying in exile on Izu Ōshima (near modern Tōkyō), he traveled to the Ryūkyū islands (of which Okinawa is the most famous), took on a second wife, Sasarae (shown in the center of this print), and became the ancestor of the islands' ruling family. This tale was sometimes used to support Japanese rights to the Ryūkyū islands.
+
+The figure on the far right is Tametomo's retainer Oniyasha."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"

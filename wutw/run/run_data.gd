@@ -116,6 +116,7 @@ static func create(run_config: RunConfig) -> RunData:
 	result.vars.modify_base_value(RunVars.Var.CARD_TIER_BONUS_PERCENT, GlobalSaveGame.get_num_shard_types_unlocked())
 	result.vars.modify_base_value(RunVars.Var.MULLIGANS, Skill.get_skill_var(Skill.Var.MULLIGANS))
 	result.vars.modify_base_value(RunVars.Var.REVEAL_RADIUS_PERCENT, Skill.get_skill_var(Skill.Var.REVEAL_SIZE_BONUS))
+	result.vars.modify_base_value(RunVars.Var.EXTRA_SPOTS, Skill.get_skill_var(Skill.Var.EXTRA_SPOTS))
 	result.deck_cards = run_config.starting_cards.duplicate()
 	result.current_season_index = 0
 	result.current_stage_index = 0

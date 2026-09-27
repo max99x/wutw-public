@@ -633,7 +633,7 @@ func _transition_stage_selector() -> void:
 	stage_selector.mode = StageSelector.Mode.SETTLEMENT
 	stage_selector.goal = _data.current_settlement_state.goal
 	stage_selector.location_radius = scaling.get_settlement_radius(get_current_stage_index())
-	stage_selector.num_spots = scaling.get_num_stage_spots(get_current_stage_index())
+	stage_selector.num_spots = scaling.get_num_stage_spots(get_current_stage_index()) + get_var(RunVars.Var.EXTRA_SPOTS)
 	stage_selector.location_selected.connect(func(map_location: Vector2) -> void:
 		await stage_selector.fade_out()
 		_data.current_settlement_state.map_location = map_location

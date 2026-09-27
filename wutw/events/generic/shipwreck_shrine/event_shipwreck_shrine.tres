@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://dqjpuxe6cd8fc"]
+
+[ext_resource type="Resource" uid="uid://dw1f10v3jwhkx" path="res://stage/spots/seashore/upgrade_seashore_3_shipwreck_shrine.tres" id="1_xcc43"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="2_stmld"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="3_vxqyw"]
+[ext_resource type="Resource" uid="uid://cawyd3x6n0awy" path="res://art/pieces/piece_kuniyoshi_ship_sinks.tres" id="4_q3deg"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_6270s"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_oigu6"]
+[ext_resource type="Resource" uid="uid://b41ftl0jtwpyw" path="res://relics/rare/divination_plate/relic_divination_plate.tres" id="7_054wl"]
+[ext_resource type="Script" uid="uid://c72da5id7avtu" path="res://events/system/outcomes/add_relic/event_outcome_add_relic.gd" id="8_lyui3"]
+[ext_resource type="Resource" uid="uid://j5k23kvamui4" path="res://bonuses/types/bonus_adventure.tres" id="9_wwltu"]
+[ext_resource type="Script" uid="uid://dfaio0ey0wbra" path="res://events/system/requirements/event_requirement_run_bonus.gd" id="10_enp72"]
+[ext_resource type="Resource" uid="uid://q6lku15k1yel" path="res://cards/tier2/card_turtle.tres" id="11_cadcw"]
+[ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="12_0c4yk"]
+[ext_resource type="Resource" uid="uid://13wana4nb67" path="res://aspects/types/life/aspect_life.tres" id="13_hfieh"]
+[ext_resource type="Script" uid="uid://cjdop1iab2efw" path="res://events/system/requirements/event_requirement_num_aspects.gd" id="14_0y4jv"]
+[ext_resource type="Resource" uid="uid://c6itkj7qwdavt" path="res://bonuses/types/bonus_harmony.tres" id="15_4cyul"]
+[ext_resource type="Script" uid="uid://dkas1jvkeluf4" path="res://events/system/outcomes/bonus/event_outcome_bonus.gd" id="16_jx8uc"]
+[ext_resource type="Resource" uid="uid://begvnkwoyu3nf" path="res://aspects/types/craft/aspect_craft.tres" id="17_2ctyi"]
+
+[sub_resource type="Resource" id="Resource_5b400"]
+script = ExtResource("5_6270s")
+_texture_path = "res://events/generic/shipwreck_shrine/shipwreck_shrine.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_3ct8e"]
+script = ExtResource("8_lyui3")
+relic = ExtResource("7_054wl")
+metadata/_custom_type_script = "uid://c72da5id7avtu"
+
+[sub_resource type="Resource" id="Resource_vuo78"]
+script = ExtResource("10_enp72")
+bonus_type = ExtResource("9_wwltu")
+min_count = 80
+max_count = -1
+extra_per_season = 40
+
+[sub_resource type="Resource" id="Resource_htnkq"]
+script = ExtResource("6_oigu6")
+markedup_text = "Let the adventurers dive into the hold."
+requirement = SubResource("Resource_vuo78")
+outcome = SubResource("Resource_3ct8e")
+markedup_result_text = "The priests agree, and the adventurers immediately dive into the waves.
+
+As they make their way into the hold through a hole in the hull they are greeted by darkness and octopuses.
+
+Feeling around the barrels and shattered crates, they find them empty. Whatever the ship carried must have long since been plundered by the denizens of the sea.
+
+They do locate a small copper plate, however, with markings indicating auspicious directions."
+
+[sub_resource type="Resource" id="Resource_axjcl"]
+script = ExtResource("12_0c4yk")
+card_type = ExtResource("11_cadcw")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_0r5k4"]
+script = ExtResource("14_0y4jv")
+aspect_type = ExtResource("13_hfieh")
+min_count = 4
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_2f1fw"]
+script = ExtResource("6_oigu6")
+markedup_text = "Let the adventurers examine the ship from a distance."
+requirement = SubResource("Resource_0r5k4")
+outcome = SubResource("Resource_axjcl")
+markedup_result_text = "The priests permit the dive, as long as the ship itself remains untouched.
+
+The adventurers find the ship's decomposing hull teeming with life. Barnacles have covered the whole surface, and octopuses peek from holes in the hull.
+
+As they are about to rise back up, a huge turtle swims out from inside the hold, trailing a cape of seaweed behind it."
+
+[sub_resource type="Resource" id="Resource_uoc2g"]
+script = ExtResource("16_jx8uc")
+bonus_type = ExtResource("15_4cyul")
+amount = -20
+extra_per_season = -20
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_d63ke"]
+script = ExtResource("14_0y4jv")
+aspect_type = ExtResource("17_2ctyi")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_csk7j"]
+script = ExtResource("6_oigu6")
+markedup_text = "Ask the adventurers to clear barnacles off the hull instead."
+requirement = SubResource("Resource_d63ke")
+outcome = SubResource("Resource_uoc2g")
+markedup_result_text = "The priests don't permit an exploration of the interior, but ask the adventurers to clear off the barnacles that cover much of the hull, hoping to delay the ship's inevitable collapse.
+
+The adventurers dive with iron bars, prying the fragile shells off the decaying wood.
+
+The barnacles now lie on the sea floor in a helpless pile, and the wood is covered in gouges."
+
+[sub_resource type="Resource" id="Resource_yfe6x"]
+script = ExtResource("6_oigu6")
+markedup_text = "Forbid the investigation."
+markedup_result_text = "The priests worry that a careless investigation could damage the decaying wood and decide to forbid the adventurers from approaching the ship."
+
+[sub_resource type="Resource" id="Resource_rpahn"]
+script = ExtResource("3_vxqyw")
+markedup_text = "A group of adventurers has arrived at the shipwreck shrine asking the priests for permission to investigate the shipwreck.
+
+Although not a sacred object itself, the sunken vessel has long been a focus for the priests' prayers."
+background_image = SubResource("Resource_5b400")
+background_credit = ExtResource("4_q3deg")
+choices = Array[ExtResource("6_oigu6")]([SubResource("Resource_htnkq"), SubResource("Resource_2f1fw"), SubResource("Resource_csk7j")])
+exit_choice = SubResource("Resource_yfe6x")
+
+[resource]
+script = ExtResource("2_stmld")
+default_spot_upgrade = ExtResource("1_xcc43")
+event_id = "shipwreck_shrine"
+event_name = "The Shipwreck Shrine"
+steps = Array[ExtResource("3_vxqyw")]([SubResource("Resource_rpahn")])
+categories = Array[int]([3])

@@ -69,6 +69,7 @@ enum Var {
 	CAST_ALL_ON_TURN_END,
 	EXTRA_HAUNTING_SLOTS,
 	SUPPORT_ENABLED,
+	EXTRA_SPOTS,
 }
 
 const DEFAULTS: Dictionary[Var, int] = {
@@ -131,6 +132,7 @@ const DEFAULTS: Dictionary[Var, int] = {
 	Var.CAST_ALL_ON_TURN_END: 0,
 	Var.EXTRA_HAUNTING_SLOTS: 0,
 	Var.SUPPORT_ENABLED: 1,
+	Var.EXTRA_SPOTS: 0,
 }
 
 var _base_values: Dictionary[Var, int] = DEFAULTS.duplicate()

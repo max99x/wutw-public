@@ -40,7 +40,6 @@ func get_num_stage_spots(stage_index: int) -> int:
 	@warning_ignore('integer_division')
 	var season_index := stage_index / stages_per_season
 	var count := base_stage_spot_count
-	count += Skill.get_skill_var(Skill.Var.EXTRA_SPOTS)
 	count += season_index * Skill.get_skill_var(Skill.Var.SPOTS_PER_SEASON)
 	return count
 
