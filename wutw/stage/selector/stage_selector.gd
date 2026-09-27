@@ -643,7 +643,10 @@ func _on_goal_rerolled() -> void:
 	_state = State.IDLE
 
 func _on_spot_placement_button_started() -> void:
-	_state = State.IDLE
+	if mode == Mode.EXISTING_CAPITAL:
+		_state = StageSelector.State.CONFIRMING
+	else:
+		_state = State.IDLE
 	(%ButtonsContainer as Control).mouse_behavior_recursive = Control.MOUSE_BEHAVIOR_DISABLED
 	(%EndRunButton as Control).mouse_behavior_recursive = Control.MOUSE_BEHAVIOR_DISABLED
 	(%PlacementButtonContainer as Control).mouse_behavior_recursive = Control.MOUSE_BEHAVIOR_DISABLED
