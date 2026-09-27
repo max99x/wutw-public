@@ -9,6 +9,11 @@ enum Mode { SETUP, SHOPPABLE, PLANNING, HARMONIZATION }
 
 const RADIUS := 25
 const ICON_RADIUS_FACTOR: float = 1.0
+const SHOP_ACTIVE_STATES := [
+	RunData.State.STAGE_SELECTOR,
+	RunData.State.CAPITAL_PLACEMENT,
+	RunData.State.SURVEY_SELECTOR,
+]
 
 @export var settlement_sprite_config: MapSpritePlacerConfig
 @export var fallback_removable_sprites: Array[MapSpriteType]
@@ -183,7 +188,10 @@ func _update() -> void:
 		(%RadiusIndicatorFrame as Control).modulate.a = int(GameSettings.Interface.show_settlement_border.value())
 	else:
 		(%RadiusIndicatorFrame as Control).modulate.a = 0
-	(%ShopButton as Control).visible = Skill.get_skill_var(Skill.Var.SHOP_TRADE) and mode == Mode.SHOPPABLE
+	(%ShopButton as Control).visible = (
+		Skill.get_skill_var(Skill.Var.SHOP_TRADE)
+		and mode == Mode.SHOPPABLE
+		and run.get_state() in SHOP_ACTIVE_STATES)
 
 	var name_label := %NameLabel as Label
 	match GameSettings.Japanese.town_names.value():
