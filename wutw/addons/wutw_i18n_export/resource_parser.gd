@@ -1,19 +1,19 @@
 @tool
 extends EditorTranslationParserPlugin
 
-var untranslatable_regex: RegEx = RegEx.create_from_string('^[\\x{3040}-\\x{309F}\\x{30A0}-\\x{30FF}\\x{4E00}-\\x{9FAF}\\x{3000}-\\x{303F}\\x{FF00}-\\x{FFEF}\\s\\p{P}\\d]+$')
+var untranslatable_regex := RegEx.create_from_string('^[\\x{3040}-\\x{309F}\\x{30A0}-\\x{30FF}\\x{4E00}-\\x{9FAF}\\x{3000}-\\x{303F}\\x{FF00}-\\x{FFEF}\\s\\p{P}\\d]+$')
 
 func _get_recognized_extensions() -> PackedStringArray:
 	return PackedStringArray(['tres', 'res', 'tscn', 'scn'])
 
 func _parse_file(path: String) -> Array[PackedStringArray]:
-	var extracted: Array[PackedStringArray] = []
-	var resource: Resource = ResourceLoader.load(path, '', ResourceLoader.CACHE_MODE_REUSE)
+	var extracted: Array[PackedStringArray]
+	var resource := ResourceLoader.load(path, '', ResourceLoader.CACHE_MODE_REUSE)
 
 	if not resource:
 		return extracted
 
-	var seen: Dictionary = {}
+	var seen: Dictionary[String, bool]
 
 	if resource is PackedScene:
 		_extract_from_scene(resource as PackedScene, extracted, seen)
@@ -26,15 +26,15 @@ func _parse_file(path: String) -> Array[PackedStringArray]:
 
 	return extracted
 
-func _extract_from_scene(scene: PackedScene, extracted: Array[PackedStringArray], seen: Dictionary) -> void:
-	var state: SceneState = scene.get_state()
+func _extract_from_scene(scene: PackedScene, extracted: Array[PackedStringArray], seen: Dictionary[String, bool]) -> void:
+	var state := scene.get_state()
 	if not state:
 		return
 
 	for node_idx in range(state.get_node_count()):
 		for prop_idx in range(state.get_node_property_count(node_idx)):
-			var prop_name: String = state.get_node_property_name(node_idx, prop_idx)
-			var prop_value = state.get_node_property_value(node_idx, prop_idx)
+			var prop_name := state.get_node_property_name(node_idx, prop_idx)
+			var prop_value: Variant = state.get_node_property_value(node_idx, prop_idx)
 
 			if prop_value is Resource and _is_embedded(prop_value):
 				# Embedded resources
@@ -53,28 +53,28 @@ func _extract_from_scene(scene: PackedScene, extracted: Array[PackedStringArray]
 						seen[prop_value] = true
 						extracted.append(PackedStringArray([prop_value, '', '', 'Property: ' + prop_name]))
 
-func _extract_strings_from_resource(resource: Resource, extracted: Array[PackedStringArray], seen: Dictionary) -> void:
-	var properties: Array[Dictionary] = resource.get_property_list()
+func _extract_strings_from_resource(resource: Resource, extracted: Array[PackedStringArray], seen: Dictionary[String, bool]) -> void:
+	var properties := resource.get_property_list()
 
 	for prop in properties:
 		var prop_name: String = prop['name']
 		if not _is_translatable_node_property(prop_name):
 			continue
 
-		var value = resource.get(prop_name)
+		var value: Variant = resource.get(prop_name)
 
 		if prop['type'] == TYPE_STRING:
 			# Strings
 			if value is String and not value.is_empty():
-				if prop_name != 'script_class' and not _is_internal_string(value):
-					if not seen.has(value):
+				if value not in seen:
+					if prop_name != 'script_class' and not _is_internal_string(value):
 						seen[value] = true
 						extracted.append(PackedStringArray([value, '', '', 'Property: ' + prop_name]))
 		elif prop['type'] == TYPE_PACKED_STRING_ARRAY and value is PackedStringArray:
 			# Array of strings
 			for s in value:
-				if not s.is_empty() and not _is_internal_string(s):
-					if not seen.has(s):
+				if value not in seen:
+					if not s.is_empty() and not _is_internal_string(s):
 						seen[s] = true
 						extracted.append(PackedStringArray([s, '', '', 'Property: ' + prop_name]))
 		elif prop['type'] == TYPE_OBJECT and value is Resource:
@@ -85,7 +85,8 @@ func _extract_strings_from_resource(resource: Resource, extracted: Array[PackedS
 			# Arrays of strings or subresources
 			for item in value:
 				if item is String:
-					extracted.append(PackedStringArray([item, '', '', 'Property: ' + prop_name + '[]']))
+					if item not in seen and not _is_internal_string(item):
+						extracted.append(PackedStringArray([item, '', '', 'Property: ' + prop_name + '[]']))
 				elif item is Resource and _is_embedded(item):
 					_extract_strings_from_resource(item, extracted, seen)
 
