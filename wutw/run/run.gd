@@ -151,11 +151,10 @@ func get_relics_gained_this_stage() -> Array[Relic]:
 func get_deck_cards() -> Array[CardType]:
 	return _data.deck_cards
 
-func add_card_to_deck(card_type: CardType, skip_signal: bool = false) -> void:
+func add_card_to_deck(card_type: CardType) -> void:
 	get_deck_cards().append(card_type)
 	GlobalSaveGame.mark_card_seen(card_type)
-	if not skip_signal:
-		signals.card_added.emit(card_type)
+	signals.card_added.emit(card_type)
 
 func remove_card_from_deck(card_type: CardType) -> void:
 	assert(card_type in get_deck_cards())
