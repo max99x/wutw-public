@@ -60,6 +60,10 @@ func cast(card: Card) -> void:
 		var effective_points := points
 		if effective_points > 0:
 			effective_points = maxi(0, roundi(effective_points * (1.0 + run.get_var(RunVars.Var.SATISFY_ABILITY_BONUS_PERCENT) / 100.0)))
+			if effective_points <= 0:
+				GlobalUI.show_error(tr('Satisfy invocations are disabled.'))
+				return
+
 			if all:
 				bonus_types.assign(remaining_reqs.keys())
 			else:
