@@ -14,6 +14,7 @@ func _on_relic_triggered() -> void:
 	run.run_or_queue_action(func() -> void:
 		run.signals.settler_quest_challenge_triggered.emit(self)
 		run.modify_inspiration(-damage, Run.InspirationChangeReason.SETTLER_QUEST)
+		await run.get_tree().create_timer(Utils.anim_duration(0.3)).timeout
 	)
 
 func describe() -> String:
