@@ -74,7 +74,7 @@ func _cleanup() -> void:
 func _on_triggered(related_gain: BonusGain, related_slot: AspectSlot, related_card: CardType) -> void:
 	var run := Utils.get_active_run()
 	var stage := run.get_current_stage()
-	if not stage.is_processing_card() and not stage.get_card_deck().is_redrawing():
+	if not stage.is_processing_card():
 		# Don't trigger off event rewards.
 		return
 

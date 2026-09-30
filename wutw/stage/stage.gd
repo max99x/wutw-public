@@ -53,6 +53,7 @@ var _redraws_left: int
 var _card_just_slotted := false
 var _num_stage_modifiers: int = 0
 
+var _is_processing: bool
 var _processing_card: Card
 var _queued_actions: Array[Callable]
 var _queued_events: Array[Event]
@@ -220,7 +221,7 @@ func get_finish_button() -> Button:
 # Animation action queuing system.
 
 func queue_action(f: Callable) -> void:
-	assert(_processing_card or get_card_deck().is_redrawing())
+	assert(is_processing_card())
 	if not Utils.ensure(f.get_argument_count() == 0):
 		f = f.unbind(f.get_argument_count())
 	_queued_actions.append(f)
@@ -263,25 +264,30 @@ func ensure_slot_visible(slot: AspectSlot) -> void:
 			await get_tree().create_timer(duration).timeout
 
 func is_processing_card() -> bool:
-	return _processing_card != null
+	return _is_processing
 
 func get_processing_card() -> Card:
 	return _processing_card
 
 func _begin_processing(card: Card) -> void:
-	_processing_card = card
+	_is_processing = true
+	if card:
+		_processing_card = card
 	GlobalContextHighlight.enabled = false
 	get_card_deck().disable_interaction()
-	get_card_deck().start_processing(card)
+	if card:
+		get_card_deck().start_processing(card)
 	(%ShowAllToggle as Button).disabled = true
 	(%MulliganButton as Button).disabled = true  # Permanently disabled for the stage.
 	_num_actions_processed = 0
 
 func _finish_processing(card: Card) -> void:
 	GlobalContextHighlight.enabled = true
-	get_card_deck().finish_processing(card)
+	if card:
+		get_card_deck().finish_processing(card)
 	get_card_deck().enable_interaction()
 	_processing_card = null
+	_is_processing = false
 	(%ShowAllToggle as Button).disabled = false
 
 	var run := Utils.get_active_run()
@@ -698,7 +704,7 @@ func _on_finish_button_pressed() -> void:
 	(%FinishButton as Button).disabled = true
 
 	# Delay if we're waiting for an animation to finish.
-	if _processing_card or get_card_deck().is_redrawing():
+	if is_processing_card():
 		_end_button_pending = true
 		return
 
@@ -719,15 +725,14 @@ func _on_finish_button_pressed() -> void:
 	if _redraws_left:
 		_redraws_left -= 1
 		_update_redraws()
-		get_card_deck().disable_interaction()
-		_num_actions_processed = 0
+		_begin_processing(null)
 		await (%CardDeck as CardDeck).redraw()
 		# Wait for anything that reacts to discards or draws.
 		# HACK: It is technically inaccurate to process the actions after all the cards are drawn,
 		#       as actions could be queued with each draw/discard. However, in practice this may be
 		#       desired, e.g. so Butterbur Extract could exceed hand size.
 		await _process_queued_actions()
-		get_card_deck().enable_interaction()
+		_finish_processing(null)
 		(%FinishButton as Button).disabled = false
 	else:
 		_finish_stage()
