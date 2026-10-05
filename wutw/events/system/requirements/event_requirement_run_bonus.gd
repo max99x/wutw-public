@@ -35,7 +35,7 @@ func describe(run: Run, detailed: bool) -> String:
 			return tr('Between %d and %d %s') % [bounds[0], bounds[1], bonus_type.get_term_tag()]
 	else:
 		if bounds[0] == -1:
-			return tr('<=%d %s') % [bounds[1], bonus_type.get_term_tag()]
+			return tr('≤%d %s') % [bounds[1], bonus_type.get_term_tag()]
 		elif bounds[1] == -1:
 			return tr('%d %s') % [bounds[0], bonus_type.get_term_tag()]
 		else:

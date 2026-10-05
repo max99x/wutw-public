@@ -33,7 +33,7 @@ func describe(_run: Run, detailed: bool) -> String:
 		if detailed:
 			return tr('At most %d settlements') % max_count
 		else:
-			return tr('<=%d settlements') % max_count
+			return tr('≤%d settlements') % max_count
 	else:
 		if detailed:
 			return tr('Between %d and %d settlements') % [min_count, max_count]
