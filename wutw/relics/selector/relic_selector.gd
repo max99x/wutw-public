@@ -68,12 +68,6 @@ func _refill_relics_list() -> void:
 		relic_choice.selected.connect(_on_relic_selected.bind(relic))
 		%RelicsList.add_child(relic_choice)
 
-	await get_tree().process_frame
-	(%ScrollContainer as Control).custom_minimum_size.x = maxf(300.0,
-		(%RelicsList as Control).size.x)
-	(%ScrollContainer as Control).custom_minimum_size.y = maxf(300.0,
-		minf((%ScrollContainer as Control).custom_maximum_size.y, (%RelicsList as Control).size.y))
-
 func _on_relic_selected(relic: Relic) -> void:
 	if add_selected:
 		Utils.get_active_run().add_relic(relic)

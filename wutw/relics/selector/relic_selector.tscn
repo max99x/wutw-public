@@ -45,9 +45,9 @@ color_ramp = SubResource("Gradient_0fvof")
 seamless = true
 seamless_blend_skirt = 0.27
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_lrxri"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6m1c2"]
 shader = ExtResource("3_c7iyt")
-shader_parameter/size = Vector2(595, 49)
+shader_parameter/size = Vector2(602, 49)
 shader_parameter/scroll_offset = 1.0
 shader_parameter/wood_tex = ExtResource("4_6m1c2")
 shader_parameter/wood_tex_scale = Vector2(0.36, 0.18)
@@ -118,9 +118,9 @@ shader_parameter/swish_left_tex = ExtResource("12_73ach")
 shader_parameter/swish_left_transform = Vector4(0, 0, 106.982, 42.958)
 shader_parameter/hover_distance = 2.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_fpofp"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lrxri"]
 shader = ExtResource("3_c7iyt")
-shader_parameter/size = Vector2(593, 49)
+shader_parameter/size = Vector2(600, 49)
 shader_parameter/scroll_offset = 1.0
 shader_parameter/wood_tex = ExtResource("4_6m1c2")
 shader_parameter/wood_tex_scale = Vector2(0.36, 0.18)
@@ -150,14 +150,14 @@ mouse_force_pass_scroll_events = false
 
 [node name="ScrollPanel" parent="InputBlocker" unique_id=1847218709 instance=ExtResource("2_a2qt7")]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(695, 0)
+custom_minimum_size = Vector2(702, 0)
 layout_mode = 2
 
 [node name="TopDowelWood" parent="InputBlocker/ScrollPanel/TopDowelContainer" index="0"]
-material = SubResource("ShaderMaterial_lrxri")
+material = SubResource("ShaderMaterial_6m1c2")
 
 [node name="Scroller" parent="InputBlocker/ScrollPanel" index="1"]
-custom_minimum_size = Vector2(0, 622)
+custom_minimum_size = Vector2(0, 818)
 
 [node name="ScrollMargin" parent="InputBlocker/ScrollPanel/Scroller" index="0"]
 offset_bottom = 620.0
@@ -182,6 +182,8 @@ clip_children = 1
 custom_minimum_size = Vector2(550, 454)
 custom_maximum_size = Vector2(-1, 650)
 layout_mode = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 5
 script = ExtResource("7_c7iyt")
 
 [node name="RelicsList" type="VBoxContainer" parent="InputBlocker/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/ScrollContainer" unique_id=1526329886]
@@ -278,7 +280,7 @@ script = ExtResource("16_xcwrp")
 metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="BottomDowelWood" parent="InputBlocker/ScrollPanel/BottomDowelContainer" index="0"]
-material = SubResource("ShaderMaterial_fpofp")
+material = SubResource("ShaderMaterial_lrxri")
 
 [node name="MinimizeButton" type="Button" parent="." unique_id=1252783095]
 unique_name_in_owner = true
