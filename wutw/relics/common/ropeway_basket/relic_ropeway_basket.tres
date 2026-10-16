@@ -1,17 +1,17 @@
 [gd_resource type="Resource" script_class="Relic_RopewayBasket" format=3 uid="uid://cmkosn6ql8hv2"]
 
-[ext_resource type="Resource" uid="uid://bvneeqg2k4w24" path="res://cards/tier0/card_basket.tres" id="1_wl502"]
 [ext_resource type="Script" uid="uid://ys6aqrlqh6lp" path="res://relics/common/ropeway_basket/relic_ropeway_basket.gd" id="1_xeic4"]
 [ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="2_i6d5c"]
 [ext_resource type="Texture2D" uid="uid://clsvt03fjgmx8" path="res://relics/common/ropeway_basket/ropeway_basket.png" id="2_tio0a"]
+[ext_resource type="Resource" uid="uid://dxoxvtquc3hu2" path="res://stage/spots/mountain/spot_mountain.tres" id="2_wl502"]
 [ext_resource type="Resource" uid="uid://5q63svcbmx37" path="res://glossary/categories/termcategory_relic.tres" id="3_wl502"]
 
 [resource]
 script = ExtResource("1_xeic4")
-granted_card = ExtResource("1_wl502")
+mountain_spot_type = ExtResource("2_wl502")
 relic_id = "ropeway_basket"
 default_name = "Ropeway Basket"
-default_description = "When a <term_lower:survey> includes a mountain biome, increase <term_lower:hand_size> by %d."
+default_description = "When a <term_lower:foray> or <term_lower:survey> includes a mountain biome, increase <term_lower:hand_size> by %d."
 flavor_text = "Efficiency and excitement in one convenient basket."
 icon = ExtResource("2_tio0a")
 term_categories = Array[ExtResource("2_i6d5c")]([ExtResource("3_wl502")])
