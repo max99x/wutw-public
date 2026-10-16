@@ -46,7 +46,7 @@ func _ready() -> void:
 						continue  # Not possible yet.
 					if GlobalSaveGame.is_shard_type_unlocked(shard_type):
 						continue
-					if shard_type.score(run.get_run_data()) >= 1.0:
+					if run and shard_type.score(run.get_run_data()) >= 1.0:
 						shard_type_entry.will_use_main_quest_shard_type = true
 						break
 			%QuestList.add_child(shard_type_entry)
