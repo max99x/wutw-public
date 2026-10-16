@@ -42,7 +42,9 @@ func _ready() -> void:
 				[Tooltip.Alignment.CENTERED, Tooltip.Alignment.BEGIN, Tooltip.Alignment.END])
 
 func _update_font_size() -> void:
-	Utils._scale_font_size(%DescriptionLabel as RichTextLabel, false, 18)
+	var font_size := roundi(16 * GameSettings.Interface.paragraph_font_scale.value())
+	(%NameLabel as Label).add_theme_font_size_override('font_size', font_size)
+	Utils._scale_font_size(%DescriptionLabel as RichTextLabel, false, 16)
 
 func _on_button_pressed() -> void:
 	selected.emit()
