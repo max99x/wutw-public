@@ -113,7 +113,7 @@ markedup_result_text = "The horticulturists decide against harming the existing 
 
 [sub_resource type="Resource" id="Resource_f4vqu"]
 script = ExtResource("3_8tvs8")
-markedup_text = "The cherry trees lining the riverbank enjoy a great popularity among the the locals, but despite their beauty, they bloom for only a few days.
+markedup_text = "The cherry trees lining the riverbank enjoy a great popularity among the locals, but despite their beauty, they bloom for only a few days.
 
 Once the brief blooming season ends, the petals fall, covering the banks in a pink blanket.
 
