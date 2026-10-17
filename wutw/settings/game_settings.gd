@@ -174,12 +174,14 @@ func save() -> void:
 
 static func get_translatable_locales() -> Dictionary[String, String]:
 	var result: Dictionary[String, String]
-	for filename in DirAccess.get_files_at('res://i18n'):
-		if filename.match('*.po') or filename.match('*.mo'):
-			result[filename.get_slice('.', 0)] = 'res://i18n/' + filename
-	for filename in DirAccess.get_files_at('user://translations'):
-		if filename.match('*.po') or filename.match('*.mo'):
-			result[filename.get_slice('.', 0)] = 'user://translations/' + filename
+	if DirAccess.dir_exists_absolute('res://i18n'):
+		for filename in DirAccess.get_files_at('res://i18n'):
+			if filename.match('*.po') or filename.match('*.mo'):
+				result[filename.get_slice('.', 0)] = 'res://i18n/' + filename
+	if DirAccess.dir_exists_absolute('user://translations'):
+		for filename in DirAccess.get_files_at('user://translations'):
+			if filename.match('*.po') or filename.match('*.mo'):
+				result[filename.get_slice('.', 0)] = 'user://translations/' + filename
 	return result
 
 # Syntax sugar helpers.
