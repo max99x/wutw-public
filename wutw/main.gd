@@ -43,6 +43,18 @@ func _ready() -> void:
 
 	_print_system_info()
 
+	# Load translation if locale is set.
+	var chosen_locale := GameSettings.Interface.locale.value()
+	if not chosen_locale.is_empty():
+		var available_translations := GameSettings.get_translatable_locales()
+		if chosen_locale in available_translations:
+			var t := load(available_translations[chosen_locale]) as Translation
+			t.locale = chosen_locale
+			TranslationServer.add_translation(t)
+			TranslationServer.set_locale(t.locale)
+		else:
+			push_warning('Translation for chosen locale "%s" not found.' % chosen_locale)
+
 	# Handle the game ending to go to the outro cutscene.
 	GlobalSaveGame.game_finished.connect(go_to_outro)
 

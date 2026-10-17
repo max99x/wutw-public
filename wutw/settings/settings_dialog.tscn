@@ -383,6 +383,7 @@ instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+focus_mode = 0
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
@@ -403,6 +404,7 @@ instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+focus_mode = 0
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
@@ -424,6 +426,7 @@ instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+focus_mode = 0
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
@@ -444,6 +447,7 @@ instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+focus_mode = 0
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
@@ -464,6 +468,7 @@ instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+focus_mode = 0
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
@@ -493,7 +498,6 @@ theme_override_constants/margin_bottom = 10
 
 [node name="VBox_Interface" type="VBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer" unique_id=1796806943]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 
 [node name="FadedScrollContainer" type="ScrollContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface" unique_id=11421774]
@@ -507,6 +511,27 @@ metadata/_custom_type_script = "uid://dm63mtrlfj005"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="HBox_Locale" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer" unique_id=534097743]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 33)
+layout_mode = 2
+
+[node name="Label_Locale" type="Label" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer/HBox_Locale" unique_id=160838102]
+layout_mode = 2
+size_flags_horizontal = 2
+theme = ExtResource("19_jmlkd")
+text = "Language"
+horizontal_alignment = 1
+
+[node name="Dropdown_Locale" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer/HBox_Locale" unique_id=2079276916 instance=ExtResource("25_04bl0")]
+unique_name_in_owner = true
+instance_shader_parameters/background_offset = Vector2(0.581838, 0.8530631)
+custom_minimum_size = Vector2(165, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+focus_mode = 0
+initial_items = Array[ExtResource("26_42yaw")]([])
 
 [node name="HBox_AnimSpeed" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer" unique_id=2005585347]
 unique_name_in_owner = true
@@ -650,12 +675,13 @@ theme = ExtResource("19_jmlkd")
 text = "Zoom UI on Hover"
 horizontal_alignment = 1
 
-[node name="Dropdown_ZoomOnHover" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer/HBox_ZoomOnHover" unique_id=2079276916 instance=ExtResource("25_04bl0")]
+[node name="Dropdown_ZoomOnHover" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer/HBox_ZoomOnHover" unique_id=1006190489 instance=ExtResource("25_04bl0")]
 unique_name_in_owner = true
 instance_shader_parameters/background_offset = Vector2(0.581838, 0.8530631)
 custom_minimum_size = Vector2(165, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+focus_mode = 0
 initial_items = Array[ExtResource("26_42yaw")]([])
 
 [node name="Spacer3" type="Control" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer" unique_id=345597888]
@@ -687,6 +713,7 @@ instance_shader_parameters/background_offset = Vector2(0.5148642, 0.20438801)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -710,6 +737,7 @@ instance_shader_parameters/background_offset = Vector2(0.6780586, 0.77713567)
 instance_shader_parameters/state = 2.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_constants/h_separation = 10
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
@@ -735,6 +763,7 @@ instance_shader_parameters/background_offset = Vector2(0.71157265, 0.8488793)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -774,6 +803,7 @@ instance_shader_parameters/background_offset = Vector2(0.008013358, 0.03108392)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -804,6 +834,7 @@ instance_shader_parameters/background_offset = Vector2(0.38534787, 0.45504373)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -839,6 +870,7 @@ instance_shader_parameters/background_offset = Vector2(0.63077044, 0.3821231)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -869,6 +901,7 @@ instance_shader_parameters/background_offset = Vector2(0.29039353, 0.27540734)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -899,6 +932,7 @@ instance_shader_parameters/background_offset = Vector2(0.4408079, 0.701275)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -929,6 +963,7 @@ instance_shader_parameters/background_offset = Vector2(0.32579365, 0.48883992)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -959,6 +994,7 @@ instance_shader_parameters/background_offset = Vector2(0.8891148, 0.47623077)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -981,6 +1017,7 @@ instance_shader_parameters/background_offset = Vector2(0.9206002, 0.8199705)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 10
+focus_mode = 0
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
 theme_override_styles/hover = ExtResource("15_f0s7r")
@@ -1013,6 +1050,7 @@ instance_shader_parameters/background_offset = Vector2(0.7840278, 0.39481238)
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+focus_mode = 0
 initial_items = Array[ExtResource("26_42yaw")]([])
 
 [node name="HBox_VSync" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Video" unique_id=1180458017]
@@ -1034,6 +1072,7 @@ instance_shader_parameters/background_offset = Vector2(0.04834877, 0.72130847)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1063,6 +1102,7 @@ instance_shader_parameters/background_offset = Vector2(0.28495556, 0.81703156)
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+focus_mode = 0
 initial_items = Array[ExtResource("26_42yaw")]([SubResource("Resource_bx70w"), SubResource("Resource_cnyvt"), SubResource("Resource_trtbi"), SubResource("Resource_42yaw"), SubResource("Resource_0eiya"), SubResource("Resource_d174p"), SubResource("Resource_a6ufw")])
 
 [node name="Spacer" type="Control" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Video" unique_id=1140153025]
@@ -1088,6 +1128,7 @@ instance_shader_parameters/background_offset = Vector2(0.12508427, 0.6287054)
 instance_shader_parameters/state = 2.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1120,6 +1161,7 @@ instance_shader_parameters/background_offset = Vector2(0.4510799, 0.21458554)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1151,6 +1193,7 @@ instance_shader_parameters/background_offset = Vector2(0.3118934, 0.14598005)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1347,6 +1390,7 @@ instance_shader_parameters/background_offset = Vector2(0.23045859, 0.014627552)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1377,6 +1421,7 @@ instance_shader_parameters/background_offset = Vector2(0.5184818, 0.95850533)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1394,6 +1439,7 @@ instance_shader_parameters/background_offset = Vector2(0.8434352, 0.8680283)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 10
+focus_mode = 0
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
 theme_override_styles/hover = ExtResource("15_f0s7r")
@@ -1521,6 +1567,7 @@ material = ExtResource("24_kouge")
 instance_shader_parameters/background_offset = Vector2(0.68678236, 0.2575306)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
+focus_mode = 0
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
 theme_override_styles/hover = ExtResource("15_f0s7r")
@@ -1532,6 +1579,7 @@ metadata/_custom_type_script = "uid://tmvhmuymumhk"
 
 [node name="VBox_Japanese" type="VBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer" unique_id=1481182219]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 
 [node name="FadedScrollContainer" type="ScrollContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Japanese" unique_id=1219684204]
@@ -1565,6 +1613,7 @@ instance_shader_parameters/background_offset = Vector2(0.93539447, 0.934671)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1595,6 +1644,7 @@ instance_shader_parameters/background_offset = Vector2(0.64442575, 0.26243427)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1625,6 +1675,7 @@ instance_shader_parameters/background_offset = Vector2(0.63249516, 0.62632656)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1654,6 +1705,7 @@ instance_shader_parameters/background_offset = Vector2(0.19778204, 0.56770885)
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+focus_mode = 0
 initial_items = Array[ExtResource("26_42yaw")]([])
 
 [node name="HBox_SettlementNames" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Japanese/FadedScrollContainer/VBoxContainer" unique_id=1366459438]
@@ -1674,6 +1726,7 @@ instance_shader_parameters/background_offset = Vector2(0.5651362, 0.5933875)
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+focus_mode = 0
 initial_items = Array[ExtResource("26_42yaw")]([])
 
 [node name="HBox_ShardNames" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Japanese/FadedScrollContainer/VBoxContainer" unique_id=361525512]
@@ -1694,6 +1747,7 @@ instance_shader_parameters/background_offset = Vector2(0.30289966, 0.9041403)
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+focus_mode = 0
 initial_items = Array[ExtResource("26_42yaw")]([])
 
 [node name="HBox_HauntingNames" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Japanese/FadedScrollContainer/VBoxContainer" unique_id=630981562]
@@ -1714,6 +1768,7 @@ instance_shader_parameters/background_offset = Vector2(0.76563376, 0.50582385)
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+focus_mode = 0
 initial_items = Array[ExtResource("26_42yaw")]([])
 
 [node name="HBox_Dictionary" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Japanese/FadedScrollContainer/VBoxContainer" unique_id=2132997518]
@@ -1734,6 +1789,7 @@ instance_shader_parameters/background_offset = Vector2(0.30289966, 0.9041403)
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
+focus_mode = 0
 initial_items = Array[ExtResource("26_42yaw")]([])
 
 [node name="HBox_EmbedJapanese" type="HBoxContainer" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Japanese/FadedScrollContainer/VBoxContainer" unique_id=715657039]
@@ -1755,6 +1811,7 @@ instance_shader_parameters/background_offset = Vector2(0.94084406, 0.97303325)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1785,6 +1842,7 @@ instance_shader_parameters/background_offset = Vector2(0.77360886, 0.9689313)
 instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_6tqbi")
 theme_override_styles/hover = SubResource("StyleBoxTexture_6tqbi")
@@ -1818,6 +1876,7 @@ instance_shader_parameters/state = 0.0
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+focus_mode = 0
 theme_override_styles/normal = ExtResource("15_f0s7r")
 theme_override_styles/pressed = ExtResource("15_f0s7r")
 theme_override_styles/hover = ExtResource("15_f0s7r")
@@ -1835,6 +1894,7 @@ material = SubResource("ShaderMaterial_17upk")
 [connection signal="pressed" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabBar/TabButton_Audio" to="." method="_on_tab_button_audio_pressed"]
 [connection signal="pressed" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabBar/TabButton_Controls" to="." method="_on_tab_button_controls_pressed"]
 [connection signal="pressed" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabBar/TabButton_Japanese" to="." method="_on_tab_button_japanese_pressed"]
+[connection signal="selected" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer/HBox_Locale/Dropdown_Locale" to="." method="_on_dropdown_locale_selected"]
 [connection signal="value_changed" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer/HBox_AnimSpeed/Slider_AnimSpeed" to="." method="_on_slider_anim_speed_value_changed"]
 [connection signal="value_changed" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer/HBox_TooltipDelay/Slider_TooltipDelay" to="." method="_on_slider_tooltip_delay_value_changed"]
 [connection signal="value_changed" from="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/TabContent/MarginContainer/VBox_Interface/FadedScrollContainer/VBoxContainer/HBox_TooltipFontScale/Slider_TooltipFontScale" to="." method="_on_slider_tooltip_font_scale_value_changed"]

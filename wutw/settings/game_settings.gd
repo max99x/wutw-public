@@ -27,6 +27,7 @@ class Interface:
 	static var show_stage_bonuses := BoolSetting.new('ui', 'show_stage_bonuses', false)
 	static var sort_predicted_yields := BoolSetting.new('ui', 'sort_predicted_yields', true)
 	static var show_version_watermark := BoolSetting.new('ui', 'show_version_watermark', true)
+	static var locale := StringSetting.new('ui', 'locale', '')
 	# Not configurable unless we find a reason for it to be.
 	static var show_harmonization_haunting_preview := BoolSetting.new('ui', 'show_harmonization_haunting_preview', true)
 	# Deprecated
@@ -171,6 +172,16 @@ func save() -> void:
 	if not read_only:
 		_config_file.save(FILE_PATH)
 
+static func get_translatable_locales() -> Dictionary[String, String]:
+	var result: Dictionary[String, String]
+	for filename in DirAccess.get_files_at('res://i18n'):
+		if filename.match('*.po') or filename.match('*.mo'):
+			result[filename.get_slice('.', 0)] = 'res://i18n/' + filename
+	for filename in DirAccess.get_files_at('user://translations'):
+		if filename.match('*.po') or filename.match('*.mo'):
+			result[filename.get_slice('.', 0)] = 'user://translations/' + filename
+	return result
+
 # Syntax sugar helpers.
 
 class FloatSetting extends RefCounted:
@@ -240,4 +251,27 @@ class BoolSetting extends RefCounted:
 		GlobalGameSettings.set_setting(_category, _key, new_value, autosave)
 
 	func get_default() -> bool:
+		return _default
+
+class StringSetting extends RefCounted:
+	var _category: String
+	var _key: String
+	var _default: String
+
+	func _init(category: String, key: String, default: String) -> void:
+		_category = category
+		_key = key
+		_default = default
+
+	func value() -> String:
+		if Utils.is_in_editor():
+			return _default
+		return GlobalGameSettings.get_setting(_category, _key, _default) as String
+
+	func set_value(new_value: String, autosave: bool = false) -> void:
+		if Utils.is_in_editor():
+			return
+		GlobalGameSettings.set_setting(_category, _key, new_value, autosave)
+
+	func get_default() -> String:
 		return _default

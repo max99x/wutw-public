@@ -66,6 +66,16 @@ func _ready() -> void:
 	_on_button_skip_claimed_music_pressed()
 
 	# Interface
+	var available_translations := GameSettings.get_translatable_locales()
+	if available_translations.is_empty():
+		(%HBox_Locale as Control).visible = false
+	else:
+		(%HBox_Locale as Control).visible = true
+		_setup_tooltip(%HBox_Locale, tr('The game\'s language.'))
+		(%Dropdown_Locale as Dropdown).add_item('English', '')
+		for locale in available_translations:
+			(%Dropdown_Locale as Dropdown).add_item(locale, locale)
+		(%Dropdown_Locale as Dropdown).set_selected_value(GameSettings.Interface.locale.value())
 	(%Slider_AnimSpeed as Slider).set_value(_multiplier_to_speed(
 		GameSettings.Interface.animation_speed.value()))
 	_setup_tooltip(%HBox_AnimSpeed, tr('How fast to play gameplay and UI animations.'))
@@ -560,3 +570,19 @@ func _setup_tooltip(node: Node, text: String) -> void:
 	GlobalTooltipSystem.attach(node as Control, func() -> String:
 		return text
 	, [Tooltip.RelativeDirection.LEFT], [Tooltip.Alignment.CENTERED, Tooltip.Alignment.BEGIN])
+
+func _on_dropdown_locale_selected(item: DropdownItem) -> void:
+	var chosen_locale := item.value as String
+	GameSettings.Interface.locale.set_value(chosen_locale)
+	if chosen_locale:
+		var available_translations := GameSettings.get_translatable_locales()
+		if chosen_locale in available_translations:
+			var t := ResourceLoader.load(available_translations[chosen_locale], '', ResourceLoader.CACHE_MODE_IGNORE) as Translation
+			t.locale = chosen_locale
+			TranslationServer.clear()
+			TranslationServer.add_translation(t)
+			TranslationServer.set_locale(t.locale)
+		else:
+			push_warning('Translation for chosen locale "%s" not found.' % chosen_locale)
+	else:
+		TranslationServer.set_locale('en')
