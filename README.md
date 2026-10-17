@@ -113,7 +113,25 @@ The code is intentionally kept as simple as possible while supporting efficient 
 
 This is a read-only mirror, so I am unable to merge pull requests. However, I am open to manually accepting significant contributions.
 
-Additionally, while the game is set up for localization, it is not currently localized due to the sheer amount of text (230k+ words, 800+ pages, though about a third is Japanese learning materials). If you are interested in contributing to translation, let me know.
+## Translation
+
+While the game is set up for localization, it is not currently localized due to the sheer amount of text. Here are the stats, broken down by category, as of v1.4.1:
+- Gameplay: 25,034 words (necessary to play the game)
+- Events: 54,133 words (all of the interactive vignette text)
+- Narrative: 41,744 words (dialogues, history entries, etc.)
+- Art Wiki: 34,202 words (historical art blurbs, etc.)
+- Language Learning: 69,258 words (vocabulary and example sentences)
+- Total: 224,371 words
+
+The game supports user-supplied translations. To set up a translation:
+- Start with `i18n/exported_game_text.pot`. This has all game text, annotated with category.
+- Use a translation management software (or a text editor if you're hardcore) to translate any number of strings.
+- Put the resulting `.po` file into `user://translations/`. For example, on Windows a Spanish translation would go to `%APPDATA%/Worlds Upon the Wind/translations/Spanish.po`.
+- Once you've done this, the ingame settings dialogue will have a language dropdown with your new language.
+
+Notes:
+- You do not need to be running a development version of the game. This works on the Steam version too.
+- While translating, you can switch the language back and forth to reload the translation without restarting the game.
 
 ## Maintenance
 
