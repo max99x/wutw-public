@@ -574,15 +574,4 @@ func _setup_tooltip(node: Node, text: String) -> void:
 func _on_dropdown_locale_selected(item: DropdownItem) -> void:
 	var chosen_locale := item.value as String
 	GameSettings.Interface.locale.set_value(chosen_locale)
-	if chosen_locale:
-		var available_translations := GameSettings.get_translatable_locales()
-		if chosen_locale in available_translations:
-			var t := ResourceLoader.load(available_translations[chosen_locale], '', ResourceLoader.CACHE_MODE_IGNORE) as Translation
-			t.locale = chosen_locale
-			TranslationServer.clear()
-			TranslationServer.add_translation(t)
-			TranslationServer.set_locale(t.locale)
-		else:
-			push_warning('Translation for chosen locale "%s" not found.' % chosen_locale)
-	else:
-		TranslationServer.set_locale('en')
+	GameSettings.reload_i18n()

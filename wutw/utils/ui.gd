@@ -114,6 +114,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			if layer > Layer.GAME:
 				_layers[layer].visible = not _ui_hidden
 		ui_hide_toggled.emit()
+	elif key_event and key_event.pressed and key_event.is_action('debug_reload_i18n'):
+		GameSettings.reload_i18n()
 
 func notify_drag_started() -> void:
 	Utils.ensure(not _is_dragging)

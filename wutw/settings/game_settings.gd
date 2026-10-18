@@ -184,6 +184,21 @@ static func get_translatable_locales() -> Dictionary[String, String]:
 				result[filename.get_slice('.', 0)] = 'user://translations/' + filename
 	return result
 
+static func reload_i18n() -> void:
+	var chosen_locale := Interface.locale.value()
+	if chosen_locale:
+		var available_translations := get_translatable_locales()
+		if chosen_locale in available_translations:
+			var t := ResourceLoader.load(available_translations[chosen_locale], '', ResourceLoader.CACHE_MODE_IGNORE) as Translation
+			t.locale = chosen_locale
+			TranslationServer.clear()
+			TranslationServer.add_translation(t)
+			TranslationServer.set_locale(t.locale)
+		else:
+			push_warning('Translation for chosen locale "%s" not found.' % chosen_locale)
+	else:
+		TranslationServer.set_locale('en')
+
 # Syntax sugar helpers.
 
 class FloatSetting extends RefCounted:
