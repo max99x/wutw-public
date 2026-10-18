@@ -273,6 +273,7 @@
 # res://art/pieces/piece_gekkou_enoshima.tres
 # res://art/pieces/piece_gekkou_foxes_shrine.tres
 # res://art/pieces/piece_gekkou_fuji_24.tres
+# res://art/pieces/piece_gekkou_incense.tres
 # res://art/pieces/piece_gekkou_masaaki.tres
 # res://art/pieces/piece_gekkou_momotarou.tres
 # res://art/pieces/piece_gekkou_morning_glory.tres
@@ -328,6 +329,7 @@
 # res://art/pieces/piece_hiroshige_2_mount_hirakido.tres
 # res://art/pieces/piece_hiroshige_2_mt_asama.tres
 # res://art/pieces/piece_hiroshige_2_rock_tripe.tres
+# res://art/pieces/piece_hiroshige_3_ashikaga_loom.tres
 # res://art/pieces/piece_hiroshige_3_bear_hunting.tres
 # res://art/pieces/piece_hiroshige_3_butterbur.tres
 # res://art/pieces/piece_hiroshige_3_coal_mine.tres
@@ -421,6 +423,7 @@
 # res://art/pieces/piece_hiroshige_shokintei_in_yushima.tres
 # res://art/pieces/piece_hiroshige_sumidagawa.tres
 # res://art/pieces/piece_hiroshige_tamachi_moon.tres
+# res://art/pieces/piece_hiroshige_tama_river_blossoms.tres
 # res://art/pieces/piece_hiroshige_theater.tres
 # res://art/pieces/piece_hiroshige_tsuchiyama.tres
 # res://art/pieces/piece_hiroshige_tsuchiyama_reisho.tres
@@ -513,6 +516,7 @@
 # res://art/pieces/piece_kuniyoshi_okabe.tres
 # res://art/pieces/piece_kuniyoshi_rain_and_thunder_in_hashidate.tres
 # res://art/pieces/piece_kuniyoshi_rock_gazing.tres
+# res://art/pieces/piece_kuniyoshi_ship_sinks.tres
 # res://art/pieces/piece_kuniyoshi_shotoku.tres
 # res://art/pieces/piece_kuniyoshi_sunrise.tres
 # res://art/pieces/piece_kuniyoshi_tang_long.tres
@@ -549,6 +553,7 @@
 # res://art/pieces/piece_shuuun_tanuki.tres
 # res://art/pieces/piece_souzan_tanuki.tres
 # res://art/pieces/piece_tankei_eruption.tres
+# res://art/pieces/piece_toshikata_hanawa_hokiichi.tres
 # res://art/pieces/piece_toshikata_spring_sea.tres
 # res://art/pieces/piece_toukou_cat_spider.tres
 # res://art/pieces/piece_tsukumogami_drum.tres
@@ -842,6 +847,7 @@
 # res://cards/tier0/card_one.tres
 # res://cards/tier0/card_paddy.tres
 # res://cards/tier0/card_rabbit.tres
+# res://cards/tier0/card_resign.tres
 # res://cards/tier0/card_rest.tres
 # res://cards/tier0/card_right.tres
 # res://cards/tier0/card_run.tres
@@ -1696,6 +1702,7 @@
 # res://events/companions/turtle/event_companion_turtle_2.tres
 # res://events/companions/turtle/event_companion_turtle_3.tres
 # res://events/generic/alekon/event_alekon.tres
+# res://events/generic/artisan_bureau/event_artisan_bureau.tres
 # res://events/generic/basket_weaver/event_basket_weaver.tres
 # res://events/generic/big_dry_tree/event_big_dry_tree.tres
 # res://events/generic/bird_man/event_bird_man.tres
@@ -1728,6 +1735,10 @@
 # res://events/generic/hull_pile/event_hull_pile.tres
 # res://events/generic/hungry_monk/event_hungry_monk.tres
 # res://events/generic/ikebana/event_ikebana.tres
+# res://events/generic/incense/event_incense_autumn.tres
+# res://events/generic/incense/event_incense_spring.tres
+# res://events/generic/incense/event_incense_summer.tres
+# res://events/generic/incense/event_incense_winter.tres
 # res://events/generic/iron_wreck/event_iron_wreck.tres
 # res://events/generic/kite_fight/event_kite_fight.tres
 # res://events/generic/kudzu_harvest/event_kudzu_harvest.tres
@@ -1749,9 +1760,11 @@
 # res://events/generic/river_festival_flood/event_river_festival_flood.tres
 # res://events/generic/rocks_reply/event_rocks_reply.tres
 # res://events/generic/ropeways/event_ropeways.tres
+# res://events/generic/sakura/event_sakura.tres
 # res://events/generic/salt_gatherers/event_salt_gatherers.tres
 # res://events/generic/scarlet_curse/event_scarlet_curse.tres
 # res://events/generic/school/event_school.tres
+# res://events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
 # res://events/generic/sick_apothecary/event_sick_apothecary.tres
 # res://events/generic/silk_weaver/event_silk_weaver.tres
 # res://events/generic/silver_mine/event_silver_mine.tres
@@ -1774,6 +1787,7 @@
 # res://events/generic/vinegar_tasters/event_vinegar_tasters.tres
 # res://events/generic/violent_pillar/event_violent_pillar.tres
 # res://events/generic/volcano/event_volcano.tres
+# res://events/generic/weaving_house/event_weaving_house.tres
 # res://events/generic/wedding_veil/event_wedding_veil.tres
 # res://events/generic/wild_monastery/event_wild_monastery.tres
 # res://events/landmark/communal_baths/event_communal_baths.tres
@@ -3021,11 +3035,14 @@
 # res://quests/resourcegroup_quests.tres
 # res://quests/settler/challenges/settler_quest_challenge_card_after_foray.gd
 # res://quests/settler/challenges/settler_quest_challenge_card_choices.gd
+# res://quests/settler/challenges/settler_quest_challenge_card_on_companion.gd
 # res://quests/settler/challenges/settler_quest_challenge_card_on_redraw.gd
+# res://quests/settler/challenges/settler_quest_challenge_card_on_tag_played.gd
 # res://quests/settler/challenges/settler_quest_challenge_card_rarity.gd
 # res://quests/settler/challenges/settler_quest_challenge_damage_on_bonus.gd
 # res://quests/settler/challenges/settler_quest_challenge_damage_on_card_removal.gd
 # res://quests/settler/challenges/settler_quest_challenge_damage_on_rare_cards.gd
+# res://quests/settler/challenges/settler_quest_challenge_damage_on_relic.gd
 # res://quests/settler/challenges/settler_quest_challenge_damage_on_spread.gd
 # res://quests/settler/challenges/settler_quest_challenge_damage_on_unconnected.gd
 # res://quests/settler/challenges/settler_quest_challenge_damage_per_stage.gd
@@ -3034,41 +3051,58 @@
 # res://quests/settler/challenges/settler_quest_challenge_foray_goals.gd
 # res://quests/settler/challenges/settler_quest_challenge_harm_on_aspect_cards.gd
 # res://quests/settler/challenges/settler_quest_challenge_max_inspiration.gd
+# res://quests/settler/challenges/settler_quest_challenge_negative_glyph_each_turn.gd
 # res://quests/settler/challenges/settler_quest_challenge_no_heal_during_survey.gd
 # res://quests/settler/challenges/settler_quest_challenge_run_var.gd
 # res://quests/settler/challenges/settler_quest_challenge_shop_cost.gd
 # res://quests/settler/challenges/settler_quest_challenge_starting_cards.gd
+# res://quests/settler/challenges/settler_quest_extra_haunting.gd
+# res://quests/settler/goals/settler_quest_goal_all_bonuses.gd
 # res://quests/settler/goals/settler_quest_goal_any_upgrade.gd
 # res://quests/settler/goals/settler_quest_goal_biome_settlements.gd
 # res://quests/settler/goals/settler_quest_goal_event.gd
 # res://quests/settler/goals/settler_quest_goal_global_upgrades.gd
+# res://quests/settler/goals/settler_quest_goal_legendary_card.gd
 # res://quests/settler/goals/settler_quest_goal_no_loss_survey.gd
 # res://quests/settler/goals/settler_quest_goal_num_cards.gd
 # res://quests/settler/goals/settler_quest_goal_num_connected_settlements.gd
 # res://quests/settler/goals/settler_quest_goal_num_events.gd
+# res://quests/settler/goals/settler_quest_goal_num_pacified.gd
 # res://quests/settler/goals/settler_quest_goal_num_perfect_settlements.gd
 # res://quests/settler/goals/settler_quest_goal_num_relics.gd
 # res://quests/settler/goals/settler_quest_goal_num_settlements.gd
 # res://quests/settler/goals/settler_quest_goal_num_survey_episodes.gd
+# res://quests/settler/goals/settler_quest_goal_num_t3_spots.gd
+# res://quests/settler/goals/settler_quest_goal_num_unfinished_settlements.gd
 # res://quests/settler/goals/settler_quest_goal_run_bonus.gd
 # res://quests/settler/goals/settler_quest_goal_settlement_upgrades.gd
 # res://quests/settler/goals/settler_quest_goal_stage_bonus.gd
+# res://quests/settler/quests/quest_settler_animal_allergy.tres
 # res://quests/settler/quests/quest_settler_antique_collector.tres
+# res://quests/settler/quests/quest_settler_anti_relics.tres
+# res://quests/settler/quests/quest_settler_artisan.tres
 # res://quests/settler/quests/quest_settler_ascetic.tres
 # res://quests/settler/quests/quest_settler_clumsy_scholar.tres
+# res://quests/settler/quests/quest_settler_contrarian.tres
 # res://quests/settler/quests/quest_settler_daredevil.tres
 # res://quests/settler/quests/quest_settler_diligent_surveyor.tres
 # res://quests/settler/quests/quest_settler_dragon_scale.tres
 # res://quests/settler/quests/quest_settler_enterprising_trader.tres
 # res://quests/settler/quests/quest_settler_former_monk.tres
+# res://quests/settler/quests/quest_settler_grieving.tres
 # res://quests/settler/quests/quest_settler_grumpy_scout.tres
 # res://quests/settler/quests/quest_settler_hanami.tres
 # res://quests/settler/quests/quest_settler_healer.tres
 # res://quests/settler/quests/quest_settler_hoarder.tres
+# res://quests/settler/quests/quest_settler_independence.tres
 # res://quests/settler/quests/quest_settler_novelty_seeker.tres
+# res://quests/settler/quests/quest_settler_no_waste.tres
+# res://quests/settler/quests/quest_settler_panicker.tres
 # res://quests/settler/quests/quest_settler_perfectionist.tres
+# res://quests/settler/quests/quest_settler_philosophers.tres
 # res://quests/settler/quests/quest_settler_planner.tres
 # res://quests/settler/quests/quest_settler_publisher.tres
+# res://quests/settler/quests/quest_settler_quartermaster.tres
 # res://quests/settler/quests/quest_settler_rabbit_family.tres
 # res://quests/settler/quests/quest_settler_safety_warden.tres
 # res://quests/settler/quests/quest_settler_sick_elder.tres
@@ -3078,6 +3112,7 @@
 # res://quests/settler/quests/quest_settler_talisman_seed_pouch.tres
 # res://quests/settler/quests/quest_settler_tipsy_musician.tres
 # res://quests/settler/quests/quest_settler_traditionalist.tres
+# res://quests/settler/quests/quest_settler_unlucky.tres
 # res://quests/settler/quests/quest_settler_unsatisfied_customer.tres
 # res://quests/settler/quests/quest_settler_wildlife_ranger.tres
 # res://quests/settler/quests/quest_settler_worrier.tres
@@ -3113,6 +3148,8 @@
 # res://relics/common/census_tag/relic_census_tag.tres
 # res://relics/common/charcoal_rod/relic_charcoal_rod.gd
 # res://relics/common/charcoal_rod/relic_charcoal_rod.tres
+# res://relics/common/cherry_petal/relic_cherry_petal.gd
+# res://relics/common/cherry_petal/relic_cherry_petal.tres
 # res://relics/common/cherry_pit/relic_cherry_pit.gd
 # res://relics/common/cherry_pit/relic_cherry_pit.tres
 # res://relics/common/chisel_fang/relic_chisel_fang.gd
@@ -3175,6 +3212,8 @@
 # res://relics/common/leaky_inkstick/relic_leaky_inkstick.tres
 # res://relics/common/lettered_robe/relic_lettered_robe.gd
 # res://relics/common/lettered_robe/relic_lettered_robe.tres
+# res://relics/common/loom_shuttle/relic_loom_shuttle.gd
+# res://relics/common/loom_shuttle/relic_loom_shuttle.tres
 # res://relics/common/meal_tally/relic_meal_tally.gd
 # res://relics/common/meal_tally/relic_meal_tally.tres
 # res://relics/common/metal_egg/relic_metal_egg.tres
@@ -3227,6 +3266,8 @@
 # res://relics/common/spider_web/relic_spider_web.tres
 # res://relics/common/spring_rune/relic_spring_rune.gd
 # res://relics/common/spring_rune/relic_spring_rune.tres
+# res://relics/common/square_ruler/relic_square_ruler.gd
+# res://relics/common/square_ruler/relic_square_ruler.tres
 # res://relics/common/starter_bead/relic_starter_bead.gd
 # res://relics/common/starter_bead/relic_starter_bead.tres
 # res://relics/common/still_ink/relic_still_ink.gd
@@ -3258,6 +3299,7 @@
 # res://relics/common/wicker_gear/relic_wicker_gear.tres
 # res://relics/rare/crystal_blossom/relic_crystal_blossom.tres
 # res://relics/rare/delicious_mushroom/relic_delicious_mushroom.tres
+# res://relics/rare/divination_plate/relic_divination_plate.tres
 # res://relics/rare/last_thread/relic_last_thread.gd
 # res://relics/rare/last_thread/relic_last_thread.tres
 # res://relics/relic.gd
@@ -4074,6 +4116,7 @@
 # res://tutorial/steps/hub/tutorial_shard_type_reqs.gd
 # res://tutorial/steps/hub/tutorial_skills.gd
 # res://tutorial/steps/hub/tutorial_skill_quest.gd
+# res://tutorial/steps/hub/tutorial_starter_cards_skills.gd
 # res://tutorial/steps/hub/tutorial_studio.gd
 # res://tutorial/steps/hub/tutorial_tower.gd
 # res://tutorial/steps/misc/tutorial_add_cards.gd
@@ -5552,6 +5595,7 @@ msgstr ""
 #: art/pieces/piece_gekkou_deer_on_bridge.tres
 #: art/pieces/piece_gekkou_foxes_shrine.tres
 #: art/pieces/piece_gekkou_fuji_24.tres
+#: art/pieces/piece_gekkou_incense.tres
 #: art/pieces/piece_gekkou_masaaki.tres
 #: art/pieces/piece_gekkou_momotarou.tres
 #: art/pieces/piece_gekkou_morning_glory.tres
@@ -6219,6 +6263,7 @@ msgstr ""
 #: art/pieces/piece_hasui_lotus.tres
 #: art/pieces/piece_hasui_sanpoji_pond.tres
 #: art/pieces/piece_hasui_yuhi_waterfall.tres
+#: art/pieces/piece_hiroshige_3_ashikaga_loom.tres
 #: art/pieces/piece_hiroshige_3_kudzu.tres
 #: art/pieces/piece_hiroshige_3_whetstone.tres
 #: art/pieces/piece_hiroshige_hara.tres
@@ -6238,6 +6283,7 @@ msgstr ""
 #: art/pieces/piece_koson_tadpoles.tres
 #: art/pieces/piece_kuniyoshi_warabi.tres
 #: art/pieces/piece_shunshou_airing_books.tres
+#: art/pieces/piece_toshikata_hanawa_hokiichi.tres
 #: art/pieces/piece_unknown_sea_bream.tres
 #: art/pieces/piece_yoshida_gingko.tres
 msgid "The image was cropped."
@@ -6448,6 +6494,21 @@ msgstr ""
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
 #: art/pieces/piece_gekkou_fuji_24.tres
 msgid "100 Views of Mount Fuji, #24"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_gekkou_incense.tres
+msgid "Incense Ceremony"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_gekkou_incense.tres
+msgid ""
+"Depicts women performing an incense ceremony. The exact nature of the ceremony is unclear, but it seems to involve smelling different kinds of incense.\n"
+"\n"
+"Incense has a long history in Japanese traditions. During the Heian period, incense blends were often presented to be judged by aristocrats, and the Tale of Genji features a chapter describing one such occasion.\n"
+"\n"
+"Later, in the Muromachi and Edo periods, incense-guessing games were invented, the most famous of which is the Genjikō, which involved drawing five sachets of blended wood and guessing which of them were the same and which were different."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -7188,6 +7249,16 @@ msgid ""
 "Depicts workers scraping rock tripe off a cliff face, while suspended in baskets above a gorge.\n"
 "\n"
 "Although rock tripe is called iwatake (\"rock mushroom\") in Japanese, it is actually an edible lichen (Umbilicaria esculenta) that grows on sheer, exposed mountain cliffs. Although considered at best a starvation food in most of the world, Japanese cuisine appreciates its elastic texture and earthy flavor. It requires extensive processing by repeated boiling to reduce bitterness, and is sometimes prepared with sugar and soy sauce or baked into cakes."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_hiroshige_3_ashikaga_loom.tres
+msgid "High Loom Near Ashikaga, Shimotsuke Province"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_hiroshige_3_ashikaga_loom.tres
+msgid "Depicts the operation of a high loom. The text on the right describes various types of silk fabrics, such as satin and damask, being manufactured in the Ashikaga province, and explains that the operator sits on a raised platform to manipulate threads and weave intricate patterns. It praises the craftsmanship, explaining that \"Ashikaga Silk\" is a renowned local product."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -8660,6 +8731,19 @@ msgid ""
 "The shrine was allegedly founded in 1365, and a shrine rebuilt in 1957 still stands on the same site. A guardian dog statue on the grounds was dedicated in 1696.\n"
 "\n"
 "From the series Eight Views of Shiba in the Eastern Capital."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_hiroshige_tama_river_blossoms.tres
+msgid "Blossoms on the Tama River Embankment"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_hiroshige_tama_river_blossoms.tres
+msgid ""
+"Depicts sightseers viewing cherry blossoms along the banks of the Tama River at Edo.\n"
+"\n"
+"The scene is situated along the Tamagawa Aqueduct flowing south of Naito-Shinjuku, a post town on the Kōshū Kaidō road. To the right are the houses of the post town, and to the left is a row of cherry trees planted during the Kyōhō era (1716-1736) to reinforce the embankment."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -10150,6 +10234,26 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_kuniyoshi_ship_sinks.tres
+msgid "Minamoto no Tametomo Shoots an Enemy Ship with an Arrow"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: edits_description
+#: art/pieces/piece_kuniyoshi_ship_sinks.tres
+msgid "The image was cropped and extra ships and the text were removed."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_kuniyoshi_ship_sinks.tres
+msgid ""
+"Depicts a legendary scene of the famous 12th-century samurai [url=https://en.wikipedia.org/wiki/Minamoto_no_Tametomo]Minamoto no Tametomo[/url] (far left) sinking an enemy ship by firing a single arrow.\n"
+"\n"
+"The legend goes that instead of dying in exile on Izu Ōshima (near modern Tōkyō), he traveled to the Ryūkyū islands (of which Okinawa is the most famous), took on a second wife, Sasarae (shown in the center of this print), and became the ancestor of the islands' ruling family. This tale was sometimes used to support Japanese rights to the Ryūkyū islands.\n"
+"\n"
+"The figure on the far right is Tametomo's retainer Oniyasha."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
 #: art/pieces/piece_kuniyoshi_shotoku.tres
 msgid "The Miraculous Gourd"
 msgstr ""
@@ -10598,6 +10702,23 @@ msgid ""
 "The eruption occurred on the morning of July 15, 1888, triggered by a relatively minor earthquake. The initial explosion was followed by successive blasts occurring 15 to 20 times per minute. Each explosion was accompanied by thunder and a black eruption column up to 1300 meters high. Several hours later hot rain started falling, transforming the vast quantity of ash into volcanic mudslides.\n"
 "\n"
 "The eruption transformed hundreds of square kilometers of forest and farmland around the mountain into a wasteland, and several villages were completely buried under landslides. At least 477 people were killed, and hundreds more were injured and rendered homeless."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_toshikata_hanawa_hokiichi.tres
+msgid "Hanawa Hokiichi"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_toshikata_hanawa_hokiichi.tres
+msgid ""
+"Depicts the blind scholar [url=https://en.wikipedia.org/wiki/Hanawa_Hokiichi]Hanawa Hokiichi[/url] (1746-1821), famous for compiling the [url=https://en.wikipedia.org/wiki/Gunsho_Ruij%C5%AB]Gunsho Ruijū[/url], a collection of over a thousand historical documents. Helen Keller has described Hokiichi as one of her role models.\n"
+"\n"
+"In this scene, Hokiichi is giving a lecture when the wind blows out the candle, leaving the room dark. When his students explained the issue, he is said to to have replied: \"That shows the inconvenience of having to depend on eyes; for when the light goes out, you suddenly become helpless. I'm fortunate in never having any such trouble.\"\n"
+"\n"
+"The text in the top right corner gives a background on the scholar, but also claims that he published 3070 books, which is an obvious exaggeration.\n"
+"\n"
+"This print is from the series Foundations of Morality and Success designed by various artists and published by Matsuki Heikichi."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -13848,7 +13969,7 @@ msgstr ""
 #: theme/confirm_dialog/confirm_dialog.tscn
 #: tutorial/steps/hub/tutorial_enable_japanese.gd:36
 #: utils/bug_reporter/bug_reporter.tscn
-#: utils/ui.gd:288
+#: utils/ui.gd:290
 msgid "Cancel"
 msgstr ""
 
@@ -14438,14 +14559,15 @@ msgid " - <term:innate>"
 msgstr ""
 
 #: cards/card.gd:387
-#: cards/card_type.gd:210
-msgid "Provides "
+msgid "Provides any <term:aspect>"
+msgstr ""
+
+#: cards/card.gd:389
+msgid "Provides %s <term:aspect>"
 msgstr ""
 
 #: cards/card.gd:391
-msgid ""
-"\n"
-"Provides no <term_lower:aspect>s."
+msgid "Provides no <term_lower:aspect>s"
 msgstr ""
 
 #: cards/card.gd:399
@@ -14629,6 +14751,10 @@ msgstr ""
 
 #: cards/card_type.gd:196
 msgid " Glyph (%s)"
+msgstr ""
+
+#: cards/card_type.gd:210
+msgid "Provides "
 msgstr ""
 
 #: cards/card_type.gd:215
@@ -17866,6 +17992,7 @@ msgstr ""
 #: cards/tier0/card_left.tres
 #: cards/tier0/card_name.tres
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier0/card_tree.tres
@@ -18099,6 +18226,7 @@ msgstr ""
 #: cards/tier0/card_left.tres
 #: cards/tier0/card_name.tres
 #: cards/tier0/card_old.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_stand.tres
 #: cards/tier0/card_tree.tres
@@ -27147,6 +27275,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_left.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier2/card_conflict.tres
 msgid "to step down"
 msgstr ""
@@ -27154,6 +27283,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_left.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_rest.tres
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_conflict.tres
@@ -28124,6 +28254,7 @@ msgstr ""
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_name.tres
 #: cards/tier0/card_rabbit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_town.tres
 #: cards/tier0/card_tree.tres
@@ -31509,6 +31640,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_left.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_wind.tres
 #: cards/tier1/card_ear.tres
 #: cards/tier2/card_conflict.tres
@@ -31916,6 +32048,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_down.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_wind.tres
 #: cards/tier3/card_six.tres
 #: cards/tier3/card_thicket.tres
@@ -31955,6 +32088,7 @@ msgstr ""
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_know.tres
 #: cards/tier1/card_letter.tres
@@ -31978,6 +32112,7 @@ msgstr ""
 #: cards/tier0/card_down.tres
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier2/card_dye.tres
 #: cards/tier2/card_equal.tres
@@ -43889,6 +44024,7 @@ msgstr ""
 #: cards/tier0/card_middle.tres
 #: cards/tier0/card_move.tres
 #: cards/tier0/card_name.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_up.tres
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_craft.tres
@@ -44995,6 +45131,7 @@ msgstr ""
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_not.tres
 #: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier2/card_accept.tres
@@ -48914,6 +49051,7 @@ msgstr ""
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_make.tres
@@ -48955,6 +49093,7 @@ msgstr ""
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mountain.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_origin.tres
@@ -53259,6 +53398,7 @@ msgstr ""
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_olden_days.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_shift.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier1/card_red.tres
@@ -54177,6 +54317,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mountain.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_origin.tres
@@ -54206,6 +54347,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mountain.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_origin.tres
@@ -54235,6 +54377,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mountain.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_origin.tres
@@ -54269,6 +54412,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mountain.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_origin.tres
@@ -54300,6 +54444,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_mountain.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_origin.tres
@@ -54810,6 +54955,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier6/card_refuse.tres
 msgid "to refuse"
 msgstr ""
@@ -54833,12 +54979,14 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_exit.tres
+#: cards/tier0/card_resign.tres
 msgid "to turn down"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_exit.tres
 #: cards/tier0/card_foot.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_tree.tres
 #: cards/tier0/card_water.tres
 #: cards/tier2/card_accept.tres
@@ -60728,6 +60876,7 @@ msgstr ""
 #: cards/tier0/card_middle.tres
 #: cards/tier0/card_move.tres
 #: cards/tier0/card_name.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60750,6 +60899,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_life.tres
 #: cards/tier0/card_name.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60768,6 +60918,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60786,6 +60937,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60804,6 +60956,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60823,6 +60976,7 @@ msgstr ""
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_man.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_town.tres
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_craft.tres
@@ -60858,6 +61012,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60878,6 +61033,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60896,6 +61052,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60914,6 +61071,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60932,6 +61090,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60950,6 +61109,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60968,6 +61128,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -60986,6 +61147,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -61006,6 +61168,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_divination.tres
 #: cards/tier1/card_gold.tres
@@ -61026,6 +61189,7 @@ msgstr ""
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_foot.tres
 #: cards/tier0/card_fruit.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_craft.tres
 #: cards/tier1/card_gold.tres
 #: cards/tier1/card_product.tres
@@ -62659,6 +62823,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_flower.tres
 #: cards/tier0/card_man.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_town.tres
 #: cards/tier0/card_woman.tres
@@ -77168,6 +77333,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_left.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier1/card_power.tres
 #: cards/tier2/card_sail.tres
 #: cards/tier3/card_write.tres
@@ -82060,6 +82226,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_middle.tres
 #: cards/tier0/card_move.tres
+#: cards/tier0/card_resign.tres
 #: cards/tier0/card_run.tres
 #: cards/tier0/card_tree.tres
 #: cards/tier1/card_early.tres
@@ -88280,6 +88447,557 @@ msgid "Against the snow, the white rabbit was invisible."
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: card_name
+#: cards/tier0/card_resign.tres
+msgid "Resign"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier1/card_letter.tres
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_copy.tres
+msgid "dictionary"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_copy.tres
+#: cards/tier3/card_forge.tres
+msgid "lexicon"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_copy.tres
+msgid "letter of resignation"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "declining"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier6/card_refuse.tres
+msgid "refusal"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "nonacceptance"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "turning down"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "withdrawal,e.g. of candidacy"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "pulling out, e.g. of a race"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "excusing oneself"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_butterfly.tres
+#: cards/tier2/card_thanks.tres
+msgid "bow"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_thanks.tres
+msgid "bowing"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_cut.tres
+#: cards/tier2/card_group.tres
+#: cards/tier2/card_marriage.tres
+#: cards/tier2/card_release.tres
+#: cards/tier3/card_clothes.tres
+#: cards/tier3/card_duty.tres
+#: cards/tier3/card_obey.tres
+msgid "resignation"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier0/card_up.tres
+#: cards/tier1/card_hand.tres
+#: cards/tier2/card_asset.tres
+#: cards/tier2/card_fee.tres
+#: cards/tier2/card_love.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier4/card_illustration.tres
+msgid "flattery"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "compliment"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "encyclopedia"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "encyclopaedia"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "notice of personnel change"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_use.tres
+msgid "wording"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "choice of language"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier3/card_duty.tres
+msgid "resignation from a position"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "to take one's leave"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "to excuse oneself"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "to not mind doing"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "eulogy"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "congratulatory address"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "intention to resign"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "memorial address"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "words of condolence"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "ceremonial address"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "flowery words"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "rhetorical flourishes"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "mass resignation"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "I resign."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "to leave (one's job, etc.)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "I want to leave school."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier0/card_stand.tres
+#: cards/tier0/card_woman.tres
+#: cards/tier1/card_craft.tres
+#: cards/tier1/card_school.tres
+#: cards/tier2/card_bird.tres
+#: cards/tier2/card_boat.tres
+#: cards/tier2/card_effort.tres
+#: cards/tier2/card_fast.tres
+#: cards/tier2/card_flow.tres
+#: cards/tier2/card_lock.tres
+#: cards/tier3/card_gate.tres
+#: cards/tier3/card_study.tres
+#: cards/tier6/card_entangle.tres
+msgid "school"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "Are you a walking dictionary?"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "Why not just quit?"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "I will look it up in the dictionary."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier1/card_evening.tres
+#: cards/tier1/card_hand.tres
+#: cards/tier3/card_write.tres
+msgid "to investigate"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier3/card_write.tres
+msgid "to check up"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_darkness.tres
+#: cards/tier3/card_study.tres
+#: cards/tier3/card_write.tres
+#: cards/tier4/card_discipline.tres
+#: cards/tier6/card_failure.tres
+msgid "to study"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_ask.tres
+#: cards/tier3/card_write.tres
+#: cards/tier4/card_thought.tres
+msgid "to inquire"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier3/card_write.tres
+msgid "to search"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "You flatter me."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier1/card_bright.tres
+#: cards/tier1/card_craft.tres
+#: cards/tier1/card_origin.tres
+#: cards/tier2/card_asset.tres
+#: cards/tier2/card_inside.tres
+#: cards/tier2/card_pottery.tres
+#: cards/tier2/card_purity.tres
+#: cards/tier2/card_record.tres
+#: cards/tier6/card_clumsy.tres
+msgid "skill"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier1/card_power.tres
+#: cards/tier2/card_discern.tres
+#: cards/tier2/card_prune.tres
+#: cards/tier2/card_statue.tres
+#: cards/tier3/card_alone.tres
+#: cards/tier3/card_create.tres
+#: cards/tier3/card_forge.tres
+#: cards/tier3/card_recollection.tres
+#: cards/tier3/card_village.tres
+#: cards/tier4/card_peace.tres
+#: cards/tier5/card_echo.tres
+msgid "proficiency"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier6/card_clumsy.tres
+msgid "dexterity"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "I quit."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "I don't have money to buy a dictionary."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "gold (metal)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "gold (color)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "gold (medal)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "first place (prize)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier1/card_gold.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "something of great value"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "something golden (e.g. silence)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier1/card_gold.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "gold coin"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "sum (of money)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "Friday"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "karat (measure of purity of gold)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "carat"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "metal (fourth phase of Wu Xing)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "Jin dynasty (of China; 1115-1234)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "Chin dynasty"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "Jurchen dynasty"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "gold general"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+#: cards/tier2/card_picture.tres
+#: cards/tier3/card_fortune.tres
+#: cards/tier3/card_hide.tres
+#: cards/tier3/card_travel.tres
+#: cards/tier4/card_silver.tres
+#: cards/tier6/card_pass_away.tres
+#: cards/tier6/card_refuse.tres
+msgid "testicles"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier0/card_resign.tres
+msgid "I need a dictionary."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier0/card_resign.tres
+msgid "resign"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: card_name
 #: cards/tier0/card_rest.tres
 msgid "Rest"
 msgstr ""
@@ -93001,23 +93719,6 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_stand.tres
 #: cards/tier0/card_woman.tres
-#: cards/tier1/card_craft.tres
-#: cards/tier1/card_school.tres
-#: cards/tier2/card_bird.tres
-#: cards/tier2/card_boat.tres
-#: cards/tier2/card_effort.tres
-#: cards/tier2/card_fast.tres
-#: cards/tier2/card_flow.tres
-#: cards/tier2/card_lock.tres
-#: cards/tier3/card_gate.tres
-#: cards/tier3/card_study.tres
-#: cards/tier6/card_entangle.tres
-msgid "school"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier0/card_stand.tres
-#: cards/tier0/card_woman.tres
 #: cards/tier2/card_lock.tres
 #: cards/tier3/card_gate.tres
 msgid "phylum"
@@ -97574,17 +98275,6 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier4/card_illustration.tres
 msgid "adept"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier0/card_up.tres
-#: cards/tier1/card_hand.tres
-#: cards/tier2/card_asset.tres
-#: cards/tier2/card_fee.tres
-#: cards/tier2/card_love.tres
-#: cards/tier2/card_picture.tres
-#: cards/tier4/card_illustration.tres
-msgid "flattery"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
@@ -106076,19 +106766,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier1/card_bright.tres
-#: cards/tier1/card_craft.tres
-#: cards/tier1/card_origin.tres
-#: cards/tier2/card_asset.tres
-#: cards/tier2/card_inside.tres
-#: cards/tier2/card_pottery.tres
-#: cards/tier2/card_purity.tres
-#: cards/tier2/card_record.tres
-#: cards/tier6/card_clumsy.tres
-msgid "skill"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier1/card_bright.tres
 #: cards/tier2/card_inside.tres
 msgid "(in one's) grip"
 msgstr ""
@@ -109523,13 +110200,6 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier1/card_evening.tres
 #: cards/tier1/card_hand.tres
-#: cards/tier3/card_write.tres
-msgid "to investigate"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier1/card_evening.tres
-#: cards/tier1/card_hand.tres
 msgid "to purify (one's heart)"
 msgstr ""
 
@@ -110894,30 +111564,6 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier1/card_gold.tres
 msgid "gold color"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier1/card_gold.tres
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "something of great value"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier1/card_gold.tres
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "gold coin"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
@@ -113297,13 +113943,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier1/card_letter.tres
-#: cards/tier1/card_origin.tres
-#: cards/tier2/card_copy.tres
-msgid "dictionary"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier1/card_letter.tres
 #: cards/tier3/card_write.tres
 msgid "written text"
 msgstr ""
@@ -114705,19 +115344,6 @@ msgstr ""
 msgid "money at hand"
 msgstr ""
 
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier1/card_origin.tres
-#: cards/tier2/card_copy.tres
-#: cards/tier3/card_forge.tres
-msgid "lexicon"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier1/card_origin.tres
-#: cards/tier2/card_copy.tres
-msgid "letter of resignation"
-msgstr ""
-
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier1/card_origin.tres
 msgid "A healthy child can no more sit still than a puppy can."
@@ -115804,21 +116430,6 @@ msgstr ""
 #: cards/tier4/card_peace.tres
 #: cards/tier5/card_echo.tres
 msgid "strength"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier1/card_power.tres
-#: cards/tier2/card_discern.tres
-#: cards/tier2/card_prune.tres
-#: cards/tier2/card_statue.tres
-#: cards/tier3/card_alone.tres
-#: cards/tier3/card_create.tres
-#: cards/tier3/card_forge.tres
-#: cards/tier3/card_recollection.tres
-#: cards/tier3/card_village.tres
-#: cards/tier4/card_peace.tres
-#: cards/tier5/card_echo.tres
-msgid "proficiency"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
@@ -121589,13 +122200,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_ask.tres
-#: cards/tier3/card_write.tres
-#: cards/tier4/card_thought.tres
-msgid "to inquire"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_ask.tres
 msgid "to blame someone for"
 msgstr ""
 
@@ -125122,12 +125726,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_butterfly.tres
-#: cards/tier2/card_thanks.tres
-msgid "bow"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_butterfly.tres
 msgid "bowknot"
 msgstr ""
 
@@ -128591,17 +129189,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cut.tres
-#: cards/tier2/card_group.tres
-#: cards/tier2/card_marriage.tres
-#: cards/tier2/card_release.tres
-#: cards/tier3/card_clothes.tres
-#: cards/tier3/card_duty.tres
-#: cards/tier3/card_obey.tres
-msgid "resignation"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_cut.tres
 #: cards/tier2/card_sell.tres
 msgid "to be sold out"
 msgstr ""
@@ -129287,15 +129874,6 @@ msgstr ""
 #: cards/tier3/card_teach.tres
 #: cards/tier6/card_failure.tres
 msgid "to learn"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_darkness.tres
-#: cards/tier3/card_study.tres
-#: cards/tier3/card_write.tres
-#: cards/tier4/card_discipline.tres
-#: cards/tier6/card_failure.tres
-msgid "to study"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
@@ -144021,171 +144599,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "gold (metal)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "gold (color)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "gold (medal)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "first place (prize)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "something golden (e.g. silence)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "sum (of money)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "Friday"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "karat (measure of purity of gold)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "carat"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "metal (fourth phase of Wu Xing)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "Jin dynasty (of China; 1115-1234)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "Chin dynasty"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "Jurchen dynasty"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "gold general"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
-#: cards/tier3/card_fortune.tres
-#: cards/tier3/card_hide.tres
-#: cards/tier3/card_travel.tres
-#: cards/tier4/card_silver.tres
-#: cards/tier6/card_pass_away.tres
-#: cards/tier6/card_refuse.tres
-msgid "testicles"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_picture.tres
 #: cards/tier3/card_offering.tres
 msgid "to pay (e.g. money, bill)"
 msgstr ""
@@ -155175,11 +155588,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_thanks.tres
-msgid "bowing"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_thanks.tres
 msgid "organized worship"
 msgstr ""
 
@@ -157679,11 +158087,6 @@ msgstr ""
 #: cards/tier2/card_use.tres
 #: cards/tier3/card_forge.tres
 msgid "terminology"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_use.tres
-msgid "wording"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
@@ -163121,11 +163524,6 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_duty.tres
 msgid "consecutive jobs"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier3/card_duty.tres
-msgid "resignation from a position"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
@@ -170998,16 +171396,6 @@ msgstr ""
 msgid "I'll study your report."
 msgstr ""
 
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier3/card_write.tres
-msgid "to check up"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier3/card_write.tres
-msgid "to search"
-msgstr ""
-
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier3/card_write.tres
 msgid "Who wrote this?"
@@ -178296,11 +178684,6 @@ msgstr ""
 msgid "Clumsy"
 msgstr ""
 
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier6/card_clumsy.tres
-msgid "dexterity"
-msgstr ""
-
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier6/card_clumsy.tres
 msgid "I can't check to see if your sentence is correct or not because it's too short."
@@ -183088,11 +183471,6 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: card_name
 #: cards/tier6/card_refuse.tres
 msgid "Refuse"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier6/card_refuse.tres
-msgid "refusal"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
@@ -192508,6 +192886,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: markedup_text
 #: events/companions/dog/event_companion_dog_2.tres
+#: events/generic/weaving_house/event_weaving_house.tres
 msgid "Refuse the offer."
 msgstr ""
 
@@ -195183,6 +195562,73 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid "The Retiring Master"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid ""
+"The settlement's master carpenter is slowly but surely going blind. His techniques remain unrivaled, but it won't be long before he will be unable to put any of them into practice.\n"
+"\n"
+"His apprentices gather for their monthly meeting with apprehension. It isn't easy to ask their master to put down his tools and retire.\n"
+"\n"
+"The master listens without saying a word, and stops to consider their suggestion."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid "Retire quietly."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid ""
+"The master accepts with a heavy heart.\n"
+"\n"
+"Though it pains him to give up his craft, he knows that to continue is to hold the entire group back."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid "Choose a successor."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid ""
+"The master agrees, but before resigning he chooses the foremost of his pupils as a successor.\n"
+"\n"
+"He presents the fortunate apprentice with his carpenter's square, an indispensable tool that has served him for decades."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid "Start teaching instead."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid ""
+"The master agrees to leave the cutting and measuring to the apprentices, but insists on holding regular carpentry classes, open to all.\n"
+"\n"
+"It would be a tragedy to let all his accumulated wisdom go to waste just because his eyesight is gone."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid "Refuse to retire."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/artisan_bureau/event_artisan_bureau.tres
+msgid ""
+"The master refuses to retire. Carpentry has been his life for decades, and he'd rather die a carpenter than spend his days sitting around.\n"
+"\n"
+"The apprentices will be forced to redo much of his work, but they are too timid to force the point."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
 #: events/generic/basket_weaver/event_basket_weaver.tres
 msgid "An Ominous Basket"
 msgstr ""
@@ -197562,6 +198008,194 @@ msgid ""
 "The result is a striking contrast, vibrant new life rising from the unchangeable bones of the past."
 msgstr ""
 
+#. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/incense/event_incense_autumn.tres
+msgid "Seasonal Incense: Autumn"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/incense/event_incense_autumn.tres
+msgid ""
+"At the incense workshop, the apprentices are preparing a new blend for their master to examine.\n"
+"\n"
+"They have boiled and crushed seashells, mixing them with agarwood for the traditional base, and are now preparing to add the main aromatic ingredients.\n"
+"\n"
+"Today, they have been tasked with creating a seasonal scent appropriate for [b]autumn[/b]."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/incense/event_incense_autumn.tres
+#: events/generic/incense/event_incense_spring.tres
+#: events/generic/incense/event_incense_summer.tres
+#: events/generic/incense/event_incense_winter.tres
+msgid "Mix in clove, frankincense, and sandalwood."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/incense/event_incense_autumn.tres
+#: events/generic/incense/event_incense_spring.tres
+#: events/generic/incense/event_incense_summer.tres
+msgid ""
+"The apprentices blend clove, frankincense, and sandalwood into the base mixture of agarwood and crushed seashells, then knead it with honey.\n"
+"\n"
+"The result is a set of pellets with a deep, warm fragrance.\n"
+"\n"
+"The master examines their work over a hot censer and frowns. \"It is a fine scent, but it does not suit the season.\""
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/incense/event_incense_autumn.tres
+#: events/generic/incense/event_incense_spring.tres
+#: events/generic/incense/event_incense_summer.tres
+#: events/generic/incense/event_incense_winter.tres
+msgid "Mix in clove, frankincense, and spikenard."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/incense/event_incense_autumn.tres
+msgid ""
+"The apprentices blend clove, frankincense, and spikenard into the base mixture of agarwood and crushed seashells, then knead it with honey.\n"
+"\n"
+"The result is a set of pellets with a rich woody scent.\n"
+"\n"
+"The master examines their work over a hot censer and nods. \"They bring to mind the fading of chrysanthemum flower.\"\n"
+"\n"
+"The pellets are buried to age in the dark."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/incense/event_incense_autumn.tres
+#: events/generic/incense/event_incense_spring.tres
+#: events/generic/incense/event_incense_summer.tres
+#: events/generic/incense/event_incense_winter.tres
+msgid "Mix in clove, camphor, spikenard, and sandalwood."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/incense/event_incense_autumn.tres
+#: events/generic/incense/event_incense_summer.tres
+#: events/generic/incense/event_incense_winter.tres
+msgid ""
+"The apprentices blend clove, camphor, spikenard, and sandalwood into the base mixture of agarwood and crushed seashells, then knead it with honey.\n"
+"\n"
+"The result is a set of pellets with a sweet, floral scent.\n"
+"\n"
+"The master examines their work over a hot censer and frowns. \"It is a fine scent, but it does not suit the season.\""
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/incense/event_incense_autumn.tres
+#: events/generic/incense/event_incense_spring.tres
+#: events/generic/incense/event_incense_summer.tres
+#: events/generic/incense/event_incense_winter.tres
+msgid "Mix in patchouli, spikenard, sandalwood, and turmeric."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/incense/event_incense_autumn.tres
+#: events/generic/incense/event_incense_spring.tres
+#: events/generic/incense/event_incense_winter.tres
+msgid ""
+"The apprentices blend patchouli, spikenard, sandalwood, and turmeric into the base mixture of agarwood and crushed seashells, then knead it with honey.\n"
+"\n"
+"The result is a set of pellets with an earthy yet refreshing scent.\n"
+"\n"
+"The master examines their work over a hot censer and frowns. \"It is a fine scent, but it does not suit the season.\""
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/incense/event_incense_spring.tres
+msgid "Seasonal Incense: Spring"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/incense/event_incense_spring.tres
+msgid ""
+"At the incense workshop, the apprentices are preparing a new blend for their master to examine.\n"
+"\n"
+"They have boiled and crushed seashells, mixing them with agarwood for the traditional base, and are now preparing to add the main aromatic ingredients.\n"
+"\n"
+"Today, they have been tasked with creating a seasonal scent appropriate for [b]spring[/b]."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/incense/event_incense_spring.tres
+#: events/generic/incense/event_incense_summer.tres
+#: events/generic/incense/event_incense_winter.tres
+msgid ""
+"The apprentices blend clove, frankincense, and spikenard into the base mixture of agarwood and crushed seashells, then knead it with honey.\n"
+"\n"
+"The result is a set of pellets with a rich woody scent.\n"
+"\n"
+"The master examines their work over a hot censer and frowns. \"It is a fine scent, but it does not suit the season.\""
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/incense/event_incense_spring.tres
+msgid ""
+"The apprentices blend clove, camphor, spikenard, and sandalwood into the base mixture of agarwood and crushed seashells, then knead it with honey.\n"
+"\n"
+"The result is a set of pellets with a sweet, floral scent.\n"
+"\n"
+"The master examines their work over a hot censer and nods. \"They bring to mind plum blossoms pushing through the snow.\"\n"
+"\n"
+"The pellets are buried to age in the dark."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/incense/event_incense_summer.tres
+msgid "Seasonal Incense: Summer"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/incense/event_incense_summer.tres
+msgid ""
+"At the incense workshop, the apprentices are preparing a new blend for their master to examine.\n"
+"\n"
+"They have boiled and crushed seashells, mixing them with agarwood for the traditional base, and are now preparing to add the main aromatic ingredients.\n"
+"\n"
+"Today, they have been tasked with creating a seasonal scent appropriate for [b]summer[/b]."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/incense/event_incense_summer.tres
+msgid ""
+"The apprentices blend patchouli, spikenard, sandalwood, and turmeric into the base mixture of agarwood and crushed seashells, then knead it with honey.\n"
+"\n"
+"The result is a set of pellets with an earthy yet refreshing scent.\n"
+"\n"
+"The master examines their work over a hot censer and nods. \"They bring to mind a breeze wafting over lotus flowers in a summer pond.\"\n"
+"\n"
+"The pellets are buried to age in the dark."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/incense/event_incense_winter.tres
+msgid "Seasonal Incense: Winter"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/incense/event_incense_winter.tres
+msgid ""
+"At the incense workshop, the apprentices are preparing a new blend for their master to examine.\n"
+"\n"
+"They have boiled and crushed seashells, mixing them with agarwood for the traditional base, and are now preparing to add the main aromatic ingredients.\n"
+"\n"
+"Today, they have been tasked with creating a seasonal scent appropriate for [b]winter[/b]."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/incense/event_incense_winter.tres
+msgid ""
+"The apprentices blend clove, frankincense, and sandalwood into the base mixture of agarwood and crushed seashells, then knead it with honey.\n"
+"\n"
+"The result is a set of pellets with a deep, warm fragrance.\n"
+"\n"
+"The master examines their work over a hot censer and nods. \"They bring to mind the warmth of a winter robe.\"\n"
+"\n"
+"The pellets are buried to age in the dark."
+msgstr ""
+
 #. TRANSLATORS: Category: EVENTS; Property: markedup_text
 #: events/generic/iron_wreck/event_iron_wreck.tres
 msgid ""
@@ -199096,6 +199730,78 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/sakura/event_sakura.tres
+msgid "The Brief Bloom"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/sakura/event_sakura.tres
+msgid ""
+"The cherry trees lining the riverbank enjoy a great popularity among the locals, but despite their beauty, they bloom for only a few days.\n"
+"\n"
+"Once the brief blooming season ends, the petals fall, covering the banks in a pink blanket.\n"
+"\n"
+"Local horticulturists think they may be able to solve the problem with enough effort."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/sakura/event_sakura.tres
+msgid "Replant with varieties that bloom at different times."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/sakura/event_sakura.tres
+msgid ""
+"The horticulturists cut down most of the existing cherry trees and plant new varieties brought from distant shards.\n"
+"\n"
+"Each one will bloom at a different time, letting the sakura season last for a month or more.\n"
+"\n"
+"Still, it will be years before the new trees will mature, much to the disppointment of the locals."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/sakura/event_sakura.tres
+msgid "Graft longer-blooming varieties onto existing trees."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/sakura/event_sakura.tres
+msgid ""
+"The horticulturists carefully choose branches to replace, making sure to match them in size to the scion branches.\n"
+"\n"
+"They make interlocking cuts, then seal and bind the wounds.\n"
+"\n"
+"In time, this will double the length of the blooming season, even if the result may be somewhat patchy."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/sakura/event_sakura.tres
+msgid "Highlight the beauty in the blooms' transience."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/sakura/event_sakura.tres
+msgid ""
+"The horticulturists' ambitions are overriden by an old poet, who sings praises to the transience of the blooms.\n"
+"\n"
+"The joy of the cherry blossom viewing tradition lies in its transience, he declares. If these trees bloomed all year long, they wouldn't be special anymore. He even recites a poem to support his point:\n"
+"\n"
+"Falling sakura...\n"
+"The blooms that remain are still;\n"
+"Falling sakura."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/sakura/event_sakura.tres
+msgid "Leave the trees alone."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/sakura/event_sakura.tres
+msgid "The horticulturists decide against harming the existing trees, and they are left to bloom in peace, even if for only a short while."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
 #: events/generic/salt_gatherers/event_salt_gatherers.tres
 msgid "The Salt Sisters"
 msgstr ""
@@ -199301,6 +200007,76 @@ msgid ""
 "By the third day, half of the lesson is taken up by the teachers arguing about the best way to run a school.\n"
 "\n"
 "The constant disagreement leaves the children confused, eroding their trust in education before they have a chance to start learning."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid "The Shipwreck Shrine"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid ""
+"A group of adventurers has arrived at the shipwreck shrine asking the priests for permission to investigate the shipwreck.\n"
+"\n"
+"Although not a sacred object itself, the sunken vessel has long been a focus for the priests' prayers."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid "Let the adventurers dive into the hold."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid ""
+"The priests agree, and the adventurers immediately dive into the waves.\n"
+"\n"
+"As they make their way into the hold through a hole in the hull they are greeted by darkness and octopuses.\n"
+"\n"
+"Feeling around the barrels and shattered crates, they find them empty. Whatever the ship carried must have long since been plundered by the denizens of the sea.\n"
+"\n"
+"They do locate a small copper plate, however, with markings indicating auspicious directions."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid "Let the adventurers examine the ship from a distance."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid ""
+"The priests permit the dive, as long as the ship itself remains untouched.\n"
+"\n"
+"The adventurers find the ship's decomposing hull teeming with life. Barnacles have covered the whole surface, and octopuses peek from holes in the hull.\n"
+"\n"
+"As they are about to rise back up, a huge turtle swims out from inside the hold, trailing a cape of seaweed behind it."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid "Ask the adventurers to clear barnacles off the hull instead."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid ""
+"The priests don't permit an exploration of the interior, but ask the adventurers to clear off the barnacles that cover much of the hull, hoping to delay the ship's inevitable collapse.\n"
+"\n"
+"The adventurers dive with iron bars, prying the fragile shells off the decaying wood.\n"
+"\n"
+"The barnacles now lie on the sea floor in a helpless pile, and the wood is covered in gouges."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid "Forbid the investigation."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/shipwreck_shrine/event_shipwreck_shrine.tres
+msgid "The priests worry that a careless investigation could damage the decaying wood and decide to forbid the adventurers from approaching the ship."
 msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: event_name
@@ -201215,6 +201991,72 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid "The Foreign Merchant"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid ""
+"The head weaver surveys his workshop while his assistant is hard at work at the great loom, a massive construction only recently invented by local carpenters.\n"
+"\n"
+"Thanks to this loom, the workshop's reputation is already spreading throughout the shard.\n"
+"\n"
+"Today, an unusual visitor is at the door: a tall, well-dressed woman, accompanied by a young attendant. She speaks in an unusual accent, and offers a great sum in return for selling her the loom."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid "Offer cloth instead."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid ""
+"The weaver offers to sell her his finest cloth instead. The merchant reluctantly agrees, on the condition that he sell only to her.\n"
+"\n"
+"And so the deal is sealed, the master earning a small fortune in the process.\n"
+"\n"
+"In time, the workshop will expand to employ much of the town's workforce, yet none will be able to wear garments made from the cloth they produce."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid "Explain how to build such looms."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid ""
+"The weaver offers to teach the merchant how to build her own great looms instead. She seems reluctant at first, but agrees after the master refuses to sell the loom for any sum.\n"
+"\n"
+"The woman will bring schematics and spare parts back to her home shard, and perhaps the technology will continue to spread."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid "Accept the offer."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid ""
+"The master weaver, tempted by the large sum which the merchant is offering, agrees to sell her the loom. He can always construct a new one, he reasons.\n"
+"\n"
+"The loom is deconstructed, packed into crates, and shipped off to a distant shard.\n"
+"\n"
+"It won't be long before off-shard cloth becomes cheaper than anything the town manages to produce."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/weaving_house/event_weaving_house.tres
+msgid ""
+"The merchant's arrogance doesn't sit well with the weaver, and besides, he doesn't need any more money.\n"
+"\n"
+"He politely but firmly refuses her offer and sends the woman on her way."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
 #: events/generic/wedding_veil/event_wedding_veil.tres
 msgid "The Lost Veil"
 msgstr ""
@@ -202699,8 +203541,8 @@ msgstr ""
 #: hub/museum/museum_detail_shop.gd:44
 #: hub/museum/museum_detail_survey.gd:47
 #: hub/skill_management/skill_tooltip.gd:25
-#: settings/settings_dialog.gd:355
-#: settings/settings_dialog.gd:387
+#: settings/settings_dialog.gd:365
+#: settings/settings_dialog.gd:397
 #: stage/spots/spot_recipe_unknown.tscn
 #: stage/survey/survey_recipe.gd:99
 msgid "???"
@@ -205074,7 +205916,7 @@ msgstr ""
 #: hub/run_setup/run_setup.gd:191
 #: hub/run_setup/run_setup.gd:217
 #: quests/settler/challenges/settler_quest_challenge_harm_on_aspect_cards.gd:43
-#: settings/settings_dialog.gd:195
+#: settings/settings_dialog.gd:205
 #: settings/settings_dialog.tscn
 msgid "None"
 msgstr ""
@@ -205881,7 +206723,7 @@ msgid "When Solved"
 msgstr ""
 
 #: japanese/practice_blanks/blanks_practice.gd:553
-#: settings/settings_dialog.gd:104
+#: settings/settings_dialog.gd:114
 msgid "Always"
 msgstr ""
 
@@ -205956,7 +206798,7 @@ msgstr ""
 #: quests/announcement/quest_announcement.tscn
 #: theme/confirm_dialog/confirm_dialog.gd:11
 #: theme/confirm_dialog/confirm_dialog.tscn
-#: utils/ui.gd:288
+#: utils/ui.gd:290
 msgid "Ok"
 msgstr ""
 
@@ -206739,6 +207581,10 @@ msgstr ""
 
 #: map/settlement.gd:363
 msgid "<term:satisfy_lack>s the <term_lower:lack> of %s at this <term_lower:settlement>."
+msgstr ""
+
+#: map/settlement.gd:409
+msgid "This <term_lower:settlement> is <related_term:stage_specialization>specialized in %s"
 msgstr ""
 
 #: map/settlement.gd:412
@@ -208849,8 +209695,16 @@ msgstr ""
 msgid "Reduce the number of <term:glyph>s you can choose among when selecting a reward by %d."
 msgstr ""
 
+#: quests/settler/challenges/settler_quest_challenge_card_on_companion.gd:20
+msgid "Add a %s <term_lower:glyph> to <term_lower:hand> whenever a <term_lower:companion> ability is activated."
+msgstr ""
+
 #: quests/settler/challenges/settler_quest_challenge_card_on_redraw.gd:21
 msgid "Add a %s <term_lower:glyph> to your <term_lower:hand> whenever a new <term_lower:hand> is <term_lower:draw>n."
+msgstr ""
+
+#: quests/settler/challenges/settler_quest_challenge_card_on_tag_played.gd:25
+msgid "Add a %s <term_lower:glyph> to <term_lower:hand> whenever any %s <term_lower:glyph> is <term_lower:play_card>ed."
 msgstr ""
 
 #: quests/settler/challenges/settler_quest_challenge_card_rarity.gd:11
@@ -208871,6 +209725,10 @@ msgstr ""
 
 #: quests/settler/challenges/settler_quest_challenge_damage_on_rare_cards.gd:26
 msgid "Lose %d <term_lower:inspiration> when an Epic or Legendary <term_lower:glyph> is played."
+msgstr ""
+
+#: quests/settler/challenges/settler_quest_challenge_damage_on_relic.gd:31
+msgid "Lose %d <term_lower:inspiration> the first time a relic is triggered each <term_lower:turn>."
 msgstr ""
 
 #: quests/settler/challenges/settler_quest_challenge_damage_on_spread.gd:25
@@ -208913,6 +209771,10 @@ msgstr ""
 msgid "Reduce maximum <term_lower:inspiration> by %d."
 msgstr ""
 
+#: quests/settler/challenges/settler_quest_challenge_negative_glyph_each_turn.gd:25
+msgid "Add a random <term_lower:negative_glyph> at the start of each <term_lower:turn>."
+msgstr ""
+
 #: quests/settler/challenges/settler_quest_challenge_no_heal_during_survey.gd:15
 msgid "Cannot restore <term:inspiration> during <term_lower:survey>s."
 msgstr ""
@@ -208931,6 +209793,34 @@ msgstr ""
 
 #: quests/settler/challenges/settler_quest_challenge_starting_cards.gd:26
 msgid "Add %s <term_lower:glyph>s to the starting <term_lower:card_deck>."
+msgstr ""
+
+#: quests/settler/challenges/settler_quest_extra_haunting.gd:11
+msgid "Add a <haunting:%s> <term_lower:haunting> to every <term_lower:foray>."
+msgstr ""
+
+#: quests/settler/goals/settler_quest_goal_all_bonuses.gd:27
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:58
+#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:69
+#: quests/settler/goals/settler_quest_goal_num_cards.gd:21
+#: quests/settler/goals/settler_quest_goal_num_connected_settlements.gd:20
+#: quests/settler/goals/settler_quest_goal_num_events.gd:20
+#: quests/settler/goals/settler_quest_goal_num_pacified.gd:20
+#: quests/settler/goals/settler_quest_goal_num_perfect_settlements.gd:20
+#: quests/settler/goals/settler_quest_goal_num_relics.gd:20
+#: quests/settler/goals/settler_quest_goal_num_settlements.gd:21
+#: quests/settler/goals/settler_quest_goal_num_survey_episodes.gd:20
+#: quests/settler/goals/settler_quest_goal_num_t3_spots.gd:20
+#: quests/settler/goals/settler_quest_goal_num_unfinished_settlements.gd:20
+#: quests/settler/goals/settler_quest_goal_run_bonus.gd:24
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:45
+#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:56
+#: quests/settler/goals/settler_quest_goal_stage_bonus.gd:24
+msgid "[%d/%d] "
+msgstr ""
+
+#: quests/settler/goals/settler_quest_goal_all_bonuses.gd:28
+msgid "Reach %d of every <term_lower:bonus>."
 msgstr ""
 
 #: quests/settler/goals/settler_quest_goal_any_upgrade.gd:22
@@ -208953,22 +209843,6 @@ msgstr[1] ""
 msgid "Encounter the <event:%s> <term_lower:event>."
 msgstr ""
 
-#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:58
-#: quests/settler/goals/settler_quest_goal_global_upgrades.gd:69
-#: quests/settler/goals/settler_quest_goal_num_cards.gd:21
-#: quests/settler/goals/settler_quest_goal_num_connected_settlements.gd:20
-#: quests/settler/goals/settler_quest_goal_num_events.gd:20
-#: quests/settler/goals/settler_quest_goal_num_perfect_settlements.gd:20
-#: quests/settler/goals/settler_quest_goal_num_relics.gd:20
-#: quests/settler/goals/settler_quest_goal_num_settlements.gd:21
-#: quests/settler/goals/settler_quest_goal_num_survey_episodes.gd:20
-#: quests/settler/goals/settler_quest_goal_run_bonus.gd:24
-#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:45
-#: quests/settler/goals/settler_quest_goal_settlement_upgrades.gd:56
-#: quests/settler/goals/settler_quest_goal_stage_bonus.gd:24
-msgid "[%d/%d] "
-msgstr ""
-
 #: quests/settler/goals/settler_quest_goal_global_upgrades.gd:59
 msgid "Establish %d <spot_upgrade:%s> <term_lower:spot_upgrade>s."
 msgstr ""
@@ -208983,6 +209857,10 @@ msgid "<spot_upgrade:%s>"
 msgid_plural "<spot_upgrade:%s>s"
 msgstr[0] ""
 msgstr[1] ""
+
+#: quests/settler/goals/settler_quest_goal_legendary_card.gd:17
+msgid "Add a legendary <term_lower:glyph> to your <term_lower:card_deck>"
+msgstr ""
 
 #: quests/settler/goals/settler_quest_goal_no_loss_survey.gd:51
 msgid "Finish all <term_lower:encounter>s in a <term_lower:survey> without ever losing any <term_lower:bonus>s or <term:inspiration>."
@@ -209008,6 +209886,10 @@ msgstr ""
 msgid "Finish at least %d <term_lower:event>s."
 msgstr ""
 
+#: quests/settler/goals/settler_quest_goal_num_pacified.gd:21
+msgid "<term:pacify> at least %d <term_lower:haunting>s."
+msgstr ""
+
 #: quests/settler/goals/settler_quest_goal_num_perfect_settlements.gd:21
 msgid "Finish at least %d <term_lower:foray>s with all <term_lower:stage_goal>s fully satisfied."
 msgstr ""
@@ -209024,6 +209906,14 @@ msgstr ""
 msgid "Finish at least %d <term_lower:survey> <term_lower:encounter>s."
 msgstr ""
 
+#: quests/settler/goals/settler_quest_goal_num_t3_spots.gd:21
+msgid "Activate 3 <term_lower:spot_upgrade>s on %d <term_lower:spot>s."
+msgstr ""
+
+#: quests/settler/goals/settler_quest_goal_num_unfinished_settlements.gd:21
+msgid "Finish at least %d <term_lower:foray>s with [b]no[/b] <term_lower:stage_goal>s fully satisfied."
+msgstr ""
+
 #: quests/settler/goals/settler_quest_goal_run_bonus.gd:25
 msgid "Reach %d total %s <term_lower:bonus>."
 msgstr ""
@@ -209038,6 +209928,16 @@ msgstr ""
 
 #: quests/settler/goals/settler_quest_goal_stage_bonus.gd:25
 msgid "Reach %d total %s <term_lower:bonus> [b]in a single <term_lower:settlement>[/b]."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_animal_allergy.tres
+msgid "My skin gets all itchy whenever an animal is around. I even carry incense around to keep them away. I don't hate animals, but I'm trying to find a place to live away from them."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_animal_allergy.tres
+msgid "An Allergiac"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
@@ -209066,6 +209966,41 @@ msgid "An Antique Collector"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_anti_relics.tres
+msgid "I am trying to stop this barbaric practice of lugging relics along on expeditions for good luck. These holy artifacts belong in monasteries, where they can be properly preserved and revered, not out on the road."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_anti_relics.tres
+msgid "A Relic Preserver"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_artisan.tres
+msgid "I feel true mastery is disappearing day by day. Modern craftspeople have no standards. They use whatever materials they have on hand and don't even bother checking their work. I yearn for the returen of real, traditional artisanship."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: description
+#: quests/settler/quests/quest_settler_artisan.tres
+msgid "<term:card_ability>s can no longer <term_lower:fill> <term_lower:aspect_slot>s."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: preview_description
+#: quests/settler/quests/quest_settler_artisan.tres
+msgid "Increase <term_lower:card_rarity_tier> by 20%."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: outcome_description
+#: quests/settler/quests/quest_settler_artisan.tres
+msgid "Increased <term_lower:card_rarity_tier> by 20%."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_artisan.tres
+msgid "An Artisan"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
 #: quests/settler/quests/quest_settler_ascetic.tres
 msgid "I have spent my life living among people, and I grow weary of the excesses of civilization. It is time for me to take up the mossy robes and retire into the wilderness."
 msgstr ""
@@ -209083,6 +210018,26 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: name
 #: quests/settler/quests/quest_settler_clumsy_scholar.tres
 msgid "A Clumsy Librarian"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_contrarian.tres
+msgid "I've been on three expeditions now and I've watched the leaders make the wrong choice every time. Like when they decide they need harmony while there's a forest perfect for clear-cutting! I need folks to finally listen to my ideas."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: preview_description
+#: quests/settler/quests/quest_settler_contrarian.tres
+msgid "Reduce all <term_lower:stage_goal>s by 20%."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: outcome_description
+#: quests/settler/quests/quest_settler_contrarian.tres
+msgid "Reduced all <term_lower:stage_goal>s by 20%."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_contrarian.tres
+msgid "A Contrarian"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
@@ -209156,6 +210111,21 @@ msgid "Leaving the Order"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_grieving.tres
+msgid "My husband was never able to travel in life, so he asked me to at least have his ashes buried on another shard. I may be old, but I can still fulfill his last request."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: description
+#: quests/settler/quests/quest_settler_grieving.tres
+msgid "<term:inspiration> restoration is reduced by 50%."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_grieving.tres
+msgid "A Grieving Spouse"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
 #: quests/settler/quests/quest_settler_grumpy_scout.tres
 msgid "My old scouting team fired me. Can you believe them? \"Lowers team morale,\" they said. It's not my fault that bad things are bound to happen. I just don't sugarcoat it."
 msgstr ""
@@ -209203,6 +210173,31 @@ msgid "A Hoarder"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_independence.tres
+msgid "Everyone's relying on help nowadays. What if another Shattering happens tomorrow? One must be able to rely on one's own skills, at the very least for everyday necessities."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: description
+#: quests/settler/quests/quest_settler_independence.tres
+msgid "<term:card_ability.support> <term_lower:card_ability>s are disabled."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: preview_description
+#: quests/settler/quests/quest_settler_independence.tres
+msgid "Gain 20% more <term_lower:bonus>s."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: outcome_description
+#: quests/settler/quests/quest_settler_independence.tres
+msgid "From now on, all <term_lower:bonus> gains are raised by 20%."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_independence.tres
+msgid "A Self-Starter"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
 #: quests/settler/quests/quest_settler_novelty_seeker.tres
 msgid "I'm tired of the same old sights. I need more novelty in my life. Romance! Adventure! Questionable behavior!"
 msgstr ""
@@ -209210,6 +210205,36 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: name
 #: quests/settler/quests/quest_settler_novelty_seeker.tres
 msgid "A Novelty Seeker"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_no_waste.tres
+msgid "I see people in my hometown throwing away perfectly good tools just because they aren't needed. That's such a waste! I think that we should use everything at our disposal, even if it isn't perfect."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: description
+#: quests/settler/quests/quest_settler_no_waste.tres
+msgid "All <term_lower:glyph>s remaining in hand at <term_lower:turn> end are <term_lower:cast_card>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_no_waste.tres
+msgid "A Salvager"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_panicker.tres
+msgid "After an earthquake destroyed my town, I am in constant fear of disasters. I can't even sleep at night without a lantern. I have resolved to cure my worries by facing all the challenges involved in settling a new shard."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: description
+#: quests/settler/quests/quest_settler_panicker.tres
+msgid "All <term_lower:haunting>s have an extra <term_lower:aspect_slot>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_panicker.tres
+msgid "A Disaster Survivor"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
@@ -209235,6 +210260,21 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: name
 #: quests/settler/quests/quest_settler_perfectionist.tres
 msgid "A Perfectionist"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_philosophers.tres
+msgid "My colleagues and I represent a philosophy advocating non-action. We believe that enlightenment can only be reached through discussing the nature of reality, rather than doing things that may disrupt its natural order. We'd like someone to set up schools for us to teach the next generation."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: description
+#: quests/settler/quests/quest_settler_philosophers.tres
+msgid "Reduce <term_lower:hand_size> by 2."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_philosophers.tres
+msgid "A Philosophy School"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
@@ -209270,6 +210310,31 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: name
 #: quests/settler/quests/quest_settler_publisher.tres
 msgid "A Woodblock Print Publisher"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_quartermaster.tres
+msgid "As my town's quartermaster, I take pride in making sure there are never any shortages. Now I want to try my hand at something bigger: managing the resources of an entire shard!"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: description
+#: quests/settler/quests/quest_settler_quartermaster.tres
+msgid "Lose 5 more <term:inspiration> for each <term_lower:lack> at the end of a <term_lower:harmonization>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: preview_description
+#: quests/settler/quests/quest_settler_quartermaster.tres
+msgid "Increase <term:card_ability.satisfy> effects by 50%."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: outcome_description
+#: quests/settler/quests/quest_settler_quartermaster.tres
+msgid "Increased <term:card_ability.satisfy> effects by 50%."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_quartermaster.tres
+msgid "A Quartermaster"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
@@ -209412,6 +210477,26 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: name
 #: quests/settler/quests/quest_settler_traditionalist.tres
 msgid "A Traditionalist"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
+#: quests/settler/quests/quest_settler_unlucky.tres
+msgid "I've been unlucky my whole life. Just once, I want to witness miraculous luck. Perhaps a grand adventure like settling a new shard could give me the opportunity."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: preview_description
+#: quests/settler/quests/quest_settler_unlucky.tres
+msgid "Gain 5 maximum <term_lower:inspiration>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: outcome_description
+#: quests/settler/quests/quest_settler_unlucky.tres
+msgid "Gained 5 maximum <term_lower:inspiration>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: name
+#: quests/settler/quests/quest_settler_unlucky.tres
+msgid "An Unfortunate"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: intro_text
@@ -209675,6 +210760,27 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
 #: relics/common/charcoal_rod/relic_charcoal_rod.tres
 msgid "Burned to honor the past. Kept to carry it forward."
+msgstr ""
+
+#: relics/common/cherry_petal/relic_cherry_petal.gd:34
+msgid "%d fewer <term_lower:aspect>"
+msgid_plural "%d fewer <term_lower:aspect>s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_name
+#: relics/common/cherry_petal/relic_cherry_petal.tres
+msgid "Cherry Petal"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_description
+#: relics/common/cherry_petal/relic_cherry_petal.tres
+msgid "Event choices require %s when no <term_lower:redraw>s are left."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
+#: relics/common/cherry_petal/relic_cherry_petal.tres
+msgid "Falling sakura...The blooms that remain are still... Falling sakura."
 msgstr ""
 
 #: relics/common/cherry_pit/relic_cherry_pit.gd:64
@@ -210170,6 +211276,21 @@ msgid "Covered in glyphs, mostly unreadable."
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: default_name
+#: relics/common/loom_shuttle/relic_loom_shuttle.tres
+msgid "Loom Shuttle"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_description
+#: relics/common/loom_shuttle/relic_loom_shuttle.tres
+msgid "As long as you have %d copies of any <term_lower:glyph> in <term_lower:hand>, gain %d%% more <term_lower:bonus>s."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
+#: relics/common/loom_shuttle/relic_loom_shuttle.tres
+msgid "It just keeps going back and forth."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_name
 #: relics/common/meal_tally/relic_meal_tally.tres
 msgid "Meal Tally"
 msgstr ""
@@ -210561,6 +211682,21 @@ msgid "Glows when life blooms across the lands."
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: default_name
+#: relics/common/square_ruler/relic_square_ruler.tres
+msgid "Carpenter's Square"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_description
+#: relics/common/square_ruler/relic_square_ruler.tres
+msgid "Number <term_lower:glyph>s no longer <term_lower:discard>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
+#: relics/common/square_ruler/relic_square_ruler.tres
+msgid "On the back is another scale, spaced to find the square beam hidden inside any log."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_name
 #: relics/common/starter_bead/relic_starter_bead.tres
 msgid "Starter Bead"
 msgstr ""
@@ -210833,6 +211969,21 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
 #: relics/rare/delicious_mushroom/relic_delicious_mushroom.tres
 msgid "Consume in moderation."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_name
+#: relics/rare/divination_plate/relic_divination_plate.tres
+msgid "Divination Plate"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_description
+#: relics/rare/divination_plate/relic_divination_plate.tres
+msgid "Reduce <term_lower:hand_size> by 1 but add one more <term_lower:spot> to each <term_lower:foray>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
+#: relics/rare/divination_plate/relic_divination_plate.tres
+msgid "It's missing the spoon-shaped indicator which would point in the auspicious direction."
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: default_name
@@ -211652,36 +212803,36 @@ msgstr ""
 #: settings/settings_dialog.gd:28
 #: settings/settings_dialog.gd:37
 #: settings/settings_dialog.gd:46
-#: settings/settings_dialog.gd:91
-#: settings/settings_dialog.gd:96
-#: settings/settings_dialog.gd:111
-#: settings/settings_dialog.gd:116
+#: settings/settings_dialog.gd:101
+#: settings/settings_dialog.gd:106
 #: settings/settings_dialog.gd:121
 #: settings/settings_dialog.gd:126
 #: settings/settings_dialog.gd:131
-#: settings/settings_dialog.gd:143
-#: settings/settings_dialog.gd:147
-#: settings/settings_dialog.gd:152
-#: settings/settings_dialog.gd:192
-#: settings/settings_dialog.gd:205
-#: settings/settings_dialog.gd:250
+#: settings/settings_dialog.gd:136
+#: settings/settings_dialog.gd:141
+#: settings/settings_dialog.gd:153
+#: settings/settings_dialog.gd:157
+#: settings/settings_dialog.gd:162
+#: settings/settings_dialog.gd:202
+#: settings/settings_dialog.gd:215
 #: settings/settings_dialog.gd:260
-#: settings/settings_dialog.gd:265
 #: settings/settings_dialog.gd:270
-#: settings/settings_dialog.gd:442
-#: settings/settings_dialog.gd:470
-#: settings/settings_dialog.gd:479
-#: settings/settings_dialog.gd:484
+#: settings/settings_dialog.gd:275
+#: settings/settings_dialog.gd:280
+#: settings/settings_dialog.gd:452
+#: settings/settings_dialog.gd:480
 #: settings/settings_dialog.gd:489
 #: settings/settings_dialog.gd:494
-#: settings/settings_dialog.gd:514
-#: settings/settings_dialog.gd:523
-#: settings/settings_dialog.gd:528
+#: settings/settings_dialog.gd:499
+#: settings/settings_dialog.gd:504
+#: settings/settings_dialog.gd:524
 #: settings/settings_dialog.gd:533
 #: settings/settings_dialog.gd:538
 #: settings/settings_dialog.gd:543
 #: settings/settings_dialog.gd:548
 #: settings/settings_dialog.gd:553
+#: settings/settings_dialog.gd:558
+#: settings/settings_dialog.gd:563
 msgid "ON"
 msgstr ""
 
@@ -211690,36 +212841,36 @@ msgstr ""
 #: settings/settings_dialog.gd:28
 #: settings/settings_dialog.gd:37
 #: settings/settings_dialog.gd:46
-#: settings/settings_dialog.gd:91
-#: settings/settings_dialog.gd:96
-#: settings/settings_dialog.gd:111
-#: settings/settings_dialog.gd:116
+#: settings/settings_dialog.gd:101
+#: settings/settings_dialog.gd:106
 #: settings/settings_dialog.gd:121
 #: settings/settings_dialog.gd:126
 #: settings/settings_dialog.gd:131
-#: settings/settings_dialog.gd:143
-#: settings/settings_dialog.gd:147
-#: settings/settings_dialog.gd:152
-#: settings/settings_dialog.gd:192
-#: settings/settings_dialog.gd:205
-#: settings/settings_dialog.gd:250
+#: settings/settings_dialog.gd:136
+#: settings/settings_dialog.gd:141
+#: settings/settings_dialog.gd:153
+#: settings/settings_dialog.gd:157
+#: settings/settings_dialog.gd:162
+#: settings/settings_dialog.gd:202
+#: settings/settings_dialog.gd:215
 #: settings/settings_dialog.gd:260
-#: settings/settings_dialog.gd:265
 #: settings/settings_dialog.gd:270
-#: settings/settings_dialog.gd:442
-#: settings/settings_dialog.gd:470
-#: settings/settings_dialog.gd:479
-#: settings/settings_dialog.gd:484
+#: settings/settings_dialog.gd:275
+#: settings/settings_dialog.gd:280
+#: settings/settings_dialog.gd:452
+#: settings/settings_dialog.gd:480
 #: settings/settings_dialog.gd:489
 #: settings/settings_dialog.gd:494
-#: settings/settings_dialog.gd:514
-#: settings/settings_dialog.gd:523
-#: settings/settings_dialog.gd:528
+#: settings/settings_dialog.gd:499
+#: settings/settings_dialog.gd:504
+#: settings/settings_dialog.gd:524
 #: settings/settings_dialog.gd:533
 #: settings/settings_dialog.gd:538
 #: settings/settings_dialog.gd:543
 #: settings/settings_dialog.gd:548
 #: settings/settings_dialog.gd:553
+#: settings/settings_dialog.gd:558
+#: settings/settings_dialog.gd:563
 #: settings/settings_dialog.tscn
 msgid "OFF"
 msgstr ""
@@ -211777,204 +212928,212 @@ msgstr ""
 msgid "Whether to skip music tracks that may trigger Content ID claims on platforms like YouTube. If you receive a claim, license certificates are available upon request."
 msgstr ""
 
-#: settings/settings_dialog.gd:71
+#: settings/settings_dialog.gd:74
+msgid "The game's language."
+msgstr ""
+
+#: settings/settings_dialog.gd:75
+msgid "English"
+msgstr ""
+
+#: settings/settings_dialog.gd:81
 msgid "How fast to play gameplay and UI animations."
 msgstr ""
 
-#: settings/settings_dialog.gd:74
+#: settings/settings_dialog.gd:84
 msgid "How long to delay before showing tooltips on hover."
 msgstr ""
 
-#: settings/settings_dialog.gd:77
+#: settings/settings_dialog.gd:87
 msgid "How to scale tooltip text."
 msgstr ""
 
-#: settings/settings_dialog.gd:80
+#: settings/settings_dialog.gd:90
 msgid "How to scale free-flowing UI text."
 msgstr ""
 
-#: settings/settings_dialog.gd:87
+#: settings/settings_dialog.gd:97
 msgid "Which icons to use for essences everywhere in the game."
 msgstr ""
 
-#: settings/settings_dialog.gd:92
+#: settings/settings_dialog.gd:102
 msgid "Whether to show the name above glyph cards."
 msgstr ""
 
-#: settings/settings_dialog.gd:97
+#: settings/settings_dialog.gd:107
 msgid "Whether to show a button in the top right corner that opens the pause menu. The pause menu can always be opened by pressing Escape."
 msgstr ""
 
-#: settings/settings_dialog.gd:99
+#: settings/settings_dialog.gd:109
 msgid "Disabled"
 msgstr ""
 
-#: settings/settings_dialog.gd:101
+#: settings/settings_dialog.gd:111
 msgid "When L1 Held"
 msgstr ""
 
-#: settings/settings_dialog.gd:103
+#: settings/settings_dialog.gd:113
 msgid "When Shift Held"
 msgstr ""
 
-#: settings/settings_dialog.gd:107
+#: settings/settings_dialog.gd:117
 msgid "Whether to zoom key UI elements when hovered. Useful for small screens."
 msgstr ""
 
-#: settings/settings_dialog.gd:112
+#: settings/settings_dialog.gd:122
 msgid "Whether to display settlement borders when selecting the location for a new settlement."
 msgstr ""
 
-#: settings/settings_dialog.gd:117
+#: settings/settings_dialog.gd:127
 msgid "Whether to display the yields gained in the current foray above the goal bar, in addition to the standard expedition-long yields in the top right corner."
 msgstr ""
 
-#: settings/settings_dialog.gd:122
+#: settings/settings_dialog.gd:132
 msgid "Whether to sort yield predictions to show higher yields first when selecting a foray location."
 msgstr ""
 
-#: settings/settings_dialog.gd:127
+#: settings/settings_dialog.gd:137
 msgid "Whether to randomly choose a different roof color for each settlement. When off, all settlements share a standard color."
 msgstr ""
 
-#: settings/settings_dialog.gd:132
+#: settings/settings_dialog.gd:142
 msgid "Whether to show the game version label in the bottom right corner."
 msgstr ""
 
-#: settings/settings_dialog.gd:134
+#: settings/settings_dialog.gd:144
 msgid "Re-enable all previously seen contextual tutorials."
 msgstr ""
 
-#: settings/settings_dialog.gd:144
+#: settings/settings_dialog.gd:154
 msgid "Whether to enable the kanji practice minigame in the Haven. This allows you to practice vocabulary, readings, and example sentences to gain a small number of extra insight points."
 msgstr ""
 
-#: settings/settings_dialog.gd:148
+#: settings/settings_dialog.gd:158
 msgid "Whether to enable the kanji drawing minigame when inscribing glyphs. When this is on, inscribing a glyph requires you to draw it successfully. There are no penalties for failing."
 msgstr ""
 
-#: settings/settings_dialog.gd:155
+#: settings/settings_dialog.gd:165
 msgid "Whether to use the player-drawn kanji as the image on inscribed glyph cards."
 msgstr ""
 
-#: settings/settings_dialog.gd:157
-#: settings/settings_dialog.gd:169
-#: settings/settings_dialog.gd:177
-#: settings/settings_dialog.gd:185
+#: settings/settings_dialog.gd:167
+#: settings/settings_dialog.gd:179
+#: settings/settings_dialog.gd:187
+#: settings/settings_dialog.gd:195
 msgid "Meaning"
 msgstr ""
 
-#: settings/settings_dialog.gd:158
+#: settings/settings_dialog.gd:168
 msgid "くんよみ"
 msgstr ""
 
-#: settings/settings_dialog.gd:159
+#: settings/settings_dialog.gd:169
 msgid "オンヨミ"
 msgstr ""
 
-#: settings/settings_dialog.gd:160
+#: settings/settings_dialog.gd:170
 msgid "Kunyomi"
 msgstr ""
 
-#: settings/settings_dialog.gd:161
+#: settings/settings_dialog.gd:171
 msgid "Onyomi"
 msgstr ""
 
-#: settings/settings_dialog.gd:164
+#: settings/settings_dialog.gd:174
 msgid "Whether to display the English meaning or the most common kunyomi or onyomi reading as the title above glyph cards."
 msgstr ""
 
-#: settings/settings_dialog.gd:166
-#: settings/settings_dialog.gd:174
-#: settings/settings_dialog.gd:182
-#: settings/settings_dialog.gd:197
+#: settings/settings_dialog.gd:176
+#: settings/settings_dialog.gd:184
+#: settings/settings_dialog.gd:192
+#: settings/settings_dialog.gd:207
 msgid "Romaji"
 msgstr ""
 
-#: settings/settings_dialog.gd:167
-#: settings/settings_dialog.gd:175
-#: settings/settings_dialog.gd:183
+#: settings/settings_dialog.gd:177
+#: settings/settings_dialog.gd:185
+#: settings/settings_dialog.gd:193
 msgid "漢字"
 msgstr ""
 
-#: settings/settings_dialog.gd:168
-#: settings/settings_dialog.gd:176
-#: settings/settings_dialog.gd:184
+#: settings/settings_dialog.gd:178
+#: settings/settings_dialog.gd:186
+#: settings/settings_dialog.gd:194
 msgid "ひらがな"
 msgstr ""
 
-#: settings/settings_dialog.gd:172
+#: settings/settings_dialog.gd:182
 msgid "How to display settlement names on the map and in various UIs. If kanji or hiragana are chosen, the translation appears in settlement tooltips."
 msgstr ""
 
-#: settings/settings_dialog.gd:180
+#: settings/settings_dialog.gd:190
 msgid "How to display shard names on the map and in various UIs. If kanji or hiragana are chosen, the translation appears when hovering over the name."
 msgstr ""
 
-#: settings/settings_dialog.gd:188
+#: settings/settings_dialog.gd:198
 msgid "How to display the names of hauntings (yōkai). If kanji or hiragana are chosen, the translation appears in tooltips."
 msgstr ""
 
-#: settings/settings_dialog.gd:193
+#: settings/settings_dialog.gd:203
 msgid "Whether to use kanji names for shards and settlements in shard culture histories."
 msgstr ""
 
-#: settings/settings_dialog.gd:196
+#: settings/settings_dialog.gd:206
 msgid "かな"
 msgstr ""
 
-#: settings/settings_dialog.gd:198
+#: settings/settings_dialog.gd:208
 msgid "かな (Romaji)"
 msgstr ""
 
-#: settings/settings_dialog.gd:201
+#: settings/settings_dialog.gd:211
 msgid "How to display kanji readings and meanings in glyph tooltips everywhere in the game."
 msgstr ""
 
-#: settings/settings_dialog.gd:206
+#: settings/settings_dialog.gd:216
 msgid "Whether to display romaji readings above kanji in the kanji practice minigame in place of furigana."
 msgstr ""
 
-#: settings/settings_dialog.gd:285
-#: settings/settings_dialog.gd:290
+#: settings/settings_dialog.gd:295
+#: settings/settings_dialog.gd:300
 msgid "%.1fx"
 msgstr ""
 
-#: settings/settings_dialog.gd:348
+#: settings/settings_dialog.gd:358
 msgid "0.25x"
 msgstr ""
 
-#: settings/settings_dialog.gd:349
-#: settings/settings_dialog.gd:383
+#: settings/settings_dialog.gd:359
+#: settings/settings_dialog.gd:393
 msgid "0.5x"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
-#: settings/settings_dialog.gd:350
-#: settings/settings_dialog.gd:384
+#: settings/settings_dialog.gd:360
+#: settings/settings_dialog.gd:394
 #: settings/settings_dialog.tscn
 msgid "1x"
 msgstr ""
 
-#: settings/settings_dialog.gd:351
+#: settings/settings_dialog.gd:361
 msgid "1.5x"
 msgstr ""
 
-#: settings/settings_dialog.gd:352
-#: settings/settings_dialog.gd:385
+#: settings/settings_dialog.gd:362
+#: settings/settings_dialog.gd:395
 msgid "2x"
 msgstr ""
 
-#: settings/settings_dialog.gd:353
-#: settings/settings_dialog.gd:386
+#: settings/settings_dialog.gd:363
+#: settings/settings_dialog.gd:396
 msgid "4x"
 msgstr ""
 
-#: settings/settings_dialog.gd:354
+#: settings/settings_dialog.gd:364
 msgid "10x"
 msgstr ""
 
-#: settings/settings_dialog.gd:382
+#: settings/settings_dialog.gd:392
 msgid "0.1x"
 msgstr ""
 
@@ -212001,6 +213160,11 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
 #: settings/settings_dialog.tscn
 msgid "Japanese"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: text[]
+#: settings/settings_dialog.tscn
+msgid "Language"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
@@ -228258,6 +229422,14 @@ msgid ""
 "This is the [b]%s[/b] skill.\n"
 "\n"
 "It will allow you to <term_lower:craft> <term_lower:glyph>s to start with on future <term_lower:run>s.\n"
+msgstr ""
+
+#: tutorial/steps/hub/tutorial_starter_cards_skills.gd:41
+msgid ""
+"\n"
+"Now may be a good time to consider unlocking the [b]%s[/b] skill.\n"
+"\n"
+"It will give you a lot of choices in customizing your starting <term_lower:card_deck>.\n"
 msgstr ""
 
 #: tutorial/steps/hub/tutorial_studio.gd:26
