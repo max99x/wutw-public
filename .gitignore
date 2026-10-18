@@ -20,3 +20,5 @@ wutw/addons/godotsteam/win64/~libgodotsteam.windows.*
 wutw/addons/Wwise/native/lib/win64/editor/profile/~libwwise.windows.editor.profile.*
 wutw/addons/wutw_editor/editor_game_startup_config.tres
 .DS_Store
+# Don't accidentally check in licensed audio.
+wutw/audio/generated_sound_banks
