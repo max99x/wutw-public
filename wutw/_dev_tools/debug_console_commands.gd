@@ -33,7 +33,8 @@ func _ready() -> void:
 	Console.add_command('debug_biomes', _cmd_debug_biomes, [], 0, 'Toggle biome grid debug display on the map.')
 
 	Console.add_command('static_stats', _cmd_static_stats, [], 0, 'Print stats about spots (sites).')
-	Console.add_command('write_terms', _cmd_write_terms, [], 0, 'Writes all the Terms except Cards and Relics and their definitions (images stripped) to terms.txt in the user data folder.')
+	Console.add_command('write_terms', _cmd_write_terms.bind(false), [], 0, 'Writes all the Terms except Cards and Relics and their definitions (images stripped) to terms.txt in the user data folder.')
+	Console.add_command('write_terms_csv', _cmd_write_terms.bind(true), [], 0, 'Writes all the Terms except Cards and Relics and their definitions (images stripped) to terms.csv in the user data folder.')
 	Console.add_command('write_cards', _cmd_write_cards, [], 0, 'Writes all the Card Types and their definitions (images stripped) to cards.txt in the user data folder.')
 	Console.add_command('write_card_power', _cmd_write_card_power, [], 0, 'Writes all the Card Types and their definitions (images stripped) to card_power.csv in the user data folder.')
 	Console.add_command('write_relics', _cmd_write_relics, [], 0, 'Writes all the Relics and their definitions (images stripped) to cards.txt in the user data folder.')
@@ -305,7 +306,7 @@ func _cmd_debug_biomes() -> void:
 	map.preview_mode = not map.preview_mode
 	Console.print_info('Debug collision %s.' % ('enabled' if map.preview_mode else 'disabled'))
 
-func _cmd_write_terms() -> void:
+func _cmd_write_terms(csv_format: bool) -> void:
 	var terms: Array[Term]
 	for term: Term in Term.get_all_terms().values():
 		if term is CardType or term is Relic:
@@ -314,7 +315,7 @@ func _cmd_write_terms() -> void:
 	terms.sort_custom(func(a: Term, b: Term) -> bool:
 		return a.get_term_priority() < b.get_term_priority()
 	)
-	_write_terms(terms, 'terms.txt')
+	_write_terms(terms, 'terms.' + ('csv' if csv_format else 'txt'), csv_format)
 
 func _cmd_write_cards() -> void:
 	var terms: Array[Term]
@@ -661,14 +662,24 @@ func _cmd_test_card_rarity(bonus_str: String) -> void:
 
 	run.get_vars().remove_modifier('_cmd_test_card_rarity')
 
-func _write_terms(terms : Array[Term], filename: String) -> void:
-	var img_regex := RegEx.create_from_string('\\[img.*?\\[/img\\]\\s*')
+func _write_terms(terms : Array[Term], filename: String, csv_format: bool = false) -> void:
+	var img_regex := RegEx.create_from_string('\\[(img|font_size).*?\\[/(img|font_size)\\]\\s*')
 	var output_file := FileAccess.open('user://' + filename, FileAccess.WRITE)
+	if csv_format:
+		output_file.store_line('ID,Name,Long Name,Description')
 	for term: Term in terms:
 		var description_bbcode := Term.parse(term.get_markedup_description()).bbcode_text
 		var term_name := img_regex.sub(term.get_term_name(true), '', true)
 		description_bbcode = img_regex.sub(description_bbcode, '', true)
-		output_file.store_line('* %s: %s\n' % [term_name, description_bbcode])
+		if csv_format:
+			output_file.store_csv_line([
+				term.get_term_id(),
+				img_regex.sub(term.get_term_name(false), '', true),
+				term_name,
+				description_bbcode,
+			])
+		else:
+			output_file.store_line('* %s: %s\n' % [term_name, description_bbcode])
 	output_file.close()
 	Console.print_info('Wrote terms to %s.' % filename)
 

@@ -1,0 +1,317 @@
+ID,Name,Long Name,Description
+glyph,Glyph,Glyph,A card used to shape Developments or cast Invocations.
+world_shard,World Shard,World Shard,"A broken fragment of the Old World, floating in the Cloud Sea, now ready to be restored into a new home for Settlers."
+bonus,Yield,Yield,"The results of your Developments, such as Food or Knowledge, which can be gathered over the course of the Expedition, spent at Landmarks, and used during Events."
+aspect_slot,Essence Slot,Essence Slot,A requirement within a Development or Task that must be filled with a matching Essence.
+aspect,Essence,Essence,"The elemental force used to create Developments in Sites, usually provided by Slotting glyphs."
+hand,Hand,Hand,The current set of Glyphs available to play in a Stage.
+run,Expedition,Expedition,"A full journey to restore a World Shard, made up of multiple Phases."
+companion,Companion,Animal Companions,Animal spirits which can join you during your expeditions and provide unique abilities.
+season,Phase,Phase,"One part of an Expedition, where you establish several Settlements then connect them to the Shard Capital."
+slot_card,Slot,Slotting Glyphs,Using a glyph for its Essence to fill an Essence Slot.
+settler_quest,Settler Quest,Settler Quest,A task offered by a settler that lasts a single expedition and adds a difficulty modifier.
+relic,Relic,Relic,"A symbolic item that grants a special effect during an Expedition, usually acquired from Events or at the end of a Phase."
+play_card,Play,Playing Glyphs,Using a glyph either to slot into an Essence Slot or to cast its Invocations.
+inspiration,Inspiration,Inspiration,"Your guiding resolve. If it runs out, the Expedition ends prematurely and you forfeit bonus Insights."
+hub,Haven,The Haven,"Your resting place between Expeditions, where you prepare, reflect, and grow."
+explorer_trip,Explorer Trip,Explorer Trip,A trip which the Explorer takes to a previously settled shard. Such trips take one phase and may reveal new skills or relics.
+card_deck,Glyph Deck,Glyph Deck,The collection of Glyphs you bring into an Expedition and draw from during Stages.
+aspect.change,Change,Change Essence,"One of the three Basic Essences.
+
+[i]“The force of motion, heat, and transition. It drives the wind, stirs the fire, and turns the seasons.”[/i]"
+aspect.connection,Connection,Connection Essence,"One of the four Advanced Essences. Used during Convergence to connect settlements to the Shard Capital.
+
+[i]“The bonds that link people, places, and purpose. It bridges distances and lingers in a shared glance.”[/i]"
+aspect.craft,Craft,Craft Essence,"One of the four Advanced Essences.
+
+[i]“The touch of human effort, shaping, and refining. It carves, builds, and brings purpose to raw form.”[/i]"
+aspect.illumination,Radiance,Radiance Essence,"One of the four Advanced Essences.
+
+[i]“The glow of light and the spark of knowledge. It reveals paths and turns darkness into discovery.”[/i]"
+aspect.life,Life,Life Essence,"One of the three Basic Essences.
+
+[i]“The breath of vitality, water, and growth. It fills rivers, nourishes roots, and renews the land.”[/i]"
+aspect.stability,Stability,Stability Essence,"One of the three Basic Essences.
+
+[i]“The foundation of stone, structure, and stillness. It endures, unshaken by time or chaos.”[/i]"
+aspect.spirit,Spirit,Spirit Essence,"One of the four Advanced Essences.
+
+[i]“The trace of something greater. It fuels wonder and flickers at the edge of knowing.”[/i]"
+bonus.food,Food,Food Yield,"Food production.
+
+Can be invested at a Stone of Remembrance to host feasts that commemorate glyphs to make them Innate.
+
+“Feeds the hungry, strengthens bodies, and supports growing communities.”"
+bonus.beauty,Beauty,Beauty Yield,"Beauty in nature and human endeavors.
+
+Can be spent at a Verse Arena to restore Inspiration.
+
+“Lifts the spirit, awakens wonder, and turns the ordinary into something unforgettable.”"
+bonus.harmony,Harmony,Harmony Yield,"Human and environmental harmony.
+
+Can be invested at Post Road to connect Settlements, making the next Convergence easier.
+
+“Reduces conflict, fosters cooperation, and strengthens communities.”"
+bonus.knowledge,Knowledge,Knowledge Yield,"Learning and enlightenment.
+
+Can be invested at a Woodblock Print Studio to recall inscribed glyphs and add them to your Glyph Deck.
+
+“Educates people, advances technology, and deepens understanding.”"
+bonus.adventure,Adventure,Adventure Yield,"Thrilling opportunities. 
+
+Can be spent at Mirage Gates to acquire rare and powerful glyphs to add to your Glyph Deck.
+
+“Provides excitement, challenges the bold, and opens paths to new discoveries.”"
+bonus.productivity,Productivity,Productivity Yield,"Dedicated human craftsmanship.
+
+Can be invested at Communal Baths to purify your Glyph Deck by removing glyphs.
+
+“Supplies materials, enables craftsmanship, and drives economic growth.”"
+bonus.safety,Safety,Safety Yield,"Protection from the elements and human follies.
+
+Can be invested at Endless Ruins to excavate Relics.
+
+“Protects people from danger, secures shelter, and ensures stability.”"
+turn,Turn,Turn,"The period during which you play a single hand of glyphs before redrawing or finishing a stage. By default, each stage consists of two turns."
+discard,Discard,Discarding,Moving a glyph to the Discards for any reason. Not limited to the Discard invocation.
+card_ability,Invocation,Invocation,A spell-like ability cast from a Glyph instead of slotting it into an Essence Slot. Glyphs with multiple Invocations cast them all in order.
+craft,Inscribe,Inscribing Glyphs,"Creating new Glyphs to use as Signature Glyphs at the start of an Expedition, by combining Strokes in the Haven."
+innate,Innate,Innate Glyphs,Glyphs that are guaranteed to be drawn first at the beginning of a Stage.
+inherit_card,Keep,Keeping Glyphs,"Marking a Glyph as Kept at the end of an Expedition, which will add it to your starting Glyph Deck on your next Expedition."
+haunting,Challenge,Challenge,"Extra challenges during stages, attributed to hauntings in ages past. Challenges can affect a specific site or the whole settlement. They can be countered by filling their associated essence slots."
+harmonization_recipe,Convergence Task,Convergence Task,"A task during Convergence that requires Essence to accomplish, such as connecting Settlements or fulfilling Shortages."
+harmonization,Convergence,Convergence,A key moment at the end of each Phase where you make up for your Settlements' Shortages.
+discard_pile,Discards,Discards,"Glyphs that have already been discarded, but will be reshuffled into the draw stack when it is exhausted. They can be retrieved to your hand using Recycle."
+hand_size,Hand Size,Hand Size,"The number of glyphs drawn into your Hand at the beginning of a Stage, and on each Redraw."
+draw,Draw,Drawing,Moving a glyph from the Draw Stack to your Hand.
+draw_pile,Draw Stack,Draw Stack,The stack of glyphs waiting to be drawn during a Stage.
+encounter,Encounter,Survey Encounter,A dilemma encountered during Surveys resolved using glyphs.
+foray,Foray,Foray,"A focused effort to establish a new Settlement, where you play glyphs to develop Sites."
+fill,Fill,Filling Slots,"Filling an Essence Slot with Essence, in order to activate Developments or Tasks."
+event,Event,Event,An interactive vignette that can lead to a variety of outcomes.
+survey,Survey,Regional Survey,"A brief exploration of a map region, where a survey team scouts the wilderness in preparation for future forays. Consists of several Encounters resolved using glyphs."
+stroke,Stroke,Glyph Stroke,"Pieces of a glyph that can be used to inscribe new glyphs in the Haven, to use as Signature Glyphs at the start of an expedition. Strokes are acquired when you salvage glyphs at the end of a completed phase."
+stage_specialization,Specialization,Settlement Specialization,A type of Yield that a Settlement can provide. Connect this Settlement to the Shard Capital to share the yield with settlements that have a shortage of this yield.
+stage_goal,Foray Goal,Foray Goal,A type of Yield required to complete a Foray without losing Inspiration.
+stage,Stage,Stage,"A Foray, Convergence, or Survey."
+spot_upgrade,Development,Development,"A specific transformation of a Site, shaped by Essences and providing various Yields. You can only choose one Development per tier. Higher-tier upgrades for that path stay open."
+spot,Site,Site,"A small feature within a Foray, like a forest or a ruin, which serves as a base for Developments that produce Yields."
+task,Task,Task,"A task that requires essences to accomplish, encountered during surveys and convergences."
+skill,Skill,Skill,An ability permanently unlocked in the Haven by spending Insights.
+simple,Simple,Simple Glyphs,Glyphs with one Essence and no Invocations.
+signature_card,Signature Glyph,Signature Glyph,A Glyph which you choose to add to your Glyph Deck at the beginning of an Expedition. You can only choose Glyphs which you have previously Inscribed.
+shop,Landmark,Landmark,A permanent unique development in a settlement where you can invest Yields to gain powerful benefits or upgrades.
+shard_type,Shard Culture,Shard Culture,"The type of society a given World Shard can develop. Shards with notable cultures are revealed at the end of an Expedition, based on the yields, narrative choices, or other decisions made by its settlers."
+settlement,Settlement,Settlement,A Location that has been settled after a Foray and now contributes to the World Shard.
+satisfy_lack,Fulfill,Fulfilling Shortages,Fulfilling a Settlement's Shortage by completing a Convergence Task during Convergence.
+salvage,Salvage,Salvaging Glyphs,Choosing a Glyph from your Glyph Deck at the end of a completed Expedition to convert into Strokes which can be used to Inscribe new Glyphs in the Haven.
+reserve_card,Reserve,Reserving Glyphs,Marking a Glyph reward option as reserved. This will guarantee that the same Glyph will appear the next time you are offered a Glyph to choose.
+reroll,Reroll,Rerolling,"Getting new random choices when offered to choose a Glyph or Relic. Rerolls can be gained by unlocking Skills, but can only be used a limited number of times per Expedition."
+remove_card,Remove,Removing Glyphs,"Removing a Glyph from your Glyph Deck for the rest of an Expedition. By default, the minimum size of your Glyph Deck is 10 glyphs."
+refugee,Settler,Settler,"A survivor of the shattered world, ready to create new life on the World Shards."
+redraw,Redraw,Redrawing,"Drawing a new set of glyphs into your Hand, according to your Hand Size."
+pacify,Mitigate,Mitigate Challenge,"Mitigating a challenge, usually by filling its associated essence slots."
+negative_glyph,Negative Glyph,Negative Glyphs,"Glyphs with harmful Invocations, such as 涙 (Tears). Any such glyphs remaining in the hand at the end of a turn are cast automatically."
+location,Location,Location,"A place on the World Shard waiting to be settled, chosen to begin a new Foray."
+lack,Shortage,Settlement Shortage,"A type of Yield that a Settlement is lacking. During Convergence, you can Fulfill these directly or by connecting the Settlement. Each unfulfilled shortage results in a loss of 5 inspiration."
+insight,Insight,Insights,Points earned by completing Stages. You can spend them in the Haven to permanently unlock new Skills.
+card_ability.shrink,Shrink,Shrink Invocation,Reduce your hand size for the rest of the stage.
+card_ability.satisfy_all,Satisfy All,Satisfy All Invocation,Gain a number of yield points of each foray goal.
+card_ability.satisfy,Satisfy,Satisfy Invocation,"Gain a number of yield points of a random foray goal, prioritizing unsatisfied."
+card_ability.reserve,Store,Store Invocation,Place this glyph on top of the draw stack.
+card_ability.recycle,Recycle,Recycle Invocation,"Draw random glyphs from the Discards, if available."
+card_ability.recall,Recall,Recall Invocation,Choose one or more glyphs from the discards and draw them.
+card_ability.pick,Pick,Pick Invocation,Choose one or more glyphs from the draw stack and draw them.
+card_ability.neglect,Neglect,Neglect Invocation,Halve all gains of a given yield for the rest of the stage. Does not stack.
+card_ability.mirror,Mirror,Mirror Invocation,Duplicate a random glyph in your hand.
+card_ability.lose,Lose,Lose Invocation,Lose a number of yield points of a specific type.
+card_ability.lock,Lock,Lock Invocation,"Lock a site, preventing any more essence slots from being filled."
+card_ability.inspire,Inspire,Inspire Invocation,Restore some amount of inspiration.
+card_ability.imitate,Imitate,Imitate Invocation,Choose a glyph from the hand and one or more copies of it to your hand.
+card_ability.gain,Gain,Gain Invocation,Lose a number of yield points of a specific type.
+card_ability.fill,Fill,Fill Invocation,Fill a number of random unfilled essence slots in developments or tasks.
+card_ability.expand,Expand,Expand Invocation,Increase your hand size for the rest of the stage.
+card_ability.exhaust,Fade Away,Fade Away Invocation,Remove [b]all copies of[/b] the glyph for the rest of the stage.
+card_ability.echo,Echo,Echo Invocation,"Repeat the effects of the most recently cast glyph, as if cast by this glyph."
+card_ability.draw,Draw,Draw Invocation,Draw one or more glyphs from the draw stack.
+card_ability.divine,Predict,Predict Invocation,"See the next glyphs you would draw from the draw stack, in order."
+card_ability.dissatisfy_all,Dissatisfy All,Dissatisfy All Invocation,Lose a number of yield points of each foray goal.
+card_ability.dissatisfy,Dissatisfy,Dissatisfy Invocation,Lose a number of yield points of a random foray goal.
+card_ability.discard,Discard,Discard Invocation,Randomly discard a number of glyphs.
+card_ability.despair,Despair,Despair Invocation,Lose some amount of Inspiration.
+card_ability.add_card,Conjure,Conjure Invocation,Add one or more copies of a glyph to your hand.
+card_ability.adapt,Adapt,Adapt Invocation,Add one or more glyphs with a random essence you don't already have to your hand. The glyph being cast is considered to be in your hand.
+connect_settlement,Connect,Connecting Settlements,Completing a Convergence Task during Convergence to connect a Settlement to the Shard Capital.
+cast_card,Cast,Casting Glyphs,"Using a glyph for its Invocations instead of slotting it into an Essence Slot. When a glyph is cast, all of its Invocations are cast."
+card_rarity_tier,Rarity Tier,Glyph Rarity Tier,The rarity tier of Glyphs determines their power. Higher tier Glyphs provide more Essences and stronger Invocations. Higher tier Glyphs are found later in an Expedition.
+capital,Shard Capital,Shard Capital,"A central hub that shares yields with connected settlements, growing stronger as more are linked. Its state carries over between phases."
+basic_aspect,Basic Essence,Basic Essence,"One of the three fundamental Essences of the world: Stability, Change, and Life. All Site require one basic essence for their initial Developments."
+advanced_aspect,Advanced Essence,Advanced Essence,"One of the four reflected Essences: Craft, Spirit, Radiance, and Connection. Advanced Site Developments require these."
+add_card,Add,Adding Glyphs,"Adding a Glyph to your Glyph Deck for the rest of an Expedition, for example by choosing one at the end of a Foray."
+card_ability.split,Split,Split Invocation,"Add simple glyphs with each of this glyph's essences to your hand.
+"
+card_ability.spread,Spread,Spread Invocation,Duplicate a random glyph in your hand that has a certain essence type.
+card_ability.support,Support,Support Invocation,Double all gains of a given yield for the rest of the stage. Does not stack.
+card_ability.topdeck,Top,Top Invocation,Add one or more copies of a specific glyph to the top of the draw stack.
+card_ability.pacify,Mitigate,Mitigate Invocation,Fill a number of random unfilled essence slots in a challenge. Benefits from bonuses to Fill.
+card_ability.continue,Continue,Continue Invocation,Fill a number of random unfilled essence slots in developments or tasks with any essence slots already filled. Benefits from bonuses to Fill.
+card_ability.target,Target,Target Invocation,Fill a number of random unfilled essence slots in developments that produce a specific yield. Benefits from bonuses to Fill.
+skill.hauntings_preview,Preview Challenges,Skill: Preview Challenges,Allows you to preview challenges before starting a foray.
+skill.hauntings_root,Challenges Skill Tree,Skill: Challenges Skill Tree,Skills that allow more control over Challenges.
+skill.inspiration_heal_1,Restore Inspiration 一,Skill: Restore Inspiration 一,Restore [b]1[/b] point of Inspiration after each foray.
+skill.inspiration_heal_2,Restore Inspiration 二,Skill: Restore Inspiration 二,Restore [b]2 more[/b] points of Inspiration after each foray.
+skill.inspiration_max_1,Max Inspiration 一,Skill: Max Inspiration 一,Increases your maximum Inspiration by [b]5[/b] points.
+skill.inspiration_max_2,Max Inspiration 二,Skill: Max Inspiration 二,Increases your maximum Inspiration by a [b]further 10[/b] points.
+skill.inspiration_max_3,Max Inspiration 三,Skill: Max Inspiration 三,Increases your maximum Inspiration by a [b]further 10[/b] points.
+skill.inspiration_max_4,Max Inspiration 四,Skill: Max Inspiration 四,Increases your maximum Inspiration by a [b]further 15[/b] points.
+skill.inspiration_max_5,Max Inspiration 五,Skill: Max Inspiration 五,Increases your maximum Inspiration by a [b]further 15[/b] points.
+skill.inspiration_max_6,Max Inspiration 六,Skill: Max Inspiration 六,Increases your maximum Inspiration by a [b]further 20[/b] points.
+skill.inspiration_root,Inspiration Skill Tree,Skill: Inspiration Skill Tree,Skills that enhance Inspiration.
+skill.inspiration_shop,Landmark: Verse Arena,Skill: Landmark: Verse Arena,"Unlocks the Verse Arena landmark, available in Town Squares, which allows you to restore Inspiration when global Beauty thresholds are met."
+skill.relics_reroll,Relic Reroll,Skill: Relic Reroll,Allows you to reroll relic choices once per expedition.
+skill.relics_root,Relics Skill Tree,Skill: Relics Skill Tree,Skills that provide more ways to access Relics.
+skill.relics_shop,Landmark: Endless Ruin,Skill: Landmark: Endless Ruin,"Unlocks the Endless Ruin landmark, available in the Wastelands, which allows you to acquire relics when global Safety thresholds are met."
+skill.hauntings_pacify_3,Mitigate Challenge 三,Skill: Mitigate Challenge 三,Allows you to mitigate [b]1[/b] more challenge per expedition without using any glyphs.
+skill.craft_salvage_1,Salvaged Glyphs 一,Skill: Salvaged Glyphs 一,Allows you to salvage [b]1[/b] more glyph at the end of each Convergence.
+skill.craft_salvage_2,Salvaged Glyphs 二,Skill: Salvaged Glyphs 二,Allows you to salvage [b]1[/b] more glyph at the end of each Convergence.
+skill.hauntings_pacify_2,Mitigate Challenge 二,Skill: Mitigate Challenge 二,Allows you to mitigate [b]1[/b] more challenge per expedition without using any glyphs.
+skill.hauntings_pacify_1,Mitigate Challenge 一,Skill: Mitigate Challenge 一,Allows you to mitigate [b]1[/b] challenge per expedition without using any glyphs.
+skill.hauntings_ban_2,Prevented Challenges 二,Skill: Prevented Challenges 二,Allows you to take precautions to prevent [b]1[/b] more challenge before starting an expedition.
+skill.hauntings_ban_1,Prevented Challenges 一,Skill: Prevented Challenges 一,Allows you to take precautions to prevent a specific challenge before starting an expedition.
+skill.events_root,Events Skill Tree,Skill: Events Skill Tree,Skills that allow more control over Events.
+skill.events_preview,Events Preview,Skill: Events Preview,Allows you to preview events before starting a foray.
+skill.events_guarantee_3,Guaranteed Events 三,Skill: Guaranteed Events 三,Allows you to choose [b]1[/b] more guaranteed event.
+skill.events_guarantee_2,Guaranteed Events 二,Skill: Guaranteed Events 二,Allows you to choose [b]1[/b] more guaranteed event.
+skill.events_guarantee_1,Guaranteed Events 一,Skill: Guaranteed Events 一,"Allows you to choose an event which will be guaranteed to happen, assuming its requirements are met."
+skill.events_extra,Events per Foray +1,Skill: Events per Foray +1,Allows 1 more event to appear during each foray.
+skill.craft_signature_2,Extra Signature Glyph,Skill: Extra Signature Glyph,Allows you to select [b]1[/b] more signature glyph to include in your glyph deck when starting an expedition.
+skill.craft_signature_1,Signature Glyph,Skill: Signature Glyph,Allows you to select a signature glyph to include in your glyph deck when starting an expedition.
+skill.craft_shop_recall,Landmark: Woodblock Print Studio,Skill: Landmark: Woodblock Print Studio,"Unlocks the Woodblock Print Studio landmark, available in Large Buildings, which allows you to acquire previously inscribed glyphs when global Knowledge thresholds are met."
+skill.settlement_quests_2,Extra Settler Quests 二,Skill: Extra Settler Quests 二,"Allows you to take on [b]5[/b] more settler quests on the same expedition, if available."
+skill.settlement_reroll_1,Goal Rerolls 一,Skill: Goal Rerolls 一,Allows you to reroll a foray goal [b]once[/b] per expedition.
+skill.settlement_reroll_2,Goal Rerolls 二,Skill: Goal Rerolls 二,Allows you to reroll a foray goal [b]1[/b] more time per expedition.
+skill.settlement_reroll_3,Goal Rerolls 三,Skill: Goal Rerolls 三,Allows you to reroll a foray goal [b]1[/b] more time per expedition.
+skill.settlement_root,Settlement Skill Tree,Skill: Settlement Skill Tree,Skills that provide new ways to manage the Sites and Developments.
+skill.settlement_spots_per_season,Sites Per Phase +1,Skill: Sites Per Phase +1,Adds one extra site in each foray after every Convergence.
+skill.survey_episodes_1,Longer Surveys 一,Skill: Longer Surveys 一,Increases the maximum number of encounters per survey by [b]2[/b].
+skill.survey_episodes_2,Longer Surveys 二,Skill: Longer Surveys 二,Further increases the maximum number of encounters per survey by [b]2[/b].
+skill.survey_map_preview,Shard Preview,Skill: Shard Preview,Allows you to preview the shard map before starting an expedition.
+skill.survey_map_reroll,Shard Choice,Skill: Shard Choice,Allows you to pick a different shard before starting an expedition any number of times.
+skill.survey_preps_1,Survey Preparation 一,Skill: Survey Preparation 一,Allows you to spend yields to gain bonuses for the duration of a survey.
+skill.survey_preps_2,Survey Preparation 二,Skill: Survey Preparation 二,Allows some survey preparations to be stacked twice.
+skill.survey_reveal_1,Scouting 一,Skill: Scouting 一,Increases the size of the area revealed by forays and surveys by [b]20%[/b].
+skill.survey_reveal_2,Scouting 二,Skill: Scouting 二,Increases the size of the area revealed by forays and surveys by a further [b]20%[/b].
+skill.survey_root,Exploration Skill Tree,Skill: Exploration Skill Tree,Skills that allow more control over Surveys and other shard exploration.
+skill.settlement_quests_1,Extra Settler Quests 一,Skill: Extra Settler Quests 一,"Allows you to take on [b]5[/b] more settler quests on the same expedition, if available."
+skill.settlement_preview_bonuses,Preview Yields,Skill: Preview Yields,"Allows you to preview all site yields before starting a foray, rather than just ones relevant to the foray goal."
+skill.settlement_overlap,Packed In,Skill: Packed In,Allows settlements to overlap by up to 15% of their diameter.
+skill.settlement_show_nongoal,Development Freedom,Skill: Development Freedom,"Allows you to reveal all possible developments of any site, even if they are irrelevant to the current foray goals."
+skill.settlement_insights_per_yield,Insights from Excess,Skill: Insights from Excess,"Grants an Insight for every 10 yield points of any type that do not directly progress the foray goals during forays, up to 20."
+skill.settlement_insights_per_discovery,Insights from Discovery,Skill: Insights from Discovery,"Grants an Insight for each discovery, such as new glyphs, new event choices, and so on."
+skill.settlement_ignore_unique,Everything is Unique,Skill: Everything is Unique,Allows you to activate multiple unique developments within each expedition.
+skill.settlement_extra_spot,Sites +1,Skill: Sites +1,Adds one extra site in each foray.
+skill.settlement_create_spot_square,Create Site: Town Square,Skill: Create Site: Town Square,Allows you to create a Town Square site once per expedition.
+skill.settlement_create_spot_small_building,Create Site: Small Building,Skill: Create Site: Small Building,Allows you to create a Small Building site once per expedition.
+skill.settlement_create_spot_large_building,Create Site: Large Building,Skill: Create Site: Large Building,Allows you to create a Large Building site once per expedition.
+skill.settlement_create_spot_lake,Create Site: Lake,Skill: Create Site: Lake,Allows you to create a Lake site once per expedition.
+skill.relics_starting_uncommon,Uncommon Starting Relic,Skill: Uncommon Starting Relic,Allows Uncommon relics to appear as random starting relics.
+skill.relics_starting_common,Selected Starting Relic,Skill: Selected Starting Relic,"Allows you to select a specific relic to start with before each expedition, without being limited to specific choices."
+skill.relics_starting_random,Random Starting Relic,Skill: Random Starting Relic,Grants you a choice of random relics at the start of each expedition.
+skill.relics_shop_remove,Relic Removal,Skill: Relic Removal,Allows you to remove relics at the Endless Ruin landmark.
+skill.capital_shop_trade,Landmark: Shard Council,Skill: Landmark: Shard Council,"Unlocks the Shard Council landmark, always available in the shard capital, which allows you to exchange different yield types."
+skill.capital_shop_connect,Landmark: Post Road,Skill: Landmark: Post Road,"Unlocks the Post Road landmark, available in the Plains, which allows you to connect settlements before Convergence when global Harmony thresholds are met."
+skill.capital_root,Capital Skill Tree,Skill: Capital Skill Tree,Skills that provide new ways to manage the shard capital.
+skill.capital_initial_provision,Capital Initial Provision,Skill: Capital Initial Provision,"Lets the capital provide one type of yield immediately when placed, depending on its biome."
+skill.capital_craft_connection,Craft Connection,Skill: Craft Connection,Allows you to create Connection glyphs by combining one of each basic essence during Convergence.
+skill.capital_connect,Connect Settlements,Skill: Connect Settlements,Allows you to connect a settlement to the shard capital. Settlements connected to the shard capital will share the yields they provide with all other connected settlements to fulfill their shortages.
+skill.capital_activate_provisions,Capital Activated Provisions,Skill: Capital Activated Provisions,"Allows you to use glyphs to make the capital provide any type of yield, assuming enough of that yield has been created on the shard."
+shop.trade,Shard Council,Landmark: Shard Council,"This hall in the Shard Capital manages shard-wide planning. Settlement representatives can coordinate here to direct their focus, even if it disrupts efficiency.
+
+Here you can exchange any type of Yield for half as much of another Yield.
+
+This landmark is always available in the Shard Capital.
+
+[i]“Not all plans are efficient, but coordination has its own power. Even mismatched efforts can find purpose when aligned.”[/i]"
+shop.remove_cards,Communal Baths,Landmark: Communal Baths,"Steam rises from the warm baths, its puffs carried away by the cool breeze. The stone walkways are worn smooth with use, and clean buckets are stacked neatly in a row.
+
+Here you can purify your Glyph Deck and remove glyphs if a given amount of Productivity has been reached on the shard.
+
+[i]“True work begins by letting go. In these waters, even stubborn thoughts dissolve, leaving only what matters.”[/i]"
+shop.recall_cards,Woodblock Print Studio,Landmark: Woodblock Print Studio,"The masters of the studio are adept at reproducing scripture and paintings alike. By investing time and focus, scholars can find old teachings to print and spread among the populace.
+
+Here you can print Inscribed Glyphs and add them to your Glyph Deck if a given amount of Knowledge has been reached on the shard.
+
+[i]“What is written once may be forgotten; what is printed will travel.”[/i]"
+shop.make_innate_cards,Stone of Remembrance,Landmark: Stone of Remembrance,"The monument stands at the center of the square, marked with hundreds of inscriptions. Here, the settlers gather to honor their most important values.
+
+Here you can make Glyphs Innate if a given amount of Food has been reached on the shard.
+
+[i]“The people gather to remember what guided them through the hardships of days past.”[/i]"
+shop.heal,Verse Arena,Landmark: Verse Arena,"This arena is hosts regular contests of the lyrical variety. Poems recited here become a source of renewed inspiration for those who stop by.
+
+Here you can restore some Inspiration if a given amount of Beauty has been reached on the shard.
+
+[i]“In words, beauty endures. A single poem can carry hope farther than any road.”[/i]"
+shop.get_relics,Endless Ruin,Landmark: Endless Ruin,"This unfathomably vast, ancient ruin stretches deep underground. Investigating it may put people at risk, but what they bring back could unlock new possibilities.
+
+Here you can retrieve Relics from the ruins if a given amount of Safety has been reached on the shard.
+
+[i]“Some truths are found only by those willing to reach into the dark.”[/i]"
+shop.get_rare_card,Mirage Gate,Landmark: Mirage Gate,"This ancient gate is unlike the ones we are used to. It leads somewhere unknowable. Those who enter come back with insights unlike anything seen before, but after such an experience, they lose all interest in exploring mundane landscapes.
+
+Here you can retrieve Glyphs of high Rarity Tier to add to your glyph deck once a given amount of Adventure has been reached on the shard.
+
+[i]“What lies beyond is wondrous, but unsettling. Those who glimpse it rarely wish to linger in the familiar.”[/i]"
+shop.connect_settlements,Post Road,Landmark: Post Road,"A paved road stretches from the settlement and disappears into the horizon. Painted markers guide travelers between shaded milestones. Each new connection includes distant places into the communal network.
+
+Here you can connect Settlements to the Shard Capital freely if a given amount of Harmony has been reached on the shard.
+
+[i]“A road connects markets and spirits alike.”[/i]"
+shop.accord_monument,Accord Monument,Landmark: Accord Monument,"This town square is special. Within its temple and accompanying pagoda, the Great Accord is enshrined."
+companion.cat,Cat,Cat Companion,Luck will follow this cat anywhere.
+companion.crane,Crane,Crane Companion,"A graceful companion, gathering strength through steadfast loyalty."
+companion.deer,Deer,Deer Companion,"A harmonious spirit, connecting folks to their environment."
+companion.dog,Dog,Dog Companion,"A steadfast guardian, sworn to protect the journey."
+companion.dragon,Dragon,Dragon Companion,"A wise ally, reshaping all things with knowledge."
+companion.fox,Fox,Fox Companion,No one beats the fox when it comes to trickery.
+companion.frog,Frog,Frog Companion,This frog lets nothing go to waste.
+companion.koi,Carp,Carp Companion,"A tiny dreamer, who believes even lost causes deserve one more try."
+companion.monkey,Monkey,Monkey Companion,"An irreverent spirit, quick to mock hardship and quicker to outrun it."
+companion.snake,Snake,Snake Companion,"A secretive friend, who keeps gifts hidden until the moment is right."
+companion.spider,Spider,Spider Companion,"A dangerous ally, tempting the brave of heart but weak of will."
+companion.tai,Sea Bream,Sea Bream Companion,"A warm-hearted companion, happiest when others succeed."
+companion.tanuki,Tanuki,Tanuki Companion,This schemer is always rummaging around.
+companion.tiger,Tiger,Tiger Companion,"A creature of pure power, taking on obstacles with brute force."
+companion.turtle,Turtle,Turtle Companion,"A careful keeper, saving hope for the days when it is most needed."
+skill.craft_root,Inscription Skill Tree,Skill: Inscription Skill Tree,Skills that provide new ways to inscribe glyphs.
+skill.craft_replace,Replace Starter Glyphs,Skill: Replace Starter Glyphs,Allows you to replace starting glyphs with other Basic or Common glyphs.
+skill.craft_inherit,Kept Glyph,Skill: Kept Glyph,Allows you to keep a glyph at the end of each expedition to take on your next expedition. Only glyphs added during the expedition are eligible.
+skill.craft_double_strokes,Double Salvaged Strokes,Skill: Double Salvaged Strokes,Grants [b]double[/b] the strokes when salvaging glyphs at the end of each Convergence.
+skill.buy_strokes,Stroke Research,Skill: Stroke Research,Allows you to use insights to acquire strokes.
+skill.buy_cards,Glyph Research,Skill: Glyph Research,Allows you to use insights to discover new glyphs. These would still need to be inscribed.
+skill.craft_4_epic,Inscribe Glyph 四,Skill: Inscribe Glyph 四,Allows you to inscribe glyphs of [b]Epic[/b] rarity tier for use as signature glyphs.
+skill.craft_3_rare,Inscribe Glyph 三,Skill: Inscribe Glyph 三,Allows you to inscribe glyphs of [b]Rare[/b] rarity tier for use as signature glyphs.
+skill.craft_2_uncommon,Inscribe Glyph 二,Skill: Inscribe Glyph 二,Allows you to inscribe glyphs of [b]Uncommon[/b] rarity tier for use as signature glyphs.
+skill.craft_1_common,Inscribe Glyph,Skill: Inscribe Glyph,"Allows you to salvage a glyph at the end of each phase, and inscribe glyphs of [b]Common[/b] rarity tier for use as signature glyphs."
+skill.cards_shop_remove,Landmark: Communal Baths,Skill: Landmark: Communal Baths,"Unlocks the Communal Baths landmark, available in Town Squares, which allows you to remove glyphs from your glyph deck when global Productivity thresholds are met."
+skill.cards_shop_rare,Landmark: Mirage Gate,Skill: Landmark: Mirage Gate,"Unlocks the Mirage Gate landmark, available in the Deserts, which allows you to acquire high rarity glyphs when global Adventure thresholds are met."
+skill.cards_shop_innate,Landmark: Stone of Remembrance,Skill: Landmark: Stone of Remembrance,"Unlocks the Stone of Remembrance landmark, available in Town Squares, which allows you to make glyphs innate when global Food thresholds are met."
+skill.cards_root,Glyph Skill Tree,Skill: Glyph Skill Tree,Skills that enhance the glyph deck.
+skill.cards_reserve,Reserve Glyph,Skill: Reserve Glyph,Allows you to reserve glyph reward choices.
+skill.cards_reroll_quality,Quality Glyph Rerolls,Skill: Quality Glyph Rerolls,"When glyph rewards are rerolled, their rarity tier is [b]10%[/b] higher. Does not stack."
+skill.cards_reroll_4,Glyph Reward Rerolls 四,Skill: Glyph Reward Rerolls 四,Allows you to reroll glyph reward choices [b]3 more[/b] times per expedition.
+skill.cards_reroll_3,Glyph Reward Rerolls 三,Skill: Glyph Reward Rerolls 三,Allows you to reroll glyph reward choices [b]2 more[/b] times per expedition.
+skill.cards_reroll_2,Glyph Reward Rerolls 二,Skill: Glyph Reward Rerolls 二,Allows you to reroll glyph reward choices [b]1 more[/b] time per expedition.
+skill.cards_reroll_1,Glyph Reward Rerolls 一,Skill: Glyph Reward Rerolls 一,Allows you to reroll glyph reward choices [b]1[/b] time per expedition.
+skill.cards_quality_3,Glyph Mastery 三,Skill: Glyph Mastery 三,Increases the rarity tier of glyph rewards by a [b]further 15%[/b].
+skill.cards_quality_2,Glyph Mastery 二,Skill: Glyph Mastery 二,Increases the rarity tier of glyph rewards by a [b]further 10%[/b].
+skill.cards_quality_1,Glyph Mastery 一,Skill: Glyph Mastery 一,Increases the rarity tier of glyph rewards by [b]10%[/b].
+skill.cards_mulligan_4,Replan 四,Skill: Replan 四,Allows you to reshuffle your glyph deck and draw a new starting hand [b]1[/b] more time per expedition.
+skill.cards_mulligan_3,Replan 三,Skill: Replan 三,Allows you to reshuffle your glyph deck and draw a new starting hand [b]1[/b] more time per expedition.
+skill.cards_mulligan_2,Replan 二,Skill: Replan 二,Allows you to reshuffle your glyph deck and draw a new starting hand [b]1[/b] more time per expedition.
+skill.cards_mulligan_1,Replan 一,Skill: Replan 一,Allows you to reshuffle your glyph deck and draw a new starting hand [b]1[/b] time per expedition.
+skill.cards_min_deck_size_2,Minimum Deck Size -2,Skill: Minimum Deck Size -2,Reduces the minimum glyph deck size by [b]2[/b] more.
+skill.cards_min_deck_size_1,Minimum Deck Size -1,Skill: Minimum Deck Size -1,Reduces the minimum glyph deck size by [b]1[/b].
+skill.cards_hand_size_start,Starting Glyphs +1,Skill: Starting Glyphs +1,Increases the number of glyphs drawn on stage start by [b]1[/b].
+skill.cards_hand_size_all,Redrawn Glyphs +1,Skill: Redrawn Glyphs +1,Increases the number of glyphs drawn when redrawing by [b]1[/b].
+skill.capital_trade_discount,Efficient Management,Skill: Efficient Management,Reduces the cost of yield exchanges at the Shard Council landmark by [b]20%[/b].
