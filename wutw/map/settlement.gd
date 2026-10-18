@@ -406,7 +406,7 @@ func _make_tooltip_text() -> String:
 
 	if Skill.get_skill_var(Skill.Var.CAPITAL_CONNECTION):
 		text += '\n\n'
-		text += tr('This <term_lower:settlement> is <related_term:stage_specialization>specialized in %s' %
+		text += (tr('This <term_lower:settlement> is <related_term:stage_specialization>specialized in %s') %
 				 get_yield_type().get_term_tag())
 		if is_settlement_connected():
 			text += tr(', which it provides to the <term:capital> because it is <term_lower:connect_settlement>ed.')

@@ -382,13 +382,13 @@ func _make_tooltip_text() -> String:
 	elif display_state == DisplayState.INNATE:
 		pieces.append(tr(' - <term:innate>'))
 
+	pieces.append('\n')
+	if card_type.aspects.size() == 7:  # All
+		pieces.append(tr('Provides any <term:aspect>'))
 	if card_type.aspects:
-		pieces.append('\n')
-		pieces.append(tr('Provides '))
-		pieces.append(card_type.format_aspects_list())
-		pieces.append(' <term:aspect>')
+		pieces.append(tr('Provides %s <term:aspect>') % card_type.format_aspects_list())
 	else:
-		pieces.append(tr('\nProvides no <term_lower:aspect>s.'))
+		pieces.append(tr('Provides no <term_lower:aspect>s'))
 
 	if card_type.rarity == CardType.Rarity.NEGATIVE:
 		pieces.append('\n')
