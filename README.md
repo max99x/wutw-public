@@ -131,7 +131,7 @@ The game supports user-supplied translations. To set up a translation:
 
 Notes:
 - You do not need to be running a development version of the game. This works on the Steam version too.
-- While translating, you can switch the language back and forth to reload the translation without restarting the game.
+- While translating, you can press Ctrl+T to reload the translation without restarting the game.
 
 ## Maintenance
 
