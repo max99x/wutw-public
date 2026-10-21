@@ -236,7 +236,7 @@ func _on_choice_activated(episode: SurveyEpisode, recipe: SurveyRecipe) -> void:
 
 	var old_character_count := _main_text.get_total_character_count()
 	var new_text := _main_text.get_markedup_text()
-	new_text += '\n\n➤ ' + choice.label + '\n\n'
+	new_text += '\n\n➤ ' + tr(choice.label) + '\n\n'
 	if _overridden_result_text:
 		new_text += _overridden_result_text
 		_overridden_result_text = ''
