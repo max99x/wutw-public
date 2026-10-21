@@ -66,16 +66,11 @@ func _ready() -> void:
 	_on_button_skip_claimed_music_pressed()
 
 	# Interface
-	var available_translations := GameSettings.get_translatable_locales()
-	if available_translations.is_empty():
-		(%HBox_Locale as Control).visible = false
-	else:
-		(%HBox_Locale as Control).visible = true
-		_setup_tooltip(%HBox_Locale, tr('The game\'s language.'))
-		(%Dropdown_Locale as Dropdown).add_item('English', '')
-		for locale in available_translations:
-			(%Dropdown_Locale as Dropdown).add_item(locale, locale)
-		(%Dropdown_Locale as Dropdown).set_selected_value(GameSettings.Interface.locale.value())
+	_setup_tooltip(%HBox_Locale, tr('The game\'s language.'))
+	_setup_tooltip(%HBox_LocaleMod_New, tr('Upload a locally-authored translation as a new Steam Workshop mod.'))
+	_setup_tooltip(%HBox_LocaleMod_Update, tr('Update an existing Steam Workshop mod with a new translation file.'))
+	_update_locale_boxes()
+
 	(%Slider_AnimSpeed as Slider).set_value(_multiplier_to_speed(
 		GameSettings.Interface.animation_speed.value()))
 	_setup_tooltip(%HBox_AnimSpeed, tr('How fast to play gameplay and UI animations.'))
@@ -573,5 +568,88 @@ func _setup_tooltip(node: Node, text: String) -> void:
 
 func _on_dropdown_locale_selected(item: DropdownItem) -> void:
 	var chosen_locale := item.value as String
-	GameSettings.Interface.locale.set_value(chosen_locale)
+	GameSettings.Interface.locale.set_value(chosen_locale, true)
 	GameSettings.reload_i18n()
+	_update_locale_boxes()
+
+func _on_button_locale_mod_new_pressed() -> void:
+	var folder := DirAccess.create_temp('wutw_mod_upload', true)
+	var folder_path := folder.get_current_dir()
+	folder = null  # Ensure it's no longer open.
+
+	var available_translations := GameSettings.get_translatable_locales()
+	var chosen_locale := GameSettings.Interface.locale.value()
+	var file_path := ProjectSettings.globalize_path(available_translations[chosen_locale])
+	var file_name := file_path.split('/')[-1]
+	DirAccess.copy_absolute(file_path, folder_path + '/' + file_name)
+	if Utils.ensure(FileAccess.file_exists(folder_path + '/' + file_name)):
+		(%Button_LocaleMod_New as Button).disabled = true
+		(%Button_LocaleMod_New as Button).text = 'Creating...'
+		var mod_title := 'Translation: ' + chosen_locale.replace(' (Local)', '')
+		var file_id := await GlobalSteamSetup.create_mod(folder_path, mod_title)
+		(%Button_LocaleMod_New as Button).text = 'Create Translation Mod'
+		(%Button_LocaleMod_New as Button).disabled = false
+		OS.move_to_trash(folder_path)
+		if file_id:
+			OS.shell_open('https://steamcommunity.com/sharedfiles/filedetails/?id=%d' % file_id)
+			var new_locale := chosen_locale.replace(' (Local)', ' (Mod)')
+			GameSettings.Interface.locale.set_value(new_locale)
+			_update_locale_boxes()
+
+func _update_locale_boxes() -> void:
+	(%HBox_LocaleMod_New as Control).visible = false
+	(%HBox_LocaleMod_Update as Control).visible = false
+	var available_translations := GameSettings.get_translatable_locales()
+	if available_translations.is_empty():
+		(%HBox_Locale as Control).visible = false
+		return
+
+	(%HBox_Locale as Control).visible = true
+	(%Dropdown_Locale as Dropdown).clear()
+	(%Dropdown_Locale as Dropdown).add_item('English', '')
+	for locale in available_translations:
+		(%Dropdown_Locale as Dropdown).add_item(locale, locale)
+	var chosen_locale := GameSettings.Interface.locale.value()
+	if chosen_locale in available_translations:
+		(%Dropdown_Locale as Dropdown).set_selected_value(GameSettings.Interface.locale.value())
+
+		var show_create := available_translations[chosen_locale].begins_with('user://')
+		(%HBox_LocaleMod_New as Control).visible = show_create
+
+		var locale_mod_file_id := _get_locale_mod_file_id(chosen_locale)
+		if locale_mod_file_id:
+			(%HBox_LocaleMod_Update as Control).visible = await GlobalSteamSetup.can_update_mod(locale_mod_file_id)
+
+func _get_locale_mod_file_id(locale: String) -> int:
+	var path: String = GameSettings.get_translatable_locales().get(locale, '')
+	var m := RegEx.create_from_string(r'[/\\]\d+[/\\](\d+)[/\\][^/\\]+$').search(path)
+	if m:
+		return m.strings[1].to_int()
+	else:
+		return 0
+
+func _on_button_locale_mod_update_pressed() -> void:
+	(%ModUpdateFileDialog as FileDialog).popup_centered()
+
+func _on_mod_update_file_dialog_file_selected(file_path: String) -> void:
+	var chosen_locale := GameSettings.Interface.locale.value()
+	var locale_mod_file_id := _get_locale_mod_file_id(chosen_locale)
+	if not Utils.ensure(locale_mod_file_id):
+		return
+
+	var folder := DirAccess.create_temp('wutw_mod_upload', true)
+	var folder_path := folder.get_current_dir()
+	folder = null  # Ensure it's no longer open.
+
+	var file_name := chosen_locale.replace(' (Mod)', '') + '.' + file_path.split('.')[-1]
+	DirAccess.copy_absolute(file_path, folder_path + '/' + file_name)
+	if Utils.ensure(FileAccess.file_exists(folder_path + '/' + file_name)):
+		(%Button_LocaleMod_Update as Button).disabled = true
+		(%Button_LocaleMod_Update as Button).text = 'Updating...'
+		var file_id := await GlobalSteamSetup.update_mod(locale_mod_file_id, folder_path)
+		(%Button_LocaleMod_Update as Button).text = 'Update Translation Mod...'
+		(%Button_LocaleMod_Update as Button).disabled = false
+		OS.move_to_trash(folder_path)
+		if file_id:
+			GameSettings.reload_i18n()
+			_update_locale_boxes()

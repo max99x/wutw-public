@@ -173,15 +173,28 @@ func save() -> void:
 		_config_file.save(FILE_PATH)
 
 static func get_translatable_locales() -> Dictionary[String, String]:
+	var folders_to_scan: Array[String]
+	# Built-in
+	folders_to_scan.append('res://i18n')
+	# Manually user-supplied.
+	folders_to_scan.append('user://translations')
+	# Steam Workshop.
+	folders_to_scan.append_array(GlobalSteamSetup.get_mod_folders())
+
 	var result: Dictionary[String, String]
-	if DirAccess.dir_exists_absolute('res://i18n'):
-		for filename in DirAccess.get_files_at('res://i18n'):
-			if filename.match('*.po') or filename.match('*.mo'):
-				result[filename.get_slice('.', 0)] = 'res://i18n/' + filename
-	if DirAccess.dir_exists_absolute('user://translations'):
-		for filename in DirAccess.get_files_at('user://translations'):
-			if filename.match('*.po') or filename.match('*.mo'):
-				result[filename.get_slice('.', 0)] = 'user://translations/' + filename
+	for folder_path in folders_to_scan:
+		if DirAccess.dir_exists_absolute(folder_path):
+			for filename in DirAccess.get_files_at(folder_path):
+				if filename.match('*.po') or filename.match('*.mo'):
+					var label := filename.get_slice('.', 0)
+					if folder_path.begins_with('user://'):
+						label += ' (Local)'
+					elif not folder_path.begins_with('res://'):
+						label += ' (Mod)'
+					if label in result:
+						push_warning('Duplicate translation for %s: %s' % [label, folder_path + '/' + filename])
+					result[label] = folder_path + '/' + filename
+
 	return result
 
 static func reload_i18n() -> void:

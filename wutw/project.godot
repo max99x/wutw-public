@@ -48,6 +48,7 @@ config/icon="uid://dt3ks28tcf08m"
 
 WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
 GlobalStartup="*uid://bi1lrc40w0hw8"
+GlobalSteamSetup="*uid://r5oait0ivxr0"
 GlobalGameSettings="*res://settings/game_settings.gd"
 GlobalAudioSystem="*res://audio/audio_system.gd"
 GlobalSaveGame="*res://utils/save_game.gd"

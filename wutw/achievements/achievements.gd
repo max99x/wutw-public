@@ -3,9 +3,6 @@ extends Node
 
 static var _group_loader := AsyncLoadedGroup.new('res://achievements/achievements_resourcegroup.tres', true, AsyncLoadedResource.LoadPhase.SPECULATIVE)
 
-const FULL_APP_ID := 3640430
-const DEMO_APP_ID := 4567730
-
 const STAT_STORE_INTERVAL_SECONDS := 30.0
 
 var _cached_stats: Dictionary[String, int]
@@ -14,12 +11,6 @@ var _stats_store_pending := false
 var _stats_store_requested := false
 
 func _ready() -> void:
-	var app_id := DEMO_APP_ID if Utils.is_demo() else FULL_APP_ID
-	var initialize_response := Steam.steamInitEx(app_id, true)
-	if initialize_response['status'] != Steam.STEAM_API_INIT_RESULT_OK:
-		push_warning('Failed to initialize steam: ' + str(initialize_response))
-		return
-
 	if Utils.is_demo():
 		return
 
@@ -46,7 +37,6 @@ func _ready() -> void:
 	)
 
 func _process(delta: float) -> void:
-	Steam.run_callbacks()
 	if _stats_store_pending:
 		if _stats_store_requested or _time_until_next_stat_store < 0:
 			if Steam.storeStats():
