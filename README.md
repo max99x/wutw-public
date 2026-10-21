@@ -132,6 +132,7 @@ The game supports user-supplied translations. To set up a translation:
 Notes:
 - You do not need to be running a development version of the game. This works on the Steam version too.
 - While translating, you can press Ctrl+T to reload the translation without restarting the game.
+- You can upload your local translations to the Steam Workshop using a button under the language drop-down in the settings menu.
 
 ## Maintenance
 
