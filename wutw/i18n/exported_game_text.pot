@@ -203541,8 +203541,8 @@ msgstr ""
 #: hub/museum/museum_detail_shop.gd:44
 #: hub/museum/museum_detail_survey.gd:47
 #: hub/skill_management/skill_tooltip.gd:25
-#: settings/settings_dialog.gd:365
-#: settings/settings_dialog.gd:397
+#: settings/settings_dialog.gd:360
+#: settings/settings_dialog.gd:392
 #: stage/spots/spot_recipe_unknown.tscn
 #: stage/survey/survey_recipe.gd:99
 msgid "???"
@@ -205916,7 +205916,7 @@ msgstr ""
 #: hub/run_setup/run_setup.gd:191
 #: hub/run_setup/run_setup.gd:217
 #: quests/settler/challenges/settler_quest_challenge_harm_on_aspect_cards.gd:43
-#: settings/settings_dialog.gd:205
+#: settings/settings_dialog.gd:200
 #: settings/settings_dialog.tscn
 msgid "None"
 msgstr ""
@@ -206723,7 +206723,7 @@ msgid "When Solved"
 msgstr ""
 
 #: japanese/practice_blanks/blanks_practice.gd:553
-#: settings/settings_dialog.gd:114
+#: settings/settings_dialog.gd:109
 msgid "Always"
 msgstr ""
 
@@ -212803,36 +212803,36 @@ msgstr ""
 #: settings/settings_dialog.gd:28
 #: settings/settings_dialog.gd:37
 #: settings/settings_dialog.gd:46
+#: settings/settings_dialog.gd:96
 #: settings/settings_dialog.gd:101
-#: settings/settings_dialog.gd:106
+#: settings/settings_dialog.gd:116
 #: settings/settings_dialog.gd:121
 #: settings/settings_dialog.gd:126
 #: settings/settings_dialog.gd:131
 #: settings/settings_dialog.gd:136
-#: settings/settings_dialog.gd:141
-#: settings/settings_dialog.gd:153
+#: settings/settings_dialog.gd:148
+#: settings/settings_dialog.gd:152
 #: settings/settings_dialog.gd:157
-#: settings/settings_dialog.gd:162
-#: settings/settings_dialog.gd:202
-#: settings/settings_dialog.gd:215
-#: settings/settings_dialog.gd:260
+#: settings/settings_dialog.gd:197
+#: settings/settings_dialog.gd:210
+#: settings/settings_dialog.gd:255
+#: settings/settings_dialog.gd:265
 #: settings/settings_dialog.gd:270
 #: settings/settings_dialog.gd:275
-#: settings/settings_dialog.gd:280
-#: settings/settings_dialog.gd:452
-#: settings/settings_dialog.gd:480
+#: settings/settings_dialog.gd:447
+#: settings/settings_dialog.gd:475
+#: settings/settings_dialog.gd:484
 #: settings/settings_dialog.gd:489
 #: settings/settings_dialog.gd:494
 #: settings/settings_dialog.gd:499
-#: settings/settings_dialog.gd:504
-#: settings/settings_dialog.gd:524
+#: settings/settings_dialog.gd:519
+#: settings/settings_dialog.gd:528
 #: settings/settings_dialog.gd:533
 #: settings/settings_dialog.gd:538
 #: settings/settings_dialog.gd:543
 #: settings/settings_dialog.gd:548
 #: settings/settings_dialog.gd:553
 #: settings/settings_dialog.gd:558
-#: settings/settings_dialog.gd:563
 msgid "ON"
 msgstr ""
 
@@ -212841,36 +212841,36 @@ msgstr ""
 #: settings/settings_dialog.gd:28
 #: settings/settings_dialog.gd:37
 #: settings/settings_dialog.gd:46
+#: settings/settings_dialog.gd:96
 #: settings/settings_dialog.gd:101
-#: settings/settings_dialog.gd:106
+#: settings/settings_dialog.gd:116
 #: settings/settings_dialog.gd:121
 #: settings/settings_dialog.gd:126
 #: settings/settings_dialog.gd:131
 #: settings/settings_dialog.gd:136
-#: settings/settings_dialog.gd:141
-#: settings/settings_dialog.gd:153
+#: settings/settings_dialog.gd:148
+#: settings/settings_dialog.gd:152
 #: settings/settings_dialog.gd:157
-#: settings/settings_dialog.gd:162
-#: settings/settings_dialog.gd:202
-#: settings/settings_dialog.gd:215
-#: settings/settings_dialog.gd:260
+#: settings/settings_dialog.gd:197
+#: settings/settings_dialog.gd:210
+#: settings/settings_dialog.gd:255
+#: settings/settings_dialog.gd:265
 #: settings/settings_dialog.gd:270
 #: settings/settings_dialog.gd:275
-#: settings/settings_dialog.gd:280
-#: settings/settings_dialog.gd:452
-#: settings/settings_dialog.gd:480
+#: settings/settings_dialog.gd:447
+#: settings/settings_dialog.gd:475
+#: settings/settings_dialog.gd:484
 #: settings/settings_dialog.gd:489
 #: settings/settings_dialog.gd:494
 #: settings/settings_dialog.gd:499
-#: settings/settings_dialog.gd:504
-#: settings/settings_dialog.gd:524
+#: settings/settings_dialog.gd:519
+#: settings/settings_dialog.gd:528
 #: settings/settings_dialog.gd:533
 #: settings/settings_dialog.gd:538
 #: settings/settings_dialog.gd:543
 #: settings/settings_dialog.gd:548
 #: settings/settings_dialog.gd:553
 #: settings/settings_dialog.gd:558
-#: settings/settings_dialog.gd:563
 #: settings/settings_dialog.tscn
 msgid "OFF"
 msgstr ""
@@ -212928,213 +212928,241 @@ msgstr ""
 msgid "Whether to skip music tracks that may trigger Content ID claims on platforms like YouTube. If you receive a claim, license certificates are available upon request."
 msgstr ""
 
-#: settings/settings_dialog.gd:74
+#: settings/settings_dialog.gd:69
 msgid "The game's language."
 msgstr ""
 
-#: settings/settings_dialog.gd:75
-msgid "English"
+#: settings/settings_dialog.gd:70
+msgid "Upload a locally-authored translation as a new Steam Workshop mod."
 msgstr ""
 
-#: settings/settings_dialog.gd:81
+#: settings/settings_dialog.gd:71
+msgid "Update an existing Steam Workshop mod with a new translation file."
+msgstr ""
+
+#: settings/settings_dialog.gd:76
 msgid "How fast to play gameplay and UI animations."
 msgstr ""
 
-#: settings/settings_dialog.gd:84
+#: settings/settings_dialog.gd:79
 msgid "How long to delay before showing tooltips on hover."
 msgstr ""
 
-#: settings/settings_dialog.gd:87
+#: settings/settings_dialog.gd:82
 msgid "How to scale tooltip text."
 msgstr ""
 
-#: settings/settings_dialog.gd:90
+#: settings/settings_dialog.gd:85
 msgid "How to scale free-flowing UI text."
 msgstr ""
 
-#: settings/settings_dialog.gd:97
+#: settings/settings_dialog.gd:92
 msgid "Which icons to use for essences everywhere in the game."
 msgstr ""
 
-#: settings/settings_dialog.gd:102
+#: settings/settings_dialog.gd:97
 msgid "Whether to show the name above glyph cards."
 msgstr ""
 
-#: settings/settings_dialog.gd:107
+#: settings/settings_dialog.gd:102
 msgid "Whether to show a button in the top right corner that opens the pause menu. The pause menu can always be opened by pressing Escape."
 msgstr ""
 
-#: settings/settings_dialog.gd:109
+#: settings/settings_dialog.gd:104
 msgid "Disabled"
 msgstr ""
 
-#: settings/settings_dialog.gd:111
+#: settings/settings_dialog.gd:106
 msgid "When L1 Held"
 msgstr ""
 
-#: settings/settings_dialog.gd:113
+#: settings/settings_dialog.gd:108
 msgid "When Shift Held"
 msgstr ""
 
-#: settings/settings_dialog.gd:117
+#: settings/settings_dialog.gd:112
 msgid "Whether to zoom key UI elements when hovered. Useful for small screens."
 msgstr ""
 
-#: settings/settings_dialog.gd:122
+#: settings/settings_dialog.gd:117
 msgid "Whether to display settlement borders when selecting the location for a new settlement."
 msgstr ""
 
-#: settings/settings_dialog.gd:127
+#: settings/settings_dialog.gd:122
 msgid "Whether to display the yields gained in the current foray above the goal bar, in addition to the standard expedition-long yields in the top right corner."
 msgstr ""
 
-#: settings/settings_dialog.gd:132
+#: settings/settings_dialog.gd:127
 msgid "Whether to sort yield predictions to show higher yields first when selecting a foray location."
 msgstr ""
 
-#: settings/settings_dialog.gd:137
+#: settings/settings_dialog.gd:132
 msgid "Whether to randomly choose a different roof color for each settlement. When off, all settlements share a standard color."
 msgstr ""
 
-#: settings/settings_dialog.gd:142
+#: settings/settings_dialog.gd:137
 msgid "Whether to show the game version label in the bottom right corner."
 msgstr ""
 
-#: settings/settings_dialog.gd:144
+#: settings/settings_dialog.gd:139
 msgid "Re-enable all previously seen contextual tutorials."
 msgstr ""
 
-#: settings/settings_dialog.gd:154
+#: settings/settings_dialog.gd:149
 msgid "Whether to enable the kanji practice minigame in the Haven. This allows you to practice vocabulary, readings, and example sentences to gain a small number of extra insight points."
 msgstr ""
 
-#: settings/settings_dialog.gd:158
+#: settings/settings_dialog.gd:153
 msgid "Whether to enable the kanji drawing minigame when inscribing glyphs. When this is on, inscribing a glyph requires you to draw it successfully. There are no penalties for failing."
 msgstr ""
 
-#: settings/settings_dialog.gd:165
+#: settings/settings_dialog.gd:160
 msgid "Whether to use the player-drawn kanji as the image on inscribed glyph cards."
 msgstr ""
 
-#: settings/settings_dialog.gd:167
-#: settings/settings_dialog.gd:179
-#: settings/settings_dialog.gd:187
-#: settings/settings_dialog.gd:195
+#: settings/settings_dialog.gd:162
+#: settings/settings_dialog.gd:174
+#: settings/settings_dialog.gd:182
+#: settings/settings_dialog.gd:190
 msgid "Meaning"
 msgstr ""
 
-#: settings/settings_dialog.gd:168
+#: settings/settings_dialog.gd:163
 msgid "くんよみ"
 msgstr ""
 
-#: settings/settings_dialog.gd:169
+#: settings/settings_dialog.gd:164
 msgid "オンヨミ"
 msgstr ""
 
-#: settings/settings_dialog.gd:170
+#: settings/settings_dialog.gd:165
 msgid "Kunyomi"
 msgstr ""
 
-#: settings/settings_dialog.gd:171
+#: settings/settings_dialog.gd:166
 msgid "Onyomi"
 msgstr ""
 
-#: settings/settings_dialog.gd:174
+#: settings/settings_dialog.gd:169
 msgid "Whether to display the English meaning or the most common kunyomi or onyomi reading as the title above glyph cards."
 msgstr ""
 
-#: settings/settings_dialog.gd:176
-#: settings/settings_dialog.gd:184
-#: settings/settings_dialog.gd:192
-#: settings/settings_dialog.gd:207
+#: settings/settings_dialog.gd:171
+#: settings/settings_dialog.gd:179
+#: settings/settings_dialog.gd:187
+#: settings/settings_dialog.gd:202
 msgid "Romaji"
 msgstr ""
 
-#: settings/settings_dialog.gd:177
-#: settings/settings_dialog.gd:185
-#: settings/settings_dialog.gd:193
+#: settings/settings_dialog.gd:172
+#: settings/settings_dialog.gd:180
+#: settings/settings_dialog.gd:188
 msgid "漢字"
 msgstr ""
 
-#: settings/settings_dialog.gd:178
-#: settings/settings_dialog.gd:186
-#: settings/settings_dialog.gd:194
+#: settings/settings_dialog.gd:173
+#: settings/settings_dialog.gd:181
+#: settings/settings_dialog.gd:189
 msgid "ひらがな"
 msgstr ""
 
-#: settings/settings_dialog.gd:182
+#: settings/settings_dialog.gd:177
 msgid "How to display settlement names on the map and in various UIs. If kanji or hiragana are chosen, the translation appears in settlement tooltips."
 msgstr ""
 
-#: settings/settings_dialog.gd:190
+#: settings/settings_dialog.gd:185
 msgid "How to display shard names on the map and in various UIs. If kanji or hiragana are chosen, the translation appears when hovering over the name."
 msgstr ""
 
-#: settings/settings_dialog.gd:198
+#: settings/settings_dialog.gd:193
 msgid "How to display the names of hauntings (yōkai). If kanji or hiragana are chosen, the translation appears in tooltips."
 msgstr ""
 
-#: settings/settings_dialog.gd:203
+#: settings/settings_dialog.gd:198
 msgid "Whether to use kanji names for shards and settlements in shard culture histories."
 msgstr ""
 
-#: settings/settings_dialog.gd:206
+#: settings/settings_dialog.gd:201
 msgid "かな"
 msgstr ""
 
-#: settings/settings_dialog.gd:208
+#: settings/settings_dialog.gd:203
 msgid "かな (Romaji)"
 msgstr ""
 
-#: settings/settings_dialog.gd:211
+#: settings/settings_dialog.gd:206
 msgid "How to display kanji readings and meanings in glyph tooltips everywhere in the game."
 msgstr ""
 
-#: settings/settings_dialog.gd:216
+#: settings/settings_dialog.gd:211
 msgid "Whether to display romaji readings above kanji in the kanji practice minigame in place of furigana."
 msgstr ""
 
+#: settings/settings_dialog.gd:290
 #: settings/settings_dialog.gd:295
-#: settings/settings_dialog.gd:300
 msgid "%.1fx"
 msgstr ""
 
-#: settings/settings_dialog.gd:358
+#: settings/settings_dialog.gd:353
 msgid "0.25x"
 msgstr ""
 
-#: settings/settings_dialog.gd:359
-#: settings/settings_dialog.gd:393
+#: settings/settings_dialog.gd:354
+#: settings/settings_dialog.gd:388
 msgid "0.5x"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
-#: settings/settings_dialog.gd:360
-#: settings/settings_dialog.gd:394
+#: settings/settings_dialog.gd:355
+#: settings/settings_dialog.gd:389
 #: settings/settings_dialog.tscn
 msgid "1x"
 msgstr ""
 
-#: settings/settings_dialog.gd:361
+#: settings/settings_dialog.gd:356
 msgid "1.5x"
 msgstr ""
 
-#: settings/settings_dialog.gd:362
-#: settings/settings_dialog.gd:395
+#: settings/settings_dialog.gd:357
+#: settings/settings_dialog.gd:390
 msgid "2x"
 msgstr ""
 
-#: settings/settings_dialog.gd:363
-#: settings/settings_dialog.gd:396
+#: settings/settings_dialog.gd:358
+#: settings/settings_dialog.gd:391
 msgid "4x"
 msgstr ""
 
-#: settings/settings_dialog.gd:364
+#: settings/settings_dialog.gd:359
 msgid "10x"
 msgstr ""
 
-#: settings/settings_dialog.gd:392
+#: settings/settings_dialog.gd:387
 msgid "0.1x"
+msgstr ""
+
+#: settings/settings_dialog.gd:587
+msgid "Creating..."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: text[]
+#: settings/settings_dialog.gd:590
+#: settings/settings_dialog.tscn
+msgid "Create Translation Mod"
+msgstr ""
+
+#: settings/settings_dialog.gd:609
+msgid "English"
+msgstr ""
+
+#: settings/settings_dialog.gd:648
+msgid "Updating..."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: text[]
+#: settings/settings_dialog.gd:650
+#: settings/settings_dialog.tscn
+msgid "Update Translation Mod..."
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
@@ -213615,6 +213643,11 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
 #: settings/settings_dialog.tscn
 msgid "These Japanese practice features are completely optional."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: title[]
+#: settings/settings_dialog.tscn
+msgid "Open a File"
 msgstr ""
 
 #: shard_types/adventurers/shard_type_adventurers.gd:31
@@ -224556,7 +224589,7 @@ msgid "End Survey"
 msgstr ""
 
 #: stage/stage.gd:901
-msgid "Reshuffle your <term_lower:card_deck> and draw a new starting <term_lower:hand>. Can't be used after a card is played."
+msgid "Reshuffle your <term_lower:card_deck> and draw a new starting <term_lower:hand>. Can't be used after a <term_lower:glyph> is played."
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
