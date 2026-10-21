@@ -161,7 +161,7 @@ func _fade_out() -> void:
 	_fade_tween.play()
 
 	(%LoadingLabelTimer as Timer).start()
-	(%LoadingLabel as Label).visible_characters = (%LoadingLabel as Label).text.length() - 3
+	(%LoadingLabel as Label).visible_characters = (%LoadingLabel as Label).get_total_character_count() - 3
 
 func _fade_in() -> void:
 	(%MouseBlocker as Control).mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -177,7 +177,7 @@ func _fade_in() -> void:
 
 func _on_loading_label_timer_timeout() -> void:
 	var label := %LoadingLabel as Label
-	if label.visible_characters in [-1, label.text.length()]:
-		label.visible_characters = label.text.length() - 3
+	if label.visible_characters in [-1, (%LoadingLabel as Label).get_total_character_count()]:
+		label.visible_characters = (%LoadingLabel as Label).get_total_character_count() - 3
 	else:
 		label.visible_characters += 1
