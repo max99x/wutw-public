@@ -898,7 +898,7 @@ func _on_mulligan_button_pressed() -> void:
 	(%FinishButton as Button).disabled = false
 
 func _make_mulligan_tooltip_text() -> String:
-	return tr('Reshuffle your <term_lower:card_deck> and draw a new starting <term_lower:hand>. Can\'t be used after a card is played.')
+	return tr('Reshuffle your <term_lower:card_deck> and draw a new starting <term_lower:hand>. Can\'t be used after a <term_lower:glyph> is played.')
 
 ## Noob Booster
 
