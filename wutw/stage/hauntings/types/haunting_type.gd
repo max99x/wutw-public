@@ -196,7 +196,7 @@ func get_toal_aspect_slots(run: Run, mode: HauntingTrigger.Mode) -> Array[Aspect
 
 func get_mechanics_description(mode: HauntingTrigger.Mode) -> String:
 	if mechanics_description_override:
-		return mechanics_description_override
+		return tr(mechanics_description_override)
 	else:
 		return tr('When %s, %s.') % [trigger.get_description(mode), effect.get_description(mode)]
 
