@@ -12334,7 +12334,7 @@ msgstr ""
 #: bonuses/bonus.gd:87
 #: cards/deck/card_deck.gd:476
 #: cards/deck/card_deck.gd:507
-#: cards/detail/card_details.gd:175
+#: cards/detail/card_details.gd:174
 #: dialogue/dialogue_display.gd:102
 #: japanese/practice_blanks/blanks_practice.gd:231
 #: japanese/practice_blanks/practice_inspiration_display.gd:73
@@ -13356,6 +13356,27 @@ msgctxt "ABILITY"
 msgid "Continue"
 msgstr ""
 
+#: cards/abilities/card_ability_continue.gd:13
+msgid "<term:fill> a random <term_lower:aspect_slot>"
+msgstr ""
+
+#: cards/abilities/card_ability_continue.gd:15
+msgid "<term:fill> %d random <term_lower:aspect_slot>s"
+msgstr ""
+
+#: cards/abilities/card_ability_continue.gd:16
+msgid " in <term:spot_upgrade>s"
+msgstr ""
+
+#: cards/abilities/card_ability_continue.gd:18
+#: cards/abilities/card_ability_fill.gd:22
+msgid " or <term:task>s"
+msgstr ""
+
+#: cards/abilities/card_ability_continue.gd:19
+msgid " with any filled <term_lower:aspect_slot>s."
+msgstr ""
+
 #: cards/abilities/card_ability_discard.gd:14
 msgid "<term:discard>"
 msgstr ""
@@ -13509,10 +13530,6 @@ msgstr ""
 
 #: cards/abilities/card_ability_fill.gd:20
 msgid "<term:fill> %d random <term_lower:aspect_slot>s in <term:spot_upgrade>s"
-msgstr ""
-
-#: cards/abilities/card_ability_fill.gd:22
-msgid " or <term:task>s"
 msgstr ""
 
 #: cards/abilities/card_ability_fill.gd:48
@@ -14603,10 +14620,12 @@ msgid " - <term:innate>"
 msgstr ""
 
 #: cards/card.gd:387
+#: cards/detail/card_details.gd:102
 msgid "Provides any <term:aspect>"
 msgstr ""
 
 #: cards/card.gd:389
+#: cards/detail/card_details.gd:104
 msgid "Provides %s <term:aspect>"
 msgstr ""
 
@@ -14615,7 +14634,7 @@ msgid "Provides no <term_lower:aspect>s"
 msgstr ""
 
 #: cards/card.gd:399
-#: cards/detail/card_details.gd:119
+#: cards/detail/card_details.gd:118
 msgid "<term:card_ability>s:\n"
 msgstr ""
 
@@ -14906,49 +14925,41 @@ msgid_plural "%d strokes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: cards/detail/card_details.gd:102
-msgid "Provides any"
+#: cards/detail/card_details.gd:106
+msgid "Provides no <term:aspect>s"
 msgstr ""
 
-#: cards/detail/card_details.gd:105
-msgid " <term:aspect>."
-msgstr ""
-
-#: cards/detail/card_details.gd:107
-msgid "Provides no <term:aspect>s."
-msgstr ""
-
-#: cards/detail/card_details.gd:111
+#: cards/detail/card_details.gd:110
 msgid "This is a <term:negative_glyph>."
 msgstr ""
 
-#: cards/detail/card_details.gd:115
+#: cards/detail/card_details.gd:114
 msgid "This <term_lower:glyph> is never offered in randomized rewards."
 msgstr ""
 
-#: cards/detail/card_details.gd:131
+#: cards/detail/card_details.gd:130
 msgid "Tags:\n"
 msgstr ""
 
-#: cards/detail/card_details.gd:142
+#: cards/detail/card_details.gd:141
 msgid ""
 "\n"
 "\n"
 "[b]Vocabulary:[/b]\n"
 msgstr ""
 
-#: cards/detail/card_details.gd:146
+#: cards/detail/card_details.gd:145
 msgid ""
 "\n"
 "[b]Examples:[/b]\n"
 "\n"
 msgstr ""
 
-#: cards/detail/card_details.gd:178
+#: cards/detail/card_details.gd:177
 msgid "[/center]"
 msgstr ""
 
-#: cards/detail/card_details.gd:180
+#: cards/detail/card_details.gd:179
 msgid ""
 "\n"
 "Game strokes often don't match traditional ones."
@@ -204637,6 +204648,121 @@ msgstr ""
 
 #: events/system/outcomes/choose_card/event_outcome_choose_card.gd:25
 msgid "Choose a <term_lower:glyph>s from: "
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:29
+msgctxt "CARD_TAG"
+msgid "a plant"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:30
+msgctxt "CARD_TAG"
+msgid "an animal"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:31
+msgctxt "CARD_TAG"
+msgid "a mineral"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:32
+msgctxt "CARD_TAG"
+msgid "a number"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:33
+msgctxt "CARD_TAG"
+msgid "a person"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:34
+msgctxt "CARD_TAG"
+msgid "an emotion"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:35
+msgctxt "CARD_TAG"
+msgid "a body"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:36
+msgctxt "CARD_TAG"
+msgid "an action"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:37
+msgctxt "CARD_TAG"
+msgid "a time"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:38
+msgctxt "CARD_TAG"
+msgid "a tool"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:39
+msgctxt "CARD_TAG"
+msgid "an art"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:40
+msgctxt "CARD_TAG"
+msgid "a scholarship"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:41
+msgctxt "CARD_TAG"
+msgid "a commerce"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:42
+msgctxt "CARD_TAG"
+msgid "a labor"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:43
+msgctxt "CARD_TAG"
+msgid "a place"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:44
+msgctxt "CARD_TAG"
+msgid "a spiritual"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:45
+msgctxt "CARD_TAG"
+msgid "a food"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:46
+msgctxt "CARD_TAG"
+msgid "an element"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:47
+msgctxt "CARD_TAG"
+msgid "a color"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:48
+msgctxt "CARD_TAG"
+msgid "a social"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:49
+msgctxt "CARD_TAG"
+msgid "a weather"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:50
+msgctxt "CARD_TAG"
+msgid "a landscape"
+msgstr ""
+
+#: events/system/outcomes/choose_card/event_outcome_choose_card.gd:51
+msgctxt "CARD_TAG"
+msgid "a"
 msgstr ""
 
 #: events/system/outcomes/choose_card/event_outcome_choose_card.gd:53
