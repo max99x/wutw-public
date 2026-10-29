@@ -177,10 +177,14 @@ func modify_inspiration(delta: int, reason: InspirationChangeReason) -> int:
 		# Can't revive through this.
 		return 0
 
+	var current_inspiration := get_var(RunVars.Var.CURRENT_INSPIRATION)
 	get_vars().modify_base_value(RunVars.Var.CURRENT_INSPIRATION, delta)
 	if delta > 0:
 		GlobalAudioSystem.play(AK.EVENTS.UI_GAMEPLAY_INSPIRATION_GAIN)
 		signals.inspiration_gained.emit(delta, reason)
+		var excess := (current_inspiration + delta) - get_var(RunVars.Var.CURRENT_INSPIRATION)
+		if excess > 0:
+			signals.inspiration_excess_gained.emit(excess, reason)
 	elif delta < 0:
 		signals.inspiration_lost.emit(-delta, reason)
 		GlobalAudioSystem.play(AK.EVENTS.UI_GAMEPLAY_INSPIRATION_LOST)

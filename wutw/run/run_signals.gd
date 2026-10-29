@@ -21,6 +21,7 @@ signal pre_inspiration_gained(amount: int, reason: Run.InspirationChangeReason)
 signal inspiration_gained(amount: int, reason: Run.InspirationChangeReason)
 signal inspiration_lost(amount: int, reason: Run.InspirationChangeReason)
 signal inspiration_exhausted(reason: Run.InspirationChangeReason)
+signal inspiration_excess_gained(amount: int, reason: Run.InspirationChangeReason)
 signal card_choice_offered
 signal card_reward_skipped
 signal card_choice_finished

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Relic_StrangeStatue" format=3 uid="uid://doee8be08sljp"]
+
+[ext_resource type="Script" uid="uid://b2nsbrl738w0j" path="res://relics/common/strange_statue/relic_strange_statue.gd" id="1_8b4rf"]
+[ext_resource type="Texture2D" uid="uid://c285yg0fhjw1r" path="res://relics/common/strange_statue/strange_statue.png" id="1_28ynf"]
+[ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="2_28ynf"]
+[ext_resource type="Resource" uid="uid://5q63svcbmx37" path="res://glossary/categories/termcategory_relic.tres" id="3_ir4vm"]
+
+[resource]
+script = ExtResource("1_8b4rf")
+relic_id = "strange_statue"
+default_name = "Strange Statuette"
+default_description = "Whenever you restore <term:inspiration> beyond the maximum, gain as many points of a random unsatisfied <term_lower:stage_goal>."
+flavor_text = "Other than the ears, this deity looks unrecognizable."
+icon = ExtResource("1_28ynf")
+default_starting_state = 1
+term_categories = Array[ExtResource("2_28ynf")]([ExtResource("3_ir4vm")])
+metadata/_custom_type_script = "uid://b2nsbrl738w0j"
