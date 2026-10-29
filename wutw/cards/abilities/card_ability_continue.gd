@@ -10,13 +10,13 @@ func get_ability_name(_markedup: bool = false, _short: bool = false) -> String:
 func get_ability_tooltip(_card: Card) -> String:
 	var result: String
 	if count == 1:
-		result = '<term:fill> a random <term_lower:aspect_slot>'
+		result = tr('<term:fill> a random <term_lower:aspect_slot>')
 	else:
-		result = '<term:fill> %d random <term_lower:aspect_slot>s' % count
-	result += ' in <term:spot_upgrade>s'
+		result = tr('<term:fill> %d random <term_lower:aspect_slot>s') % count
+	result += tr(' in <term:spot_upgrade>s')
 	if Skill.get_skill_var(Skill.Var.SURVEYS):
-		result += ' or <term:task>s'
-	return result + ' with any filled <term_lower:aspect_slot>s.'
+		result += tr(' or <term:task>s')
+	return result + tr(' with any filled <term_lower:aspect_slot>s.')
 
 func get_term() -> Term:
 	return load('res://cards/abilities/terms/term_card_ability_continue.tres')
