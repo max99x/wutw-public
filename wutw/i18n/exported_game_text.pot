@@ -218885,16 +218885,16 @@ msgstr ""
 msgid " in the associated <term_lower:spot> (during <term_lower:foray>s) or <term_lower:settlement> (during <term_lower:harmonization>)"
 msgstr ""
 
-#: stage/hauntings/triggers/haunting_trigger_bonus_gained.gd:24
-msgid "[img width=1.5em height=1.5em]%s[/img] Gained"
-msgstr ""
-
 #: stage/hauntings/triggers/haunting_trigger_bonus_gained.gd:26
-msgid "<term:bonus> Gained"
+msgid "<term:bonus>"
 msgstr ""
 
 #: stage/hauntings/triggers/haunting_trigger_bonus_gained.gd:28
-msgid " Here"
+msgid "%s Gained"
+msgstr ""
+
+#: stage/hauntings/triggers/haunting_trigger_bonus_gained.gd:30
+msgid "%s Gained Here"
 msgstr ""
 
 #: stage/hauntings/triggers/haunting_trigger_bonus_lost.gd:6

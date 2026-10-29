@@ -21,12 +21,13 @@ func get_description(mode: HauntingTrigger.Mode) -> String:
 func get_short_description(_mode: HauntingTrigger.Mode) -> String:
 	var text: String
 	if bonus_type:
-		text = tr('[img width=1.5em height=1.5em]%s[/img] Gained') % bonus_type.icon.resource_path
+		text = '[img width=1.5em height=1.5em]%s[/img]' % bonus_type.icon.resource_path
 	else:
-		text = tr('<term:bonus> Gained')
-	if not any_spot:
-		text += tr(' Here')
-	return text
+		text = '<term:bonus>'
+	if any_spot:
+		return tr('%s Gained') % text
+	else:
+		return tr('%s Gained Here') % text
 
 func setup(spot: Spot, _settlement: Settlement) -> void:
 	var run := Utils.get_active_run()
