@@ -1,0 +1,167 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://bfg4wbqfanlkj"]
+
+[ext_resource type="Resource" uid="uid://55xk3aofgc7" path="res://stage/spots/mountain/upgrade_mountain_3_onsen_retreat.tres" id="1_llvdu"]
+[ext_resource type="Script" uid="uid://c50bhh4sr0g8o" path="res://events/system/requirements/event_requirement_main_quest_progress.gd" id="2_gd1r2"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="3_r6o1p"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="4_5spi0"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_nneit"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_u77yp"]
+[ext_resource type="Resource" uid="uid://217aj45ippt7" path="res://cards/tier2/card_cleanse.tres" id="7_30o3b"]
+[ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="8_qoiu0"]
+[ext_resource type="Resource" uid="uid://cxwl0l6i8dpm6" path="res://relics/common/talisman_herbal_scent_bag/relic_talisman_herbal_scent_bag.tres" id="9_jwwpa"]
+[ext_resource type="Script" uid="uid://bbr46symu7hfi" path="res://events/system/requirements/event_requirement_has_relic.gd" id="10_m5gp4"]
+[ext_resource type="Script" uid="uid://us3vhbuc1tdq" path="res://events/system/outcomes/all/event_outcome_all.gd" id="11_o7e6k"]
+[ext_resource type="Script" uid="uid://djcv8lbjfjg6e" path="res://events/system/outcomes/event_outcome.gd" id="12_66r7g"]
+[ext_resource type="Resource" uid="uid://i3u2ea1bcyc8" path="res://relics/common/yuzu/relic_yuzu.tres" id="13_awif1"]
+[ext_resource type="Script" uid="uid://c72da5id7avtu" path="res://events/system/outcomes/add_relic/event_outcome_add_relic.gd" id="14_bwti5"]
+[ext_resource type="Resource" uid="uid://binu8trinnt0j" path="res://cards/tier2/card_hotwater.tres" id="15_01eer"]
+[ext_resource type="Resource" uid="uid://c3wgj8qxnphek" path="res://relics/common/talisman_seed_pouch/relic_talisman_seed_pouch.tres" id="16_pws4n"]
+[ext_resource type="Resource" uid="uid://doinp0ukn6fqo" path="res://cards/tier2/card_steam.tres" id="17_ixxgv"]
+[ext_resource type="Resource" uid="uid://cwt7x3fd6ms86" path="res://relics/common/talisman_charcoal_bead/relic_talisman_charcoal_bead.tres" id="18_1w80c"]
+[ext_resource type="Resource" uid="uid://dmfd5uheymt74" path="res://cards/tier6/card_drunk.tres" id="19_h0bub"]
+[ext_resource type="Resource" uid="uid://c7r7c533wb6gm" path="res://cards/tier3/card_scroll.tres" id="19_r6o1p"]
+[ext_resource type="Resource" uid="uid://lgy2st27yh5v" path="res://relics/common/talisman_copper_ring/relic_talisman_copper_ring.tres" id="20_5spi0"]
+[ext_resource type="Resource" uid="uid://bmgqeem7cnoar" path="res://cards/tier3/card_clamor.tres" id="20_fq7fh"]
+
+[sub_resource type="Resource" id="Resource_4t4n7"]
+script = ExtResource("2_gd1r2")
+min_progress = 320
+max_progress = -1
+
+[sub_resource type="Resource" id="Resource_ygity"]
+script = ExtResource("5_nneit")
+_texture_path = "res://events/generic/onsen/onsen.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_ixqgj"]
+script = ExtResource("8_qoiu0")
+card_type = ExtResource("7_30o3b")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_024be"]
+script = ExtResource("10_m5gp4")
+relic = ExtResource("9_jwwpa")
+
+[sub_resource type="Resource" id="Resource_bekio"]
+script = ExtResource("6_u77yp")
+markedup_text = "Monks from the Order of the Wilds are visiting."
+requirement = SubResource("Resource_024be")
+outcome = SubResource("Resource_ixqgj")
+markedup_result_text = "The monks and nuns of the Wilds arrive, their companion falcons circling over their heads. The head bath-keeper leads them to the warm pools, apologizing profusely for the recent increase in snails clinging to the edges of the pool.
+
+On their way out, one of the monks takes the bath-keeper aside. He explains that the snails are to be kept undisturbed. \"They lend their service to keep these pools clean,\" he says. \"They have come because you were in need of their help.\""
+
+[sub_resource type="Resource" id="Resource_a04yg"]
+script = ExtResource("14_bwti5")
+relic = ExtResource("13_awif1")
+metadata/_custom_type_script = "uid://c72da5id7avtu"
+
+[sub_resource type="Resource" id="Resource_bpsye"]
+script = ExtResource("8_qoiu0")
+card_type = ExtResource("15_01eer")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_xdj3e"]
+script = ExtResource("11_o7e6k")
+suboutcomes = Array[ExtResource("12_66r7g")]([SubResource("Resource_a04yg"), SubResource("Resource_bpsye")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_nwgvh"]
+script = ExtResource("10_m5gp4")
+relic = ExtResource("16_pws4n")
+
+[sub_resource type="Resource" id="Resource_u3064"]
+script = ExtResource("6_u77yp")
+markedup_text = "Monks from the Order of Growth are visiting."
+requirement = SubResource("Resource_nwgvh")
+outcome = SubResource("Resource_xdj3e")
+markedup_result_text = "The bath-keeper leads the monks from the Order of Growth to the baths while boasting about the cedars surrounding the pool.
+
+When he returns later to check on the visitors, he finds the bath filled with bright yellow yuzu fruits floating in the hot water.
+
+\"These fruits offer much beyond their aroma,\" one of the monks explains. \"They will relax the sore muscles of the elderly, and the tireless workers who visit your retreat.\""
+
+[sub_resource type="Resource" id="Resource_xdn5a"]
+script = ExtResource("8_qoiu0")
+card_type = ExtResource("17_ixxgv")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_51axc"]
+script = ExtResource("10_m5gp4")
+relic = ExtResource("18_1w80c")
+
+[sub_resource type="Resource" id="Resource_52vmw"]
+script = ExtResource("6_u77yp")
+markedup_text = "Monks from the Ember Order are visiting."
+requirement = SubResource("Resource_51axc")
+outcome = SubResource("Resource_xdn5a")
+markedup_result_text = "A group of monks and nuns from the Ember Order arrive at the hot springs, faces stern and eyes gleaming.
+
+They soak in the springs until past dark.
+
+One of the nuns approaches the bath-keeper on her way out and points to a rocky outcropping several paces from the main spring. “We saw steam rising from that crack, and the ground was warm,\" she says. \"Dig there, and you will have a bath hotter than the ones at our monastery.\""
+
+[sub_resource type="Resource" id="Resource_lkjs2"]
+script = ExtResource("8_qoiu0")
+card_type = ExtResource("19_r6o1p")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_1m4gs"]
+script = ExtResource("10_m5gp4")
+relic = ExtResource("20_5spi0")
+metadata/_custom_type_script = "uid://bbr46symu7hfi"
+
+[sub_resource type="Resource" id="Resource_k1ms5"]
+script = ExtResource("6_u77yp")
+markedup_text = "Monks from the Shattered Order are visiting."
+requirement = SubResource("Resource_1m4gs")
+outcome = SubResource("Resource_lkjs2")
+markedup_result_text = "A group from the Shattered Order arrives. Their orange robes are threadbare, but they all smile serenely.
+
+When they emerge in the afternoon, one monk approaches the bath-keeper with a blank scroll. \"Let your guests fill their names in this scroll, along with their home shard,\" he says. \"A testament of how your service links our communities... And maybe it'll save them from the next Shattering,\" he adds with a wink."
+metadata/_custom_type_script = "uid://ch6bcu3nqxr1j"
+
+[sub_resource type="Resource" id="Resource_jbl5p"]
+script = ExtResource("8_qoiu0")
+card_type = ExtResource("19_h0bub")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_yj0vi"]
+script = ExtResource("8_qoiu0")
+card_type = ExtResource("20_fq7fh")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_65ovt"]
+script = ExtResource("11_o7e6k")
+suboutcomes = Array[ExtResource("12_66r7g")]([SubResource("Resource_jbl5p"), SubResource("Resource_yj0vi")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_wlgbr"]
+script = ExtResource("6_u77yp")
+markedup_text = "Actors from the Dragonfly Troupe are visiting."
+outcome = SubResource("Resource_65ovt")
+markedup_result_text = "A group of actors from the famous Dragonfly troupe arrives at the baths, making enough racket to echo all through the surrounding valleys.
+
+Halfway through their soak, they decide to put on an impromptu show for the other guests.
+
+They spend the rest of the day running around, yelling jokes, and playing on their biwa lutes, mostly to the mild annoyance and bemusement of their audience."
+
+[sub_resource type="Resource" id="Resource_i8dwd"]
+script = ExtResource("4_5spi0")
+markedup_text = "The onsen retreat has quickly gained popularity among locals and visitors alike.
+
+A cluster of wooden buildings has sprung up around the hot pools. They not only house the bath attendants, but also serve as lodges for guests. There's even a dedicated dining hall. A head bath-keeper now oversees the little community.
+
+On this misty morning the onsen is receiving an unusual group of guests."
+background_image = SubResource("Resource_ygity")
+choices = Array[ExtResource("6_u77yp")]([SubResource("Resource_bekio"), SubResource("Resource_u3064"), SubResource("Resource_52vmw"), SubResource("Resource_k1ms5")])
+exit_choice = SubResource("Resource_wlgbr")
+
+[resource]
+script = ExtResource("3_r6o1p")
+default_spot_upgrade = ExtResource("1_llvdu")
+event_id = "onsen"
+event_name = "The Onsen Visit"
+requirement = SubResource("Resource_4t4n7")
+steps = Array[ExtResource("4_5spi0")]([SubResource("Resource_i8dwd")])
+categories = Array[int]([3])
