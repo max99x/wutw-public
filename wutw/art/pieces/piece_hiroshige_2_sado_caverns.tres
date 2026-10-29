@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://bxaxgm8bkrdbh"]
+
+[ext_resource type="Resource" uid="uid://f3fpud3epydl" path="res://art/artists/artist_hiroshige_2.tres" id="1_7wr1u"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_hdjty"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_o2hbl"]
+[ext_resource type="Resource" uid="uid://fana5rgfkrls" path="res://art/series/series_hiroshige_2_100_views.tres" id="4_7wr1u"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="5_yil0d"]
+[ext_resource type="Resource" uid="uid://dyx8q8iako05e" path="res://art/styles/style_meisho.tres" id="6_v8mm3"]
+
+[sub_resource type="Resource" id="Resource_ihp2r"]
+script = ExtResource("2_hdjty")
+_texture_path = "uid://d4akfpcwivt1x"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_bcsnl"]
+script = ExtResource("2_hdjty")
+_texture_path = "uid://clwdshpavc8ci"
+_is_horizontal = false
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_o2hbl")
+original_image = SubResource("Resource_bcsnl")
+piece_name = "Caverns of the Gold Mine on Sado Island"
+series = ExtResource("4_7wr1u")
+artist = ExtResource("1_7wr1u")
+styles = Array[ExtResource("5_yil0d")]([ExtResource("6_v8mm3")])
+actual_start_year = 1859
+edits_description = "The people were edited out and the image was recolored."
+final_image_tex = SubResource("Resource_ihp2r")
+province = 45
+blurb = "Depicts miners descending into a mine by torchlight.
+
+The mines on Sado Island depicted here were founded around 1600 and were the primary source of gold in Japan for centuries, only closing in 1989."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"

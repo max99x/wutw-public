@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c50bhh4sr0g8o" path="res://events/system/requirements/event_requirement_main_quest_progress.gd" id="2_gd1r2"]
 [ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="3_r6o1p"]
 [ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="4_5spi0"]
+[ext_resource type="Resource" uid="uid://bnqhi5geivj05" path="res://art/pieces/piece_hasui_arifuku_springs.tres" id="5_5spi0"]
 [ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_nneit"]
 [ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_u77yp"]
 [ext_resource type="Resource" uid="uid://217aj45ippt7" path="res://cards/tier2/card_cleanse.tres" id="7_30o3b"]
@@ -154,6 +155,7 @@ A cluster of wooden buildings has sprung up around the hot pools. They not only 
 
 On this misty morning the onsen is receiving an unusual group of guests."
 background_image = SubResource("Resource_ygity")
+background_credit = ExtResource("5_5spi0")
 choices = Array[ExtResource("6_u77yp")]([SubResource("Resource_bekio"), SubResource("Resource_u3064"), SubResource("Resource_52vmw"), SubResource("Resource_k1ms5")])
 exit_choice = SubResource("Resource_wlgbr")
 

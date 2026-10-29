@@ -3,6 +3,7 @@
 [ext_resource type="Resource" uid="uid://dd7bt4u41vp0c" path="res://stage/spots/mountain/upgrade_mountain_2_ice_caves.tres" id="1_lp2ub"]
 [ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="2_q1o0q"]
 [ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="3_g3i8v"]
+[ext_resource type="Resource" uid="uid://bxaxgm8bkrdbh" path="res://art/pieces/piece_hiroshige_2_sado_caverns.tres" id="4_q1o0q"]
 [ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="4_q7sd1"]
 [ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="5_8wwhx"]
 [ext_resource type="Resource" uid="uid://cu5yd7ye21fhu" path="res://cards/tier6/card_flood.tres" id="6_kq2ul"]
@@ -108,6 +109,7 @@ The settlers cut away the frozen treasure piece by piece, filling the cavern wit
 
 It wasn't long, however, before the ice ran out. The only remaining wall deep in the cave hides a raging waterfall."
 background_image = SubResource("Resource_kl0gs")
+background_credit = ExtResource("4_q1o0q")
 choices = Array[ExtResource("5_8wwhx")]([SubResource("Resource_n3lb7"), SubResource("Resource_0gr1a"), SubResource("Resource_4p6fn")])
 exit_choice = SubResource("Resource_ybifv")
 

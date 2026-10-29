@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://bnqhi5geivj05"]
+
+[ext_resource type="Resource" uid="uid://ct3bagl44ln6h" path="res://art/artists/artist_hasui.tres" id="1_gobk5"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_klfju"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_0e0rt"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="4_ykaxk"]
+[ext_resource type="Resource" uid="uid://qykm4cyua7ra" path="res://art/styles/style_shin_hanga.tres" id="5_1u3l4"]
+[ext_resource type="Resource" uid="uid://dyx8q8iako05e" path="res://art/styles/style_meisho.tres" id="6_8oxi2"]
+
+[sub_resource type="Resource" id="Resource_cmiqs"]
+script = ExtResource("2_klfju")
+_texture_path = "uid://in2nrdboc4kt"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_3vcrr"]
+script = ExtResource("2_klfju")
+_texture_path = "uid://deti6pidkettr"
+_is_horizontal = false
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_0e0rt")
+original_image = SubResource("Resource_3vcrr")
+piece_name = "Arifuku Hot Springs in Iwami"
+artist = ExtResource("1_gobk5")
+styles = Array[ExtResource("4_ykaxk")]([ExtResource("5_1u3l4"), ExtResource("6_8oxi2")])
+actual_start_year = 1924
+final_image_tex = SubResource("Resource_cmiqs")
+province = 27
+blurb = "Depicts a narrow street at the Arifuku Hot Springs near present-day Gotsu City, Shimane Prefecture.
+
+The hot springs in this small village have been a tourist attraction for over a thousand years, and still operate today."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"
