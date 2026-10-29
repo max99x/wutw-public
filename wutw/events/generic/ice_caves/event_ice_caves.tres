@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://q3lcbaodr0v"]
+
+[ext_resource type="Resource" uid="uid://dd7bt4u41vp0c" path="res://stage/spots/mountain/upgrade_mountain_2_ice_caves.tres" id="1_lp2ub"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="2_q1o0q"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="3_g3i8v"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="4_q7sd1"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="5_8wwhx"]
+[ext_resource type="Resource" uid="uid://cu5yd7ye21fhu" path="res://cards/tier6/card_flood.tres" id="6_kq2ul"]
+[ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="7_cyhpv"]
+[ext_resource type="Resource" uid="uid://begvnkwoyu3nf" path="res://aspects/types/craft/aspect_craft.tres" id="8_h5dmg"]
+[ext_resource type="Script" uid="uid://cjdop1iab2efw" path="res://events/system/requirements/event_requirement_num_aspects.gd" id="9_ywmaa"]
+[ext_resource type="Resource" uid="uid://bvf0fdy10l400" path="res://bonuses/types/bonus_productivity.tres" id="10_cavpa"]
+[ext_resource type="Script" uid="uid://dkas1jvkeluf4" path="res://events/system/outcomes/bonus/event_outcome_bonus.gd" id="11_su3v8"]
+[ext_resource type="Resource" uid="uid://bvftq8aivni7l" path="res://aspects/types/stability/aspect_stability.tres" id="12_totk8"]
+[ext_resource type="Resource" uid="uid://doee8be08sljp" path="res://relics/common/strange_statue/relic_strange_statue.tres" id="13_gdomx"]
+[ext_resource type="Script" uid="uid://c72da5id7avtu" path="res://events/system/outcomes/add_relic/event_outcome_add_relic.gd" id="14_1wf2o"]
+[ext_resource type="Resource" uid="uid://j5k23kvamui4" path="res://bonuses/types/bonus_adventure.tres" id="15_k1pc0"]
+[ext_resource type="Script" uid="uid://dfaio0ey0wbra" path="res://events/system/requirements/event_requirement_run_bonus.gd" id="16_gujvp"]
+[ext_resource type="Resource" uid="uid://c6itkj7qwdavt" path="res://bonuses/types/bonus_harmony.tres" id="17_yhrae"]
+
+[sub_resource type="Resource" id="Resource_kl0gs"]
+script = ExtResource("4_q7sd1")
+_texture_path = "res://events/generic/ice_caves/ice_caves.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_trtbi"]
+script = ExtResource("7_cyhpv")
+card_type = ExtResource("6_kq2ul")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_0b2jx"]
+script = ExtResource("9_ywmaa")
+aspect_type = ExtResource("8_h5dmg")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_n3lb7"]
+script = ExtResource("5_8wwhx")
+markedup_text = "Dig into the waterfall."
+requirement = SubResource("Resource_0b2jx")
+outcome = SubResource("Resource_trtbi")
+markedup_result_text = "The settlers chisel away at the frozen falls, ignoring the cracking sound coming from the ice.
+
+They have only a moment to rush out as the wall suddenly shatters and freezing water begins to fill the chambers."
+
+[sub_resource type="Resource" id="Resource_0eiya"]
+script = ExtResource("11_su3v8")
+bonus_type = ExtResource("10_cavpa")
+amount = 15
+extra_per_season = 15
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_4sd6d"]
+script = ExtResource("9_ywmaa")
+aspect_type = ExtResource("12_totk8")
+min_count = 4
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_0gr1a"]
+script = ExtResource("5_8wwhx")
+markedup_text = "Cut little holes to let water escape and refreeze."
+requirement = SubResource("Resource_4sd6d")
+outcome = SubResource("Resource_0eiya")
+markedup_result_text = "The settlers carefully crack tiny holes in the wall to let a thin stream of water escape the falls.
+
+The settlers plug the hole once the water fills half of the chamber, letting it freeze over before extracting the newly formed ice and repeating the process. The harvest is humble, but it's safe, and it won't run out anytime soon."
+
+[sub_resource type="Resource" id="Resource_d174p"]
+script = ExtResource("14_1wf2o")
+relic = ExtResource("13_gdomx")
+metadata/_custom_type_script = "uid://c72da5id7avtu"
+
+[sub_resource type="Resource" id="Resource_tfvaq"]
+script = ExtResource("16_gujvp")
+bonus_type = ExtResource("15_k1pc0")
+min_count = 60
+max_count = -1
+extra_per_season = 40
+
+[sub_resource type="Resource" id="Resource_4p6fn"]
+script = ExtResource("5_8wwhx")
+markedup_text = "Search for the waterfall's source. "
+requirement = SubResource("Resource_tfvaq")
+outcome = SubResource("Resource_d174p")
+markedup_result_text = "Curious about where the stream feeding the falls originates, the settlers climb deeper into the cave, crawling through tiny, freezing crevices and climbing up slippery shafts until they reach a staircase cut into the rock.
+
+It leads to a small chamber with several statuettes standing in small alcoves. The origin of the falls remains a mystery, but perhaps this discovery is even more illuminating."
+
+[sub_resource type="Resource" id="Resource_a6ufw"]
+script = ExtResource("11_su3v8")
+bonus_type = ExtResource("17_yhrae")
+amount = 10
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_ybifv"]
+script = ExtResource("5_8wwhx")
+markedup_text = "Leave the waterfall be."
+outcome = SubResource("Resource_a6ufw")
+markedup_result_text = "The settlers leave the waterfall alone, afraid of flooding the whole cave system.
+
+Now settlers store their food within the caverns, rather than harvesting ice for the purpose."
+
+[sub_resource type="Resource" id="Resource_vk82q"]
+script = ExtResource("3_g3i8v")
+markedup_text = "When the first houses were still being raised in this settlement, surveyors found frozen caves with smooth, glassy walls, full of ice stalagmites. Soon, huge chunks of ice were cut and hauled back to the town for preserving food.
+
+The settlers cut away the frozen treasure piece by piece, filling the cavern with a maze of wooden platforms and staircases.
+
+It wasn't long, however, before the ice ran out. The only remaining wall deep in the cave hides a raging waterfall."
+background_image = SubResource("Resource_kl0gs")
+choices = Array[ExtResource("5_8wwhx")]([SubResource("Resource_n3lb7"), SubResource("Resource_0gr1a"), SubResource("Resource_4p6fn")])
+exit_choice = SubResource("Resource_ybifv")
+
+[resource]
+script = ExtResource("2_q1o0q")
+default_spot_upgrade = ExtResource("1_lp2ub")
+event_id = "ice_caves"
+event_name = "The Ice Harvest"
+steps = Array[ExtResource("3_g3i8v")]([SubResource("Resource_vk82q")])
+categories = Array[int]([3])
