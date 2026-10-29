@@ -1,0 +1,180 @@
+[gd_resource type="Resource" script_class="CardType" format=3 uid="uid://doinp0ukn6fqo"]
+
+[ext_resource type="Script" uid="uid://b56kytec5oqcb" path="res://cards/abilities/card_ability.gd" id="1_igeim"]
+[ext_resource type="Script" uid="uid://d0lfepah0gx0u" path="res://cards/abilities/card_ability_exhaust.gd" id="3_rxro2"]
+[ext_resource type="Script" uid="uid://dsf68mqjn7ufp" path="res://cards/abilities/card_ability_expand.gd" id="4_ppxvu"]
+[ext_resource type="Script" uid="uid://xc73x4t7ckxm" path="res://japanese/example_sentence.gd" id="5_5rpom"]
+[ext_resource type="Script" uid="uid://bl2eelwkj800o" path="res://japanese/japanese_token.gd" id="6_2ocq4"]
+[ext_resource type="Script" uid="uid://b6rw4ldrj6wch" path="res://japanese/vocab.gd" id="7_ikh16"]
+[ext_resource type="Script" uid="uid://du4k150pcdjs6" path="res://japanese/kanji_shape.gd" id="8_pht3b"]
+[ext_resource type="Script" uid="uid://dc15txdqjanlf" path="res://japanese/stroke_shape.gd" id="9_jo46p"]
+[ext_resource type="Script" uid="uid://gay6daqawghm" path="res://cards/card_type.gd" id="10_d7rvy"]
+[ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="11_ht8er"]
+[ext_resource type="Resource" uid="uid://d1k7vakhjcq5g" path="res://glossary/categories/termcategory_card.tres" id="12_kygij"]
+
+[sub_resource type="Resource" id="Resource_ci6oc"]
+script = ExtResource("4_ppxvu")
+count = 3
+metadata/_custom_type_script = "uid://dsf68mqjn7ufp"
+
+[sub_resource type="Resource" id="Resource_5fokr"]
+script = ExtResource("3_rxro2")
+metadata/_custom_type_script = "uid://d0lfepah0gx0u"
+
+[sub_resource type="Resource" id="Resource_le2qq"]
+script = ExtResource("7_ikh16")
+japanese = "汽車"
+readings = Array[String](["きしゃ"])
+meanings = Array[String](["steam locomotive", "steam train", "(long-distance) train", "non-electric train", "diesel train"])
+jlpt_level = 4
+
+[sub_resource type="Resource" id="Resource_8od11"]
+script = ExtResource("6_2ocq4")
+raw_text = "汽車"
+vocab = SubResource("Resource_le2qq")
+reading = "きしゃ"
+
+[sub_resource type="Resource" id="Resource_vbtpd"]
+script = ExtResource("6_2ocq4")
+raw_text = "の"
+reading = "の"
+
+[sub_resource type="Resource" id="Resource_4mmx4"]
+script = ExtResource("7_ikh16")
+japanese = "汽笛"
+readings = Array[String](["きてき"])
+meanings = Array[String](["steam whistle"])
+
+[sub_resource type="Resource" id="Resource_6mkir"]
+script = ExtResource("6_2ocq4")
+raw_text = "汽笛"
+vocab = SubResource("Resource_4mmx4")
+reading = "きてき"
+
+[sub_resource type="Resource" id="Resource_fch74"]
+script = ExtResource("6_2ocq4")
+raw_text = "で"
+reading = "で"
+
+[sub_resource type="Resource" id="Resource_nv4rs"]
+script = ExtResource("7_ikh16")
+japanese = "夜明け"
+readings = Array[String](["よあけ"])
+meanings = Array[String](["dawn", "daybreak"])
+jlpt_level = 3
+
+[sub_resource type="Resource" id="Resource_kc0xb"]
+script = ExtResource("6_2ocq4")
+raw_text = "夜明け"
+vocab = SubResource("Resource_nv4rs")
+reading = "よあけ"
+
+[sub_resource type="Resource" id="Resource_syymx"]
+script = ExtResource("6_2ocq4")
+raw_text = "に"
+reading = "に"
+
+[sub_resource type="Resource" id="Resource_hi37o"]
+script = ExtResource("7_ikh16")
+japanese = "目"
+readings = Array[String](["め"])
+meanings = Array[String](["eye", "eyeball", "eyesight", "sight", "vision", "look", "stare", "gaze", "glance", "notice", "attention", "observation", "eyes (of the world, public, etc.)", "an experience", "viewpoint", "discrimination", "discernment", "judgement", "eye (e.g. for quality)", "(an) appearance", "chance (of success)", "possibility (of a good result)", "spacing (between crossed strands of a net, mesh, etc.)", "opening", "stitch", "texture", "weave", "grain (of wood, paper)", "eye (of a storm, needle, etc.)", "intersection (on a go board)", "square (on a chessboard)", "dot (on a dice)", "pip", "rolled number", "graduation", "division (of a scale)", "tooth (of a saw, comb, etc.)", "ordinal number suffix", "somewhat", "-ish", "point (e.g. of change)"])
+jlpt_level = 5
+
+[sub_resource type="Resource" id="Resource_n88yk"]
+script = ExtResource("6_2ocq4")
+raw_text = "目"
+vocab = SubResource("Resource_hi37o")
+reading = "め"
+
+[sub_resource type="Resource" id="Resource_7wf7p"]
+script = ExtResource("6_2ocq4")
+raw_text = "を"
+reading = "を"
+
+[sub_resource type="Resource" id="Resource_luj4t"]
+script = ExtResource("7_ikh16")
+japanese = "覚ます"
+readings = Array[String](["さます"])
+meanings = Array[String](["to awaken", "to arouse from sleep", "to bring to one's senses", "to disabuse (someone of)", "to sober up"])
+jlpt_level = 3
+
+[sub_resource type="Resource" id="Resource_ppgq0"]
+script = ExtResource("6_2ocq4")
+raw_text = "覚まさ"
+vocab = SubResource("Resource_luj4t")
+reading = "さまさ"
+
+[sub_resource type="Resource" id="Resource_xl64x"]
+script = ExtResource("6_2ocq4")
+raw_text = "れ"
+reading = "れ"
+
+[sub_resource type="Resource" id="Resource_j0n20"]
+script = ExtResource("6_2ocq4")
+raw_text = "た"
+reading = "た"
+
+[sub_resource type="Resource" id="Resource_wukxj"]
+script = ExtResource("6_2ocq4")
+raw_text = "。"
+reading = "。"
+
+[sub_resource type="Resource" id="Resource_gyc81"]
+script = ExtResource("5_5rpom")
+japanese = "汽笛で夜明けに目を覚まされた。"
+native = "The steam whistle woke us at daybreak."
+parsed = Array[ExtResource("6_2ocq4")]([SubResource("Resource_8od11"), SubResource("Resource_vbtpd"), SubResource("Resource_6mkir"), SubResource("Resource_fch74"), SubResource("Resource_kc0xb"), SubResource("Resource_syymx"), SubResource("Resource_n88yk"), SubResource("Resource_7wf7p"), SubResource("Resource_ppgq0"), SubResource("Resource_xl64x"), SubResource("Resource_j0n20"), SubResource("Resource_wukxj")])
+_difficulty = 520
+
+[sub_resource type="Resource" id="Resource_h2f20"]
+script = ExtResource("9_jo46p")
+points = Array[Vector2]([Vector2(17.75, 18.82), Vector2(24.04, 22.57), Vector2(28.25, 26.91)])
+
+[sub_resource type="Resource" id="Resource_lgne6"]
+script = ExtResource("9_jo46p")
+points = Array[Vector2]([Vector2(13.62, 41.44), Vector2(20.29, 45.2), Vector2(24.74, 49.56)])
+
+[sub_resource type="Resource" id="Resource_78ifl"]
+script = ExtResource("9_jo46p")
+points = Array[Vector2]([Vector2(14.25, 88.27), Vector2(18.83, 86.45), Vector2(21.31, 81.72), Vector2(23.65, 76.6), Vector2(26, 71.07)])
+
+[sub_resource type="Resource" id="Resource_6g4re"]
+script = ExtResource("9_jo46p")
+points = Array[Vector2]([Vector2(49.91, 11.25), Vector2(49.2, 16.3), Vector2(47.35, 19.89), Vector2(44.77, 24.35), Vector2(41.59, 29.24), Vector2(37.96, 34.13), Vector2(34, 38.57)])
+
+[sub_resource type="Resource" id="Resource_bmwbd"]
+script = ExtResource("9_jo46p")
+points = Array[Vector2]([Vector2(48.23, 24.94), Vector2(53.46, 24.46), Vector2(58.64, 23.5), Vector2(64.23, 22.39), Vector2(69.96, 21.2), Vector2(75.53, 20.01), Vector2(81, 19.31)])
+
+[sub_resource type="Resource" id="Resource_i2sfi"]
+script = ExtResource("9_jo46p")
+points = Array[Vector2]([Vector2(45.06, 37.09), Vector2(50.49, 37.19), Vector2(56.18, 36.4), Vector2(61.52, 35.52), Vector2(66.63, 34.56), Vector2(71.61, 33.56), Vector2(76.92, 32.96)])
+
+[sub_resource type="Resource" id="Resource_5e4j6"]
+script = ExtResource("9_jo46p")
+points = Array[Vector2]([Vector2(37.89, 51.74), Vector2(42.97, 52.08), Vector2(48.51, 51.13), Vector2(54.03, 50.09), Vector2(59.41, 49.03), Vector2(64.59, 47.97), Vector2(69.53, 46.94), Vector2(74.15, 45.96), Vector2(79.02, 45.31), Vector2(80.17, 50.05), Vector2(79.52, 56.8), Vector2(79.42, 62.94), Vector2(79.85, 68.52), Vector2(80.78, 73.59), Vector2(82.17, 78.19), Vector2(84.02, 82.37), Vector2(86.27, 86.17), Vector2(88.92, 89.66), Vector2(91.93, 92.86), Vector2(95.9, 96.12), Vector2(97.53, 94.64), Vector2(97.5, 87.05)])
+
+[sub_resource type="Resource" id="Resource_8c107"]
+script = ExtResource("8_pht3b")
+stroke_shapes = Array[ExtResource("9_jo46p")]([SubResource("Resource_h2f20"), SubResource("Resource_lgne6"), SubResource("Resource_78ifl"), SubResource("Resource_6g4re"), SubResource("Resource_bmwbd"), SubResource("Resource_i2sfi"), SubResource("Resource_5e4j6")])
+
+[sub_resource type="Resource" id="Resource_f07qt"]
+script = ExtResource("7_ikh16")
+japanese = "汽笛"
+readings = Array[String](["きてき"])
+meanings = Array[String](["steam whistle"])
+_difficulty = 895
+
+[resource]
+script = ExtResource("10_d7rvy")
+symbol = "汽"
+card_name = "Steam"
+rarity = 2
+abilities = Array[ExtResource("1_igeim")]([SubResource("Resource_ci6oc"), SubResource("Resource_5fokr")])
+tags = Array[int]([19])
+vocabulary = Array[ExtResource("7_ikh16")]([SubResource("Resource_f07qt")])
+example_sentences = Array[ExtResource("5_5rpom")]([SubResource("Resource_gyc81")])
+kanji_shape = SubResource("Resource_8c107")
+init_aspects = 9
+term_categories = Array[ExtResource("11_ht8er")]([ExtResource("12_kygij")])
