@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Relic_Yuzu" format=3 uid="uid://i3u2ea1bcyc8"]
+
+[ext_resource type="Script" uid="uid://cxms1qlogov1e" path="res://relics/common/yuzu/relic_yuzu.gd" id="1_d1xfl"]
+[ext_resource type="Resource" uid="uid://ca48on1qwc8sy" path="res://cards/tier2/card_fragrance.tres" id="1_vyrfr"]
+[ext_resource type="Script" uid="uid://bjwl7ojqhubsa" path="res://glossary/categories/termcategory_category.gd" id="2_3o50b"]
+[ext_resource type="Texture2D" uid="uid://cj6vnp2cwi8oa" path="res://relics/common/yuzu/yuzu.png" id="2_yfef2"]
+[ext_resource type="Resource" uid="uid://binu8trinnt0j" path="res://cards/tier2/card_hotwater.tres" id="3_3yx75"]
+[ext_resource type="Resource" uid="uid://5q63svcbmx37" path="res://glossary/categories/termcategory_relic.tres" id="3_eg8bn"]
+
+[resource]
+script = ExtResource("1_d1xfl")
+required_card = ExtResource("3_3yx75")
+granted_card = ExtResource("1_vyrfr")
+relic_id = "yuzu"
+default_name = "Yuzu Fruit"
+default_description = "Whenever you <term_lower:play_card> a %s <term_lower:glyph>, add a %s <term_lower:glyph> to your <term_lower:hand>."
+flavor_text = "The bumpy skin is scarred by the tree's thorns."
+icon = ExtResource("2_yfef2")
+default_starting_state = 1
+term_categories = Array[ExtResource("2_3o50b")]([ExtResource("3_eg8bn")])
+metadata/_custom_type_script = "uid://cxms1qlogov1e"
