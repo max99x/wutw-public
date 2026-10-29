@@ -299,6 +299,7 @@
 # res://art/pieces/piece_harunobu_vinegar_tasters.tres
 # res://art/pieces/piece_harunobu_yamabe.tres
 # res://art/pieces/piece_hasui_arayu_road.tres
+# res://art/pieces/piece_hasui_arifuku_springs.tres
 # res://art/pieces/piece_hasui_asahi_peak.tres
 # res://art/pieces/piece_hasui_autumn_garden.tres
 # res://art/pieces/piece_hasui_deer.tres
@@ -329,6 +330,7 @@
 # res://art/pieces/piece_hiroshige_2_mount_hirakido.tres
 # res://art/pieces/piece_hiroshige_2_mt_asama.tres
 # res://art/pieces/piece_hiroshige_2_rock_tripe.tres
+# res://art/pieces/piece_hiroshige_2_sado_caverns.tres
 # res://art/pieces/piece_hiroshige_3_ashikaga_loom.tres
 # res://art/pieces/piece_hiroshige_3_bear_hunting.tres
 # res://art/pieces/piece_hiroshige_3_butterbur.tres
@@ -959,6 +961,7 @@
 # res://cards/tier2/card_fountain.tres
 # res://cards/tier2/card_four.tres
 # res://cards/tier2/card_fragment.tres
+# res://cards/tier2/card_fragrance.tres
 # res://cards/tier2/card_full.tres
 # res://cards/tier2/card_glow.tres
 # res://cards/tier2/card_group.tres
@@ -1034,6 +1037,7 @@
 # res://cards/tier2/card_spring.tres
 # res://cards/tier2/card_starve.tres
 # res://cards/tier2/card_statue.tres
+# res://cards/tier2/card_steam.tres
 # res://cards/tier2/card_stick.tres
 # res://cards/tier2/card_strange.tres
 # res://cards/tier2/card_string.tres
@@ -1110,6 +1114,7 @@
 # res://cards/tier3/card_respect.tres
 # res://cards/tier3/card_righteousness.tres
 # res://cards/tier3/card_safe.tres
+# res://cards/tier3/card_scroll.tres
 # res://cards/tier3/card_six.tres
 # res://cards/tier3/card_split.tres
 # res://cards/tier3/card_study.tres
@@ -1176,6 +1181,7 @@
 # res://cards/tier6/card_failure.tres
 # res://cards/tier6/card_fall.tres
 # res://cards/tier6/card_fear.tres
+# res://cards/tier6/card_flood.tres
 # res://cards/tier6/card_foolish.tres
 # res://cards/tier6/card_frozen.tres
 # res://cards/tier6/card_grief.tres
@@ -1734,6 +1740,7 @@
 # res://events/generic/hollow_heart/event_hollow_heart.tres
 # res://events/generic/hull_pile/event_hull_pile.tres
 # res://events/generic/hungry_monk/event_hungry_monk.tres
+# res://events/generic/ice_caves/event_ice_caves.tres
 # res://events/generic/ikebana/event_ikebana.tres
 # res://events/generic/incense/event_incense_autumn.tres
 # res://events/generic/incense/event_incense_spring.tres
@@ -1753,6 +1760,7 @@
 # res://events/generic/moistened_sleeves/event_moistened_sleeves.tres
 # res://events/generic/moss_art/event_moss_art.tres
 # res://events/generic/mulberries/event_mulberries.tres
+# res://events/generic/onsen/event_onsen.tres
 # res://events/generic/pale_weaver/event_pale_weaver.tres
 # res://events/generic/persimmons/event_persimmons.tres
 # res://events/generic/petroglyph_cave/event_petroglyph_cave.tres
@@ -3274,6 +3282,8 @@
 # res://relics/common/still_ink/relic_still_ink.tres
 # res://relics/common/stone_heart/relic_stone_heart.gd
 # res://relics/common/stone_heart/relic_stone_heart.tres
+# res://relics/common/strange_statue/relic_strange_statue.gd
+# res://relics/common/strange_statue/relic_strange_statue.tres
 # res://relics/common/sweet_honeycomb/relic_sweet_honeycomb.gd
 # res://relics/common/sweet_honeycomb/relic_sweet_honeycomb.tres
 # res://relics/common/talisman_charcoal_bead/relic_talisman_charcoal_bead.tres
@@ -3297,6 +3307,8 @@
 # res://relics/common/white_city_tale/relic_white_city_tale.tres
 # res://relics/common/wicker_gear/relic_wicker_gear.gd
 # res://relics/common/wicker_gear/relic_wicker_gear.tres
+# res://relics/common/yuzu/relic_yuzu.gd
+# res://relics/common/yuzu/relic_yuzu.tres
 # res://relics/rare/crystal_blossom/relic_crystal_blossom.tres
 # res://relics/rare/delicious_mushroom/relic_delicious_mushroom.tres
 # res://relics/rare/divination_plate/relic_divination_plate.tres
@@ -4162,6 +4174,7 @@
 # res://utils/save_game.gd
 # res://utils/save_game_indicator.gd
 # res://utils/save_game_indicator.tscn
+# res://utils/steam_setup.gd
 # res://utils/ui.gd
 # res://utils/utils.gd
 # res://utils/version_watermark.gd
@@ -6832,6 +6845,19 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_hasui_arifuku_springs.tres
+msgid "Arifuku Hot Springs in Iwami"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_hasui_arifuku_springs.tres
+msgid ""
+"Depicts a narrow street at the Arifuku Hot Springs near present-day Gotsu City, Shimane Prefecture.\n"
+"\n"
+"The hot springs in this small village have been a tourist attraction for over a thousand years, and still operate today."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
 #: art/pieces/piece_hasui_asahi_peak.tres
 msgid "Mount Asahi seen from Mount Hakuba"
 msgstr ""
@@ -7249,6 +7275,24 @@ msgid ""
 "Depicts workers scraping rock tripe off a cliff face, while suspended in baskets above a gorge.\n"
 "\n"
 "Although rock tripe is called iwatake (\"rock mushroom\") in Japanese, it is actually an edible lichen (Umbilicaria esculenta) that grows on sheer, exposed mountain cliffs. Although considered at best a starvation food in most of the world, Japanese cuisine appreciates its elastic texture and earthy flavor. It requires extensive processing by repeated boiling to reduce bitterness, and is sometimes prepared with sugar and soy sauce or baked into cakes."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_hiroshige_2_sado_caverns.tres
+msgid "Caverns of the Gold Mine on Sado Island"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: edits_description
+#: art/pieces/piece_hiroshige_2_sado_caverns.tres
+msgid "The people were edited out and the image was recolored."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_hiroshige_2_sado_caverns.tres
+msgid ""
+"Depicts miners descending into a mine by torchlight.\n"
+"\n"
+"The mines on Sado Island depicted here were founded around 1600 and were the primary source of gold in Japan for centuries, only closing in 1989."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -14017,7 +14061,7 @@ msgstr ""
 #: events/main_quest/2_30_consecration_field/event_consecration_field.tres
 #: events/main_quest/2_30_consecration_forest/event_consecration_forest.tres
 #: events/main_quest/2_30_consecration_lanterns/event_consecration_lanterns.tres
-#: events/system/scenes/event_step_scene.gd:91
+#: events/system/scenes/event_step_scene.gd:95
 #: harmonization/end/harmonization_end.tscn
 #: main_menu/main_menu.tscn
 #: seasons/season_end.tscn
@@ -17506,6 +17550,7 @@ msgstr ""
 #: cards/tier3/card_respect.tres
 #: cards/tier3/card_righteousness.tres
 #: cards/tier3/card_safe.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_six.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_study.tres
@@ -17757,6 +17802,7 @@ msgstr ""
 #: cards/tier3/card_respect.tres
 #: cards/tier3/card_righteousness.tres
 #: cards/tier3/card_safe.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_six.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_study.tres
@@ -19787,12 +19833,14 @@ msgstr ""
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_drama.tres
 #: cards/tier3/card_gate.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier4/card_rainbow.tres
 #: cards/tier5/card_console.tres
 #: cards/tier5/card_echo.tres
 #: cards/tier5/card_forest.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to occur"
 msgstr ""
@@ -20709,6 +20757,7 @@ msgstr ""
 #: cards/tier4/card_rainbow.tres
 #: cards/tier5/card_console.tres
 #: cards/tier5/card_forest.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to run"
 msgstr ""
@@ -22027,6 +22076,7 @@ msgstr ""
 #: cards/tier4/card_weave.tres
 #: cards/tier5/card_loop.tres
 #: cards/tier6/card_cry.tres
+#: cards/tier6/card_flood.tres
 msgid "to establish"
 msgstr ""
 
@@ -22394,6 +22444,7 @@ msgstr ""
 #: cards/tier3/card_rescue.tres
 #: cards/tier3/card_righteousness.tres
 #: cards/tier3/card_safe.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_study.tres
 #: cards/tier3/card_system.tres
@@ -22581,6 +22632,7 @@ msgstr ""
 #: cards/tier3/card_rescue.tres
 #: cards/tier3/card_righteousness.tres
 #: cards/tier3/card_safe.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_study.tres
 #: cards/tier3/card_system.tres
@@ -22771,6 +22823,7 @@ msgstr ""
 #: cards/tier3/card_rescue.tres
 #: cards/tier3/card_righteousness.tres
 #: cards/tier3/card_safe.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_study.tres
 #: cards/tier3/card_system.tres
@@ -22837,6 +22890,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -22867,6 +22921,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -22897,6 +22952,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -22927,6 +22983,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -22957,6 +23014,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -22993,6 +23051,7 @@ msgstr ""
 #: cards/tier2/card_discern.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -23027,6 +23086,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -23057,6 +23117,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -23088,6 +23149,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -23118,6 +23180,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -23148,6 +23211,7 @@ msgstr ""
 #: cards/tier2/card_cherry.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_manure.tres
@@ -23189,6 +23253,7 @@ msgstr ""
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_exchange.tres
 #: cards/tier2/card_four.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_honey.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_love.tres
@@ -24602,6 +24667,7 @@ msgstr ""
 #: cards/tier4/card_weave.tres
 #: cards/tier5/card_echo.tres
 #: cards/tier6/card_failure.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_soak.tres
 msgid "vast"
 msgstr ""
@@ -25269,6 +25335,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_thought.tres
 #: cards/tier5/card_opportunity.tres
 #: cards/tier6/card_cry.tres
@@ -25331,6 +25398,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "dog (Canis (lupus) familiaris)"
@@ -25355,6 +25423,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "canine"
@@ -25379,6 +25448,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "squealer"
@@ -25403,6 +25473,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "rat"
@@ -25427,6 +25498,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "snitch"
@@ -25451,6 +25523,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "informer"
@@ -25475,6 +25548,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "informant"
@@ -25499,6 +25573,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_trade.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
@@ -25525,6 +25600,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_failure.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
@@ -25550,6 +25626,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "asshole"
@@ -25575,6 +25652,7 @@ msgstr ""
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_pearl.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "counterfeit"
@@ -25601,6 +25679,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_burdensome.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
@@ -25626,6 +25705,7 @@ msgstr ""
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_rescue.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_fear.tres
 #: cards/tier6/card_harm.tres
 msgid "wasteful"
@@ -25677,6 +25757,7 @@ msgstr ""
 #: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_quake.tres
 #: cards/tier6/card_stink.tres
@@ -25725,6 +25806,7 @@ msgstr ""
 #: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_quake.tres
 msgid "residence"
@@ -25770,6 +25852,7 @@ msgstr ""
 #: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_quake.tres
 msgid "dwelling"
@@ -25819,6 +25902,7 @@ msgstr ""
 #: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_quake.tres
 msgid "home"
@@ -25872,6 +25956,7 @@ msgstr ""
 #: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_quake.tres
 #: cards/tier6/card_sad.tres
@@ -25920,6 +26005,7 @@ msgstr ""
 #: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_quake.tres
 msgid "household"
@@ -25967,6 +26053,7 @@ msgstr ""
 #: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_quake.tres
 msgid "lineage"
@@ -26015,6 +26102,7 @@ msgstr ""
 #: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_quake.tres
 msgid "family name"
@@ -26344,18 +26432,21 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_big.tres
 #: cards/tier2/card_rain.tres
+#: cards/tier6/card_flood.tres
 msgid "heavy rain"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_big.tres
 #: cards/tier2/card_rain.tres
+#: cards/tier6/card_flood.tres
 msgid "torrential rainfall"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_big.tres
 #: cards/tier2/card_rain.tres
+#: cards/tier6/card_flood.tres
 msgid "downpour"
 msgstr ""
 
@@ -26539,6 +26630,7 @@ msgstr ""
 #: cards/tier2/card_three.tres
 #: cards/tier3/card_five.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier4/card_manage.tres
 #: cards/tier4/card_seven.tres
@@ -26823,6 +26915,7 @@ msgstr ""
 #: cards/tier2/card_level.tres
 #: cards/tier3/card_desk.tres
 #: cards/tier3/card_hide.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_quake.tres
 msgid "down"
 msgstr ""
@@ -27931,6 +28024,7 @@ msgstr ""
 #: cards/tier3/card_enlightenment.tres
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_recollection.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_illustration.tres
@@ -28013,6 +28107,7 @@ msgstr ""
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_illusion.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_observe.tres
@@ -28082,6 +28177,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_observe.tres
@@ -28150,6 +28246,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_observe.tres
@@ -28224,6 +28321,7 @@ msgstr ""
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_obey.tres
 #: cards/tier3/card_offering.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_system.tres
 #: cards/tier3/card_thicket.tres
@@ -28294,6 +28392,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_system.tres
 #: cards/tier3/card_thicket.tres
@@ -28362,6 +28461,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_observe.tres
@@ -28446,6 +28546,7 @@ msgstr ""
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_mystery.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_observe.tres
@@ -28524,6 +28625,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_six.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_system.tres
@@ -28610,6 +28712,7 @@ msgstr ""
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
 #: cards/tier3/card_mystery.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_observe.tres
@@ -28687,6 +28790,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -28752,6 +28856,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -28818,6 +28923,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -28883,6 +28989,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -28967,6 +29074,7 @@ msgstr ""
 #: cards/tier3/card_duty.tres
 #: cards/tier3/card_fertility.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -29034,6 +29142,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -29099,6 +29208,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -29164,6 +29274,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -29229,6 +29340,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -29294,6 +29406,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -29359,6 +29472,7 @@ msgstr ""
 #: cards/tier3/card_dance.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fox.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier4/card_peace.tres
@@ -29403,6 +29517,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_vow.tres
 #: cards/tier3/card_write.tres
 msgid "book"
@@ -29433,6 +29548,7 @@ msgstr ""
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_pearl.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "volume"
 msgstr ""
@@ -29460,6 +29576,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "script"
 msgstr ""
@@ -29490,6 +29607,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier3/card_write.tres
 #: cards/tier4/card_build.tres
@@ -29521,6 +29639,7 @@ msgstr ""
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_celebrate.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 #: cards/tier4/card_dedicate.tres
 msgid "present"
@@ -29555,8 +29674,10 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 #: cards/tier5/card_echo.tres
+#: cards/tier6/card_flood.tres
 msgid "current"
 msgstr ""
 
@@ -29583,6 +29704,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "... in question"
 msgstr ""
@@ -29610,6 +29732,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "... at issue"
 msgstr ""
@@ -29638,6 +29761,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "main"
 msgstr ""
@@ -29677,6 +29801,7 @@ msgstr ""
 #: cards/tier3/card_clamor.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_duty.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 #: cards/tier5/card_loop.tres
 msgid "head"
@@ -29711,6 +29836,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "principal"
 msgstr ""
@@ -29741,6 +29867,7 @@ msgstr ""
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_enlightenment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 #: cards/tier4/card_signpost.tres
 #: cards/tier4/card_thought.tres
@@ -29774,6 +29901,7 @@ msgstr ""
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_enlightenment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 #: cards/tier4/card_signpost.tres
 #: cards/tier4/card_thought.tres
@@ -29806,6 +29934,7 @@ msgstr ""
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_fertility.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "regular"
 msgstr ""
@@ -29844,6 +29973,7 @@ msgstr ""
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_enlightenment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_system.tres
 #: cards/tier3/card_vow.tres
 #: cards/tier3/card_write.tres
@@ -29877,6 +30007,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "counter for long, cylindrical things"
 msgstr ""
@@ -29904,6 +30035,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "counter for films, TV shows, etc."
 msgstr ""
@@ -29931,6 +30063,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "counter for goals, home runs, etc."
 msgstr ""
@@ -29958,6 +30091,7 @@ msgstr ""
 #: cards/tier2/card_timber.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "counter for telephone calls"
 msgstr ""
@@ -31569,6 +31703,7 @@ msgstr ""
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_three.tres
 #: cards/tier3/card_drama.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_study.tres
 #: cards/tier4/card_overnight.tres
 #: cards/tier6/card_isolate.tres
@@ -31693,6 +31828,7 @@ msgstr ""
 #: cards/tier2/card_river.tres
 #: cards/tier4/card_build.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "bridge"
 msgstr ""
 
@@ -34926,6 +35062,7 @@ msgstr ""
 #: cards/tier2/card_same.tres
 #: cards/tier2/card_sell.tres
 #: cards/tier3/card_safe.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_collapse.tres
 msgid "article"
 msgstr ""
@@ -34963,6 +35100,7 @@ msgstr ""
 #: cards/tier3/card_enlightenment.tres
 #: cards/tier3/card_righteousness.tres
 #: cards/tier3/card_safe.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_study.tres
 #: cards/tier3/card_travel.tres
 #: cards/tier4/card_overnight.tres
@@ -36314,6 +36452,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_earth.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_quake.tres
 msgid "earthquake"
 msgstr ""
@@ -36455,6 +36594,7 @@ msgstr ""
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_round.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -37761,6 +37901,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_earth.tres
 #: cards/tier2/card_round.tres
+#: cards/tier3/card_scroll.tres
 msgid "to roll up"
 msgstr ""
 
@@ -40285,6 +40426,7 @@ msgstr ""
 #: cards/tier0/card_earth.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier2/card_spring.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier6/card_quake.tres
 msgid "dawn"
 msgstr ""
@@ -40293,6 +40435,7 @@ msgstr ""
 #: cards/tier0/card_earth.tres
 #: cards/tier1/card_bright.tres
 #: cards/tier2/card_spring.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier6/card_quake.tres
 msgid "daybreak"
 msgstr ""
@@ -40363,8 +40506,10 @@ msgstr ""
 #: cards/tier2/card_reality.tres
 #: cards/tier2/card_timber.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier5/card_echo.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_quake.tres
 msgid "to happen"
 msgstr ""
@@ -41228,6 +41373,7 @@ msgstr ""
 #: cards/tier2/card_purity.tres
 #: cards/tier2/card_show.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_alone.tres
 #: cards/tier3/card_create.tres
@@ -41927,6 +42073,7 @@ msgstr ""
 #: cards/tier3/card_village.tres
 #: cards/tier5/card_ten.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_frozen.tres
 #: cards/tier6/card_rot.tres
 #: cards/tier6/card_soak.tres
@@ -43102,6 +43249,7 @@ msgstr ""
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fog.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_purity.tres
 #: cards/tier2/card_release.tres
@@ -43125,6 +43273,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43141,6 +43290,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43157,6 +43307,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43173,6 +43324,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_spicy.tres
@@ -43191,6 +43343,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43208,6 +43361,7 @@ msgstr ""
 #: cards/tier1/card_power.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43236,6 +43390,7 @@ msgstr ""
 #: cards/tier1/card_thread.tres
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_child.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43257,6 +43412,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43277,6 +43433,7 @@ msgstr ""
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_fee.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_release.tres
@@ -43299,6 +43456,7 @@ msgstr ""
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_fee.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_release.tres
@@ -43317,6 +43475,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43333,6 +43492,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43349,6 +43509,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43365,6 +43526,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43381,6 +43543,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43397,6 +43560,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43413,6 +43577,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_purity.tres
 #: cards/tier2/card_release.tres
@@ -43432,6 +43597,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43452,6 +43618,7 @@ msgstr ""
 #: cards/tier1/card_spirit.tres
 #: cards/tier1/card_thread.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_nurture.tres
 #: cards/tier2/card_pillar.tres
@@ -43483,6 +43650,7 @@ msgstr ""
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fog.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_pot.tres
 #: cards/tier2/card_release.tres
@@ -43508,6 +43676,7 @@ msgstr ""
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_boat.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43534,6 +43703,7 @@ msgstr ""
 #: cards/tier2/card_bird.tres
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_fence.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_pine.tres
 #: cards/tier2/card_release.tres
@@ -43556,6 +43726,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_strong.tres
@@ -43572,6 +43743,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_blow.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_show.tres
@@ -44599,6 +44771,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_drink.tres
 #: cards/tier2/card_cut.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier3/card_call.tres
 #: cards/tier3/card_chat.tres
@@ -44612,6 +44785,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_drink.tres
 #: cards/tier2/card_cut.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier3/card_call.tres
 #: cards/tier3/card_chat.tres
@@ -44625,6 +44799,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_drink.tres
 #: cards/tier2/card_cut.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier3/card_call.tres
 #: cards/tier3/card_chat.tres
@@ -44638,6 +44813,7 @@ msgstr ""
 #: cards/tier0/card_woman.tres
 #: cards/tier1/card_drink.tres
 #: cards/tier2/card_cut.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_hotwater.tres
 #: cards/tier2/card_road.tres
 #: cards/tier2/card_seed.tres
@@ -45378,6 +45554,7 @@ msgstr ""
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sky.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_fertility.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
@@ -45638,6 +45815,7 @@ msgstr ""
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
 #: cards/tier3/card_loyalty.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_harm.tres
 msgid "object"
 msgstr ""
@@ -45649,6 +45827,7 @@ msgstr ""
 #: cards/tier2/card_perilous.tres
 #: cards/tier2/card_same.tres
 #: cards/tier2/card_show.tres
+#: cards/tier3/card_scroll.tres
 msgid "stuff"
 msgstr ""
 
@@ -45664,6 +45843,7 @@ msgstr ""
 #: cards/tier2/card_plant.tres
 #: cards/tier2/card_same.tres
 #: cards/tier2/card_use.tres
+#: cards/tier3/card_scroll.tres
 msgid "substance"
 msgstr ""
 
@@ -45672,6 +45852,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "one's things"
 msgstr ""
 
@@ -45680,6 +45861,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "possessions"
 msgstr ""
 
@@ -45693,6 +45875,7 @@ msgstr ""
 #: cards/tier2/card_same.tres
 #: cards/tier2/card_together.tres
 #: cards/tier3/card_fertility.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_build.tres
 #: cards/tier4/card_trade.tres
 #: cards/tier5/card_inherit.tres
@@ -45704,6 +45887,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "belongings"
 msgstr ""
 
@@ -45712,6 +45896,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "things"
 msgstr ""
 
@@ -45720,6 +45905,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "something"
 msgstr ""
 
@@ -45729,6 +45915,7 @@ msgstr ""
 #: cards/tier0/card_middle.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "anything"
 msgstr ""
 
@@ -45750,6 +45937,7 @@ msgstr ""
 #: cards/tier2/card_same.tres
 #: cards/tier2/card_three.tres
 #: cards/tier3/card_righteousness.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_eight.tres
 #: cards/tier5/card_wildcard.tres
 msgid "everything"
@@ -45761,6 +45949,7 @@ msgstr ""
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_nothing.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "nothing"
 msgstr ""
 
@@ -45772,6 +45961,7 @@ msgstr ""
 #: cards/tier2/card_equal.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_clumsy.tres
 msgid "quality"
 msgstr ""
@@ -45782,6 +45972,7 @@ msgstr ""
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_road.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_wisdom.tres
 #: cards/tier6/card_guilt.tres
 msgid "reason"
@@ -45792,6 +45983,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "the way of things"
 msgstr ""
 
@@ -45800,6 +45992,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "used to emphasize emotion, judgment, etc."
 msgstr ""
 
@@ -45808,6 +46001,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "used to indicate a common occurrence in the past (after a verb in past tense)"
 msgstr ""
 
@@ -45816,6 +46010,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "used to indicate a general tendency"
 msgstr ""
 
@@ -45824,6 +46019,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "used to indicate something that should happen"
 msgstr ""
 
@@ -45832,6 +46028,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "item classified as ..."
 msgstr ""
 
@@ -45840,6 +46037,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "item related to ..."
 msgstr ""
 
@@ -45848,6 +46046,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "work in the genre of ..."
 msgstr ""
 
@@ -45856,6 +46055,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "cause of ..."
 msgstr ""
 
@@ -45864,6 +46064,7 @@ msgstr ""
 #: cards/tier0/card_hold.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "cause for ..."
 msgstr ""
 
@@ -45883,6 +46084,7 @@ msgstr ""
 #: cards/tier3/card_fresh.tres
 #: cards/tier3/card_kite.tres
 #: cards/tier3/card_radiance.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_rainbow.tres
 #: cards/tier4/card_soul.tres
 msgid "somehow"
@@ -45918,9 +46120,11 @@ msgstr ""
 #: cards/tier2/card_seed.tres
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_spicy.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_duty.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_tea.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier4/card_signpost.tres
@@ -45941,6 +46145,7 @@ msgstr ""
 #: cards/tier0/card_not.tres
 #: cards/tier2/card_fee.tres
 #: cards/tier2/card_same.tres
+#: cards/tier3/card_scroll.tres
 msgid "for some reason"
 msgstr ""
 
@@ -45966,6 +46171,7 @@ msgstr ""
 #: cards/tier2/card_sun.tres
 #: cards/tier2/card_transmit.tres
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_system.tres
 #: cards/tier4/card_ghost.tres
 #: cards/tier4/card_revere.tres
@@ -45999,6 +46205,7 @@ msgstr ""
 #: cards/tier2/card_sun.tres
 #: cards/tier2/card_transmit.tres
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_system.tres
 #: cards/tier4/card_ghost.tres
 #: cards/tier4/card_revere.tres
@@ -46654,6 +46861,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_escape.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_glow.tres
 #: cards/tier2/card_release.tres
 #: cards/tier4/card_lecture.tres
@@ -46845,6 +47053,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_escape.tres
 #: cards/tier0/card_old.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_glow.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_statue.tres
@@ -47273,6 +47482,7 @@ msgstr ""
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_spicy.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier2/card_strong.tres
 #: cards/tier2/card_young.tres
 #: cards/tier3/card_bee.tres
@@ -47446,6 +47656,7 @@ msgstr ""
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_fragment.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_perilous.tres
 #: cards/tier2/card_spicy.tres
@@ -47471,6 +47682,7 @@ msgstr ""
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_fragment.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_lotus.tres
 #: cards/tier2/card_perilous.tres
 #: cards/tier2/card_spicy.tres
@@ -51469,6 +51681,7 @@ msgstr ""
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_strong.tres
 #: cards/tier3/card_fresh.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_weak.tres
 msgid "morning"
 msgstr ""
@@ -51480,6 +51693,7 @@ msgstr ""
 #: cards/tier2/card_morning.tres
 #: cards/tier2/card_strong.tres
 #: cards/tier3/card_fresh.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_foster.tres
 #: cards/tier6/card_weak.tres
 msgid "breakfast"
@@ -55521,6 +55735,7 @@ msgstr ""
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_show.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_split.tres
@@ -55972,6 +56187,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56004,6 +56220,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56040,6 +56257,7 @@ msgstr ""
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56073,6 +56291,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56113,6 +56332,7 @@ msgstr ""
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_release.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_dragon.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_illusion.tres
@@ -56157,6 +56377,7 @@ msgstr ""
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_reality.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56194,6 +56415,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56644,6 +56866,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56676,6 +56899,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56707,6 +56931,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56738,6 +56963,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56769,6 +56995,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56803,6 +57030,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56841,6 +57069,7 @@ msgstr ""
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_show.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_illusion.tres
 #: cards/tier3/card_radiance.tres
@@ -56877,6 +57106,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier2/card_year.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
@@ -56911,6 +57141,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier2/card_year.tres
 #: cards/tier3/card_alone.tres
 #: cards/tier3/card_create.tres
@@ -56946,6 +57177,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -56977,6 +57209,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57008,6 +57241,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57039,6 +57273,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57070,6 +57305,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57101,6 +57337,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57132,6 +57369,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57164,6 +57402,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57195,6 +57434,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57226,6 +57466,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57257,6 +57498,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57288,6 +57530,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57321,6 +57564,7 @@ msgstr ""
 #: cards/tier2/card_prune.tres
 #: cards/tier2/card_seed.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_fate.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
@@ -57353,6 +57597,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57384,6 +57629,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57415,6 +57661,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57446,6 +57693,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57477,6 +57725,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57508,6 +57757,7 @@ msgstr ""
 #: cards/tier2/card_picture.tres
 #: cards/tier2/card_play_music.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier3/card_hawk.tres
 #: cards/tier3/card_radiance.tres
 #: cards/tier3/card_tea.tres
@@ -57930,6 +58180,7 @@ msgstr ""
 #: cards/tier2/card_drift.tres
 #: cards/tier2/card_memorize.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier2/card_steam.tres
 msgid "to sober up"
 msgstr ""
 
@@ -57962,6 +58213,7 @@ msgstr ""
 #: cards/tier2/card_forbid.tres
 #: cards/tier2/card_perilous.tres
 #: cards/tier2/card_stick.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_signpost.tres
 msgid "last"
 msgstr ""
@@ -57969,6 +58221,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_eye.tres
 #: cards/tier0/card_hold.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_signpost.tres
 msgid "final"
 msgstr ""
@@ -57976,11 +58229,13 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_eye.tres
 #: cards/tier2/card_cut.tres
+#: cards/tier3/card_scroll.tres
 msgid "closing"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_eye.tres
+#: cards/tier3/card_scroll.tres
 msgid "last train (bus, flight, etc.; of the day)"
 msgstr ""
 
@@ -58639,6 +58894,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_fire.tres
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to become lost"
 msgstr ""
@@ -59930,6 +60186,7 @@ msgstr ""
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_town.tres
 #: cards/tier2/card_pine.tres
+#: cards/tier3/card_scroll.tres
 msgid "to surround"
 msgstr ""
 
@@ -59943,6 +60200,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_fire.tres
 #: cards/tier0/card_town.tres
+#: cards/tier3/card_scroll.tres
 msgid "to enclose"
 msgstr ""
 
@@ -60509,6 +60767,7 @@ msgstr ""
 #: cards/tier0/card_meat.tres
 #: cards/tier2/card_memorize.tres
 #: cards/tier2/card_protect.tres
+#: cards/tier2/card_steam.tres
 #: cards/tier2/card_use.tres
 #: cards/tier3/card_alone.tres
 msgid "to awaken"
@@ -61555,6 +61814,7 @@ msgstr ""
 #: cards/tier2/card_year.tres
 #: cards/tier3/card_call.tres
 #: cards/tier3/card_carp.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier6/card_astray.tres
 #: cards/tier6/card_disease.tres
@@ -62338,6 +62598,7 @@ msgstr ""
 #: cards/tier3/card_blaze.tres
 #: cards/tier3/card_bloom.tres
 #: cards/tier6/card_cry.tres
+#: cards/tier6/card_flood.tres
 msgid "to start up (a business, society, etc.)"
 msgstr ""
 
@@ -62355,6 +62616,7 @@ msgstr ""
 #: cards/tier3/card_blaze.tres
 #: cards/tier3/card_bloom.tres
 #: cards/tier6/card_cry.tres
+#: cards/tier6/card_flood.tres
 msgid "to open (e.g. a store)"
 msgstr ""
 
@@ -62485,6 +62747,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_water.tres
 #: cards/tier2/card_drift.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_spring.tres
 #: cards/tier3/card_element.tres
 #: cards/tier6/card_rot.tres
@@ -62497,6 +62760,7 @@ msgstr ""
 #: cards/tier0/card_fruit.tres
 #: cards/tier0/card_water.tres
 #: cards/tier2/card_drift.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_spring.tres
 #: cards/tier3/card_element.tres
 #: cards/tier6/card_rot.tres
@@ -64647,6 +64911,7 @@ msgstr ""
 #: cards/tier5/card_forest.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_quake.tres
 #: cards/tier6/card_wither.tres
 msgid "to collapse"
@@ -65854,6 +66119,7 @@ msgstr ""
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_butterfly.tres
 #: cards/tier2/card_child.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_group.tres
 #: cards/tier3/card_study.tres
 #: cards/tier5/card_loop.tres
@@ -65871,6 +66137,7 @@ msgstr ""
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_butterfly.tres
 #: cards/tier2/card_child.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_group.tres
 #: cards/tier2/card_strange.tres
 #: cards/tier2/card_timber.tres
@@ -65889,6 +66156,7 @@ msgstr ""
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_dye.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_group.tres
 #: cards/tier2/card_record.tres
 #: cards/tier2/card_sky.tres
@@ -65909,6 +66177,7 @@ msgstr ""
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_child.tres
 #: cards/tier2/card_forbid.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_group.tres
 #: cards/tier2/card_perilous.tres
 #: cards/tier2/card_stick.tres
@@ -65925,6 +66194,7 @@ msgstr ""
 #: cards/tier1/card_red.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_child.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_group.tres
 #: cards/tier3/card_study.tres
 #: cards/tier5/card_loop.tres
@@ -65938,6 +66208,7 @@ msgstr ""
 #: cards/tier1/card_red.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_child.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_group.tres
 #: cards/tier3/card_study.tres
 #: cards/tier5/card_loop.tres
@@ -65951,6 +66222,7 @@ msgstr ""
 #: cards/tier1/card_red.tres
 #: cards/tier2/card_asset.tres
 #: cards/tier2/card_child.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_group.tres
 #: cards/tier3/card_study.tres
 #: cards/tier5/card_loop.tres
@@ -66106,6 +66378,7 @@ msgstr ""
 #: cards/tier2/card_four.tres
 #: cards/tier2/card_three.tres
 #: cards/tier3/card_five.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_seven.tres
 #: cards/tier4/card_trade.tres
 #: cards/tier5/card_nine.tres
@@ -68177,6 +68450,7 @@ msgstr ""
 #: cards/tier2/card_plant.tres
 #: cards/tier2/card_spicy.tres
 #: cards/tier3/card_carp.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier6/card_astray.tres
 #: cards/tier6/card_disease.tres
@@ -68197,6 +68471,7 @@ msgstr ""
 #: cards/tier2/card_plant.tres
 #: cards/tier2/card_spicy.tres
 #: cards/tier3/card_carp.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier6/card_astray.tres
 #: cards/tier6/card_disease.tres
@@ -68217,6 +68492,7 @@ msgstr ""
 #: cards/tier2/card_plant.tres
 #: cards/tier2/card_spicy.tres
 #: cards/tier3/card_carp.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_thicket.tres
 #: cards/tier6/card_astray.tres
 #: cards/tier6/card_disease.tres
@@ -69689,6 +69965,7 @@ msgstr ""
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier2/card_time.tres
+#: cards/tier6/card_flood.tres
 msgid "course (of events)"
 msgstr ""
 
@@ -72333,6 +72610,7 @@ msgstr ""
 #: cards/tier2/card_flow.tres
 #: cards/tier4/card_philosophy.tres
 #: cards/tier4/card_rainbow.tres
+#: cards/tier6/card_flood.tres
 msgid "tendency"
 msgstr ""
 
@@ -72379,6 +72657,7 @@ msgstr ""
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_time.tres
 #: cards/tier3/card_polish.tres
+#: cards/tier3/card_scroll.tres
 msgid "to lie down"
 msgstr ""
 
@@ -75079,6 +75358,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "passing"
 msgstr ""
 
@@ -76358,6 +76638,7 @@ msgstr ""
 #: cards/tier3/card_carp.tres
 #: cards/tier3/card_dance.tres
 #: cards/tier6/card_failure.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_rot.tres
 #: cards/tier6/card_tears.tres
 msgid "to spread"
@@ -77590,6 +77871,7 @@ msgstr ""
 #: cards/tier0/card_man.tres
 #: cards/tier0/card_right.tres
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 msgid "to wind"
 msgstr ""
@@ -78032,6 +78314,7 @@ msgstr ""
 #: cards/tier1/card_ball.tres
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 #: cards/tier6/card_quake.tres
 msgid "to roll"
@@ -78605,6 +78888,7 @@ msgstr ""
 #: cards/tier2/card_glow.tres
 #: cards/tier3/card_divinity.tres
 #: cards/tier3/card_element.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_write.tres
 msgid "incredible"
 msgstr ""
@@ -79252,10 +79536,12 @@ msgstr ""
 #: cards/tier2/card_fountain.tres
 #: cards/tier2/card_stick.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_village.tres
 #: cards/tier5/card_festival.tres
 #: cards/tier5/card_forest.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_mud.tres
 msgid "village"
 msgstr ""
@@ -81008,6 +81294,7 @@ msgstr ""
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier3/card_vow.tres
+#: cards/tier6/card_flood.tres
 msgid "cancellation"
 msgstr ""
 
@@ -83725,6 +84012,7 @@ msgstr ""
 #: cards/tier2/card_instruct.tres
 #: cards/tier2/card_sleep.tres
 #: cards/tier6/card_entangle.tres
+#: cards/tier6/card_flood.tres
 msgid "later"
 msgstr ""
 
@@ -83733,6 +84021,7 @@ msgstr ""
 #: cards/tier2/card_instruct.tres
 #: cards/tier2/card_sleep.tres
 #: cards/tier6/card_entangle.tres
+#: cards/tier6/card_flood.tres
 msgid "afterwards"
 msgstr ""
 
@@ -83749,6 +84038,7 @@ msgstr ""
 #: cards/tier2/card_perilous.tres
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_stick.tres
+#: cards/tier6/card_flood.tres
 msgid "future"
 msgstr ""
 
@@ -83756,6 +84046,7 @@ msgstr ""
 #: cards/tier0/card_mouth.tres
 #: cards/tier2/card_instruct.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier6/card_flood.tres
 msgid "after one's death"
 msgstr ""
 
@@ -83763,6 +84054,7 @@ msgstr ""
 #: cards/tier0/card_mouth.tres
 #: cards/tier2/card_instruct.tres
 #: cards/tier2/card_sleep.tres
+#: cards/tier6/card_flood.tres
 msgid "descendant"
 msgstr ""
 
@@ -86095,6 +86387,7 @@ msgstr ""
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier2/card_use.tres
+#: cards/tier6/card_flood.tres
 msgid "process"
 msgstr ""
 
@@ -86283,6 +86576,7 @@ msgstr ""
 #: cards/tier3/card_split.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to break"
 msgstr ""
 
@@ -88674,6 +88968,7 @@ msgstr ""
 #: cards/tier3/card_gate.tres
 #: cards/tier3/card_study.tres
 #: cards/tier6/card_entangle.tres
+#: cards/tier6/card_flood.tres
 msgid "school"
 msgstr ""
 
@@ -89018,6 +89313,7 @@ msgstr ""
 #: cards/tier0/card_rest.tres
 #: cards/tier3/card_divinity.tres
 #: cards/tier3/card_loyalty.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to be absent"
 msgstr ""
@@ -89038,6 +89334,7 @@ msgstr ""
 #: cards/tier2/card_time.tres
 #: cards/tier3/card_loyalty.tres
 #: cards/tier3/card_polish.tres
+#: cards/tier3/card_scroll.tres
 msgid "to go to bed"
 msgstr ""
 
@@ -91701,12 +91998,14 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_shift.tres
 #: cards/tier0/card_wind.tres
+#: cards/tier6/card_flood.tres
 msgid "typhoon"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_shift.tres
 #: cards/tier0/card_wind.tres
+#: cards/tier6/card_flood.tres
 msgid "hurricane"
 msgstr ""
 
@@ -92234,6 +92533,7 @@ msgstr ""
 #: cards/tier2/card_river.tres
 #: cards/tier2/card_swim.tres
 #: cards/tier3/card_carp.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_isolate.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_soak.tres
@@ -93948,6 +94248,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_stand.tres
 #: cards/tier3/card_alone.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_isolate.tres
 msgid "isolation"
 msgstr ""
@@ -94131,6 +94432,7 @@ msgstr ""
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_sky.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 #: cards/tier6/card_collapse.tres
 #: cards/tier6/card_harm.tres
@@ -94144,6 +94446,7 @@ msgstr ""
 #: cards/tier1/card_product.tres
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_sky.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 #: cards/tier6/card_collapse.tres
 #: cards/tier6/card_weak.tres
@@ -94155,6 +94458,7 @@ msgstr ""
 #: cards/tier0/card_stand.tres
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_sky.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_blind.tres
 #: cards/tier6/card_weak.tres
 #: cards/tier6/card_wound.tres
@@ -94169,6 +94473,7 @@ msgstr ""
 #: cards/tier2/card_emptiness.tres
 #: cards/tier2/card_omen.tres
 #: cards/tier2/card_starve.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_disease.tres
 #: cards/tier6/card_weak.tres
 msgid "weakness"
@@ -100467,6 +100772,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_water.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_lotus.tres
 msgid "perfume"
 msgstr ""
@@ -100504,12 +100810,14 @@ msgstr ""
 #: cards/tier0/card_water.tres
 #: cards/tier1/card_spirit.tres
 #: cards/tier2/card_hotwater.tres
+#: cards/tier2/card_steam.tres
 msgid "steam"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_water.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "flooding"
 msgstr ""
 
@@ -100711,6 +101019,7 @@ msgstr ""
 #: cards/tier2/card_river.tres
 #: cards/tier2/card_swim.tres
 #: cards/tier3/card_carp.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_isolate.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_soak.tres
@@ -100734,6 +101043,7 @@ msgstr ""
 #: cards/tier2/card_river.tres
 #: cards/tier2/card_swim.tres
 #: cards/tier3/card_carp.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_isolate.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_soak.tres
@@ -100756,6 +101066,7 @@ msgstr ""
 #: cards/tier2/card_river.tres
 #: cards/tier2/card_swim.tres
 #: cards/tier3/card_carp.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_isolate.tres
 #: cards/tier6/card_mud.tres
 #: cards/tier6/card_soak.tres
@@ -100870,6 +101181,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to drain"
 msgstr ""
@@ -100880,6 +101192,7 @@ msgstr ""
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier2/card_thanks.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to pour"
 msgstr ""
@@ -100889,6 +101202,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to let flow"
 msgstr ""
@@ -100898,6 +101212,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to flush"
 msgstr ""
@@ -100907,6 +101222,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to shed (blood, tears)"
 msgstr ""
@@ -100916,6 +101232,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to spill"
 msgstr ""
@@ -100925,6 +101242,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to float (e.g. logs down a river)"
 msgstr ""
@@ -100934,6 +101252,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to set adrift"
 msgstr ""
@@ -100943,6 +101262,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_soak.tres
 #: cards/tier6/card_tears.tres
 msgid "to wash away"
@@ -100953,6 +101273,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_soak.tres
 #: cards/tier6/card_tears.tres
 msgid "to carry away"
@@ -100963,6 +101284,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_soak.tres
 #: cards/tier6/card_tears.tres
 msgid "to sweep away"
@@ -100973,6 +101295,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to broadcast"
 msgstr ""
@@ -100982,6 +101305,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to play (e.g. music over a loudspeaker)"
 msgstr ""
@@ -100991,6 +101315,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to send (electricity through a wire)"
 msgstr ""
@@ -101000,6 +101325,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to circulate (a rumour, information, etc.)"
 msgstr ""
@@ -101010,6 +101336,7 @@ msgstr ""
 #: cards/tier1/card_gold.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_isolate.tres
 #: cards/tier6/card_tears.tres
 msgid "to distribute"
@@ -101020,6 +101347,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to cruise (of a taxi)"
 msgstr ""
@@ -101029,6 +101357,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to stroll around (in search of customers, an audience, etc.)"
 msgstr ""
@@ -101038,6 +101367,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to go from place to place"
 msgstr ""
@@ -101047,6 +101377,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to cancel (a plan, meeting, etc.)"
 msgstr ""
@@ -101056,6 +101387,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to call off"
 msgstr ""
@@ -101065,6 +101397,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to reject (e.g. a bill)"
 msgstr ""
@@ -101074,6 +101407,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to forfeit (a pawn)"
 msgstr ""
@@ -101083,6 +101417,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to do leisurely (e.g. running, swimming)"
 msgstr ""
@@ -101092,6 +101427,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to do with ease"
 msgstr ""
@@ -101101,6 +101437,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to do effortlessly"
 msgstr ""
@@ -101110,6 +101447,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to exile"
 msgstr ""
@@ -101119,6 +101457,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to banish"
 msgstr ""
@@ -101128,6 +101467,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to hit (the ball) to the opposite field"
 msgstr ""
@@ -101137,6 +101477,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to do inattentively"
 msgstr ""
@@ -101146,6 +101487,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to do without concentrating"
 msgstr ""
@@ -101155,6 +101497,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to put little effort into doing"
 msgstr ""
@@ -101164,6 +101507,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to cause a miscarriage"
 msgstr ""
@@ -101173,6 +101517,7 @@ msgstr ""
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_bridge.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_tears.tres
 msgid "to abort"
 msgstr ""
@@ -101296,6 +101641,7 @@ msgstr ""
 #: cards/tier2/card_lock.tres
 #: cards/tier3/card_bear.tres
 #: cards/tier3/card_chat.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_tea.tres
 #: cards/tier6/card_harm.tres
 #: cards/tier6/card_isolate.tres
@@ -101506,6 +101852,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier0/card_water.tres
+#: cards/tier2/card_fragrance.tres
 msgid "Is that a new perfume?"
 msgstr ""
 
@@ -102318,6 +102665,7 @@ msgstr ""
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier5/card_echo.tres
+#: cards/tier6/card_flood.tres
 msgid "tide"
 msgstr ""
 
@@ -103024,6 +103372,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier0/card_wind.tres
 #: cards/tier2/card_copy.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_glow.tres
 #: cards/tier2/card_release.tres
 msgid "to shoot"
@@ -107755,6 +108104,7 @@ msgstr ""
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_time.tres
 #: cards/tier3/card_polish.tres
+#: cards/tier3/card_scroll.tres
 msgid "to sleep (lying down)"
 msgstr ""
 
@@ -107766,6 +108116,7 @@ msgstr ""
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_time.tres
 #: cards/tier3/card_polish.tres
+#: cards/tier3/card_scroll.tres
 msgid "to lie in bed"
 msgstr ""
 
@@ -107777,6 +108128,7 @@ msgstr ""
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_time.tres
 #: cards/tier3/card_polish.tres
+#: cards/tier3/card_scroll.tres
 msgid "to sleep (with someone, i.e. have intercourse)"
 msgstr ""
 
@@ -107788,6 +108140,7 @@ msgstr ""
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_time.tres
 #: cards/tier3/card_polish.tres
+#: cards/tier3/card_scroll.tres
 msgid "to lie flat (e.g. of hair)"
 msgstr ""
 
@@ -107799,6 +108152,7 @@ msgstr ""
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_time.tres
 #: cards/tier3/card_polish.tres
+#: cards/tier3/card_scroll.tres
 msgid "to lie idle (of funds, stock, etc.)"
 msgstr ""
 
@@ -107810,6 +108164,7 @@ msgstr ""
 #: cards/tier2/card_sleep.tres
 #: cards/tier2/card_time.tres
 #: cards/tier3/card_polish.tres
+#: cards/tier3/card_scroll.tres
 msgid "to ferment (of soy sauce, miso, etc.)"
 msgstr ""
 
@@ -112871,11 +113226,13 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier1/card_heaven.tres
+#: cards/tier6/card_flood.tres
 msgid "natural disaster"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier1/card_heaven.tres
+#: cards/tier6/card_flood.tres
 msgid "natural calamity"
 msgstr ""
 
@@ -119392,6 +119749,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier1/card_sound.tres
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 #: cards/tier5/card_opportunity.tres
 #: cards/tier6/card_break.tres
@@ -120712,6 +121070,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier1/card_white.tres
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "scratch"
 msgstr ""
@@ -123218,6 +123577,7 @@ msgstr ""
 #: cards/tier2/card_mirror.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to be broken"
 msgstr ""
 
@@ -124216,6 +124576,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_bind.tres
 #: cards/tier3/card_five.tres
+#: cards/tier3/card_scroll.tres
 msgid "tie"
 msgstr ""
 
@@ -124580,6 +124941,7 @@ msgstr ""
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_look_at.tres
 #: cards/tier2/card_snow.tres
+#: cards/tier3/card_scroll.tres
 msgid "snow storm"
 msgstr ""
 
@@ -124587,6 +124949,7 @@ msgstr ""
 #: cards/tier2/card_blow.tres
 #: cards/tier2/card_look_at.tres
 #: cards/tier2/card_snow.tres
+#: cards/tier3/card_scroll.tres
 msgid "blizzard"
 msgstr ""
 
@@ -124905,6 +125268,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier2/card_blow.tres
+#: cards/tier3/card_scroll.tres
 msgid "We were caught in a snowstorm."
 msgstr ""
 
@@ -125081,6 +125445,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "flow (of a fluid or gas)"
 msgstr ""
 
@@ -125088,6 +125453,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "flow (of people, things)"
 msgstr ""
 
@@ -125096,6 +125462,7 @@ msgstr ""
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier2/card_time.tres
+#: cards/tier6/card_flood.tres
 msgid "passage (of time)"
 msgstr ""
 
@@ -125103,6 +125470,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "(changing) trends"
 msgstr ""
 
@@ -125110,6 +125478,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "(step-by-step) procedure"
 msgstr ""
 
@@ -125117,6 +125486,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "group of people who remain together after the end of an event"
 msgstr ""
 
@@ -125125,6 +125495,7 @@ msgstr ""
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier6/card_fall.tres
+#: cards/tier6/card_flood.tres
 msgid "descent"
 msgstr ""
 
@@ -125132,6 +125503,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "ancestry"
 msgstr ""
 
@@ -125139,6 +125511,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "forfeiture"
 msgstr ""
 
@@ -125146,6 +125519,7 @@ msgstr ""
 #: cards/tier2/card_boat.tres
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
+#: cards/tier6/card_flood.tres
 msgid "foreclosure"
 msgstr ""
 
@@ -125156,6 +125530,7 @@ msgstr ""
 #: cards/tier2/card_flow.tres
 #: cards/tier2/card_play.tres
 #: cards/tier2/card_release.tres
+#: cards/tier6/card_flood.tres
 msgid "drifting"
 msgstr ""
 
@@ -125164,6 +125539,7 @@ msgstr ""
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier2/card_release.tres
+#: cards/tier6/card_flood.tres
 msgid "wandering"
 msgstr ""
 
@@ -125172,6 +125548,7 @@ msgstr ""
 #: cards/tier2/card_fast.tres
 #: cards/tier2/card_flow.tres
 #: cards/tier2/card_release.tres
+#: cards/tier6/card_flood.tres
 msgid "roaming"
 msgstr ""
 
@@ -127099,6 +127476,7 @@ msgstr ""
 #: cards/tier2/card_chirp.tres
 #: cards/tier2/card_vortex.tres
 #: cards/tier3/card_gate.tres
+#: cards/tier3/card_scroll.tres
 msgid "whirlpool"
 msgstr ""
 
@@ -127106,6 +127484,7 @@ msgstr ""
 #: cards/tier2/card_chirp.tres
 #: cards/tier2/card_vortex.tres
 #: cards/tier3/card_gate.tres
+#: cards/tier3/card_scroll.tres
 msgid "maelstrom"
 msgstr ""
 
@@ -127624,12 +128003,14 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 msgid "bandage"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 msgid "dressing"
 msgstr ""
 
@@ -127637,6 +128018,7 @@ msgstr ""
 #: cards/tier2/card_cleanse.tres
 #: cards/tier3/card_create.tres
 #: cards/tier3/card_mystery.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "wound"
 msgstr ""
@@ -127646,6 +128028,7 @@ msgstr ""
 #: cards/tier2/card_lock.tres
 #: cards/tier3/card_create.tres
 #: cards/tier3/card_mystery.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_drown.tres
 #: cards/tier6/card_harm.tres
@@ -127658,12 +128041,14 @@ msgstr ""
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_cut.tres
 #: cards/tier2/card_prune.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "cut"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "gash"
 msgstr ""
@@ -127671,6 +128056,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_lock.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_wound.tres
 msgid "bruise"
@@ -127678,12 +128064,14 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "scrape"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "scar"
 msgstr ""
@@ -127691,6 +128079,7 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 msgid "chip"
 msgstr ""
 
@@ -127698,44 +128087,52 @@ msgstr ""
 #: cards/tier2/card_cleanse.tres
 #: cards/tier2/card_emptiness.tres
 #: cards/tier2/card_turtle.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier3/card_split.tres
 msgid "crack"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 msgid "nick"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 msgid "stain (on one's reputation)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "disgrace"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "dishonor"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 msgid "dishonour"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 msgid "(emotional) hurt"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_cleanse.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_wound.tres
 msgid "hurt feelings"
 msgstr ""
@@ -132389,6 +132786,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_equal.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_diligence.tres
 #: cards/tier6/card_entangle.tres
 msgid "involvement"
@@ -132953,6 +133351,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fast.tres
+#: cards/tier3/card_scroll.tres
 msgid "speeding up"
 msgstr ""
 
@@ -133808,6 +134207,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fee.tres
+#: cards/tier2/card_fragrance.tres
 msgid "flavoring"
 msgstr ""
 
@@ -133818,6 +134218,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fee.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_spicy.tres
 msgid "condiment"
 msgstr ""
@@ -133854,12 +134255,14 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fee.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_spicy.tres
 msgid "spice"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fee.tres
+#: cards/tier2/card_fragrance.tres
 #: cards/tier2/card_spicy.tres
 msgid "spices"
 msgstr ""
@@ -135327,6 +135730,7 @@ msgstr ""
 #: cards/tier2/card_fragment.tres
 #: cards/tier3/card_blaze.tres
 #: cards/tier3/card_city.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_soul.tres
 #: cards/tier5/card_forest.tres
 #: cards/tier5/card_loop.tres
@@ -136200,11 +136604,13 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 msgid "one foot"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 msgid "one leg"
 msgstr ""
 
@@ -136221,47 +136627,55 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 msgid "I saw a dog with one paw bandaged."
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 msgid "to coil"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 msgid "to wear (e.g. turban, scarf)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 msgid "to envelope"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 msgid "to outflank"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 msgid "to skirt"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 msgid "to link (verse)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier5/card_loop.tres
 msgid "to move ahead (three hours, etc.)"
 msgstr ""
@@ -136319,6 +136733,160 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_fragment.tres
 msgid "right-side kata radical (no. 91)"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: card_name
+#: cards/tier2/card_fragrance.tres
+msgid "Fragrance"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+msgid "incense stick"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+msgid "aromatic"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+msgid "fragrant"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+msgid "pleasant-smelling"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+msgid "appetizing"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_lotus.tres
+msgid "balm"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_lotus.tres
+msgid "sweet scent"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+msgid "incense"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+msgid "condolence gift"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+msgid "to smell sweet"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier6/card_stink.tres
+msgid "to be fragrant"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier2/card_fragrance.tres
+msgid "That smells good."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier2/card_fragrance.tres
+msgid "Are you wearing perfume?"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier2/card_fragrance.tres
+msgid "Your perfume is excessively strong."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier2/card_fragrance.tres
+msgid "This tea smells good."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier2/card_fragrance.tres
+msgid "It smells delicious."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier2/card_fragrance.tres
+msgid "That flower smells sweet."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier2/card_fragrance.tres
+msgid "This flower gives off a strong fragrance."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_glow.tres
+#: cards/tier2/card_release.tres
+msgid "to fire (gun, arrow, questions, etc.)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_glow.tres
+#: cards/tier2/card_release.tres
+msgid "to hit (e.g. baseball)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_glow.tres
+#: cards/tier2/card_release.tres
+msgid "to break wind"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_glow.tres
+#: cards/tier2/card_release.tres
+msgid "to let loose"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_glow.tres
+#: cards/tier2/card_release.tres
+msgid "to emit (e.g. light)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_glow.tres
+#: cards/tier2/card_release.tres
+msgid "to give off (e.g. a scent)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_glow.tres
+#: cards/tier2/card_release.tres
+msgid "to send out (a person to carry out a duty)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_fragrance.tres
+#: cards/tier2/card_glow.tres
+#: cards/tier2/card_release.tres
+msgid "to set fire to"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
@@ -136678,54 +137246,6 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier2/card_glow.tres
 msgid "The sun sends out light."
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_glow.tres
-#: cards/tier2/card_release.tres
-msgid "to fire (gun, arrow, questions, etc.)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_glow.tres
-#: cards/tier2/card_release.tres
-msgid "to hit (e.g. baseball)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_glow.tres
-#: cards/tier2/card_release.tres
-msgid "to break wind"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_glow.tres
-#: cards/tier2/card_release.tres
-msgid "to let loose"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_glow.tres
-#: cards/tier2/card_release.tres
-msgid "to emit (e.g. light)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_glow.tres
-#: cards/tier2/card_release.tres
-msgid "to give off (e.g. a scent)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_glow.tres
-#: cards/tier2/card_release.tres
-msgid "to send out (a person to carry out a duty)"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_glow.tres
-#: cards/tier2/card_release.tres
-msgid "to set fire to"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
@@ -137702,6 +138222,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_hotwater.tres
+#: cards/tier2/card_steam.tres
 msgid "vapor"
 msgstr ""
 
@@ -139232,6 +139753,7 @@ msgstr ""
 #: cards/tier2/card_mirror.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to fall apart"
 msgstr ""
 
@@ -139241,6 +139763,7 @@ msgstr ""
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
 #: cards/tier6/card_destroy.tres
+#: cards/tier6/card_flood.tres
 msgid "to be destroyed"
 msgstr ""
 
@@ -139248,9 +139771,11 @@ msgstr ""
 #: cards/tier2/card_lock.tres
 #: cards/tier2/card_mirror.tres
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier4/card_weave.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 #: cards/tier6/card_wound.tres
 msgid "to be damaged"
 msgstr ""
@@ -139260,6 +139785,7 @@ msgstr ""
 #: cards/tier2/card_mirror.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to break (down)"
 msgstr ""
 
@@ -139268,6 +139794,7 @@ msgstr ""
 #: cards/tier2/card_mirror.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to stop working"
 msgstr ""
 
@@ -139276,6 +139803,7 @@ msgstr ""
 #: cards/tier2/card_mirror.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to fall through (of a plan, deal, etc.)"
 msgstr ""
 
@@ -139284,6 +139812,7 @@ msgstr ""
 #: cards/tier2/card_mirror.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to break down (of a relationship, negotiations, etc.)"
 msgstr ""
 
@@ -139292,6 +139821,7 @@ msgstr ""
 #: cards/tier2/card_mirror.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to be broken off"
 msgstr ""
 
@@ -139300,6 +139830,7 @@ msgstr ""
 #: cards/tier2/card_mirror.tres
 #: cards/tier4/card_peace.tres
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "to be ruined (of an atmosphere, one's image, etc.)"
 msgstr ""
 
@@ -139839,16 +140370,6 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier2/card_lotus.tres
 msgid "The lotus blossoms diffused an inexpressibly pleasant scent."
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_lotus.tres
-msgid "balm"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier2/card_lotus.tres
-msgid "sweet scent"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: card_name
@@ -140898,6 +141419,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_memorize.tres
+#: cards/tier3/card_scroll.tres
 msgid "spectacular"
 msgstr ""
 
@@ -141121,16 +141643,19 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_memorize.tres
+#: cards/tier2/card_steam.tres
 msgid "to arouse from sleep"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_memorize.tres
+#: cards/tier2/card_steam.tres
 msgid "to bring to one's senses"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_memorize.tres
+#: cards/tier2/card_steam.tres
 msgid "to disabuse (someone of)"
 msgstr ""
 
@@ -144353,6 +144878,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_picture.tres
+#: cards/tier3/card_scroll.tres
 msgid "picture scroll"
 msgstr ""
 
@@ -145091,6 +145617,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_pine.tres
+#: cards/tier3/card_scroll.tres
 msgid "to encircle"
 msgstr ""
 
@@ -146447,6 +146974,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_pray.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier6/card_disease.tres
 msgid "recovery"
 msgstr ""
@@ -150219,6 +150747,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_round.tres
+#: cards/tier3/card_scroll.tres
 msgid "roll up"
 msgstr ""
 
@@ -152702,26 +153231,31 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_sleep.tres
+#: cards/tier3/card_scroll.tres
 msgid "nightclothes"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_sleep.tres
+#: cards/tier3/card_scroll.tres
 msgid "nightwear"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_sleep.tres
+#: cards/tier3/card_scroll.tres
 msgid "sleepwear"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_sleep.tres
+#: cards/tier3/card_scroll.tres
 msgid "pajamas"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_sleep.tres
+#: cards/tier3/card_scroll.tres
 msgid "nightgown"
 msgstr ""
 
@@ -153160,6 +153694,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_smoke.tres
+#: cards/tier3/card_scroll.tres
 msgid "cigar"
 msgstr ""
 
@@ -154433,6 +154968,46 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier2/card_statue.tres
 msgid "He has a very surprising fancy."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: card_name
+#: cards/tier2/card_steam.tres
+msgid "Steam"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_steam.tres
+msgid "steam whistle"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier2/card_steam.tres
+msgid "The steam whistle woke us at daybreak."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_steam.tres
+msgid "steam locomotive"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_steam.tres
+msgid "steam train"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_steam.tres
+msgid "(long-distance) train"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_steam.tres
+msgid "non-electric train"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier2/card_steam.tres
+msgid "diesel train"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: card_name
@@ -158696,16 +159271,19 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_vortex.tres
+#: cards/tier3/card_scroll.tres
 msgid "swirl"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_vortex.tres
+#: cards/tier3/card_scroll.tres
 msgid "eddy"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier2/card_vortex.tres
+#: cards/tier3/card_scroll.tres
 msgid "vortex"
 msgstr ""
 
@@ -159426,6 +160004,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_alone.tres
+#: cards/tier6/card_flood.tres
 msgid "being alone"
 msgstr ""
 
@@ -160351,6 +160930,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_bloom.tres
+#: cards/tier3/card_scroll.tres
 msgid "comeback"
 msgstr ""
 
@@ -163012,60 +163592,70 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to chip"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to be chipped"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to break (off)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to be missing (from a set, team, etc.)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to be lacking (in)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to be short (of)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to be deficient"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to be wanting (in)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to wane (of the moon)"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_divinity.tres
+#: cards/tier3/card_scroll.tres
 #: cards/tier4/card_weave.tres
 msgid "to go into eclipse"
 msgstr ""
@@ -163115,21 +163705,25 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 msgid "tornado"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 msgid "whirlwind"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 msgid "waterspout"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 msgid "twister"
 msgstr ""
 
@@ -163141,6 +163735,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier3/card_dragon.tres
+#: cards/tier3/card_scroll.tres
 msgid "There was a tornado in the village."
 msgstr ""
 
@@ -168935,6 +169530,280 @@ msgid "contented"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: card_name
+#: cards/tier3/card_scroll.tres
+msgid "Scroll"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "to wear a scarf or turban"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "to link verse"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "roll, e.g. of cloth"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "winding, e.g. watch"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "volume of a book"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "to fawn over someone"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "to curry favor with"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "scroll"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "roll"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "to enfold"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "to involve"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "to drag into"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "getting mixed up in"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "getting embroiled in"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+#: cards/tier6/card_entangle.tres
+msgid "entanglement"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "end of a book"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "sweeping over"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "conquering"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "overwhelming"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "headband"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "highlight"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "best part"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "stunning"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "breathtaking"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "spiral shape"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "rally"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "rollback"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "winding"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "scarf"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "muffler"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier3/card_scroll.tres
+msgid "This book comes in two volumes."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "volume (of book)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "reel (of film)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "scroll (of books or paintings)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "roll (paper, etc.)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier3/card_scroll.tres
+msgid "He has curly hair."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "hair"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+#: cards/tier3/card_thicket.tres
+msgid "fur"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "wool"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "plumage"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "feathers"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier3/card_scroll.tres
+msgid "Let me bandage your wounds."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier3/card_scroll.tres
+msgid "The last volume is missing from this set."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+#: cards/tier5/card_wildcard.tres
+msgid "complete works"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+#: cards/tier5/card_wildcard.tres
+msgid "complete collection"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "complete series"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "roll (e.g. of cloth)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "winding (e.g. watch)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "heel (of a Japanese sandal)"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier3/card_scroll.tres
+msgid "I ate breakfast in my pajamas."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "wind up"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "coil"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier3/card_scroll.tres
+msgid "counter for texts (or book scrolls)"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: card_name
 #: cards/tier3/card_six.tres
 msgid "Six"
 msgstr ""
@@ -170358,11 +171227,6 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier3/card_thicket.tres
 msgid "pelt"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier3/card_thicket.tres
-msgid "fur"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
@@ -177526,16 +178390,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier5/card_wildcard.tres
-msgid "complete works"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier5/card_wildcard.tres
-msgid "complete collection"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier5/card_wildcard.tres
 #: cards/tier6/card_destroy.tres
 msgid "total destruction"
 msgstr ""
@@ -178301,6 +179155,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier6/card_break.tres
+#: cards/tier6/card_flood.tres
 msgid "The bridge gave way because of the flood."
 msgstr ""
 
@@ -179819,11 +180674,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier6/card_entangle.tres
-msgid "entanglement"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier6/card_entangle.tres
 msgid "to intertwine"
 msgstr ""
 
@@ -181049,6 +181899,67 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier6/card_fear.tres
 msgid "He turned pale with fright."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: card_name
+#: cards/tier6/card_flood.tres
+msgid "Flood"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier6/card_flood.tres
+msgid "The flood began to subside."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier6/card_flood.tres
+msgid "The flood diverted the course of the river."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier6/card_flood.tres
+msgid "The bridge was washed away by the flood."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier6/card_flood.tres
+msgid "A lot of houses were washed away by the flood."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier6/card_flood.tres
+msgid "After the heavy rain, there was a big flood."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier6/card_flood.tres
+msgid "Earthquakes and floods are natural disasters."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier6/card_flood.tres
+msgid "act of God"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier6/card_flood.tres
+msgid "The village was isolated by the flood."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier6/card_flood.tres
+msgid "being friendless"
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
+#: cards/tier6/card_flood.tres
+msgid "The typhoon resulted in a lot of flooding."
+msgstr ""
+
+#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
+#: cards/tier6/card_flood.tres
+#: cards/tier6/card_soak.tres
+msgid "deluge"
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: card_name
@@ -184547,11 +185458,6 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
 #: cards/tier6/card_soak.tres
-msgid "deluge"
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier6/card_soak.tres
 msgid "oversupply"
 msgstr ""
 
@@ -184969,11 +185875,6 @@ msgstr ""
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: native
 #: cards/tier6/card_stink.tres
 msgid "Something stinks here."
-msgstr ""
-
-#. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
-#: cards/tier6/card_stink.tres
-msgid "to be fragrant"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: meanings[]
@@ -197934,6 +198835,73 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid "The Ice Harvest"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid ""
+"When the first houses were still being raised in this settlement, surveyors found frozen caves with smooth, glassy walls, full of ice stalagmites. Soon, huge chunks of ice were cut and hauled back to the town for preserving food.\n"
+"\n"
+"The settlers cut away the frozen treasure piece by piece, filling the cavern with a maze of wooden platforms and staircases.\n"
+"\n"
+"It wasn't long, however, before the ice ran out. The only remaining wall deep in the cave hides a raging waterfall."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid "Dig into the waterfall."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid ""
+"The settlers chisel away at the frozen falls, ignoring the cracking sound coming from the ice.\n"
+"\n"
+"They have only a moment to rush out as the wall suddenly shatters and freezing water begins to fill the chambers."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid "Cut little holes to let water escape and refreeze."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid ""
+"The settlers carefully crack tiny holes in the wall to let a thin stream of water escape the falls.\n"
+"\n"
+"The settlers plug the hole once the water fills half of the chamber, letting it freeze over before extracting the newly formed ice and repeating the process. The harvest is humble, but it's safe, and it won't run out anytime soon."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid "Search for the waterfall's source. "
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid ""
+"Curious about where the stream feeding the falls originates, the settlers climb deeper into the cave, crawling through tiny, freezing crevices and climbing up slippery shafts until they reach a staircase cut into the rock.\n"
+"\n"
+"It leads to a small chamber with several statuettes standing in small alcoves. The origin of the falls remains a mystery, but perhaps this discovery is even more illuminating."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid "Leave the waterfall be."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/ice_caves/event_ice_caves.tres
+msgid ""
+"The settlers leave the waterfall alone, afraid of flooding the whole cave system.\n"
+"\n"
+"Now settlers store their food within the caverns, rather than harvesting ice for the purpose."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
 #: events/generic/ikebana/event_ikebana.tres
 msgid "Flower Arrangement"
 msgstr ""
@@ -199204,6 +200172,92 @@ msgid ""
 "The silkworms are put on a strict diet and indoctrinated into an ascetic lifestyle.\n"
 "\n"
 "When the berries ripen, the settlers will fill their pantries with mulberry wine and stuff themselves with millet dumplings topped with fresh berries."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/onsen/event_onsen.tres
+msgid "The Onsen Visit"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/onsen/event_onsen.tres
+msgid ""
+"The onsen retreat has quickly gained popularity among locals and visitors alike.\n"
+"\n"
+"A cluster of wooden buildings has sprung up around the hot pools. They not only house the bath attendants, but also serve as lodges for guests. There's even a dedicated dining hall. A head bath-keeper now oversees the little community.\n"
+"\n"
+"On this misty morning the onsen is receiving an unusual group of guests."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/onsen/event_onsen.tres
+msgid "Monks from the Order of the Wilds are visiting."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/onsen/event_onsen.tres
+msgid ""
+"The monks and nuns of the Wilds arrive, their companion falcons circling over their heads. The head bath-keeper leads them to the warm pools, apologizing profusely for the recent increase in snails clinging to the edges of the pool.\n"
+"\n"
+"On their way out, one of the monks takes the bath-keeper aside. He explains that the snails are to be kept undisturbed. \"They lend their service to keep these pools clean,\" he says. \"They have come because you were in need of their help.\""
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/onsen/event_onsen.tres
+msgid "Monks from the Order of Growth are visiting."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/onsen/event_onsen.tres
+msgid ""
+"The bath-keeper leads the monks from the Order of Growth to the baths while boasting about the cedars surrounding the pool.\n"
+"\n"
+"When he returns later to check on the visitors, he finds the bath filled with bright yellow yuzu fruits floating in the hot water.\n"
+"\n"
+"\"These fruits offer much beyond their aroma,\" one of the monks explains. \"They will relax the sore muscles of the elderly, and the tireless workers who visit your retreat.\""
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/onsen/event_onsen.tres
+msgid "Monks from the Ember Order are visiting."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/onsen/event_onsen.tres
+msgid ""
+"A group of monks and nuns from the Ember Order arrive at the hot springs, faces stern and eyes gleaming.\n"
+"\n"
+"They soak in the springs until past dark.\n"
+"\n"
+"One of the nuns approaches the bath-keeper on her way out and points to a rocky outcropping several paces from the main spring. “We saw steam rising from that crack, and the ground was warm,\" she says. \"Dig there, and you will have a bath hotter than the ones at our monastery.\""
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/onsen/event_onsen.tres
+msgid "Monks from the Shattered Order are visiting."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/onsen/event_onsen.tres
+msgid ""
+"A group from the Shattered Order arrives. Their orange robes are threadbare, but they all smile serenely.\n"
+"\n"
+"When they emerge in the afternoon, one monk approaches the bath-keeper with a blank scroll. \"Let your guests fill their names in this scroll, along with their home shard,\" he says. \"A testament of how your service links our communities... And maybe it'll save them from the next Shattering,\" he adds with a wink."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/onsen/event_onsen.tres
+msgid "Actors from the Dragonfly Troupe are visiting."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/onsen/event_onsen.tres
+msgid ""
+"A group of actors from the famous Dragonfly troupe arrives at the baths, making enough racket to echo all through the surrounding valleys.\n"
+"\n"
+"Halfway through their soak, they decide to put on an impromptu show for the other guests.\n"
+"\n"
+"They spend the rest of the day running around, yelling jokes, and playing on their biwa lutes, mostly to the mild annoyance and bemusement of their audience."
 msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: event_name
@@ -206798,6 +207852,12 @@ msgstr ""
 #: quests/announcement/quest_announcement.tscn
 #: theme/confirm_dialog/confirm_dialog.gd:11
 #: theme/confirm_dialog/confirm_dialog.tscn
+#: utils/steam_setup.gd:38
+#: utils/steam_setup.gd:61
+#: utils/steam_setup.gd:74
+#: utils/steam_setup.gd:81
+#: utils/steam_setup.gd:93
+#: utils/steam_setup.gd:98
 #: utils/ui.gd:290
 msgid "Ok"
 msgstr ""
@@ -210724,7 +211784,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: default_description
 #: relics/common/cart_wheel/relic_cart_wheel.tres
-msgid "Whenever you use a <term:card_ability.continue> <term_lower:card_ability>, gain %d points of a random <term_lower:stage_goal>."
+msgid "Whenever you use a <term:card_ability.continue> <term_lower:card_ability>, gain %d points of a random unsatisfied <term_lower:stage_goal>."
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
@@ -211363,6 +212423,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
 #: relics/common/odd_statue/relic_odd_statue.tres
+#: relics/common/strange_statue/relic_strange_statue.tres
 msgid "Other than the ears, this deity looks unrecognizable."
 msgstr ""
 
@@ -211742,6 +212803,16 @@ msgid "The stone doesn't feel loss, and neither should you. Not to be confused w
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: default_name
+#: relics/common/strange_statue/relic_strange_statue.tres
+msgid "Strange Statuette"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_description
+#: relics/common/strange_statue/relic_strange_statue.tres
+msgid "Whenever you restore <term:inspiration> beyond the maximum, gain as many points of a random unsatisfied <term_lower:stage_goal>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_name
 #: relics/common/sweet_honeycomb/relic_sweet_honeycomb.tres
 msgid "Sweet Honeycomb"
 msgstr ""
@@ -211939,6 +213010,21 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
 #: relics/common/wicker_gear/relic_wicker_gear.tres
 msgid "Put together from leftover tools. Still turns."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_name
+#: relics/common/yuzu/relic_yuzu.tres
+msgid "Yuzu Fruit"
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: default_description
+#: relics/common/yuzu/relic_yuzu.tres
+msgid "Whenever you <term_lower:play_card> a %s <term_lower:glyph>, add a %s <term_lower:glyph> to your <term_lower:hand>."
+msgstr ""
+
+#. TRANSLATORS: Category: GAMEPLAY; Property: flavor_text
+#: relics/common/yuzu/relic_yuzu.tres
+msgid "The bumpy skin is scarred by the tree's thorns."
 msgstr ""
 
 #. TRANSLATORS: Category: GAMEPLAY; Property: default_name
@@ -212606,7 +213692,7 @@ msgstr ""
 msgid " If you finish the <term:harmonization> now, you will lose [b]%d[/b] <term:inspiration>."
 msgstr ""
 
-#: run/run.gd:480
+#: run/run.gd:484
 msgid "Loading Settlements..."
 msgstr ""
 
@@ -229768,6 +230854,48 @@ msgstr ""
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
 #: utils/save_game_indicator.tscn
 msgid "記"
+msgstr ""
+
+#: utils/steam_setup.gd:36
+#: utils/steam_setup.gd:59
+msgid "Steam Upload Error"
+msgstr ""
+
+#: utils/steam_setup.gd:37
+#: utils/steam_setup.gd:60
+msgid "Workshop item creation failed with error code: %s"
+msgstr ""
+
+#: utils/steam_setup.gd:72
+#: utils/steam_setup.gd:79
+#: utils/steam_setup.gd:91
+#: utils/steam_setup.gd:96
+msgid "Steam Upload Success!"
+msgstr ""
+
+#: utils/steam_setup.gd:73
+msgid ""
+"Workshop item updated successfully.\n"
+"\n"
+"BUT automatic subscribe failed. Subscribe and restart to edit."
+msgstr ""
+
+#: utils/steam_setup.gd:80
+msgid ""
+"Workshop item updated and subscribed successfully.\n"
+"\n"
+"BUT automatic download failed. Steam restart may be required."
+msgstr ""
+
+#: utils/steam_setup.gd:92
+msgid "Workshop item updated and downloaded successfully."
+msgstr ""
+
+#: utils/steam_setup.gd:97
+msgid ""
+"Workshop item updated and subscribed successfully.\n"
+"\n"
+"BUT automatic download may have failed. Steam restart may be required."
 msgstr ""
 
 #: utils/utils.gd:281
