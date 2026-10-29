@@ -70,6 +70,10 @@ func _recreate() -> void:
 		choice_scene.event_choice = choice
 		choice_scene.selected.connect(_on_choice_selected.bind(choice))
 		%ChoicesList.add_child(choice_scene)
+	if all_choices.size() <= 4:
+		(%ScrollContainer as Control).custom_minimum_size.y = 310
+	else:
+		(%ScrollContainer as Control).custom_minimum_size.y = 250
 
 func _on_choice_selected(choice: EventChoice) -> void:
 	var widget: EventOutcomeWidget = null
