@@ -83,11 +83,11 @@ func format_history_text(index: int, past_run: PastRun, text_override: String = 
 	if text_override:
 		text = text_override
 	else:
-		text = history[index].text
+		text = tr(history[index].text)
 		var overridden := false
 		for override in history[index].overrides:
 			if override.requirement.is_satisfied(null, null):
-				text = override.text
+				text = tr(override.text)
 				if overridden:
 					push_warning('Multiple shard history overrides apply. Taking the last one. ID: ', shard_type_id)
 				overridden = true

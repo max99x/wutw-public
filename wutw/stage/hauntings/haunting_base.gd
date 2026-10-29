@@ -133,9 +133,9 @@ func _make_tooltip_text() -> String:
 
 	text += '\n\n'
 	if Utils.is_realistic_era():
-		text += tr('“%s”') % haunting_type.description_realistic
+		text += tr('“%s”') % tr(haunting_type.description_realistic)
 	else:
-		text += tr('“%s”') % haunting_type.description
+		text += tr('“%s”') % tr(haunting_type.description)
 
 	if Utils.is_museum_unlocked():
 		text += '\n\n'
