@@ -113,6 +113,12 @@ text = "Ready to Inscribe"
 value = "ready"
 metadata/_custom_type_script = "uid://bmw3vmo4pm0wc"
 
+[sub_resource type="Resource" id="Resource_r2u3k"]
+script = ExtResource("8_mhhnw")
+text = "Can't Inscribe Yet"
+value = "notyet"
+metadata/_custom_type_script = "uid://bmw3vmo4pm0wc"
+
 [sub_resource type="Resource" id="Resource_mhhnw"]
 script = ExtResource("8_mhhnw")
 text = "Any Essence"
@@ -244,7 +250,7 @@ custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 8
 focus_mode = 0
-initial_items = Array[ExtResource("8_mhhnw")]([SubResource("Resource_ge3l3"), SubResource("Resource_87r06"), SubResource("Resource_x5fvi")])
+initial_items = Array[ExtResource("8_mhhnw")]([SubResource("Resource_ge3l3"), SubResource("Resource_87r06"), SubResource("Resource_x5fvi"), SubResource("Resource_r2u3k")])
 
 [node name="AspectFilterDropdown" parent="Control/ScrollPanel/Scroller/ScrollMargin/ContentPanel/ContentContainer/VBoxContainer/PanelContainer/HBoxContainer" unique_id=1948387721 instance=ExtResource("7_n8ahr")]
 unique_name_in_owner = true

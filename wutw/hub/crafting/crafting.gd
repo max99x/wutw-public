@@ -213,8 +213,11 @@ func _on_search_input_text_changed(query_text: String) -> void:
 
 func _on_owned_filter_dropdown_selected(item: DropdownItem) -> void:
 	for tier_list: CardTierList in %CardsList.get_children():
-		tier_list.filter_only_owned = item.value == 'owned'
-		tier_list.filter_only_inscribable = item.value == 'ready'
+		match item.value:
+			null: tier_list.filter_state = CardTierList.StateFilter.ALL
+			'owned': tier_list.filter_state = CardTierList.StateFilter.OWNED
+			'ready': tier_list.filter_state = CardTierList.StateFilter.CRAFTABLE
+			'notyet': tier_list.filter_state = CardTierList.StateFilter.NOT_CRAFTABLE_YET
 
 func _on_aspect_filter_dropdown_selected(item: DropdownItem) -> void:
 	for tier_list: CardTierList in %CardsList.get_children():

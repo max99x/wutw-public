@@ -206382,6 +206382,11 @@ msgstr ""
 msgid "Ready to Inscribe"
 msgstr ""
 
+#. TRANSLATORS: Category: GAMEPLAY; Property: text
+#: hub/crafting/crafting.tscn
+msgid "Can't Inscribe Yet"
+msgstr ""
+
 #. TRANSLATORS: Category: GAMEPLAY; Property: text[]
 #: hub/crafting/crafting.tscn
 msgid "Stroke Inventory"
@@ -207007,7 +207012,7 @@ msgstr ""
 #: hub/museum/museum_detail_spot.gd:39
 #: relics/relic.gd:102
 #: run/run_end/discovery_upgrade.gd:81
-#: stage/selector/spot_type_entry.gd:123
+#: stage/selector/spot_type_entry.gd:126
 #: stage/spots/spot.gd:196
 #: stage/spots/spot.gd:201
 #: stage/spots/spot_recipe.gd:238
@@ -207235,7 +207240,7 @@ msgstr ""
 #: stage/hauntings/haunting_base.gd:142
 #: stage/selector/event_list_entry.gd:74
 #: stage/selector/haunting_list_entry.gd:58
-#: stage/selector/spot_type_entry.gd:128
+#: stage/selector/spot_type_entry.gd:131
 #: stage/spots/spot_recipe.gd:267
 msgid "[i]%s to open museum entry.[/i]"
 msgstr ""
@@ -220174,19 +220179,19 @@ msgstr ""
 msgid "The <term_lower:spot> type hasn't been discovered yet."
 msgstr ""
 
-#: stage/selector/spot_type_entry.gd:97
+#: stage/selector/spot_type_entry.gd:100
 msgid "This will provide %s from the capital."
 msgstr ""
 
-#: stage/selector/spot_type_entry.gd:102
+#: stage/selector/spot_type_entry.gd:105
 msgid "A valid location for the capital."
 msgstr ""
 
-#: stage/selector/spot_type_entry.gd:117
+#: stage/selector/spot_type_entry.gd:120
 msgid "Maximum <term_lower:bonus>s:"
 msgstr ""
 
-#: stage/selector/spot_type_entry.gd:132
+#: stage/selector/spot_type_entry.gd:135
 msgid "[b]This spot type has not been discovered yet.[/b]"
 msgstr ""
 

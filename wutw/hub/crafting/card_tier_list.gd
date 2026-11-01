@@ -3,6 +3,8 @@ extends VBoxContainer
 
 signal card_selected(card: Card)
 
+enum StateFilter { ALL, OWNED, CRAFTABLE, NOT_CRAFTABLE_YET }
+
 static var CARD_SCENE := AsyncLoadedResource.new('res://cards/card.tscn')
 static var UNKNOWN_CARD_SCENE := AsyncLoadedResource.new('res://hub/crafting/unknown_card.tscn', false, AsyncLoadedResource.LoadPhase.SPECULATIVE)
 
@@ -21,14 +23,9 @@ static var UNKNOWN_CARD_SCENE := AsyncLoadedResource.new('res://hub/crafting/unk
 		filter_aspect = value
 		if is_node_ready():
 			_update_filter()
-@export var filter_only_owned: bool:
+@export var filter_state: StateFilter:
 	set(value):
-		filter_only_owned = value
-		if is_node_ready():
-			_update_filter()
-@export var filter_only_inscribable: bool:
-	set(value):
-		filter_only_inscribable = value
+		filter_state = value
 		if is_node_ready():
 			_update_filter()
 
@@ -149,13 +146,20 @@ func _update_filter() -> void:
 		if passes_filter and filter_aspect:
 			if filter_aspect not in card.card_type.aspects:
 				passes_filter = false
-		if passes_filter and filter_only_owned:
-			if card.card_type not in _last_unlocked_cards:
-				passes_filter = false
-		if passes_filter and filter_only_inscribable:
-			if not _can_unlock(card.card_type) or card.card_type in _last_unlocked_cards:
-				passes_filter = false
+		if passes_filter:
+			match filter_state:
+				StateFilter.ALL: pass
+				StateFilter.OWNED:
+					if card.card_type not in _last_unlocked_cards:
+						passes_filter = false
+				StateFilter.CRAFTABLE:
+					if not _can_unlock(card.card_type) or card.card_type in _last_unlocked_cards:
+						passes_filter = false
+				StateFilter.NOT_CRAFTABLE_YET:
+					if (card.card_type.rarity >= CardType.Rarity.LEGENDARY or
+						_can_unlock(card.card_type) or card.card_type in _last_unlocked_cards):
+						passes_filter = false
 		card.visible = passes_filter
 
 	if _unknown_card:
-		_unknown_card.visible = not (filter_text or filter_aspect or filter_only_owned or filter_only_inscribable)
+		_unknown_card.visible = not (filter_text or filter_aspect or filter_state != StateFilter.ALL)
