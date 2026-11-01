@@ -65,6 +65,9 @@ func _update() -> void:
 		if GameSettings.Interface.sort_predicted_yields.value():
 			bonus_types.sort_custom(func(a: BonusType, b: BonusType) -> bool:
 				return max_bonuses.get(a, 0) > max_bonuses.get(b, 0))
+		else:
+			bonus_types.sort_custom(func(a: BonusType, b: BonusType) -> bool:
+				return goal.bonus_requirements.get(a, 0) > goal.bonus_requirements.get(b, 0))
 		var only_goal := not (_preview_all_bonuses and Input.is_key_pressed(KEY_CTRL))
 		for bonus_type: BonusType in bonus_types:
 			if only_goal and bonus_type not in goal.bonus_requirements:
