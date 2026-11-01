@@ -26,6 +26,11 @@ func _ready() -> void:
 	Utils.get_active_run().signals.bonus_lost.connect(_update_shop_state.unbind(3))
 	Utils.get_active_run().signals.shop_transacted.connect(_update_shop_state)
 
+func _process(_delta: float) -> void:
+	# HACK: Several hard-to-repro cases have been reported causing the lack display
+	#       to get out of date, so we brute-force update it here.
+	_update_lacks()
+
 func _gui_input(event: InputEvent) -> void:
 	var mouse_event := event as InputEventMouseButton
 	if mouse_event and mouse_event.button_index == MOUSE_BUTTON_LEFT:
@@ -44,12 +49,25 @@ func _update() -> void:
 	(%PositiveBonus as Bonus).bonus_type = settlement.get_yield_type()
 	(%PositiveBonus as Bonus).visible = Skill.get_skill_var(Skill.Var.CAPITAL_CONNECTION) > 0
 
+	# HACK: Currently brute-forced in _process()
+	#_update_lacks()
+
+	if not settlement.connected.is_connected(_update):
+		settlement.connected.connect(_update)
+	if not settlement.lacks_changed.is_connected(_update):
+		settlement.lacks_changed.connect(_update)
+
+	_update_shop_state()
+
+func _update_lacks() -> void:
+	if not Utils.ensure(settlement != null):
+		return
 	var negative_bonus_1 := %NegativeBonus as Bonus
 	var negative_bonus_2 := %NegativeBonus2 as Bonus
 	var lacks := settlement.get_unsatisfied_lacks()
 	Utils.ensure(lacks.size() <= 2)
 	var run := Utils.get_active_run()
-	if lacks.size() > 0 and run.scaling.stages_per_season < 100:  # Not tutorial
+	if run and lacks.size() > 0 and run.scaling.stages_per_season < 100:  # Not tutorial
 		negative_bonus_1.bonus_type = lacks[0]
 		negative_bonus_1.visible = true
 		if lacks.size() > 1:
@@ -60,13 +78,6 @@ func _update() -> void:
 	else:
 		negative_bonus_1.visible = false
 		negative_bonus_2.visible = false
-
-	if not settlement.connected.is_connected(_update):
-		settlement.connected.connect(_update)
-	if not settlement.lacks_changed.is_connected(_update):
-		settlement.lacks_changed.connect(_update)
-
-	_update_shop_state()
 
 func _update_shop_state() -> void:
 	if not settlement.get_shops():
