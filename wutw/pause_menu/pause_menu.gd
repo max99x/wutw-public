@@ -152,7 +152,7 @@ func _on_back_to_hub_button_pressed() -> void:
 					base_insights_label, bonus_insights_label]
 		else:
 			prompt += tr('You will gain %s in addition to the %s you earned for returning before inspiration is exhausted.') % [
-				bonus_insights_label, bonus_insights_label]
+				bonus_insights_label, base_insights_label]
 
 	GlobalUI.show_confirm(tr('Finish Expedition?'), prompt).confirmed.connect(func() -> void:
 		if run.get_state() in FORAY_STATES or run.get_state() in HARMONIZATION_STATES:
