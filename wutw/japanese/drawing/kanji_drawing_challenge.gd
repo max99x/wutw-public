@@ -21,6 +21,9 @@ func _ready() -> void:
 
 	(%ScrollPanel as ScrollPanel).animate_unroll()
 
+func _enter_tree() -> void:
+	UI.register_zoomable(%ScrollPanel as Control, 0.5, 0.5)
+
 func _handle_esc() -> bool:
 	close()
 	return true
