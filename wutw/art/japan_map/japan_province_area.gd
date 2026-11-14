@@ -289,13 +289,16 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		var new_hovered := false
 
-		for child in get_children():
-			var poly := child as Polygon2D
-			if poly != null:
-				var local_mouse := poly.get_local_mouse_position()
-				if Geometry2D.is_point_in_polygon(local_mouse, poly.polygon):
-					new_hovered = true
-					break
+		if is_visible_in_tree():
+			for child in get_children():
+				var poly := child as Polygon2D
+				if poly != null:
+					var local_mouse := poly.get_local_mouse_position()
+					if Geometry2D.is_point_in_polygon(local_mouse, poly.polygon):
+						new_hovered = true
+						break
+		else:
+			new_hovered = false
 
 		if new_hovered and not _is_hovered:
 			_is_hovered = true
