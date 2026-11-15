@@ -331,6 +331,7 @@
 # res://art/pieces/piece_hiroshige_2_mt_asama.tres
 # res://art/pieces/piece_hiroshige_2_rock_tripe.tres
 # res://art/pieces/piece_hiroshige_2_sado_caverns.tres
+# res://art/pieces/piece_hiroshige_2_whale_hunting.tres
 # res://art/pieces/piece_hiroshige_3_ashikaga_loom.tres
 # res://art/pieces/piece_hiroshige_3_bear_hunting.tres
 # res://art/pieces/piece_hiroshige_3_butterbur.tres
@@ -358,6 +359,7 @@
 # res://art/pieces/piece_hiroshige_akasaka_inn.tres
 # res://art/pieces/piece_hiroshige_asakusa.tres
 # res://art/pieces/piece_hiroshige_asakusa_market.tres
+# res://art/pieces/piece_hiroshige_awa_whirlpools.tres
 # res://art/pieces/piece_hiroshige_boar.tres
 # res://art/pieces/piece_hiroshige_carp.tres
 # res://art/pieces/piece_hiroshige_dreaming_courtesan.tres
@@ -1723,6 +1725,7 @@
 # res://events/generic/cicada/event_cicada_1.tres
 # res://events/generic/cicada/event_cicada_2.tres
 # res://events/generic/clay_basket/event_clay_basket.tres
+# res://events/generic/coral_garden/event_coral_garden.tres
 # res://events/generic/crystallobotany/event_crystallobotany.tres
 # res://events/generic/desert_archive/event_desert_archive.tres
 # res://events/generic/desert_cassava/event_desert_cassava.tres
@@ -1797,6 +1800,7 @@
 # res://events/generic/volcano/event_volcano.tres
 # res://events/generic/weaving_house/event_weaving_house.tres
 # res://events/generic/wedding_veil/event_wedding_veil.tres
+# res://events/generic/whale_shrine/event_whale_shrine.tres
 # res://events/generic/wild_monastery/event_wild_monastery.tres
 # res://events/landmark/communal_baths/event_communal_baths.tres
 # res://events/landmark/endless_ruin/endless_ruin_relics.tres
@@ -7296,6 +7300,30 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_hiroshige_2_whale_hunting.tres
+msgid "Whale Hunting at the Island of Goto in Hizen"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: edits_description
+#: art/pieces/piece_hiroshige_2_whale_hunting.tres
+msgid "The weapons and the text were removed."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_hiroshige_2_whale_hunting.tres
+msgid ""
+"Depicts hunters in small boats hurling harpoons at a whale.\n"
+"\n"
+"When such hunts were successful, whale parts were used not only for food, but also for lamp oil, soap, fertilizer, and even to produce folding fans.\n"
+"\n"
+"While stranded whales have been consumed in Japan since before the 3rd century BC, active whaling began in the 12th century using harpoons, and became a major industry in the 17th century, at which point specially designed nets began to also be used.\n"
+"\n"
+"Whaling has historically been opposed by Buddhists, as well as inhabitants of North Eastern Japan, who considered whales to be an incarnation of the god Ebisu.\n"
+"\n"
+"The Japanese whaling industry peaked between 1810 and 1850. By the time this print was designed, whalers from Western nations, hunting in waters off the coast of Japan, had begun to deplete the supply of whales for Japanese fishermen."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
 #: art/pieces/piece_hiroshige_3_ashikaga_loom.tres
 msgid "High Loom Near Ashikaga, Shimotsuke Province"
 msgstr ""
@@ -7707,6 +7735,26 @@ msgstr ""
 #. TRANSLATORS: Category: ART_WIKI; Property: blurb
 #: art/pieces/piece_hiroshige_asakusa_market.tres
 msgid "Depicts the busy end-of-the-year market at the Asakusa Sensō-ji temple."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: piece_name
+#: art/pieces/piece_hiroshige_awa_whirlpools.tres
+msgid "View of Whirlpools at Awa"
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: edits_description
+#: art/pieces/piece_hiroshige_awa_whirlpools.tres
+msgid "Only the middle panel was used and the stamps were removed."
+msgstr ""
+
+#. TRANSLATORS: Category: ART_WIKI; Property: blurb
+#: art/pieces/piece_hiroshige_awa_whirlpools.tres
+msgid ""
+"Depicts the swirling eddies comprising the [url=https://en.wikipedia.org/wiki/Naruto_whirlpools]Naruto whirlpools[/url], a channel between Naruto in Tokushima and Awaji Island in present-day Hyōgo prefecture.\n"
+"\n"
+"These whirlpools are caused by the difference in sea levels between the Pacific Ocean and the Seto Inland Sea. They form as the water rushes through the narrow Naruto strait, and are especially noticeable during spring and autumn.\n"
+"\n"
+"Hiroshige completed this design one year before his death as part of a set of three triptychs on the theme known as setsugetsuka (\"snow-moon-flowers\"). Flowers are the theme here, as represented by the shape of the whirlpools, while snow and the moon are the theme of the other two triptychs. These late Hiroshige works often avoided focusing on human figures and instead focused purely on vast landscapes."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -196813,6 +196861,7 @@ msgstr ""
 #. Category: EVENTS; Property: outcome_text
 #: events/generic/blossom_study/event_blossom_study.tres
 #: events/generic/school/event_school.tres
+#: events/generic/whale_shrine/event_whale_shrine.tres
 #: events/landmark/mirage_gate/event_mirage_gate.tres
 #: stage/survey/episodes/episode_big_tree.tres
 #: stage/survey/episodes/episode_swamp_bridge.tres
@@ -197530,6 +197579,79 @@ msgid ""
 "\"Not this time,\" the potter says. \"Maybe next.\"\n"
 "\n"
 "The teen shrugs and carries the crate back home."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid "Coral Jewelry"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid ""
+"Swirling whirlpools churn the waters off the settlement's coast, right above a forest of bright coral.\n"
+"\n"
+"The resulting currents occasionally snap off coral branches, and carry them ashore, where settlers gather them up.\n"
+"\n"
+"The jewelry made from these fragments has become the town's signature export, but demand far outpaces supply."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid "Make jewelry out of other materials."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid ""
+"The settlers collect smooth stones, colorful seashells, and driftwood, polishing them until they gleam, and carving them into delicate ornaments.\n"
+"\n"
+"Although the new jewelry doesn't prove to be as successful, the settlers still eke out a modest trade.\n"
+"\n"
+"Stones carved into swirling vortex shapes are especially popular."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid "Devise a way to avoid the whirlpools."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid ""
+"The settlers observe the whirlpools, recording the changes in their movement hourly. They find a few vortices that weaken at dawn.\n"
+"\n"
+"Gatherers dive with baskets as the sun rises, collecting the dead coral that ends up on the sea floor.\n"
+"\n"
+"The work is dangerous and slow, but it's enough to guarantee a steady supply of jewelry."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid "Harvest living coral."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid ""
+"The settlers, eager to expand their trade, devise a plan to break off pieces of coral without entering the rushing currents.\n"
+"\n"
+"They attach hooks to long poles and break off pieces from the reef from a distance.\n"
+"\n"
+"This yields enough coral to double their exports, but the reef suffers as a consequence. Turtles and fish will soon become a rare sight around these parts."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid "Continue using only the washed-up coral."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/coral_garden/event_coral_garden.tres
+msgid ""
+"The settlers continue to gather the coral that washes up onto shore, and stay away from the whirlpools.\n"
+"\n"
+"Their jewelry trade remains modest, but the reef will maintain its beauty for generations to come."
 msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: event_name
@@ -203193,6 +203315,72 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: Category: EVENTS; Property: event_name
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid "The Whale Season"
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid ""
+"The settlers are celebrating the beginning of whale season, watching as they come to the warm shallows to give birth.\n"
+"\n"
+"Today the first newborn calf is spotted drifting alongside its mother, but the cheers are interrupted by a troubling sight: a pod of orcas heading straight for the two whales.\n"
+"\n"
+"Although fish are their usual prey, they can pose a serious threat to a young whale."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid "Scare the orcas with loud drumming."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid ""
+"The settlers, unwilling to risk getting too close to the orcas, loudly pound their oars on the hulls of their boats, letting the noise echo into the waves.\n"
+"\n"
+"The orcas dash away, but the whale calves are just as startled and quickly flee in a different direction, with their mothers following.\n"
+"\n"
+"The celebration is cut short, but at least everyone is safe."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid "Chase the orcas off."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid ""
+"The bravest settlers row directly towards the orcas while shouting at the top of their lungs.\n"
+"\n"
+"The orcas abandon their hunt, but one of the boats ends up overturned in the commotion."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid "Guide the whales away."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_result_text
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid ""
+"The settlers split into two groups and surround the whales from two sides, in the hope of herding them towards a sheltered bay.\n"
+"\n"
+"The whales are hesitant at first, but they soon seem to recognize the offer of help. They swim carefully between the boats and safely leave the orcas behind."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: markedup_text
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid "Do not interfere."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: description
+#: events/generic/whale_shrine/event_whale_shrine.tres
+msgid "Get a <term:card.pass_away>, <term:card.battle>, or <term:card.play> <term:glyph>."
+msgstr ""
+
+#. TRANSLATORS: Category: EVENTS; Property: event_name
 #: events/generic/wild_monastery/event_wild_monastery.tres
 msgid "The Missing Crows"
 msgstr ""
@@ -207744,33 +207932,33 @@ msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: text[]
 #: japanese/drawing/kanji_drawing_challenge.gd:20
-#: japanese/drawing/kanji_drawing_challenge.gd:55
+#: japanese/drawing/kanji_drawing_challenge.gd:58
 #: japanese/drawing/kanji_drawing_challenge.tscn
 msgid "Draw the glyph on the right canvas, stroke by stroke."
 msgstr ""
 
-#: japanese/drawing/kanji_drawing_challenge.gd:40
+#: japanese/drawing/kanji_drawing_challenge.gd:43
 msgid "Glyph inscribed successfully!"
 msgstr ""
 
-#: japanese/drawing/kanji_drawing_challenge.gd:41
+#: japanese/drawing/kanji_drawing_challenge.gd:44
 msgid "Proceed"
 msgstr ""
 
-#: japanese/drawing/kanji_drawing_challenge.gd:44
+#: japanese/drawing/kanji_drawing_challenge.gd:47
 msgid "Start your stroke at the marked point!"
 msgstr ""
 
-#: japanese/drawing/kanji_drawing_challenge.gd:47
+#: japanese/drawing/kanji_drawing_challenge.gd:50
 msgid "Follow the stroke as closely as possible!"
 msgstr ""
 
-#: japanese/drawing/kanji_drawing_challenge.gd:50
+#: japanese/drawing/kanji_drawing_challenge.gd:53
 msgid "Continue on to the next stroke!"
 msgstr ""
 
 #. TRANSLATORS: Category: LANGUAGE_LEARNING; Property: text[]
-#: japanese/drawing/kanji_drawing_challenge.gd:56
+#: japanese/drawing/kanji_drawing_challenge.gd:59
 #: japanese/drawing/kanji_drawing_challenge.tscn
 msgid "Give Up"
 msgstr ""
