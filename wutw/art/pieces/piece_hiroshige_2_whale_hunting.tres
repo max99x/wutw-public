@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://ca57fxtjj2m62"]
+
+[ext_resource type="Resource" uid="uid://f3fpud3epydl" path="res://art/artists/artist_hiroshige_2.tres" id="1_qw7lg"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_2yaex"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_tpop3"]
+[ext_resource type="Resource" uid="uid://fana5rgfkrls" path="res://art/series/series_hiroshige_2_100_views.tres" id="4_v7vpj"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="5_lowlc"]
+
+[sub_resource type="Resource" id="Resource_ihp2r"]
+script = ExtResource("2_2yaex")
+_texture_path = "uid://dbt6x2n3wclbs"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_bcsnl"]
+script = ExtResource("2_2yaex")
+_texture_path = "uid://cgaxiw8xumibu"
+_is_horizontal = false
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_tpop3")
+original_image = SubResource("Resource_bcsnl")
+piece_name = "Whale Hunting at the Island of Goto in Hizen"
+series = ExtResource("4_v7vpj")
+artist = ExtResource("1_qw7lg")
+actual_start_year = 1859
+custom_link = "https://ukiyo-e.org/image/mfa/sc128738"
+edits_description = "The weapons and the text were removed."
+final_image_tex = SubResource("Resource_ihp2r")
+province = 8
+blurb = "Depicts hunters in small boats hurling harpoons at a whale.
+
+When such hunts were successful, whale parts were used not only for food, but also for lamp oil, soap, fertilizer, and even to produce folding fans.
+
+While stranded whales have been consumed in Japan since before the 3rd century BC, active whaling began in the 12th century using harpoons, and became a major industry in the 17th century, at which point specially designed nets began to also be used.
+
+Whaling has historically been opposed by Buddhists, as well as inhabitants of North Eastern Japan, who considered whales to be an incarnation of the god Ebisu.
+
+The Japanese whaling industry peaked between 1810 and 1850. By the time this print was designed, whalers from Western nations, hunting in waters off the coast of Japan, had begun to deplete the supply of whales for Japanese fishermen."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"

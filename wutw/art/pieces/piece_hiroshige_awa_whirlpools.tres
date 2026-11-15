@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="ArtPiece_Single" format=3 uid="uid://chk0be8vufv83"]
+
+[ext_resource type="Resource" uid="uid://86d5h85e0bsq" path="res://art/artists/artist_hiroshige.tres" id="1_235wk"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="2_qawwe"]
+[ext_resource type="Script" uid="uid://ch5ftavw2uwd2" path="res://art/art_piece_single.gd" id="3_fy4is"]
+[ext_resource type="Resource" uid="uid://cscdydttlaqdd" path="res://art/series/series_hiroshige_snow_moon_flowers.tres" id="4_235wk"]
+[ext_resource type="Script" uid="uid://bgguqqmww2r4l" path="res://art/art_style.gd" id="5_yfrwj"]
+[ext_resource type="Resource" uid="uid://dyx8q8iako05e" path="res://art/styles/style_meisho.tres" id="6_xipxh"]
+
+[sub_resource type="Resource" id="Resource_x4myr"]
+script = ExtResource("2_qawwe")
+_texture_path = "uid://dm5ybb53a8t8d"
+_is_horizontal = false
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[sub_resource type="Resource" id="Resource_bcsnl"]
+script = ExtResource("2_qawwe")
+_texture_path = "uid://dreg7ftitmwbq"
+_is_horizontal = true
+metadata/_custom_type_script = "uid://c7u2t141hgkj5"
+
+[resource]
+script = ExtResource("3_fy4is")
+original_image = SubResource("Resource_bcsnl")
+piece_name = "View of Whirlpools at Awa"
+series = ExtResource("4_235wk")
+artist = ExtResource("1_235wk")
+styles = Array[ExtResource("5_yfrwj")]([ExtResource("6_xipxh")])
+actual_start_year = 1857
+edits_description = "Only the middle panel was used and the stamps were removed."
+final_image_tex = SubResource("Resource_x4myr")
+province = 15
+blurb = "Depicts the swirling eddies comprising the [url=https://en.wikipedia.org/wiki/Naruto_whirlpools]Naruto whirlpools[/url], a channel between Naruto in Tokushima and Awaji Island in present-day Hyōgo prefecture.
+
+These whirlpools are caused by the difference in sea levels between the Pacific Ocean and the Seto Inland Sea. They form as the water rushes through the narrow Naruto strait, and are especially noticeable during spring and autumn.
+
+Hiroshige completed this design one year before his death as part of a set of three triptychs on the theme known as setsugetsuka (\"snow-moon-flowers\"). Flowers are the theme here, as represented by the shape of the whirlpools, while snow and the moon are the theme of the other two triptychs. These late Hiroshige works often avoided focusing on human figures and instead focused purely on vast landscapes."
+metadata/_custom_type_script = "uid://6kpsqyb2pk7a"

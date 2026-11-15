@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="3_4udp5"]
 [ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="4_e51mh"]
 [ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_5qx0g"]
+[ext_resource type="Resource" uid="uid://chk0be8vufv83" path="res://art/pieces/piece_hiroshige_awa_whirlpools.tres" id="5_cwd7f"]
 [ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_5aymh"]
 [ext_resource type="Resource" uid="uid://ba067gew0evov" path="res://cards/tier3/card_polish.tres" id="7_tax2s"]
 [ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="8_gn50p"]
@@ -148,6 +149,7 @@ The resulting currents occasionally snap off coral branches, and carry them asho
 
 The jewelry made from these fragments has become the town's signature export, but demand far outpaces supply."
 background_image = SubResource("Resource_rp6rm")
+background_credit = ExtResource("5_cwd7f")
 choices = Array[ExtResource("6_5aymh")]([SubResource("Resource_ag53m"), SubResource("Resource_425v5"), SubResource("Resource_vsjxl")])
 exit_choice = SubResource("Resource_1n263")
 

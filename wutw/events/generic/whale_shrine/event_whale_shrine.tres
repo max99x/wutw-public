@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://2sqheye7ri6u" path="res://events/system/requirements/event_requirement_num_settlements.gd" id="2_3xh8f"]
 [ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="3_2ftew"]
 [ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="4_5u84d"]
+[ext_resource type="Resource" uid="uid://ca57fxtjj2m62" path="res://art/pieces/piece_hiroshige_2_whale_hunting.tres" id="5_3xh8f"]
 [ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_j0npf"]
 [ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_q4imu"]
 [ext_resource type="Resource" uid="uid://cd5wpmao86pf3" path="res://cards/tier3/card_safe.tres" id="7_ru06g"]
@@ -181,6 +182,7 @@ Today the first newborn calf is spotted drifting alongside its mother, but the c
 
 Although fish are their usual prey, they can pose a serious threat to a young whale."
 background_image = SubResource("Resource_hxi3y")
+background_credit = ExtResource("5_3xh8f")
 choices = Array[ExtResource("6_q4imu")]([SubResource("Resource_2rpah"), SubResource("Resource_ijqs6"), SubResource("Resource_eyvo4")])
 exit_choice = SubResource("Resource_658i2")
 
