@@ -189,7 +189,7 @@ static func get_rarity_name_static(given_rarity: Rarity) -> String:
 		_: return '?'
 
 func get_term_id() -> String:
-	return 'card.' + card_name.to_lower()
+	return 'card.' + card_name.to_lower().replace(' ', '_')
 
 func get_term_name(long: bool) -> String:
 	if long:
