@@ -1,0 +1,161 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://cy7vohoh3quhr"]
+
+[ext_resource type="Resource" uid="uid://gia5p2avy13r" path="res://stage/spots/seashore/upgrade_seashore_2_coral_garden.tres" id="1_gtt4a"]
+[ext_resource type="Script" uid="uid://2sqheye7ri6u" path="res://events/system/requirements/event_requirement_num_settlements.gd" id="2_cwd7f"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="3_4udp5"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="4_e51mh"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_5qx0g"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_5aymh"]
+[ext_resource type="Resource" uid="uid://ba067gew0evov" path="res://cards/tier3/card_polish.tres" id="7_tax2s"]
+[ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="8_gn50p"]
+[ext_resource type="Resource" uid="uid://o80v148lfiri" path="res://aspects/types/change/aspect_change.tres" id="9_gdu55"]
+[ext_resource type="Script" uid="uid://cjdop1iab2efw" path="res://events/system/requirements/event_requirement_num_aspects.gd" id="10_qks2g"]
+[ext_resource type="Resource" uid="uid://1pyjk5qbkyj4" path="res://cards/tier2/card_vortex.tres" id="11_j8pyr"]
+[ext_resource type="Resource" uid="uid://j5k23kvamui4" path="res://bonuses/types/bonus_adventure.tres" id="12_plxm3"]
+[ext_resource type="Script" uid="uid://dfaio0ey0wbra" path="res://events/system/requirements/event_requirement_run_bonus.gd" id="13_sc66o"]
+[ext_resource type="Script" uid="uid://us3vhbuc1tdq" path="res://events/system/outcomes/all/event_outcome_all.gd" id="14_hjtcy"]
+[ext_resource type="Script" uid="uid://djcv8lbjfjg6e" path="res://events/system/outcomes/event_outcome.gd" id="15_2s0yu"]
+[ext_resource type="Resource" uid="uid://mfqj0cpsbnxu" path="res://cards/tier4/card_trade.tres" id="16_mijgf"]
+[ext_resource type="Resource" uid="uid://c2mj2fplq2xp5" path="res://cards/tier6/card_collapse.tres" id="17_mog8y"]
+[ext_resource type="Resource" uid="uid://begvnkwoyu3nf" path="res://aspects/types/craft/aspect_craft.tres" id="18_pyaou"]
+[ext_resource type="Resource" uid="uid://bvf0fdy10l400" path="res://bonuses/types/bonus_productivity.tres" id="19_xu7db"]
+[ext_resource type="Script" uid="uid://dkas1jvkeluf4" path="res://events/system/outcomes/bonus/event_outcome_bonus.gd" id="20_k7s85"]
+[ext_resource type="Resource" uid="uid://c6itkj7qwdavt" path="res://bonuses/types/bonus_harmony.tres" id="21_71d1r"]
+
+[sub_resource type="Resource" id="Resource_euur3"]
+script = ExtResource("2_cwd7f")
+min_count = 3
+
+[sub_resource type="Resource" id="Resource_rp6rm"]
+script = ExtResource("5_5qx0g")
+_texture_path = "res://events/generic/coral_garden/coral_garden.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_mxpny"]
+script = ExtResource("8_gn50p")
+card_type = ExtResource("7_tax2s")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_7iagp"]
+script = ExtResource("10_qks2g")
+aspect_type = ExtResource("9_gdu55")
+min_count = 5
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_ag53m"]
+script = ExtResource("6_5aymh")
+markedup_text = "Make jewelry out of other materials."
+requirement = SubResource("Resource_7iagp")
+outcome = SubResource("Resource_mxpny")
+markedup_result_text = "The settlers collect smooth stones, colorful seashells, and driftwood, polishing them until they gleam, and carving them into delicate ornaments.
+
+Although the new jewelry doesn't prove to be as successful, the settlers still eke out a modest trade.
+
+Stones carved into swirling vortex shapes are especially popular."
+
+[sub_resource type="Resource" id="Resource_3xh8f"]
+script = ExtResource("8_gn50p")
+card_type = ExtResource("11_j8pyr")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_tiogh"]
+script = ExtResource("13_sc66o")
+bonus_type = ExtResource("12_plxm3")
+min_count = 50
+max_count = -1
+extra_per_season = 25
+
+[sub_resource type="Resource" id="Resource_425v5"]
+script = ExtResource("6_5aymh")
+markedup_text = "Devise a way to avoid the whirlpools."
+requirement = SubResource("Resource_tiogh")
+outcome = SubResource("Resource_3xh8f")
+markedup_result_text = "The settlers observe the whirlpools, recording the changes in their movement hourly. They find a few vortices that weaken at dawn.
+
+Gatherers dive with baskets as the sun rises, collecting the dead coral that ends up on the sea floor.
+
+The work is dangerous and slow, but it's enough to guarantee a steady supply of jewelry."
+
+[sub_resource type="Resource" id="Resource_j0npf"]
+script = ExtResource("8_gn50p")
+card_type = ExtResource("16_mijgf")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_q4imu"]
+script = ExtResource("8_gn50p")
+card_type = ExtResource("17_mog8y")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_ru06g"]
+script = ExtResource("8_gn50p")
+card_type = ExtResource("17_mog8y")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_5u84d"]
+script = ExtResource("14_hjtcy")
+suboutcomes = Array[ExtResource("15_2s0yu")]([SubResource("Resource_j0npf"), SubResource("Resource_q4imu"), SubResource("Resource_ru06g")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_03wcp"]
+script = ExtResource("10_qks2g")
+aspect_type = ExtResource("18_pyaou")
+min_count = 3
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_vsjxl"]
+script = ExtResource("6_5aymh")
+markedup_text = "Harvest living coral."
+requirement = SubResource("Resource_03wcp")
+outcome = SubResource("Resource_5u84d")
+markedup_result_text = "The settlers, eager to expand their trade, devise a plan to break off pieces of coral without entering the rushing currents.
+
+They attach hooks to long poles and break off pieces from the reef from a distance.
+
+This yields enough coral to double their exports, but the reef suffers as a consequence. Turtles and fish will soon become a rare sight around these parts."
+
+[sub_resource type="Resource" id="Resource_5w4nb"]
+script = ExtResource("20_k7s85")
+bonus_type = ExtResource("19_xu7db")
+amount = -10
+extra_per_season = -10
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_w0kms"]
+script = ExtResource("20_k7s85")
+bonus_type = ExtResource("21_71d1r")
+amount = 15
+extra_per_season = 15
+metadata/_custom_type_script = "uid://dkas1jvkeluf4"
+
+[sub_resource type="Resource" id="Resource_5so36"]
+script = ExtResource("14_hjtcy")
+suboutcomes = Array[ExtResource("15_2s0yu")]([SubResource("Resource_5w4nb"), SubResource("Resource_w0kms")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_1n263"]
+script = ExtResource("6_5aymh")
+markedup_text = "Continue using only the washed-up coral."
+outcome = SubResource("Resource_5so36")
+markedup_result_text = "The settlers continue to gather the coral that washes up onto shore, and stay away from the whirlpools.
+
+Their jewelry trade remains modest, but the reef will maintain its beauty for generations to come."
+
+[sub_resource type="Resource" id="Resource_cs0i7"]
+script = ExtResource("4_e51mh")
+markedup_text = "Swirling whirlpools churn the waters off the settlement's coast, right above a forest of bright coral.
+
+The resulting currents occasionally snap off coral branches, and carry them ashore, where settlers gather them up.
+
+The jewelry made from these fragments has become the town's signature export, but demand far outpaces supply."
+background_image = SubResource("Resource_rp6rm")
+choices = Array[ExtResource("6_5aymh")]([SubResource("Resource_ag53m"), SubResource("Resource_425v5"), SubResource("Resource_vsjxl")])
+exit_choice = SubResource("Resource_1n263")
+
+[resource]
+script = ExtResource("3_4udp5")
+default_spot_upgrade = ExtResource("1_gtt4a")
+event_id = "coral_garden"
+event_name = "Coral Jewelry"
+requirement = SubResource("Resource_euur3")
+steps = Array[ExtResource("4_e51mh")]([SubResource("Resource_cs0i7")])
+categories = Array[int]([3])

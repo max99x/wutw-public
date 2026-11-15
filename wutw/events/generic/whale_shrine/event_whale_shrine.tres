@@ -1,0 +1,194 @@
+[gd_resource type="Resource" script_class="Event_Stage" format=3 uid="uid://bs8q2cou34b0r"]
+
+[ext_resource type="Resource" uid="uid://cl8h0b8goemjr" path="res://stage/spots/seashore/upgrade_seashore_3_whale_caller_shrine.tres" id="1_mxpny"]
+[ext_resource type="Script" uid="uid://2sqheye7ri6u" path="res://events/system/requirements/event_requirement_num_settlements.gd" id="2_3xh8f"]
+[ext_resource type="Script" uid="uid://b0ix465cqojf3" path="res://events/system/event_stage.gd" id="3_2ftew"]
+[ext_resource type="Script" uid="uid://b3ryo56yig0k3" path="res://events/system/event_step.gd" id="4_5u84d"]
+[ext_resource type="Script" uid="uid://c7u2t141hgkj5" path="res://art/lazy_texture.gd" id="5_j0npf"]
+[ext_resource type="Script" uid="uid://ch6bcu3nqxr1j" path="res://events/system/event_choice.gd" id="6_q4imu"]
+[ext_resource type="Resource" uid="uid://cd5wpmao86pf3" path="res://cards/tier3/card_safe.tres" id="7_ru06g"]
+[ext_resource type="Script" uid="uid://cqnoecri6xisf" path="res://events/system/outcomes/add_card/event_outcome_add_card.gd" id="8_5so36"]
+[ext_resource type="Resource" uid="uid://dgd4xg64jr3k0" path="res://aspects/types/spirit/aspect_spirit.tres" id="9_5w4nb"]
+[ext_resource type="Script" uid="uid://cjdop1iab2efw" path="res://events/system/requirements/event_requirement_num_aspects.gd" id="10_w0kms"]
+[ext_resource type="Script" uid="uid://us3vhbuc1tdq" path="res://events/system/outcomes/all/event_outcome_all.gd" id="11_5eb0f"]
+[ext_resource type="Script" uid="uid://djcv8lbjfjg6e" path="res://events/system/outcomes/event_outcome.gd" id="12_n03w5"]
+[ext_resource type="Resource" uid="uid://bmgqeem7cnoar" path="res://cards/tier3/card_clamor.tres" id="13_64cid"]
+[ext_resource type="Resource" uid="uid://c8ax48tb3uxge" path="res://cards/tier6/card_soak.tres" id="14_2hdbo"]
+[ext_resource type="Resource" uid="uid://o80v148lfiri" path="res://aspects/types/change/aspect_change.tres" id="15_xavjv"]
+[ext_resource type="Resource" uid="uid://ceismq0ioep4k" path="res://cards/tier3/card_rescue.tres" id="16_65632"]
+[ext_resource type="Resource" uid="uid://ddp3f5lll121p" path="res://aspects/types/connection/aspect_connection.tres" id="17_jqpq7"]
+[ext_resource type="Script" uid="uid://cbnw4a13y5x8c" path="res://events/system/outcomes/random/event_outcome_random.gd" id="18_ya8ll"]
+[ext_resource type="Script" uid="uid://yxgaymbbt8tk" path="res://events/system/outcomes/override_next_step/event_outcome_override_next_step.gd" id="19_05lm0"]
+[ext_resource type="Resource" uid="uid://c1pvywklu45ke" path="res://cards/tier6/card_pass_away.tres" id="20_mx8m2"]
+[ext_resource type="Resource" uid="uid://y6x5dtxxn1d7" path="res://cards/tier2/card_battle.tres" id="21_t4opb"]
+[ext_resource type="Resource" uid="uid://cbpcuddnx7ugg" path="res://cards/tier2/card_play.tres" id="22_1scoa"]
+
+[sub_resource type="Resource" id="Resource_4a55s"]
+script = ExtResource("2_3xh8f")
+min_count = 3
+
+[sub_resource type="Resource" id="Resource_hxi3y"]
+script = ExtResource("5_j0npf")
+_texture_path = "res://events/generic/whale_shrine/whale_shrine.png"
+_is_horizontal = false
+
+[sub_resource type="Resource" id="Resource_trtbi"]
+script = ExtResource("8_5so36")
+card_type = ExtResource("7_ru06g")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_4fpj6"]
+script = ExtResource("10_w0kms")
+aspect_type = ExtResource("9_5w4nb")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_2rpah"]
+script = ExtResource("6_q4imu")
+markedup_text = "Scare the orcas with loud drumming."
+requirement = SubResource("Resource_4fpj6")
+outcome = SubResource("Resource_trtbi")
+markedup_result_text = "The settlers, unwilling to risk getting too close to the orcas, loudly pound their oars on the hulls of their boats, letting the noise echo into the waves.
+
+The orcas dash away, but the whale calves are just as startled and quickly flee in a different direction, with their mothers following.
+
+The celebration is cut short, but at least everyone is safe."
+
+[sub_resource type="Resource" id="Resource_d174p"]
+script = ExtResource("8_5so36")
+card_type = ExtResource("13_64cid")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_a6ufw"]
+script = ExtResource("8_5so36")
+card_type = ExtResource("14_2hdbo")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_0eiya"]
+script = ExtResource("11_5eb0f")
+suboutcomes = Array[ExtResource("12_n03w5")]([SubResource("Resource_d174p"), SubResource("Resource_a6ufw")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_3dyre"]
+script = ExtResource("10_w0kms")
+aspect_type = ExtResource("15_xavjv")
+min_count = 4
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_ijqs6"]
+script = ExtResource("6_q4imu")
+markedup_text = "Chase the orcas off."
+requirement = SubResource("Resource_3dyre")
+outcome = SubResource("Resource_0eiya")
+markedup_result_text = "The bravest settlers row directly towards the orcas while shouting at the top of their lungs.
+
+The orcas abandon their hunt, but one of the boats ends up overturned in the commotion."
+
+[sub_resource type="Resource" id="Resource_bgisj"]
+script = ExtResource("8_5so36")
+card_type = ExtResource("16_65632")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_pf411"]
+script = ExtResource("10_w0kms")
+aspect_type = ExtResource("17_jqpq7")
+min_count = 2
+extra_per_season = 1
+
+[sub_resource type="Resource" id="Resource_eyvo4"]
+script = ExtResource("6_q4imu")
+markedup_text = "Guide the whales away."
+requirement = SubResource("Resource_pf411")
+outcome = SubResource("Resource_bgisj")
+markedup_result_text = "The settlers split into two groups and surround the whales from two sides, in the hope of herding them towards a sheltered bay.
+
+The whales are hesitant at first, but they soon seem to recognize the offer of help. They swim carefully between the boats and safely leave the orcas behind."
+
+[sub_resource type="Resource" id="Resource_agcm7"]
+script = ExtResource("19_05lm0")
+result_text = "The settlers decide to let nature take its course, remaining at a distance.
+
+The orcas soon surround the whales and manage to separate them, capturing the calf."
+metadata/_custom_type_script = "uid://yxgaymbbt8tk"
+
+[sub_resource type="Resource" id="Resource_b7llu"]
+script = ExtResource("8_5so36")
+card_type = ExtResource("20_mx8m2")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_e7hfo"]
+script = ExtResource("11_5eb0f")
+suboutcomes = Array[ExtResource("12_n03w5")]([SubResource("Resource_agcm7"), SubResource("Resource_b7llu")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_q837o"]
+script = ExtResource("19_05lm0")
+result_text = "The settlers decide to let nature take its course, remaining at a distance.
+
+The orcas soon surround the whales, but the mother puts up a fight and manages to defend her baby, eliciting cheers from the gathered settlers."
+description = ""
+metadata/_custom_type_script = "uid://yxgaymbbt8tk"
+
+[sub_resource type="Resource" id="Resource_fdi0j"]
+script = ExtResource("8_5so36")
+card_type = ExtResource("21_t4opb")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_kd355"]
+script = ExtResource("11_5eb0f")
+suboutcomes = Array[ExtResource("12_n03w5")]([SubResource("Resource_q837o"), SubResource("Resource_fdi0j")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_mfxkf"]
+script = ExtResource("19_05lm0")
+result_text = "The settlers decide to let nature take its course, remaining at a distance.
+
+It soon becomes clear that the orcas are more interested in hunting fish and playing around in the bay than trying to challenge the whale."
+description = ""
+metadata/_custom_type_script = "uid://yxgaymbbt8tk"
+
+[sub_resource type="Resource" id="Resource_2cj5p"]
+script = ExtResource("8_5so36")
+card_type = ExtResource("22_1scoa")
+metadata/_custom_type_script = "uid://cqnoecri6xisf"
+
+[sub_resource type="Resource" id="Resource_kj1sh"]
+script = ExtResource("11_5eb0f")
+suboutcomes = Array[ExtResource("12_n03w5")]([SubResource("Resource_mfxkf"), SubResource("Resource_2cj5p")])
+metadata/_custom_type_script = "uid://us3vhbuc1tdq"
+
+[sub_resource type="Resource" id="Resource_pakit"]
+script = ExtResource("18_ya8ll")
+suboutcomes = Dictionary[ExtResource("12_n03w5"), float]({
+SubResource("Resource_e7hfo"): 1.0,
+SubResource("Resource_kd355"): 1.0,
+SubResource("Resource_kj1sh"): 1.0
+})
+description = "Get a <term:card.pass_away>, <term:card.battle>, or <term:card.play> <term:glyph>."
+metadata/_custom_type_script = "uid://cbnw4a13y5x8c"
+
+[sub_resource type="Resource" id="Resource_658i2"]
+script = ExtResource("6_q4imu")
+markedup_text = "Do not interfere."
+outcome = SubResource("Resource_pakit")
+markedup_result_text = "<overridden>"
+
+[sub_resource type="Resource" id="Resource_o44fc"]
+script = ExtResource("4_5u84d")
+markedup_text = "The settlers are celebrating the beginning of whale season, watching as they come to the warm shallows to give birth.
+
+Today the first newborn calf is spotted drifting alongside its mother, but the cheers are interrupted by a troubling sight: a pod of orcas heading straight for the two whales.
+
+Although fish are their usual prey, they can pose a serious threat to a young whale."
+background_image = SubResource("Resource_hxi3y")
+choices = Array[ExtResource("6_q4imu")]([SubResource("Resource_2rpah"), SubResource("Resource_ijqs6"), SubResource("Resource_eyvo4")])
+exit_choice = SubResource("Resource_658i2")
+
+[resource]
+script = ExtResource("3_2ftew")
+default_spot_upgrade = ExtResource("1_mxpny")
+event_id = "whale_shrine"
+event_name = "The Whale Season"
+requirement = SubResource("Resource_4a55s")
+steps = Array[ExtResource("4_5u84d")]([SubResource("Resource_o44fc")])
+categories = Array[int]([3])
