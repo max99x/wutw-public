@@ -130,7 +130,7 @@ script = ExtResource("5_it5ex")
 markedup_text = "Hold a tiny ceremony."
 requirement = SubResource("Resource_kojkx")
 outcome = SubResource("Resource_40rqf")
-markedup_result_text = "The ceremony is performed in the evening, with all th settlers gathered on the bank.
+markedup_result_text = "The ceremony is performed in the evening, with all the settlers gathered on the bank.
 
 It consists of a single lit lantern floating away down the stream, and a half-forgotten song chanted by the priest."
 
