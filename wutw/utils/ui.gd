@@ -106,16 +106,19 @@ func _notification(what: int) -> void:
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	var key_event := event as InputEventKey
-	if key_event and key_event.pressed and key_event.keycode == KEY_ESCAPE:
-		handle_esc()
-	elif key_event and key_event.pressed and key_event.is_action('toggle_ui_visiblity'):
-		_ui_hidden = not _ui_hidden
-		for layer in _layers:
-			if layer > Layer.GAME:
-				_layers[layer].visible = not _ui_hidden
-		ui_hide_toggled.emit()
-	elif key_event and key_event.pressed and key_event.is_action('debug_reload_i18n'):
-		GameSettings.reload_i18n()
+	if key_event and key_event.pressed:
+		if key_event.keycode == KEY_ESCAPE:
+			handle_esc()
+		if key_event.is_action('toggle_ui_visiblity'):
+			_ui_hidden = not _ui_hidden
+			for layer in _layers:
+				if layer > Layer.GAME:
+					_layers[layer].visible = not _ui_hidden
+			ui_hide_toggled.emit()
+		if key_event.is_action('debug_reload_i18n'):
+			GameSettings.reload_i18n()
+		if key_event.is_action('debug_toggle_i18n'):
+			GameSettings.debug_toggle_i18n()
 
 func notify_drag_started() -> void:
 	Utils.ensure(not _is_dragging)

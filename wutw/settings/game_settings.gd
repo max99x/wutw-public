@@ -96,6 +96,8 @@ class Controls:
 
 const FILE_PATH := 'user://game_settings.ini'
 
+static var _debug_translation_disabled := false
+
 var read_only: bool = false  # Used for debugging and dev tools.
 
 var _config_file: ConfigFile
@@ -211,6 +213,13 @@ static func reload_i18n() -> void:
 			push_warning('Translation for chosen locale "%s" not found.' % chosen_locale)
 	else:
 		TranslationServer.set_locale('en')
+
+static func debug_toggle_i18n() -> void:
+	_debug_translation_disabled = not _debug_translation_disabled
+	if _debug_translation_disabled:
+		TranslationServer.set_locale('en')
+	else:
+		reload_i18n()
 
 # Syntax sugar helpers.
 
