@@ -5899,7 +5899,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: blurb
 #: art/pieces/piece_bakemono_yamawarou.tres
-msgid "Depicts Yamawarō (\"ox demon\"), a yōkai from the mountains in the west of Japan. They are one-eyed and child-sized, and are said to mimic both natural sounds and human speech. They offer woodcutting services if presented with an appropriate amount of food at an appropriate time."
+msgid "Depicts Yamawarō (\"mountain child\"), a yōkai from the mountains in the west of Japan. They are one-eyed and child-sized, and are said to mimic both natural sounds and human speech. They offer woodcutting services if presented with an appropriate amount of food at an appropriate time."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -14078,7 +14078,7 @@ msgstr ""
 #: theme/confirm_dialog/confirm_dialog.tscn
 #: tutorial/steps/hub/tutorial_enable_japanese.gd:36
 #: utils/bug_reporter/bug_reporter.tscn
-#: utils/ui.gd:290
+#: utils/ui.gd:293
 msgid "Cancel"
 msgstr ""
 
@@ -208177,7 +208177,7 @@ msgstr ""
 #: utils/steam_setup.gd:81
 #: utils/steam_setup.gd:93
 #: utils/steam_setup.gd:98
-#: utils/ui.gd:290
+#: utils/ui.gd:293
 msgid "Ok"
 msgstr ""
 
