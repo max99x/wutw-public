@@ -29,7 +29,7 @@ custom_link = "https://collections.lacma.org/object/88128"
 edits_description = "The image was cropped and the text was removed."
 final_image_tex = SubResource("Resource_a22jj")
 province = 68
-blurb = "Depicts a rock formation surrounded by serene waters in Oga Quasi-National Park on the coast of Akita prefecture. The rock are painted red by the rising (or possibly setting) sun.
+blurb = "Depicts a rock formation surrounded by serene waters in Oga Quasi-National Park on the coast of Akita prefecture. The rocks are painted red by the rising (or possibly setting) sun.
 
 This rock formation is called ryū-ga-shima (\"dragon island\"), possibly due to its resemblance to a dragon's jaw. Part of it collapsed during the 1939 Oga earthquake."
 metadata/_custom_type_script = "uid://6kpsqyb2pk7a"

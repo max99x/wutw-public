@@ -124,7 +124,7 @@ func get_province_label(p: JapanProvinceArea.Province) -> String:
 		JapanProvinceArea.Province.OOSUMI:
 			label = tr('Ōsumi')
 		JapanProvinceArea.Province.CHIKUGO:
-			label = tr('Chukugo')
+			label = tr('Chikugo')
 		JapanProvinceArea.Province.KOUZUKE:
 			label = tr('Kōzuke')
 		JapanProvinceArea.Province.HIZEN:

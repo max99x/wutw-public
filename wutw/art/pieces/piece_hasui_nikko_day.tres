@@ -30,7 +30,7 @@ custom_link = "https://ukiyo-e.org/image/ohmi/Kawase_Hasui-Road_to_Nikko-011708-
 edits_description = "The man was removed."
 final_image_tex = SubResource("Resource_h6dpt")
 province = 66
-blurb = "Depicts a a man carrying a basket through a cedar-lined road.
+blurb = "Depicts a man carrying a basket through a cedar-lined road.
 
 The location is the famous Nikko Cedar Avenue, the longest tree-lined road in the world, with 12,000 cedars still there today."
 metadata/_custom_type_script = "uid://6kpsqyb2pk7a"

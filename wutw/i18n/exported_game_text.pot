@@ -5285,7 +5285,7 @@ msgid "Ōsumi"
 msgstr ""
 
 #: art/japan_map/japan_province_area.gd:127
-msgid "Chukugo"
+msgid "Chikugo"
 msgstr ""
 
 #: art/japan_map/japan_province_area.gd:129
@@ -6371,7 +6371,7 @@ msgstr ""
 #. TRANSLATORS: Category: ART_WIKI; Property: blurb
 #: art/pieces/piece_gakutei_writing_materials.tres
 msgid ""
-"Depicts a scholar's shelf-desk with writing materials and a potted plant in from of a screen painted with a wave.\n"
+"Depicts a scholar's shelf-desk with writing materials and a potted plant in front of a screen painted with a wave.\n"
 "\n"
 "The print features embossing and metallic pigment to create sparkling grooves in the desk.\n"
 "\n"
@@ -6991,7 +6991,7 @@ msgstr ""
 #. TRANSLATORS: Category: ART_WIKI; Property: blurb
 #: art/pieces/piece_hasui_nigatsu_hall.tres
 msgid ""
-"Depicts a view from the veranda of Nigatsu-dō (\"second month hall\"), one of the important structures of Tōdai-ji, the main temple complex in Nara, the ancient capital of Japan. Nigatsu-dō was first established in 752, but has been rebuild numerous times since.\n"
+"Depicts a view from the veranda of Nigatsu-dō (\"second month hall\"), one of the important structures of Tōdai-ji, the main temple complex in Nara, the ancient capital of Japan. Nigatsu-dō was first established in 752, but has been rebuilt numerous times since.\n"
 "\n"
 "It is best known for Omizutori, a fire and water ceremony held annually on the 12th of March. It includes monks holding huge flaming torches from the temple balcony, and on the next day drawing sacred water from a well under the temple. The ceremony has been held without a break for over 1200 years."
 msgstr ""
@@ -7009,7 +7009,7 @@ msgstr ""
 #. TRANSLATORS: Category: ART_WIKI; Property: blurb
 #: art/pieces/piece_hasui_nikko_day.tres
 msgid ""
-"Depicts a a man carrying a basket through a cedar-lined road.\n"
+"Depicts a man carrying a basket through a cedar-lined road.\n"
 "\n"
 "The location is the famous Nikko Cedar Avenue, the longest tree-lined road in the world, with 12,000 cedars still there today."
 msgstr ""
@@ -7075,7 +7075,7 @@ msgstr ""
 #. TRANSLATORS: Category: ART_WIKI; Property: blurb
 #: art/pieces/piece_hasui_ryugashima.tres
 msgid ""
-"Depicts a rock formation surrounded by serene waters in Oga Quasi-National Park on the coast of Akita prefecture. The rock are painted red by the rising (or possibly setting) sun.\n"
+"Depicts a rock formation surrounded by serene waters in Oga Quasi-National Park on the coast of Akita prefecture. The rocks are painted red by the rising (or possibly setting) sun.\n"
 "\n"
 "This rock formation is called ryū-ga-shima (\"dragon island\"), possibly due to its resemblance to a dragon's jaw. Part of it collapsed during the 1939 Oga earthquake."
 msgstr ""
@@ -7145,7 +7145,7 @@ msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: blurb
 #: art/pieces/piece_hirokage_foxes.tres
-msgid "Depicts fox spirits acting out a comical version of a daimyō's (feudal lord's) procession. They are carrying pumpkin instead of travelling bags and holding a bamboo stick with hanging corn instead of a spear. The man sitting in a bamboo basket seems to be delighted, bewitched by the foxes to feel as if he were a feudal lord. The place is near the Ōji Inari Shrine. It was said that foxes gathered to the Shrine on New Year's Eve, and farmers forecasted next year's harvest by the number of fox fires they saw."
+msgid "Depicts fox spirits acting out a comical version of a daimyō's (feudal lord's) procession. They are carrying pumpkins instead of travelling bags and holding a bamboo stick with hanging corn instead of a spear. The man sitting in a bamboo basket seems to be delighted, bewitched by the foxes to feel as if he were a feudal lord. The place is near the Ōji Inari Shrine. It was said that foxes gathered to the Shrine on New Year's Eve, and farmers forecasted next year's harvest by the number of fox fires they saw."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -7580,7 +7580,7 @@ msgstr ""
 msgid ""
 "Depicts a workshop for making tatami mats in Bingo province (present-day eastern Hiroshima prefecture).\n"
 "\n"
-"The text in the top right explains the production process. Rushes are planted in autumn and harvested in June. They are dyed in a hole in the ground by rubbing with a mxture of white clay and water. They are then dried in the sun, sorted, and rubbed again with clay after an outer layer is removed. Using hemp thread as the warp, the rushes are woven using a loom, rolled up tightly, and shipped out."
+"The text in the top right explains the production process. Rushes are planted in autumn and harvested in June. They are dyed in a hole in the ground by rubbing with a mixture of white clay and water. They are then dried in the sun, sorted, and rubbed again with clay after an outer layer is removed. Using hemp thread as the warp, the rushes are woven using a loom, rolled up tightly, and shipped out."
 msgstr ""
 
 #. TRANSLATORS: Category: ART_WIKI; Property: piece_name
@@ -7774,7 +7774,7 @@ msgid ""
 "\n"
 "The inscription is a poem:\n"
 "\n"
-"[i][Like] a maiden's\n"
+"[i][lb]Like[rb] a maiden's\n"
 "flower-dyed robe's\n"
 "swinging sleeve\n"
 "unstitch\n"
